@@ -85,6 +85,30 @@ $script:Sources = @(
   }
 )
 
+$pikabuPages = @('eda-yandex', 'samokat', 'vkusvill', 'dodopizza', 'perekrestok', '5ka')
+foreach ($slug in $pikabuPages) {
+  $script:Sources += @{
+    name = 'promokod.pikabu.ru'
+    url  = "https://promokod.pikabu.ru/shops/$slug"
+    kind = 'pikabu'
+  }
+}
+
+$kpPages = @(
+  @{ url = 'https://www.kp.ru/promokod/yandex-eda'; service = 'Яндекс Еда' },
+  @{ url = 'https://www.kp.ru/promokod/samokat/'; service = 'Самокат' },
+  @{ url = 'https://www.kp.ru/promokod/vkusvill/'; service = 'ВкусВилл' },
+  @{ url = 'https://www.kp.ru/promokod/pyaterochka/'; service = 'Пятёрочка' }
+)
+foreach ($page in $kpPages) {
+  $script:Sources += @{
+    name    = 'kp.ru'
+    url     = $page.url
+    kind    = 'kp'
+    service = $page.service
+  }
+}
+
 $script:Months = @{
   'января' = 1; 'февраля' = 2; 'марта' = 3; 'апреля' = 4;
   'мая' = 5; 'июня' = 6; 'июля' = 7; 'августа' = 8;
@@ -210,10 +234,16 @@ function Get-DiscountInfo {
 function Test-Food {
   param([string]$Text)
   $t = $Text.ToLower()
-  $negative = '(аптек|\bвита\b|косметик|подружк|цветочн|цвет(ы|ов|ам|ами)?\b|ювелир|товар\w*\s+для\s+дома|хобби|спорт\w*|техник|электроник|одежд|обув|игрушк|зоотовар|канцтовар|бытов|куулклевер|доктор\s+столетов|оптик|очк|кешбэк)'
+  $negative = '(аптек|\bвита\b|косметик|подружк|цветочн|цвет(ы|ов|ам|ами)?\b|ювелир|товар\w*\s+для\s+дома|хобби|спорт\w*|техник|электроник|одежд|обув|игрушк|зоотовар|канцтовар|бытов|куулклевер|доктор\s+столетов|оптик|очк|кешбэк|рив\s+гош)'
   $positive = '(вкусвилл|дикси|магнит|перекр[её]ст|пят[её]роч|азбука\s+вкуса|лент|ашан|самокат|купер|лавка|монетк|верный|dolce\s+milk|додо|ресторан|кафе|фастфуд|блюд|продукт|супермаркет|гипермаркет|гастроном|пицц|суши|доставк|заказ|еда\b)'
   if ($t -match $negative) { return $false }
   return [bool]($t -match $positive)
+}
+
+function Test-RubPrice {
+  param([string]$Text)
+  if ($Text -match '(?i)(BYN|₸|тенге|\bсум\b|\bсом\b|бел\.?\s*руб)') { return $false }
+  return $true
 }
 
 function Get-ExistingUsers {
@@ -282,6 +312,49 @@ function Get-Cities {
     'Тольятти'            = 'тольятти'
     'Ижевск'              = 'ижевск'
     'Ульяновск'           = 'ульяновск'
+    'Балаково'            = 'балаков'
+    'Якутск'              = 'якутск'
+    'Владимир'            = 'владимир'
+    'Бузулук'             = 'бузулук'
+    'Березники'           = 'березник'
+    'Когалым'             = 'когалым'
+    'Сургут'              = 'сургут'
+    'Нижневартовск'       = 'нижневартовск'
+    'Чита'                = 'чита'
+    'Улан-Удэ'            = 'улан-удэ'
+    'Махачкала'           = 'махачкал'
+    'Ставрополь'          = 'ставропол'
+    'Белгород'            = 'белгород'
+    'Курск'               = 'курск'
+    'Орёл'                = 'ор[её]л'
+    'Брянск'              = 'брянск'
+    'Смоленск'            = 'смоленск'
+    'Тверь'               = '\bтвер'
+    'Иваново'             = 'иванов'
+    'Кострома'            = 'костром'
+    'Архангельск'         = 'архангельск'
+    'Мурманск'            = 'мурманск'
+    'Петрозаводск'        = 'петрозаводск'
+    'Вологда'             = 'вологд'
+    'Череповец'           = 'череповец'
+    'Йошкар-Ола'          = 'йошкар'
+    'Чебоксары'           = 'чебоксар'
+    'Саранск'             = 'саранск'
+    'Тамбов'              = 'тамбов'
+    'Астрахань'           = 'астрахан'
+    'Оренбург'            = 'оренбург'
+    'Курган'              = 'курган'
+    'Кемерово'            = 'кемеров'
+    'Новокузнецк'         = 'новокузнецк'
+    'Бийск'               = 'бийск'
+    'Абакан'              = 'абакан'
+    'Братск'              = 'братск'
+    'Ангарск'             = 'ангарск'
+    'Петропавловск-Камчатский' = 'петропавловск-камчат'
+    'Южно-Сахалинск'      = 'южно-сахалинск'
+    'Комсомольск-на-Амуре' = 'комсомольск'
+    'Находка'             = 'находк'
+    'Уссурийск'           = 'уссурийск'
   }
 
   $result = @()
@@ -495,6 +568,174 @@ function Get-EcosumCodes {
   return $items
 }
 
+function Get-BalancedArray {
+  param([string]$Text, [int]$Start)
+  if ($Start -lt 0 -or $Start -ge $Text.Length -or $Text[$Start] -ne '[') { return $null }
+  $depth = 0
+  $inString = $false
+  $escaped = $false
+  for ($i = $Start; $i -lt $Text.Length; $i++) {
+    $c = $Text[$i]
+    if ($inString) {
+      if ($escaped) { $escaped = $false }
+      elseif ($c -eq '\') { $escaped = $true }
+      elseif ($c -eq '"') { $inString = $false }
+    }
+    else {
+      if ($c -eq '"') { $inString = $true }
+      elseif ($c -eq '[') { $depth++ }
+      elseif ($c -eq ']') {
+        $depth--
+        if ($depth -eq 0) { return $Text.Substring($Start, $i - $Start + 1) }
+      }
+    }
+  }
+  return $null
+}
+
+function Get-PikabuCodes {
+  param([string]$Html, [string]$Url, [string]$SourceName)
+
+  $items = @()
+  $idx = $Html.IndexOf('"coupons":')
+  if ($idx -lt 0) { return $items }
+  $arrStart = $Html.IndexOf('[', $idx)
+  $json = Get-BalancedArray $Html $arrStart
+  if (-not $json) { return $items }
+
+  try { $coupons = $json | ConvertFrom-Json } catch { return $items }
+
+  foreach ($coupon in $coupons) {
+    $code = ([string]$coupon.promoCode).Trim()
+    if (-not $code) { continue }
+    if ($code -notmatch '^[A-Za-z0-9_-]{3,32}$') { continue }
+
+    $title = (Convert-HtmlToText ([string]$coupon.title)).Trim()
+    $desc = (Convert-HtmlToText ([string]$coupon.description)).Trim()
+    $full = $title + ' ' + $desc
+
+    if ($title -notmatch '(?i)(скидк|выгод|эконом|дисконт|минус|купон\s+на|промокод\s+на|^-\s*\d|\d+\s*%|бесплатн\w*\s+доставк)') { continue }
+    if (-not (Test-RubPrice $full)) { continue }
+    if (-not (Test-Food $full)) { continue }
+
+    $days = $null
+    if ($coupon.endDate -and [long]$coupon.endDate -gt 0) {
+      $end = [DateTimeOffset]::FromUnixTimeSeconds([long]$coupon.endDate).LocalDateTime
+      $days = [int][math]::Ceiling(($end - (Get-Date)).TotalDays)
+      if ($days -lt 0) { continue }
+    }
+
+    $info = [ordered]@{ type = 'fixed'; value = 0; maxDiscount = 0 }
+    if ([int]$coupon.benefitType -eq 1 -or [int]$coupon.discountPercent -gt 0) {
+      $info.type = 'percent'
+      $info.value = [int]$coupon.discountPercent
+      if ($info.value -le 0) {
+        $fromTitle = Get-DiscountFromTitle $title
+        if ($fromTitle -and $fromTitle.type -eq 'percent') { $info.value = $fromTitle.value }
+      }
+    }
+    elseif ([int]$coupon.benefitType -eq 2) {
+      $info.type = 'fixed'
+      $info.value = ConvertTo-Number ([string]$coupon.discountAmount)
+      if ($info.value -le 0) {
+        $fromTitle = Get-DiscountFromTitle $title
+        if ($fromTitle) { $info.type = $fromTitle.type; $info.value = $fromTitle.value }
+      }
+    }
+
+    $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+    if ($info.value -le 0 -and $freeDelivery) { $info.type = 'delivery' }
+    if ($info.value -le 0 -and $info.type -ne 'delivery') { continue }
+
+    if ($info.type -eq 'percent') {
+      $discountInfo = Get-DiscountInfo -Discount $full -Text $full
+      $info.maxDiscount = $discountInfo.maxDiscount
+    }
+
+    $minOrder = Get-MinOrder $full
+    $existing = $true
+    if ($coupon.forRepeatPurchase -eq $false) { $existing = $false }
+    elseif (($full -match '(?i)перв\w*\s+заказ') -and ($full -notmatch '(?i)перв\w*\s+и\s+повторн|повторн\w*\s+и\s+перв')) { $existing = $false }
+    $wholeCart = Get-WholeCart $full $info.type
+    $cities = @(Get-Cities $full)
+    $cityRestricted = $cities.Count -gt 0
+
+    $conditions = @()
+    if ($desc) { $conditions += $desc }
+    if ($minOrder -gt 0) { $conditions += ('Минимальный заказ — от ' + $minOrder + ' ₽') }
+    if ($null -ne $days -and $days -ge 0) { $conditions += ('Срок действия — примерно ' + $days + ' дн.') }
+
+    $works = 0
+    if ($coupon.clickCount) { $works = [int]$coupon.clickCount }
+
+    $items += New-PromoEntry -Service (Resolve-Service ([string]$coupon.shop.altTitle)) -Code $code `
+      -Type $info.type -Value $info.value -MaxDiscount $info.maxDiscount -MinOrder $minOrder `
+      -FreeDelivery $freeDelivery -Title $title -ExpiresInDays $days -Works $works `
+      -ExistingUsers $existing -WholeCart $wholeCart -Cities $cities -CityRestricted $cityRestricted `
+      -Conditions $conditions -SourceName $SourceName -SourceUrl $Url
+  }
+
+  return $items
+}
+
+function Get-KpCodes {
+  param([string]$Html, [string]$Url, [string]$SourceName, [string]$Service)
+
+  $items = @()
+  $parts = [regex]::Split($Html, '<div class="retailer-coupon"')
+
+  for ($i = 1; $i -lt $parts.Count; $i++) {
+    $chunk = $parts[$i]
+    $codeMatch = [regex]::Match($chunk, 'retailer-coupon__teaser-code">([^<]+)</span>')
+    if (-not $codeMatch.Success) { continue }
+    $code = $codeMatch.Groups[1].Value.Trim()
+    if (-not $code) { continue }
+
+    $titleHtml = [regex]::Match($chunk, '(?s)<div class="retailer-coupon__title">(.*?)</div>\s*<div class="estimated-time').Groups[1].Value
+    $title = (Convert-HtmlToText $titleHtml).Trim()
+    if (-not $title) { continue }
+
+    $desc = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)<div class="retailer-coupon__description-content"[^>]*>(.*?)</div>').Groups[1].Value)).Trim()
+    $validity = (Convert-HtmlToText ([regex]::Match($chunk, 'estimated-time__time-text[^>]*>(.*?)</div>').Groups[1].Value)).Trim()
+    $full = $title + ' ' + $desc + ' ' + $validity
+
+    if (-not (Test-RubPrice $full)) { continue }
+    if (-not (Test-Food $full)) { continue }
+    if ($title -notmatch '(?i)(скидк|выгод|эконом|минус|^-\s*\d|промокод\s+на)') { continue }
+
+    $days = Get-ExpiryDays $validity
+    if ($null -ne $days -and $days -lt 0) { continue }
+
+    $info = Get-DiscountFromTitle $title
+    if ($null -eq $info) { $info = Get-DiscountInfo -Discount $title -Text $full }
+    if ($info.value -le 0 -and $info.type -ne 'delivery') { continue }
+
+    $minOrder = Get-MinOrder $full
+    $existing = Get-ExistingUsers $full
+    $wholeCart = Get-WholeCart $full $info.type
+    $cities = @(Get-Cities $full)
+    $cityRestricted = $cities.Count -gt 0
+    $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+
+    $works = 0
+    $clicksMatch = [regex]::Match($chunk, '(?s)estimated-time__clicks-text.*?(\d+)\s*раз')
+    if ($clicksMatch.Success) { $works = [int]$clicksMatch.Groups[1].Value }
+
+    $conditions = @()
+    if ($desc) { $conditions += $desc }
+    if ($validity) { $conditions += $validity }
+    if ($minOrder -gt 0) { $conditions += ('Минимальный заказ — от ' + $minOrder + ' ₽') }
+
+    $items += New-PromoEntry -Service $Service -Code $code -Type $info.type -Value $info.value `
+      -MaxDiscount $info.maxDiscount -MinOrder $minOrder -FreeDelivery $freeDelivery `
+      -Title $title -ExpiresInDays $days -Works $works -ExistingUsers $existing -WholeCart $wholeCart `
+      -Cities $cities -CityRestricted $cityRestricted -Conditions $conditions `
+      -SourceName $SourceName -SourceUrl $Url
+  }
+
+  return $items
+}
+
 # ---------- main ----------
 
 if (-not $Force -and (Test-Path $OutFile)) {
@@ -513,6 +754,12 @@ foreach ($source in $script:Sources) {
     $html = Get-Html $source.url
     if ($source.kind -eq 'promokodcom') {
       $found = @(Get-PromokodComCodes -Html $html -Url $source.url -SourceName $source.name)
+    }
+    elseif ($source.kind -eq 'pikabu') {
+      $found = @(Get-PikabuCodes -Html $html -Url $source.url -SourceName $source.name)
+    }
+    elseif ($source.kind -eq 'kp') {
+      $found = @(Get-KpCodes -Html $html -Url $source.url -SourceName $source.name -Service $source.service)
     }
     else {
       $found = @(Get-EcosumCodes -Html $html -Url $source.url -SourceName $source.name)
