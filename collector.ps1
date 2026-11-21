@@ -120,6 +120,24 @@ $script:Sources += @{
   kind = 'promokodex'
 }
 
+$promokodoffPages = @(
+  @{ url = 'https://promokodoff.ru/samokat-promokody/'; service = 'Самокат' },
+  @{ url = 'https://promokodoff.ru/promokody-auchan/'; service = 'Ашан' },
+  @{ url = 'https://promokodoff.ru/promokody-perekrestok/'; service = 'Перекрёсток' },
+  @{ url = 'https://promokodoff.ru/promokody-yandex-eda/'; service = 'Яндекс Еда' },
+  @{ url = 'https://promokodoff.ru/promokody-magnit/'; service = 'Магнит' },
+  @{ url = 'https://promokodoff.ru/promokody-dixy/'; service = 'Дикси' },
+  @{ url = 'https://promokodoff.ru/promokody-vkusvill/'; service = 'ВкусВилл' }
+)
+foreach ($page in $promokodoffPages) {
+  $script:Sources += @{
+    name    = 'promokodoff.ru'
+    url     = $page.url
+    kind    = 'promokodoff'
+    service = $page.service
+  }
+}
+
 $script:Months = @{
   'января' = 1; 'февраля' = 2; 'марта' = 3; 'апреля' = 4;
   'мая' = 5; 'июня' = 6; 'июля' = 7; 'августа' = 8;
@@ -1054,6 +1072,101 @@ function Get-PromokodexCodes {
   return $items
 }
 
+function Get-PromokodoffCodes {
+  param([string]$Html, [string]$Url, [string]$SourceName, [string]$Service)
+
+  $items = @()
+  $nonce = [regex]::Match($Html, '"nonce":"([^"]+)"').Groups[1].Value
+  if (-not $nonce) { return $items }
+
+  $expected = $Url.TrimEnd('/')
+  $parts = [regex]::Split($Html, '<div class="kodoff-coupon')
+  $processed = 0
+
+  for ($i = 1; $i -lt $parts.Count; $i++) {
+    if ($processed -ge 30) { break }
+    $chunk = $parts[$i]
+    $postUrl = [regex]::Match($chunk, 'data-postid="([^"]+)"').Groups[1].Value.TrimEnd('/')
+    if ($postUrl -ne $expected) { continue }
+    $countId = [regex]::Match($chunk, 'data-countid="(\d+)"').Groups[1].Value
+    if (-not $countId) { continue }
+
+    $title = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)kodoff-h3">(.*?)</div>').Groups[1].Value)).Trim()
+    if (-not $title) { continue }
+
+    $desc = [Net.WebUtility]::HtmlDecode([regex]::Match($chunk, 'data-modaldescr="([^"]*)"').Groups[1].Value)
+    $full = $title + ' ' + $desc
+
+    if (-not (Test-RubPrice $full)) { continue }
+    if (-not (Test-Food $full)) { continue }
+
+    $info = Get-DiscountFromTitle $title
+    if ($null -eq $info) { $info = Get-DiscountInfo -Discount '' -Text $full }
+    $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+    if ($info.value -le 0 -and $freeDelivery) { $info.type = 'delivery' }
+    if ($info.value -le 0 -and $info.type -ne 'delivery') { continue }
+
+    $expiryText = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)class="istech">(.*?)</div>').Groups[1].Value)).Trim()
+    $days = Get-ExpiryDays $expiryText
+    if ($null -eq $days -and $expiryText -match '(\d{2})\.(\d{2})\.(\d{4})') {
+      try {
+        $end = Get-Date -Year ([int]$Matches[3]) -Month ([int]$Matches[2]) -Day ([int]$Matches[1]) -Hour 23 -Minute 59
+        $days = [int][math]::Ceiling(($end - (Get-Date)).TotalDays)
+      } catch { }
+    }
+    if ($null -ne $days -and $days -lt 0) { continue }
+
+    $responseFile = Join-Path $env:TEMP ('promokodoff-' + [guid]::NewGuid().ToString('N') + '.json')
+    try {
+      $postArgs = @(
+        '-s', '-A', $script:UA,
+        '-H', 'X-Requested-With: XMLHttpRequest',
+        '-H', "Referer: $Url",
+        '-X', 'POST',
+        '-F', 'action=get_coupon_promo_data',
+        '-F', "coupon_id=$countId",
+        '-F', "security=$nonce",
+        'https://promokodoff.ru/wp-admin/admin-ajax.php',
+        '-o', $responseFile, '-w', '%{http_code}'
+      )
+      $postStatus = & curl.exe @postArgs
+      $processed++
+      if ($postStatus -ne '200') { continue }
+
+      $response = $null
+      try { $response = Get-Content -Raw -Encoding UTF8 $responseFile | ConvertFrom-Json } catch { continue }
+      if (-not $response.success) { continue }
+      $code = ([string]$response.data.promo).Trim()
+      if ($code -notmatch '^[A-Za-z0-9_-]{3,32}$') { continue }
+
+      $minOrder = Get-MinOrder $full
+      $existing = Get-ExistingUsers $full
+      $wholeCart = Get-WholeCart $full $info.type
+      $cities = @(Get-Cities $full)
+      $cityRestricted = $cities.Count -gt 0
+
+      $entryService = $Service
+      if ($title -match '(?i)купер|сбермаркет') { $entryService = 'Купер' }
+
+      $conditions = @()
+      if ($desc) { $conditions += $desc }
+      if ($minOrder -gt 0) { $conditions += ('Минимальный заказ — от ' + $minOrder + ' ₽') }
+
+      $items += New-PromoEntry -Service $entryService -Code $code `
+        -Type $info.type -Value $info.value -MaxDiscount $info.maxDiscount -MinOrder $minOrder `
+        -FreeDelivery $freeDelivery -Title $title -ExpiresInDays $days -Works 0 `
+        -ExistingUsers $existing -WholeCart $wholeCart -Cities $cities -CityRestricted $cityRestricted `
+        -Conditions $conditions -SourceName $SourceName -SourceUrl $Url
+    }
+    finally {
+      Remove-Item $responseFile -ErrorAction SilentlyContinue
+    }
+    Start-Sleep -Milliseconds 100
+  }
+
+  return $items
+}
+
 # ---------- main ----------
 
 if (-not $Force -and (Test-Path $OutFile)) {
@@ -1085,6 +1198,9 @@ foreach ($source in $script:Sources) {
     elseif ($source.kind -eq 'promokodex') {
       $found = @(Get-PromokodexCodes -Html $html -Url $source.url -SourceName $source.name)
     }
+    elseif ($source.kind -eq 'promokodoff') {
+      $found = @(Get-PromokodoffCodes -Html $html -Url $source.url -SourceName $source.name -Service $source.service)
+    }
     elseif ($source.kind -eq 'promokodsite') {
       $found = @(Get-PromokodSiteCodes -Html $html -Url $source.url -SourceName $source.name -Service $source.service)
     }
@@ -1105,7 +1221,9 @@ if ($collected.Count -eq 0) {
 }
 
 $unique = @{}
+$junkCode = '^(admitad|promokodex|promokod|promocode|promo|test|none|null)$'
 foreach ($item in $collected) {
+  if ($item.code -match $junkCode) { continue }
   $key = ($item.code + '|' + $item.service).ToUpper()
   if (-not $unique.ContainsKey($key)) {
     $unique[$key] = $item
