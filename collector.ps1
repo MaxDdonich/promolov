@@ -1076,6 +1076,25 @@ function Get-PromokodoffCodes {
   param([string]$Html, [string]$Url, [string]$SourceName, [string]$Service)
 
   $items = @()
+  $pageFile = Join-Path $env:TEMP ('promokodoff-' + [guid]::NewGuid().ToString('N') + '.html')
+
+  try {
+    $browserUa = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36'
+    $fetchArgs = @(
+      '-s', '-L', '--compressed', '--max-time', '30', '-A', $browserUa,
+      '-H', 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      '-H', 'Accept-Language: ru-RU,ru;q=0.9,en;q=0.5',
+      '-H', 'Upgrade-Insecure-Requests: 1',
+      $Url, '-o', $pageFile, '-w', '%{http_code}'
+    )
+    $pageStatus = & curl.exe @fetchArgs
+    if ($pageStatus -ne '200') { return $items }
+    $Html = [IO.File]::ReadAllText($pageFile, [Text.Encoding]::UTF8)
+  }
+  finally {
+    Remove-Item $pageFile -ErrorAction SilentlyContinue
+  }
+
   $nonce = [regex]::Match($Html, '"nonce":"([^"]+)"').Groups[1].Value
   if (-not $nonce) { return $items }
 
@@ -1182,7 +1201,10 @@ $collected = @()
 foreach ($source in $script:Sources) {
   try {
     Write-Log ('Fetching ' + $source.name + ' ...')
-    $html = Get-Html $source.url
+    $html = ''
+    if ($source.kind -ne 'promokodoff') {
+      $html = Get-Html $source.url
+    }
     if ($source.kind -eq 'promokodcom') {
       $found = @(Get-PromokodComCodes -Html $html -Url $source.url -SourceName $source.name)
     }
