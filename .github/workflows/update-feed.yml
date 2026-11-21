@@ -1,0 +1,36 @@
+name: Update promo feed
+
+on:
+  schedule:
+    # Twice an hour; GitHub may start scheduled jobs with a delay.
+    - cron: '17,47 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Collect promo codes
+        shell: pwsh
+        continue-on-error: true
+        run: ./collector.ps1 -Force
+
+      - name: Commit updated feed
+        shell: pwsh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/codes.json
+          $changes = git status --porcelain data/codes.json
+          if ($changes) {
+            git commit -m "chore: update promo feed"
+            git push
+          } else {
+            Write-Host "Feed is unchanged"
+          }

@@ -1,0 +1,4 @@
+*.log
+mobile-test.html
+thumbs.db
+.DS_Store

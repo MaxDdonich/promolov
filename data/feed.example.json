@@ -1,0 +1,64 @@
+{
+  "updatedAt": "2026-11-21T12:00:00Z",
+  "codes": [
+    {
+      "service": "Яндекс Еда",
+      "code": "FEED300",
+      "type": "fixed",
+      "value": 300,
+      "minOrder": 900,
+      "freeDelivery": true,
+      "deliveryCost": 149,
+      "title": "300 ₽ на заказ от 900 ₽",
+      "category": ["первый заказ", "доставка"],
+      "existingUsers": false,
+      "wholeCart": true,
+      "conditions": [
+        "Только для новых пользователей",
+        "Заказ от 900 ₽",
+        "Бесплатная доставка включена"
+      ],
+      "expiresInDays": 10,
+      "works": 24,
+      "fails": 3
+    },
+    {
+      "service": "Самокат",
+      "code": "FEED20",
+      "type": "percent",
+      "value": 20,
+      "maxDiscount": 600,
+      "minOrder": 1200,
+      "freeDelivery": false,
+      "title": "20% на всю корзину из фида",
+      "category": ["продукты"],
+      "existingUsers": true,
+      "wholeCart": true,
+      "conditions": [
+        "Скидка до 600 ₽",
+        "Заказ от 1200 ₽",
+        "Можно использовать повторно"
+      ],
+      "expiresInDays": 6,
+      "works": 11,
+      "fails": 2
+    },
+    {
+      "service": "Додо Пицца",
+      "code": "FEEDFREE",
+      "type": "delivery",
+      "value": 0,
+      "minOrder": 800,
+      "freeDelivery": true,
+      "deliveryCost": 149,
+      "title": "Бесплатная доставка от 800 ₽",
+      "category": ["доставка", "пицца"],
+      "existingUsers": true,
+      "wholeCart": false,
+      "conditions": ["Заказ от 800 ₽", "Действует на доставку"],
+      "expiresInDays": 14,
+      "works": 6,
+      "fails": 1
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ПромоЛов — выгодные промокоды на доставку еды</title>
+  <meta name="description" content="Автоматический сбор промокодов на доставку еды: реальная выгода с учётом вашего чека, проверка источников и отметки пользователей.">
+  <meta name="theme-color" content="#0a0c0b">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23c8f751'/><text x='50' y='74' font-size='62' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%230a0c0b'>₽</text></svg>">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="logo" href="#top" aria-label="ПромоЛов — на главную">
+        <span class="logo__mark" aria-hidden="true">₽</span>
+        <span class="logo__text">Промо<b>Лов</b></span>
+      </a>
+
+      <div class="live" id="liveStatus" data-state="on">
+        <span class="live__dot" aria-hidden="true"></span>
+        <span class="live__text" id="liveText">ловим промокоды</span>
+        <span class="live__sep" aria-hidden="true"></span>
+        <span class="live__meta" id="liveMeta">обновлено только что</span>
+      </div>
+
+      <div class="topbar__actions">
+        <button class="btn btn--ghost" id="btnRefresh" type="button">
+          <span aria-hidden="true">⟳</span> Проверить
+        </button>
+        <button class="btn btn--ghost" id="btnSources" type="button">
+          <span aria-hidden="true">◫</span> Источники <span class="count" id="srcCount">5</span>
+        </button>
+        <button class="btn btn--icon" id="btnShare" type="button" title="Скопировать ссылку для другого устройства" aria-label="Скопировать ссылку для другого устройства">↗</button>
+        <button class="btn btn--icon" id="btnPause" type="button" title="Пауза автолова" aria-label="Пауза автолова">⏸</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero__copy">
+        <div class="eyebrow">
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+          автосбор 24/7 · без ручного поиска
+        </div>
+        <h1>Выгодные промокоды<br>на доставку еды <span class="grad">ловятся сами</span></h1>
+        <p class="hero__lead">
+          ПромоЛов проверяет официальные акции, Telegram-каналы и партнёрские фиды,
+          считает реальную выгоду с учётом вашего чека и оставляет только то,
+          что действительно экономит деньги.
+        </p>
+        <div class="hero__stats">
+          <div class="stat"><b id="statCount">—</b><span>рабочих кодов</span></div>
+          <div class="stat"><b id="statBest">—</b><span>лучшая экономия</span></div>
+          <div class="stat"><b id="statAvg">—</b><span>средняя выгода</span></div>
+        </div>
+      </div>
+
+      <aside class="calc" aria-labelledby="calcTitle">
+        <div class="calc__head">
+          <span id="calcTitle">Калькулятор выгоды</span>
+          <span class="calc__badge">ваш чек</span>
+        </div>
+        <label class="calc__field">
+          <span class="sr-only">Сумма заказа в рублях</span>
+          <input id="orderSum" type="number" inputmode="numeric" min="0" max="20000" step="50" value="1500">
+          <span class="calc__cur" aria-hidden="true">₽</span>
+        </label>
+        <input id="orderRange" class="calc__range" type="range" min="300" max="5000" step="100" value="1500" aria-label="Сумма заказа">
+        <div class="calc__quick" id="quickSums">
+          <button type="button" data-sum="700">700 ₽</button>
+          <button type="button" data-sum="1200">1 200 ₽</button>
+          <button type="button" data-sum="2000">2 000 ₽</button>
+          <button type="button" data-sum="3500">3 500 ₽</button>
+        </div>
+        <div class="calc__result" id="calcResult" aria-live="polite"></div>
+      </aside>
+    </section>
+
+    <section class="toolbar container" aria-label="Фильтры промокодов">
+      <div class="search">
+        <span class="search__icon" aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="Промокод, сервис или категория…" autocomplete="off" aria-label="Поиск промокодов">
+      </div>
+
+      <div class="chips" id="serviceChips" role="group" aria-label="Сервисы доставки"></div>
+
+      <div class="picks">
+        <span class="picks__label">Подборки · можно несколько</span>
+        <div class="picks__chips" id="collectionChips" role="group" aria-label="Подборки промокодов"></div>
+      </div>
+
+      <div class="toolbar__row">
+        <label class="switch" title="Скрыть истёкшие, демо и коды с плохими отметками">
+          <input type="checkbox" id="onlyWorking" checked>
+          <span class="switch__track" aria-hidden="true"><i></i></span>
+          только рабочие
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="onlyBest">
+          <span class="switch__track" aria-hidden="true"><i></i></span>
+          только выгодные
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="freeDelivery">
+          <span class="switch__track" aria-hidden="true"><i></i></span>
+          бесплатная доставка
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="onlyFav">
+          <span class="switch__track" aria-hidden="true"><i></i></span>
+          избранное
+        </label>
+
+        <div class="sort">
+          <span>Сортировка</span>
+          <select id="sort" aria-label="Сортировка">
+            <option value="score">по выгоде</option>
+            <option value="savings">по экономии при моём чеке</option>
+            <option value="expiry">скоро истекают</option>
+            <option value="new">сначала новые</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="results container" aria-labelledby="resultsTitle">
+      <div class="results__head">
+        <h2 id="resultsTitle">Промокоды</h2>
+        <span id="resultsMeta" class="results__meta"></span>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <div class="empty__icon" aria-hidden="true">∅</div>
+        <h3 id="emptyTitle">Ничего не поймали по этим фильтрам</h3>
+        <p id="emptyText">Сбросьте фильтры или уменьшите сумму чека — подходящий код найдётся.</p>
+        <button class="btn" type="button" id="btnReset">Сбросить фильтры</button>
+      </div>
+    </section>
+
+    <section class="how container" aria-labelledby="howTitle">
+      <h2 id="howTitle">Как работает автолов</h2>
+      <div class="how__grid">
+        <article class="how__card">
+          <span class="how__num">01</span>
+          <h3>Опрашивает источники</h3>
+          <p>Раз в 10–20 секунд сборщик заходит в промо-разделы сервисов, Telegram-каналы и партнёрские фиды.</p>
+        </article>
+        <article class="how__card">
+          <span class="how__num">02</span>
+          <h3>Считает выгоду, а не процент</h3>
+          <p>Учитывает лимит скидки, минимальный чек, стоимость доставки и вероятность срабатывания кода.</p>
+        </article>
+        <article class="how__card">
+          <span class="how__num">03</span>
+          <h3>Проверяет сообществом</h3>
+          <p>Отметки «сработало / не сработало» понижают или повышают рейтинг кода в реальном времени.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer__brand">
+      <span class="logo__mark logo__mark--sm" aria-hidden="true">₽</span>
+      <span>ПромоЛов · демо-проект</span>
+    </div>
+    <p>
+      Реальные коды собираются из открытых страниц промокодов (promokod.com, ecosum.ru)
+      скриптом <code>collector.ps1</code>: при запуске сервера и каждые 30 минут.
+      Фид <code>data/codes.json</code> подхватывается автоматически и кэшируется в браузере.
+      Источник указан у каждого кода — условия всегда проверяйте на сайте сервиса.
+    </p>
+    <p class="footer__copy">С телефона: «Источники» → «Доступ с других устройств».</p>
+    <p class="footer__copy">Сделано для личного использования · 2026</p>
+  </footer>
+
+  <!-- Панель источников -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__backdrop" data-close-drawer></div>
+    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+      <header class="drawer__head">
+        <div>
+          <h2 id="drawerTitle">Источники и автолов</h2>
+          <p>Что проверяет сборщик и что он нашёл</p>
+        </div>
+        <button class="btn btn--icon" type="button" data-close-drawer aria-label="Закрыть панель">✕</button>
+      </header>
+
+      <div class="drawer__body">
+        <div id="sourceList" class="sources"></div>
+
+        <div class="feedbox">
+          <h3>Реальный фид</h3>
+          <p>По умолчанию используется <code>data/codes.json</code>: его собирает <code>collector.ps1</code>, а сайт подхватывает автоматически и кэширует. Можно вставить другой URL с массивом <code>codes</code> — если сервер отдаёт CORS-заголовки.</p>
+          <form id="feedForm" class="feedbox__form">
+            <input id="feedUrl" type="url" placeholder="https://example.com/promos.json" aria-label="URL JSON-фида">
+            <button class="btn btn--lime" type="submit">Подключить / обновить</button>
+          </form>
+          <div class="feedbox__hint" id="feedHint" aria-live="polite"></div>
+        </div>
+
+        <div class="feedbox">
+          <h3>Доступ с других устройств</h3>
+          <p>Откройте ссылку на телефоне или другом компьютере в той же Wi-Fi-сети. Для доступа из интернета запустите <code>Публичная ссылка.bat</code>.</p>
+          <div class="feedbox__form">
+            <input id="shareUrl" type="text" readonly aria-label="Ссылка для других устройств" placeholder="Ссылка появится здесь">
+            <button class="btn btn--lime" type="button" id="btnShareCopy">Копировать</button>
+          </div>
+          <div class="feedbox__hint" id="shareHint" aria-live="polite"></div>
+        </div>
+
+        <div class="logbox">
+          <div class="logbox__head">
+            <h3>Журнал автолова</h3>
+            <span id="logCount"></span>
+          </div>
+          <div id="log" class="log" aria-live="polite"></div>
+        </div>
+
+        <button class="btn btn--ghost reset-demo" id="btnResetDemo" type="button">Сбросить прогресс автолова</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Детали промокода -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" type="button" data-close-modal aria-label="Закрыть">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div id="toasts" aria-live="polite" aria-atomic="false"></div>
+
+  <noscript>
+    <div class="noscript">Для работы ПромоЛова нужен JavaScript — включите его в настройках браузера.</div>
+  </noscript>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
