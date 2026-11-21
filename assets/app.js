@@ -1163,13 +1163,11 @@
 
       let host = 'локальный фид';
       try {
-        if (/^https?:/i.test(url)) {
-          const parsed = new URL(url, location.href);
-          if (parsed.hostname === location.hostname) {
-            host = parsed.hostname.endsWith('github.io') ? 'GitHub Pages' : 'локальный фид';
-          } else {
-            host = parsed.hostname;
-          }
+        const parsed = new URL(url, location.href);
+        if (parsed.hostname === location.hostname) {
+          host = parsed.hostname.endsWith('github.io') ? 'GitHub Pages' : 'локальный фид';
+        } else {
+          host = parsed.hostname;
         }
       } catch (err) { /* ignore */ }
       hint.textContent = '✓ Фид обновлён: ' + added + ' кодов · ' + host + ' · ' + new Date().toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
