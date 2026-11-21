@@ -23,6 +23,7 @@
     'Самокат': { color: '#FF3B5C', mark: 'С', site: 'https://samokat.ru' },
     'Купер': { color: '#7B61FF', mark: 'К', site: 'https://kuper.ru' },
     'ВкусВилл': { color: '#009B4E', mark: 'В', site: 'https://vkusvill.ru' },
+    'ВкусМил': { color: '#6A9A23', mark: 'ВМ', site: 'https://vkusmil.ru' },
     'Додо Пицца': { color: '#FF5A00', mark: 'Д', site: 'https://dodopizza.ru' },
     'Ozon Fresh': { color: '#005BFF', mark: 'O', site: 'https://ozon.ru' },
     'Лавка': { color: '#00C2A8', mark: 'Л', site: 'https://lavka.yandex.ru' },
