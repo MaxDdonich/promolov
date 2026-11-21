@@ -85,7 +85,7 @@ $script:Sources = @(
   }
 )
 
-$pikabuPages = @('eda-yandex', 'samokat', 'vkusvill', 'dodopizza', 'perekrestok', '5ka')
+$pikabuPages = @('eda-yandex', 'samokat', 'vkusvill', 'dodopizza', 'perekrestok', '5ka', 'sbermarket', 'ozon-fresh')
 foreach ($slug in $pikabuPages) {
   $script:Sources += @{
     name = 'promokod.pikabu.ru'
@@ -107,6 +107,17 @@ foreach ($page in $kpPages) {
     kind    = 'kp'
     service = $page.service
   }
+}
+
+$script:Sources += @{
+  name = 'promokodi.komukupon.ru'
+  url  = 'https://promokodi.komukupon.ru/categories/produkty-i-eda/'
+  kind = 'komukupon'
+}
+$script:Sources += @{
+  name = 'promokodex.ru'
+  url  = 'https://www.promokodex.ru/actions/edim-doma'
+  kind = 'promokodex'
 }
 
 $script:Months = @{
@@ -234,7 +245,7 @@ function Get-DiscountInfo {
 function Test-Food {
   param([string]$Text)
   $t = $Text.ToLower()
-  $negative = '(аптек|\bвита\b|косметик|подружк|цветочн|цвет(ы|ов|ам|ами)?\b|ювелир|товар\w*\s+для\s+дома|хобби|спорт\w*|техник|электроник|одежд|обув|игрушк|зоотовар|канцтовар|бытов|куулклевер|доктор\s+столетов|оптик|очк|кешбэк|рив\s+гош)'
+  $negative = '(аптек|\bвита\b|косметик|подружк|цветочн|цвет(ы|ов|ам|ами)?\b|ювелир|товар\w*\s+для\s+дома|хобби|спорт\w*|техник|электроник|одежд|обув|игрушк|зоотовар|канцтовар|бытов|куулклевер|доктор\s+столетов|оптик|очк|кешбэк|рив\s+гош|winelab|алкогол)'
   $positive = '(вкусвилл|дикси|магнит|перекр[её]ст|пят[её]роч|азбука\s+вкуса|лент|ашан|самокат|купер|лавка|монетк|верный|dolce\s+milk|додо|ресторан|кафе|фастфуд|блюд|продукт|супермаркет|гипермаркет|гастроном|пицц|суши|доставк|заказ|еда\b)'
   if ($t -match $negative) { return $false }
   return [bool]($t -match $positive)
@@ -378,8 +389,28 @@ function Resolve-Service {
   param([string]$Name)
   $n = ($Name -replace '\s+', ' ').Trim()
   if (-not $n) { return 'Яндекс Еда' }
+  $n = $n -replace '\s*!\s*$', ''
+  $n = $n -replace '\.(ru|com)$', ''
+
   switch -Regex ($n) {
     '^(Сбермаркет|Купер)$' { return 'Купер' }
+    '^Vkusvill|^Food\.vkusvill' { return 'ВкусВилл' }
+    '^Perekrestok' { return 'Перекрёсток' }
+    '^5ka' { return 'Пятёрочка' }
+    '^Samokat' { return 'Самокат' }
+    '^Dixy' { return 'Дикси' }
+    '^Dodopizza' { return 'Додо Пицца' }
+    '^Dominopizza|^Domino' { return "Domino's Pizza" }
+    '^Dostavka\.magnit|^Magnit' { return 'Магнит' }
+    '^Ollis' { return 'Ollis' }
+    '^Yobidoyobi' { return 'ЁбиДоёби' }
+    '^Sushiwok' { return 'Sushiwok' }
+    '^Rostics' { return "Rostic's" }
+    '^Winelab' { return 'Winelab' }
+    '^Elementaree' { return 'Elementaree' }
+    '^Just Food' { return 'Just Food' }
+    '^Ашан' { return 'Ашан' }
+    '^2 Берега' { return '2 Берега' }
     '^Додо' { return 'Додо Пицца' }
     '^Ozon' { return 'Ozon Fresh' }
     '^Пят' { return 'Пятёрочка' }
@@ -593,6 +624,31 @@ function Get-BalancedArray {
   return $null
 }
 
+function Get-NuxtValue {
+  param($Data, $Index)
+  if ($null -eq $Index) { return $null }
+  if ($Index -is [string] -or $Index -is [bool]) { return $Index }
+
+  if ($Index -is [int] -or $Index -is [long]) {
+    $i = [int]$Index
+    if ($i -lt 0 -or $i -ge $Data.Count) { return $Index }
+    $value = $Data[$i]
+    if ($value -is [string] -or $value -is [int] -or $value -is [long] -or $value -is [bool] -or $null -eq $value) {
+      return $value
+    }
+    if ($value -is [array]) {
+      if ($value.Count -ge 2 -and $value[0] -is [string]) {
+        $tag = [string]$value[0]
+        if ($tag -eq 'Date') { return $value[1] }
+        if ($tag -in @('ShallowReactive', 'Reactive', 'Ref')) { return (Get-NuxtValue $Data $value[1]) }
+      }
+      return $value
+    }
+    return $value
+  }
+  return $Index
+}
+
 function Get-PikabuCodes {
   param([string]$Html, [string]$Url, [string]$SourceName)
 
@@ -736,6 +792,268 @@ function Get-KpCodes {
   return $items
 }
 
+function Get-KomukuponCodes {
+  param([string]$Html, [string]$Url, [string]$SourceName)
+
+  $items = @()
+  $payload = [regex]::Match($Html, '(?s)<script[^>]*id="__NUXT_DATA__"[^>]*>(.*?)</script>')
+  if (-not $payload.Success) { return $items }
+
+  try { $data = $payload.Groups[1].Value | ConvertFrom-Json } catch { return $items }
+
+  for ($i = 0; $i -lt $data.Count; $i++) {
+    $obj = $data[$i]
+    if (-not ($obj -is [pscustomobject])) { continue }
+    $names = $obj.PSObject.Properties.Name
+    if (-not ($names -contains 'code' -and $names -contains 'title' -and $names -contains 'endAt' -and $names -contains 'discount' -and $names -contains 'shop')) { continue }
+
+    $code = ([string](Get-NuxtValue $data $obj.code)).Trim()
+    if ($code -notmatch '^[A-Za-z0-9_-]{3,32}$') { continue }
+
+    $title = (Convert-HtmlToText ([string](Get-NuxtValue $data $obj.title))).Trim()
+    if (-not $title) { continue }
+
+    $shopObj = Get-NuxtValue $data $obj.shop
+    $shopName = ''
+    if ($shopObj -is [pscustomobject] -and $shopObj.PSObject.Properties.Name -contains 'shopName') {
+      $shopName = [string](Get-NuxtValue $data $shopObj.shopName)
+    }
+
+    $discountObj = Get-NuxtValue $data $obj.discount
+    if (-not ($discountObj -is [pscustomobject])) { continue }
+    $discountType = [string](Get-NuxtValue $data $discountObj.type)
+    $discountValue = Get-NuxtValue $data $discountObj.value
+    $minOrder = Get-NuxtValue $data $discountObj.minOrder
+    $upTo = Get-NuxtValue $data $discountObj.upTo
+    $firstOrder = Get-NuxtValue $data $discountObj.firstOrder
+
+    $conditions = @()
+    $conditionArray = Get-NuxtValue $data $obj.conditions
+    if ($conditionArray -is [array]) {
+      foreach ($conditionIndex in $conditionArray) {
+        $conditionObj = Get-NuxtValue $data $conditionIndex
+        if ($conditionObj -is [pscustomobject] -and $conditionObj.PSObject.Properties.Name -contains 'text') {
+          $text = [string](Get-NuxtValue $data $conditionObj.text)
+          if ($text) { $conditions += (Convert-HtmlToText $text) }
+        }
+      }
+    }
+
+    $full = $title + ' ' + ($conditions -join ' ') + ' ' + $shopName
+    if (-not (Test-RubPrice $full)) { continue }
+    if (-not (Test-Food $full)) { continue }
+
+    $days = $null
+    $endAt = [string](Get-NuxtValue $data $obj.endAt)
+    if ($endAt) {
+      try {
+        $end = [datetime]::Parse($endAt, [Globalization.CultureInfo]::InvariantCulture)
+        $days = [int][math]::Ceiling(($end.ToLocalTime() - (Get-Date)).TotalDays)
+        if ($days -lt 0) { continue }
+      } catch { }
+    }
+
+    $info = [ordered]@{ type = 'fixed'; value = 0; maxDiscount = 0 }
+    if ($discountType -eq 'percent') {
+      $info.type = 'percent'
+      $info.value = [int]$discountValue
+      if ($upTo -is [int] -or $upTo -is [long]) { $info.maxDiscount = [int]$upTo }
+    }
+    elseif ($discountType -eq 'fixed') {
+      $info.type = 'fixed'
+      $info.value = [int]$discountValue
+    }
+    if ($info.value -le 0) { continue }
+
+    $min = 0
+    if ($minOrder -is [int] -or $minOrder -is [long]) { $min = [int]$minOrder }
+    $existing = -not [bool]$firstOrder
+    $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+    $wholeCart = Get-WholeCart $full $info.type
+    $cities = @(Get-Cities $full)
+    $cityRestricted = $cities.Count -gt 0
+
+    if ($min -gt 0) { $conditions += ('Минимальный заказ — от ' + $min + ' ₽') }
+
+    $items += New-PromoEntry -Service (Resolve-Service $shopName) -Code $code `
+      -Type $info.type -Value $info.value -MaxDiscount $info.maxDiscount -MinOrder $min `
+      -FreeDelivery $freeDelivery -Title $title -ExpiresInDays $days -Works 0 `
+      -ExistingUsers $existing -WholeCart $wholeCart -Cities $cities -CityRestricted $cityRestricted `
+      -Conditions $conditions -SourceName $SourceName -SourceUrl $Url
+  }
+
+  return $items
+}
+
+function Get-PromokodSiteCodes {
+  param([string]$Html, [string]$Url, [string]$SourceName, [string]$Service)
+
+  $items = @()
+  $parts = [regex]::Split($Html, '<article class="coupon"')
+
+  for ($i = 1; $i -lt $parts.Count; $i++) {
+    $chunk = $parts[$i]
+    $codeMatch = [regex]::Match($chunk, 'card-code__val">([^<]+)</code>')
+    if (-not $codeMatch.Success) { continue }
+    $code = $codeMatch.Groups[1].Value.Trim()
+    if ($code -notmatch '^[A-Za-z0-9_-]{3,32}$') { continue }
+
+    $title = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)<h3 class="coupon__title">(.*?)</h3>').Groups[1].Value)).Trim()
+    if (-not $title) { continue }
+    $discount = (Convert-HtmlToText ([regex]::Match($chunk, '<span class="coupon__disc">(.*?)</span>').Groups[1].Value)).Trim()
+    $store = (Convert-HtmlToText ([regex]::Match($chunk, '<a class="coupon__store"[^>]*>(.*?)</a>').Groups[1].Value)).Trim()
+    $dateText = [regex]::Match($chunk, '<time datetime="([^"]+)"').Groups[1].Value
+    $full = $title + ' ' + $discount + ' ' + $store
+
+    if (-not (Test-RubPrice $full)) { continue }
+    if (-not (Test-Food $full)) { continue }
+    if ($title -notmatch '(?i)(скидк|выгод|эконом|дисконт|минус|бесплатн\w*\s+доставк|\d+\s*%)') { continue }
+
+    $info = Get-DiscountFromTitle $title
+    if ($null -eq $info) { $info = Get-DiscountInfo -Discount $discount -Text $full }
+    if ($info.value -le 0 -and $info.type -ne 'delivery') { continue }
+
+    $days = $null
+    if ($dateText) {
+      try {
+        $end = [datetime]::Parse($dateText, [Globalization.CultureInfo]::InvariantCulture)
+        $days = [int][math]::Ceiling(($end.Date - (Get-Date).Date).TotalDays)
+        if ($days -lt 0) { continue }
+      } catch { }
+    }
+
+    $minOrder = Get-MinOrder $full
+    $existing = Get-ExistingUsers $full
+    $wholeCart = Get-WholeCart $full $info.type
+    $cities = @(Get-Cities $full)
+    $cityRestricted = $cities.Count -gt 0
+    $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+
+    $works = 0
+    $worksMatch = [regex]::Match($chunk, '(?s)Сработал\w*.*?([\d\s]+)\s*раз')
+    if ($worksMatch.Success) { $works = ConvertTo-Number $worksMatch.Groups[1].Value }
+
+    $conditions = @()
+    if ($discount) { $conditions += ('Скидка: ' + $discount) }
+    if ($store) { $conditions += ('Магазин: ' + $store) }
+    if ($minOrder -gt 0) { $conditions += ('Минимальный заказ — от ' + $minOrder + ' ₽') }
+
+    $items += New-PromoEntry -Service (Resolve-Service ($(if ($store) { $store } else { $Service }))) -Code $code `
+      -Type $info.type -Value $info.value -MaxDiscount $info.maxDiscount -MinOrder $minOrder `
+      -FreeDelivery $freeDelivery -Title $title -ExpiresInDays $days -Works $works `
+      -ExistingUsers $existing -WholeCart $wholeCart -Cities $cities -CityRestricted $cityRestricted `
+      -Conditions $conditions -SourceName $SourceName -SourceUrl $Url
+  }
+
+  return $items
+}
+
+function Get-PromokodexCodes {
+  param([string]$Html, [string]$Url, [string]$SourceName)
+
+  $items = @()
+  $jar = Join-Path $env:TEMP ('promokodex-' + [guid]::NewGuid().ToString('N') + '.txt')
+  $pageFile = Join-Path $env:TEMP ('promokodex-' + [guid]::NewGuid().ToString('N') + '.html')
+
+  try {
+    $pageArgs = @('-s', '-L', '--max-time', '30', '-A', $script:UA, '-H', 'Accept-Language: ru-RU,ru;q=0.9', '-c', $jar, $Url, '-o', $pageFile, '-w', '%{http_code}')
+    $pageStatus = & curl.exe @pageArgs
+    if ($pageStatus -ne '200') { return $items }
+
+    $pageHtml = [IO.File]::ReadAllText($pageFile, [Text.Encoding]::UTF8)
+    $tokenLine = Get-Content $jar -ErrorAction SilentlyContinue | Where-Object { $_ -match 'XSRF-TOKEN' } | Select-Object -First 1
+    if (-not $tokenLine) { return $items }
+    $xsrf = [uri]::UnescapeDataString((($tokenLine -split "`t")[-1]))
+
+    $cards = [regex]::Matches($pageHtml, '(?s)<article[^>]*data-attributes="([^"]+)"[^>]*>(.*?)</article>')
+    $processed = 0
+
+    foreach ($card in $cards) {
+      if ($processed -ge 30) { break }
+      $meta = $null
+      try {
+        $meta = ([Net.WebUtility]::HtmlDecode($card.Groups[1].Value)) | ConvertFrom-Json
+      } catch { continue }
+
+      if ($meta.type -ne 'promocode') { continue }
+      $shop = [string]$meta.shop
+      $couponToken = [string]$meta.token
+      if (-not $shop -or -not $couponToken) { continue }
+
+      $inner = $card.Groups[2].Value
+      $title = (Convert-HtmlToText ([regex]::Match($inner, '(?s)<div class="coupon-tile__title">(.*?)</div>').Groups[1].Value)).Trim()
+      if (-not $title) { continue }
+      $discount = (Convert-HtmlToText ([regex]::Match($inner, '(?s)<div class="coupon-tile__discount">(.*?)</div>').Groups[1].Value)).Trim()
+      $logoAlt = [Net.WebUtility]::HtmlDecode([regex]::Match($inner, '<img[^>]*alt="([^"]+)"').Groups[1].Value)
+      $service = Resolve-Service $logoAlt
+      if ($service -eq 'Winelab') { continue }
+
+      $responseFile = Join-Path $env:TEMP ('promokodex-' + [guid]::NewGuid().ToString('N') + '.json')
+      try {
+        $postArgs = @(
+          '-s', '-b', $jar, '-A', $script:UA,
+          '-H', "X-XSRF-TOKEN: $xsrf",
+          '-H', 'Content-Type: application/json',
+          '-H', 'X-Requested-With: XMLHttpRequest',
+          '-H', "Referer: $Url",
+          '-H', 'Origin: https://www.promokodex.ru',
+          '-X', 'POST', '-d', '{}',
+          "https://www.promokodex.ru/v3/coupon/$shop/$couponToken",
+          '-o', $responseFile, '-w', '%{http_code}'
+        )
+        $postStatus = & curl.exe @postArgs
+        $processed++
+        if ($postStatus -ne '200') { continue }
+
+        $response = $null
+        try { $response = Get-Content -Raw -Encoding UTF8 $responseFile | ConvertFrom-Json } catch { continue }
+        $code = ([string]$response.promocode).Trim()
+        if ($code -notmatch '^[A-Za-z0-9_-]{3,32}$') { continue }
+
+        $popup = Convert-HtmlToText ([string]$response.html)
+        $full = $title + ' ' + $discount + ' ' + $popup
+        if (-not (Test-RubPrice $full)) { continue }
+        if (-not (Test-Food $full)) { continue }
+        if ($title -notmatch '(?i)(скидк|выгод|эконом|дисконт|минус|^-\s*\d|\d+\s*%|бесплатн\w*\s+доставк)') { continue }
+
+        $info = Get-DiscountFromTitle $title
+        if ($null -eq $info) { $info = Get-DiscountInfo -Discount $discount -Text $full }
+        $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+        if ($info.value -le 0 -and $freeDelivery) { $info.type = 'delivery' }
+        if ($info.value -le 0 -and $info.type -ne 'delivery') { continue }
+
+        $days = Get-ExpiryDays $popup
+        if ($null -ne $days -and $days -lt 0) { continue }
+
+        $minOrder = Get-MinOrder $full
+        $existing = Get-ExistingUsers $full
+        $wholeCart = Get-WholeCart $full $info.type
+        $cities = @(Get-Cities $full)
+        $cityRestricted = $cities.Count -gt 0
+
+        $conditions = @()
+        if ($popup) { $conditions += $popup }
+        if ($minOrder -gt 0) { $conditions += ('Минимальный заказ — от ' + $minOrder + ' ₽') }
+
+        $items += New-PromoEntry -Service $service -Code $code -Type $info.type -Value $info.value `
+          -MaxDiscount $info.maxDiscount -MinOrder $minOrder -FreeDelivery $freeDelivery `
+          -Title $title -ExpiresInDays $days -Works 0 -ExistingUsers $existing -WholeCart $wholeCart `
+          -Cities $cities -CityRestricted $cityRestricted -Conditions $conditions `
+          -SourceName $SourceName -SourceUrl $Url
+      }
+      finally {
+        Remove-Item $responseFile -ErrorAction SilentlyContinue
+      }
+      Start-Sleep -Milliseconds 120
+    }
+  }
+  finally {
+    Remove-Item $jar, $pageFile -ErrorAction SilentlyContinue
+  }
+
+  return $items
+}
+
 # ---------- main ----------
 
 if (-not $Force -and (Test-Path $OutFile)) {
@@ -760,6 +1078,15 @@ foreach ($source in $script:Sources) {
     }
     elseif ($source.kind -eq 'kp') {
       $found = @(Get-KpCodes -Html $html -Url $source.url -SourceName $source.name -Service $source.service)
+    }
+    elseif ($source.kind -eq 'komukupon') {
+      $found = @(Get-KomukuponCodes -Html $html -Url $source.url -SourceName $source.name)
+    }
+    elseif ($source.kind -eq 'promokodex') {
+      $found = @(Get-PromokodexCodes -Html $html -Url $source.url -SourceName $source.name)
+    }
+    elseif ($source.kind -eq 'promokodsite') {
+      $found = @(Get-PromokodSiteCodes -Html $html -Url $source.url -SourceName $source.name -Service $source.service)
     }
     else {
       $found = @(Get-EcosumCodes -Html $html -Url $source.url -SourceName $source.name)

@@ -29,6 +29,16 @@
     'Перекрёсток': { color: '#00A651', mark: 'П', site: 'https://perekrestok.ru' },
     'Магнит': { color: '#E4002B', mark: 'М', site: 'https://magnit.ru' },
     'Пятёрочка': { color: '#00A64F', mark: '5', site: 'https://5ka.ru' },
+    'Дикси': { color: '#E30613', mark: 'Д', site: 'https://dixy.ru' },
+    'Sushiwok': { color: '#F25C05', mark: 'S', site: 'https://sushiwok.ru' },
+    "Rostic's": { color: '#E4002B', mark: 'R', site: 'https://rostics.ru' },
+    'Ollis': { color: '#FF7A00', mark: 'O', site: 'https://ollis.ru' },
+    "Domino's Pizza": { color: '#0B5CAB', mark: 'D', site: 'https://dominos.ru' },
+    'ЁбиДоёби': { color: '#FF4D00', mark: 'Ё', site: 'https://yobidoyobi.ru' },
+    'Ашан': { color: '#E4002B', mark: 'А', site: 'https://auchan.ru' },
+    'Just Food': { color: '#6BBF59', mark: 'J', site: 'https://justfood.ru' },
+    'Elementaree': { color: '#8BC34A', mark: 'E', site: 'https://elementaree.ru' },
+    '2 Берега': { color: '#1F8A70', mark: '2', site: 'https://2berega.ru' },
     'Азбука Вкуса': { color: '#2E6BE6', mark: 'А', site: 'https://av.ru' }
   };
 
