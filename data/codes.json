@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T23:43:16+00:00",
+  "updatedAt": "2026-11-21T23:51:30+00:00",
   "generator": "PromoLov collector",
   "sources": [
     {
@@ -99,32 +99,12 @@
       "url": "https://www.promokodex.ru/actions/edim-doma"
     },
     {
-      "name": "promokodoff.ru",
-      "url": "https://promokodoff.ru/samokat-promokody/"
+      "name": "promokod.site",
+      "url": "https://promokod.site/vkusvill/"
     },
     {
-      "name": "promokodoff.ru",
-      "url": "https://promokodoff.ru/promokody-auchan/"
-    },
-    {
-      "name": "promokodoff.ru",
-      "url": "https://promokodoff.ru/promokody-perekrestok/"
-    },
-    {
-      "name": "promokodoff.ru",
-      "url": "https://promokodoff.ru/promokody-yandex-eda/"
-    },
-    {
-      "name": "promokodoff.ru",
-      "url": "https://promokodoff.ru/promokody-magnit/"
-    },
-    {
-      "name": "promokodoff.ru",
-      "url": "https://promokodoff.ru/promokody-dixy/"
-    },
-    {
-      "name": "promokodoff.ru",
-      "url": "https://promokodoff.ru/promokody-vkusvill/"
+      "name": "promokod.site",
+      "url": "https://promokod.site/vkusmil/"
     }
   ],
   "codes": [
@@ -4075,6 +4055,38 @@
       "sourceUrl": "https://promokod.com/coupon-store/samokat-ru"
     },
     {
+      "service": "ВкусВилл",
+      "code": "VS8STFX",
+      "type": "fixed",
+      "value": 300,
+      "maxDiscount": 0,
+      "minOrder": 1500,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Скидка 300 ₽ на первый заказ от 1500 ₽",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "Скидка: 300 ₽",
+        "Минимальный заказ — от 1500 ₽"
+      ],
+      "expiresInDays": 40,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": false,
+      "wholeCart": true,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": [
+        "firstOrder",
+        "wholeCart"
+      ],
+      "sourceName": "promokod.site",
+      "sourceUrl": "https://promokod.site/vkusvill/"
+    },
+    {
       "service": "Перекрёсток",
       "code": "60PROMOCOM",
       "type": "fixed",
@@ -5821,6 +5833,37 @@
       ],
       "sourceName": "promokod.com",
       "sourceUrl": "https://promokod.com/coupon-store/perekrestok-ru"
+    },
+    {
+      "service": "ВкусМил",
+      "code": "VS8STFX",
+      "type": "percent",
+      "value": 10,
+      "maxDiscount": 0,
+      "minOrder": 0,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Скидка 10% на первый заказ рациона",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "Скидка: 10%"
+      ],
+      "expiresInDays": 40,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": false,
+      "wholeCart": true,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": [
+        "firstOrder",
+        "wholeCart"
+      ],
+      "sourceName": "promokod.site",
+      "sourceUrl": "https://promokod.site/vkusmil/"
     },
     {
       "service": "Перекрёсток",
