@@ -1,0 +1,48 @@
+name: probe sources
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: windows-latest
+    steps:
+      - name: Probe candidate sites
+        shell: pwsh
+        run: |
+          $ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36'
+          $urls = @(
+            'https://promokod.site/',
+            'https://promokod.site/vkusvill/',
+            'https://promokod.guru/',
+            'https://promokodka.ru/',
+            'https://promokodoff.ru/samokat-promokody/',
+            'https://promokod.pro/',
+            'https://vkusvill.ru/promo/',
+            'https://t.me/s/promokody',
+            'https://promokody.ru/',
+            'https://kupon.ru/',
+            'https://promokod.expert/',
+            'https://promokodnik.ru/',
+            'https://promocode.ru/',
+            'https://promokod365.ru/',
+            'https://promokodik.ru/',
+            'https://kupongid.ru/',
+            'https://skidkium.ru/',
+            'https://promokodchik.ru/',
+            'https://promokod-blog.ru/',
+            'https://promokod.site/delimobil/'
+          )
+          foreach ($u in $urls) {
+            $f = Join-Path $env:RUNNER_TEMP ([guid]::NewGuid().ToString('N') + '.html')
+            $st = curl.exe -s -L --compressed --max-time 20 -A $ua -H 'Accept-Language: ru-RU,ru;q=0.9' $u -o $f -w '%{http_code}'
+            $size = 0; $promo = 0; $codes = 0
+            if (Test-Path $f) {
+              $size = (Get-Item $f).Length
+              $h = [IO.File]::ReadAllText($f, [Text.Encoding]::UTF8)
+              $promo = ([regex]::Matches($h, '(?i)промокод')).Count
+              $codes = ([regex]::Matches($h, 'data-code|<code|promoCode')).Count
+            }
+            Write-Host "PROBE status=$st size=$size promo=$promo codes=$codes $u"
+            Remove-Item $f -ErrorAction SilentlyContinue
+          }
