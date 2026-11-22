@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T10:18:32+00:00",
+  "updatedAt": "2026-11-22T18:03:42+00:00",
   "generator": "PromoLov collector",
   "sources": [
     {
@@ -159,7 +159,7 @@
         "Срок действия — примерно 1 дн."
       ],
       "expiresInDays": 1,
-      "works": 25,
+      "works": 32,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -192,7 +192,7 @@
         "Срок действия — примерно 40 дн."
       ],
       "expiresInDays": 40,
-      "works": 147,
+      "works": 148,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -385,7 +385,7 @@
         "Срок действия — примерно 40 дн."
       ],
       "expiresInDays": 40,
-      "works": 572,
+      "works": 587,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -512,7 +512,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 161,
+      "works": 162,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -578,7 +578,7 @@
         "Срок действия — примерно 40 дн."
       ],
       "expiresInDays": 40,
-      "works": 328,
+      "works": 335,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -611,7 +611,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 212,
+      "works": 216,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -644,7 +644,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 50,
+      "works": 51,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -915,7 +915,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 32,
+      "works": 33,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -948,7 +948,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 48,
+      "works": 52,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -980,7 +980,7 @@
         "Срок действия — примерно 40 дн."
       ],
       "expiresInDays": 40,
-      "works": 490,
+      "works": 496,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1013,7 +1013,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 90,
+      "works": 91,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1045,7 +1045,7 @@
         "Срок действия — примерно 40 дн."
       ],
       "expiresInDays": 40,
-      "works": 24,
+      "works": 25,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1107,7 +1107,7 @@
         "Скидка 50% распространяется на три заказа и действует в Нижнем Новгороде."
       ],
       "expiresInDays": null,
-      "works": 165,
+      "works": 166,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1255,7 +1255,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 1917,
+      "works": 1929,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -1344,7 +1344,7 @@
         "Срок действия — примерно 12 дн."
       ],
       "expiresInDays": 12,
-      "works": 803,
+      "works": 810,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -1404,7 +1404,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 5281,
+      "works": 5285,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -1436,7 +1436,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 1509,
+      "works": 1515,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1524,7 +1524,7 @@
         "Срок действия — примерно 1 дн."
       ],
       "expiresInDays": 1,
-      "works": 48,
+      "works": 76,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -1640,7 +1640,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 8,
+      "works": 9,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -1796,7 +1796,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 1117,
+      "works": 1135,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1832,7 +1832,7 @@
         "Срок действия — примерно 40 дн."
       ],
       "expiresInDays": 40,
-      "works": 171,
+      "works": 173,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -2290,7 +2290,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 233,
+      "works": 235,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -2322,7 +2322,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 619,
+      "works": 632,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2424,7 +2424,7 @@
         "Срок действия — примерно 40 дн."
       ],
       "expiresInDays": 40,
-      "works": 2163,
+      "works": 2198,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -2453,7 +2453,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 4820,
+      "works": 4821,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2615,7 +2615,7 @@
         "Срок действия — примерно 1 дн."
       ],
       "expiresInDays": 1,
-      "works": 6,
+      "works": 11,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2822,7 +2822,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 196,
+      "works": 203,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -2862,7 +2862,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 140,
+      "works": 142,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -2901,7 +2901,7 @@
         "Срок действия — примерно 397 дн."
       ],
       "expiresInDays": 397,
-      "works": 224,
+      "works": 228,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -2972,7 +2972,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 323,
+      "works": 331,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -3160,7 +3160,7 @@
         "Минимальный заказ — от 800 ₽"
       ],
       "expiresInDays": null,
-      "works": 75,
+      "works": 76,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": false,
@@ -3189,7 +3189,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 1668,
+      "works": 1719,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -3222,7 +3222,7 @@
         "Срок действия — примерно 1 дн."
       ],
       "expiresInDays": 1,
-      "works": 20,
+      "works": 32,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -3441,7 +3441,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 770,
+      "works": 788,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -3474,7 +3474,7 @@
         "Срок действия — примерно 40 дн."
       ],
       "expiresInDays": 40,
-      "works": 2802,
+      "works": 2841,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -3696,7 +3696,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 784,
+      "works": 844,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -3708,38 +3708,6 @@
       ],
       "sourceName": "promokod.pikabu.ru",
       "sourceUrl": "https://promokod.pikabu.ru/shops/samokat"
-    },
-    {
-      "service": "Перекрёсток",
-      "code": "167D2RNMP",
-      "type": "fixed",
-      "value": 300,
-      "maxDiscount": 0,
-      "minOrder": 1200,
-      "freeDelivery": false,
-      "deliveryCost": 149,
-      "title": "Скидка 300₽ на первый заказ от 1200₽! Р!",
-      "category": [
-        "доставка еды",
-        "собрано с сайта"
-      ],
-      "conditions": [
-        "Закажите продукты через сайт или приложение “Перекрёсток Доставка” со скидкой 300 рублей на первый заказ от 1200р вместе с промокодом! Акция действует для новых пользователей по всей РФ, а также для тех кто не совершал покупки более года. Не суммируется со скидками и с товарами со знаком \"Низкая цена\". Условия доставки уточняйте на сайте perekrestok.ru или в приложении Перекрёсток Доставка.",
-        "Минимальный заказ — от 1200 ₽"
-      ],
-      "expiresInDays": null,
-      "works": 20,
-      "fails": 0,
-      "existingUsers": false,
-      "wholeCart": true,
-      "cities": [],
-      "cityRestricted": false,
-      "collections": [
-        "firstOrder",
-        "wholeCart"
-      ],
-      "sourceName": "promokod.com",
-      "sourceUrl": "https://promokod.com/coupon-store/perekrestok-ru"
     },
     {
       "service": "Перекрёсток",
@@ -3856,7 +3824,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 1053,
+      "works": 1064,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4264,7 +4232,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 602,
+      "works": 613,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4326,7 +4294,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 30,
+      "works": 31,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": false,
@@ -4386,7 +4354,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 477,
+      "works": 488,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4419,7 +4387,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 260,
+      "works": 261,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4483,7 +4451,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 469,
+      "works": 548,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4515,7 +4483,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 91307,
+      "works": 91604,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4548,7 +4516,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 103,
+      "works": 105,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": false,
@@ -4611,7 +4579,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 25,
+      "works": 27,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": false,
@@ -4640,7 +4608,7 @@
         "Срок действия — примерно 40 дн."
       ],
       "expiresInDays": 40,
-      "works": 71120,
+      "works": 71417,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4668,7 +4636,7 @@
         "собрано с сайта"
       ],
       "conditions": [],
-      "expiresInDays": 71,
+      "expiresInDays": 70,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -4702,7 +4670,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 54,
+      "works": 55,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4867,7 +4835,7 @@
         "Срок действия — примерно 10 дн."
       ],
       "expiresInDays": 10,
-      "works": 81,
+      "works": 82,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": false,
@@ -5190,7 +5158,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 103,
+      "works": 104,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -5254,7 +5222,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 221996,
+      "works": 222114,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -5414,7 +5382,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 7592,
+      "works": 7854,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -5455,7 +5423,7 @@
         "Срок действия — примерно 2 дн."
       ],
       "expiresInDays": 2,
-      "works": 126,
+      "works": 128,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -5545,7 +5513,7 @@
         "Срок действия — примерно 1383 дн."
       ],
       "expiresInDays": 1383,
-      "works": 25,
+      "works": 26,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": false,
@@ -5695,7 +5663,7 @@
         "Срок действия — примерно 1383 дн."
       ],
       "expiresInDays": 1383,
-      "works": 102,
+      "works": 103,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": false,
@@ -5724,7 +5692,7 @@
         "Срок действия — примерно 1383 дн."
       ],
       "expiresInDays": 1383,
-      "works": 389,
+      "works": 390,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -5756,7 +5724,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 44573,
+      "works": 44601,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
