@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T18:03:42+00:00",
+  "updatedAt": "2026-11-22T23:36:10+00:00",
   "generator": "PromoLov collector",
   "sources": [
     {
@@ -140,39 +140,6 @@
       "sourceUrl": "https://promokod.com/coupon-store/ozonfresh"
     },
     {
-      "service": "Купер",
-      "code": "lenew",
-      "type": "fixed",
-      "value": 1000,
-      "maxDiscount": 0,
-      "minOrder": 6000,
-      "freeDelivery": false,
-      "deliveryCost": 149,
-      "title": "Скидка 1000 рублей в \"Гипер Ленте\" при покупке от 6000 рублей",
-      "category": [
-        "доставка еды",
-        "собрано с сайта"
-      ],
-      "conditions": [
-        "Распространяется и на первую, и на повторную покупку.",
-        "Минимальный заказ — от 6000 ₽",
-        "Срок действия — примерно 1 дн."
-      ],
-      "expiresInDays": 1,
-      "works": 32,
-      "fails": 0,
-      "existingUsers": true,
-      "wholeCart": true,
-      "cities": [],
-      "cityRestricted": false,
-      "collections": [
-        "returning",
-        "wholeCart"
-      ],
-      "sourceName": "promokod.pikabu.ru",
-      "sourceUrl": "https://promokod.pikabu.ru/shops/sbermarket"
-    },
-    {
       "service": "Яндекс Еда",
       "code": "DIXY",
       "type": "fixed",
@@ -189,9 +156,9 @@
       "conditions": [
         "Промокод действует на первый и повторный заказы.",
         "Минимальный заказ — от 4000 ₽",
-        "Срок действия — примерно 40 дн."
+        "Срок действия — примерно 39 дн."
       ],
-      "expiresInDays": 40,
+      "expiresInDays": 39,
       "works": 148,
       "fails": 0,
       "existingUsers": true,
@@ -253,9 +220,9 @@
       ],
       "conditions": [
         "Минимальный заказ — от 2000 ₽",
-        "Срок действия — примерно 40 дн."
+        "Срок действия — примерно 39 дн."
       ],
-      "expiresInDays": 40,
+      "expiresInDays": 39,
       "works": 30,
       "fails": 0,
       "existingUsers": true,
@@ -412,10 +379,10 @@
       "conditions": [
         "Можно применить при первой и повторной покупке.",
         "Минимальный заказ — от 2500 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 36,
+      "expiresInDays": 8,
+      "works": 39,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -738,9 +705,9 @@
       "conditions": [
         "Не действует с другими акциями, наборами и на добавленные ингредиенты. Работает в ресторане, на доставку и самовывоз.",
         "Минимальный заказ — от 1200 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
+      "expiresInDays": 8,
       "works": 183,
       "fails": 0,
       "existingUsers": true,
@@ -877,9 +844,9 @@
       "conditions": [
         "Ежедневно с 10:00 до 16:00, только в ресторане и на самовывоз. Не действует с другими акциями, наборами и на добавленные ингредиенты.",
         "Минимальный заказ — от 1000 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
+      "expiresInDays": 8,
       "works": 2552,
       "fails": 0,
       "existingUsers": true,
@@ -977,10 +944,10 @@
       ],
       "conditions": [
         "Минимальный заказ — от 1300 ₽",
-        "Срок действия — примерно 40 дн."
+        "Срок действия — примерно 39 дн."
       ],
-      "expiresInDays": 40,
-      "works": 496,
+      "expiresInDays": 39,
+      "works": 498,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1042,9 +1009,9 @@
       ],
       "conditions": [
         "Минимальный заказ — от 800 ₽",
-        "Срок действия — примерно 40 дн."
+        "Срок действия — примерно 39 дн."
       ],
-      "expiresInDays": 40,
+      "expiresInDays": 39,
       "works": 25,
       "fails": 0,
       "existingUsers": true,
@@ -1252,10 +1219,10 @@
       ],
       "conditions": [
         "Можно использовать с 21:00 до 00:00 с понедельника по четверг. Не действует с наборами и на добавленные ингредиенты.",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 1929,
+      "expiresInDays": 8,
+      "works": 1930,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -1344,7 +1311,7 @@
         "Срок действия — примерно 12 дн."
       ],
       "expiresInDays": 12,
-      "works": 810,
+      "works": 817,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -1401,9 +1368,9 @@
       ],
       "conditions": [
         "С понедельника по четверг с 11:00 до 14:00 закажите 2 любые пиццы среднего размера (30 см) всего за 730 рублей с бесплатной доставкой. Не действует в выходные, праздничные и предпраздничные дни, а также не применяется к наборам и добавленным ингредиентам.",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
+      "expiresInDays": 8,
       "works": 5285,
       "fails": 0,
       "existingUsers": true,
@@ -1433,9 +1400,9 @@
       "conditions": [
         "Не действует с другими акциями, наборами и на добавленные ингредиенты.",
         "Минимальный заказ — от 1200 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
+      "expiresInDays": 8,
       "works": 1515,
       "fails": 0,
       "existingUsers": true,
@@ -1520,11 +1487,10 @@
         "собрано с сайта"
       ],
       "conditions": [
-        "Скидка 30% распространяется на продукты питания, которые собраны в отдельную подборку на сайте.",
-        "Срок действия — примерно 1 дн."
+        "Скидка 30% распространяется на продукты питания, которые собраны в отдельную подборку на сайте."
       ],
-      "expiresInDays": 1,
-      "works": 76,
+      "expiresInDays": null,
+      "works": 102,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -1766,7 +1732,7 @@
         "Срок действия — примерно 40 дн."
       ],
       "expiresInDays": 40,
-      "works": 121,
+      "works": 123,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -1793,10 +1759,10 @@
       "conditions": [
         "Действует на первый и повторный заказ. Не работает при покупке наборов в одном заказе.",
         "Минимальный заказ — от 1399 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 1135,
+      "expiresInDays": 8,
+      "works": 1136,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1832,7 +1798,7 @@
         "Срок действия — примерно 40 дн."
       ],
       "expiresInDays": 40,
-      "works": 173,
+      "works": 174,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -1953,10 +1919,10 @@
       "conditions": [
         "Акция действует ежедневно, только на доставку. Не действует с другими акциями, наборами и на добавленные ингредиенты.",
         "Минимальный заказ — от 4000 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 1594,
+      "expiresInDays": 8,
+      "works": 1595,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2023,9 +1989,9 @@
       ],
       "conditions": [
         "Работает с воскресенья по четверг с 22:00 до 00:00. Не суммируется с другими кодами, не действует с наборами и на добавленные ингредиенты.",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
+      "expiresInDays": 8,
       "works": 203,
       "fails": 0,
       "existingUsers": true,
@@ -2159,9 +2125,9 @@
       "conditions": [
         "Даёт скидку до 800 рублей. Пользователь может применить код неограниченное количество раз.",
         "Минимальный заказ — от 2000 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
+      "expiresInDays": 8,
       "works": 3,
       "fails": 0,
       "existingUsers": true,
@@ -2221,9 +2187,9 @@
       "conditions": [
         "Максимум - 800 рублей. Предложение действительно на первый и повторный заказ.",
         "Минимальный заказ — от 2600 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
+      "expiresInDays": 8,
       "works": 26,
       "fails": 0,
       "existingUsers": true,
@@ -2287,9 +2253,9 @@
       "conditions": [
         "В любой пиццерии города. При заказе в ресторане и на самовывоз, не действует с наборами и не суммируется с другими акциями.",
         "Минимальный заказ — от 999 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
+      "expiresInDays": 8,
       "works": 235,
       "fails": 0,
       "existingUsers": true,
@@ -2319,9 +2285,9 @@
       "conditions": [
         "Доступно при первом и повторном заказе. Исключение: заказы, содержащие наборы.",
         "Минимальный заказ — от 1499 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
+      "expiresInDays": 8,
       "works": 632,
       "fails": 0,
       "existingUsers": true,
@@ -2450,10 +2416,10 @@
       ],
       "conditions": [
         "Соберите покупку от минимальной суммы. Можно воспользоваться только один раз. Действует на самовывоз и не действует с другими акциями, наборами и на добавленные ингредиенты.",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 4821,
+      "expiresInDays": 8,
+      "works": 4822,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2597,39 +2563,6 @@
     },
     {
       "service": "Купер",
-      "code": "20gl24",
-      "type": "percent",
-      "value": 14,
-      "maxDiscount": 2000,
-      "minOrder": 9000,
-      "freeDelivery": false,
-      "deliveryCost": 149,
-      "title": "Экономия до 14% при покупке в \"Глобус\" от 9000 рублей",
-      "category": [
-        "доставка еды",
-        "собрано с сайта"
-      ],
-      "conditions": [
-        "Даёт скидку 10% на заказ от 9000 рублей, 12% от 11000 рублей, 14% от 13500 рублей. Максимальная скидка — 2000 рублей. Можно сделать не больше 1 заказа. Подходит для первой и повторной покупки.",
-        "Минимальный заказ — от 9000 ₽",
-        "Срок действия — примерно 1 дн."
-      ],
-      "expiresInDays": 1,
-      "works": 11,
-      "fails": 0,
-      "existingUsers": true,
-      "wholeCart": true,
-      "cities": [],
-      "cityRestricted": false,
-      "collections": [
-        "returning",
-        "wholeCart"
-      ],
-      "sourceName": "promokod.pikabu.ru",
-      "sourceUrl": "https://promokod.pikabu.ru/shops/sbermarket"
-    },
-    {
-      "service": "Купер",
       "code": "dxnvs",
       "type": "percent",
       "value": 10,
@@ -2645,9 +2578,9 @@
       "conditions": [
         "Для заказов от 2000 ₽. Даёт скидку до 600 ₽. Можно сделать не больше 3 заказов.",
         "Минимальный заказ — от 2000 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
+      "expiresInDays": 8,
       "works": 22,
       "fails": 0,
       "existingUsers": true,
@@ -2822,7 +2755,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 203,
+      "works": 206,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -2862,7 +2795,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 142,
+      "works": 143,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -3037,7 +2970,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 260,
+      "works": 261,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -3186,10 +3119,10 @@
       ],
       "conditions": [
         "Минимальный заказ — от 1500 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 1719,
+      "expiresInDays": 8,
+      "works": 1725,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -3201,71 +3134,6 @@
       ],
       "sourceName": "promokod.pikabu.ru",
       "sourceUrl": "https://promokod.pikabu.ru/shops/samokat"
-    },
-    {
-      "service": "ВкусВилл",
-      "code": "50V496S8",
-      "type": "fixed",
-      "value": 500,
-      "maxDiscount": 0,
-      "minOrder": 2000,
-      "freeDelivery": false,
-      "deliveryCost": 149,
-      "title": "Выгода 500 рублей на первый онлайн-заказ",
-      "category": [
-        "доставка еды",
-        "собрано с сайта"
-      ],
-      "conditions": [
-        "Действует на заказ от 2000 рублей.",
-        "Минимальный заказ — от 2000 ₽",
-        "Срок действия — примерно 1 дн."
-      ],
-      "expiresInDays": 1,
-      "works": 32,
-      "fails": 0,
-      "existingUsers": false,
-      "wholeCart": true,
-      "cities": [],
-      "cityRestricted": false,
-      "collections": [
-        "firstOrder",
-        "wholeCart"
-      ],
-      "sourceName": "promokod.pikabu.ru",
-      "sourceUrl": "https://promokod.pikabu.ru/shops/vkusvill"
-    },
-    {
-      "service": "ВкусВилл",
-      "code": "50VD6ZC2",
-      "type": "fixed",
-      "value": 500,
-      "maxDiscount": 0,
-      "minOrder": 2000,
-      "freeDelivery": false,
-      "deliveryCost": 149,
-      "title": "Скидка 500 рублей на первый заказ от 2000 рублей!",
-      "category": [
-        "доставка еды",
-        "собрано с сайта"
-      ],
-      "conditions": [
-        "Скидка 500 рублей на первый заказ от 2000 рублей! Промокод: 50VD6ZC2 Скопировать промокод Открыть магазин и использовать промокод Условия скидки Промокод действует до: 22.11.2026 Переходи по ссылке и используй промокод при первом заказе любых товаров.",
-        "Минимальный заказ — от 2000 ₽"
-      ],
-      "expiresInDays": null,
-      "works": 0,
-      "fails": 0,
-      "existingUsers": false,
-      "wholeCart": true,
-      "cities": [],
-      "cityRestricted": false,
-      "collections": [
-        "firstOrder",
-        "wholeCart"
-      ],
-      "sourceName": "promokodex.ru",
-      "sourceUrl": "https://www.promokodex.ru/actions/edim-doma"
     },
     {
       "service": "Перекрёсток",
@@ -3438,10 +3306,10 @@
       ],
       "conditions": [
         "Минимальный заказ — от 1300 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 788,
+      "expiresInDays": 8,
+      "works": 790,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -3693,10 +3561,10 @@
       ],
       "conditions": [
         "Минимальный заказ — от 1000 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 844,
+      "expiresInDays": 8,
+      "works": 865,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -3760,7 +3628,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 15,
+      "works": 16,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -3821,10 +3689,10 @@
       ],
       "conditions": [
         "Минимальный заказ — от 1000 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 1064,
+      "expiresInDays": 8,
+      "works": 1066,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4229,10 +4097,10 @@
       ],
       "conditions": [
         "Минимальный заказ — от 900 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 613,
+      "expiresInDays": 8,
+      "works": 614,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4434,38 +4302,6 @@
     },
     {
       "service": "Пятёрочка",
-      "code": "fl6emnhy1u8",
-      "type": "percent",
-      "value": 55,
-      "maxDiscount": 0,
-      "minOrder": 700,
-      "freeDelivery": false,
-      "deliveryCost": 149,
-      "title": "Выгоднее на 55% первый заказ в приложении от 700 рублей",
-      "category": [
-        "доставка еды",
-        "собрано с сайта"
-      ],
-      "conditions": [
-        "Минимальный заказ — от 700 ₽",
-        "Срок действия — примерно 9 дн."
-      ],
-      "expiresInDays": 9,
-      "works": 548,
-      "fails": 0,
-      "existingUsers": false,
-      "wholeCart": true,
-      "cities": [],
-      "cityRestricted": false,
-      "collections": [
-        "firstOrder",
-        "wholeCart"
-      ],
-      "sourceName": "promokod.pikabu.ru",
-      "sourceUrl": "https://promokod.pikabu.ru/shops/5ka"
-    },
-    {
-      "service": "Пятёрочка",
       "code": "pikabu05",
       "type": "percent",
       "value": 55,
@@ -4480,10 +4316,10 @@
       ],
       "conditions": [
         "Минимальный заказ — от 700 ₽",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 91604,
+      "expiresInDays": 8,
+      "works": 91640,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4605,10 +4441,10 @@
       ],
       "conditions": [
         "Минимальный заказ — от 700 ₽",
-        "Срок действия — примерно 40 дн."
+        "Срок действия — примерно 39 дн."
       ],
-      "expiresInDays": 40,
-      "works": 71417,
+      "expiresInDays": 39,
+      "works": 71470,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4703,7 +4539,7 @@
         "Срок действия — примерно 9 дн."
       ],
       "expiresInDays": 9,
-      "works": 41,
+      "works": 43,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -5219,10 +5055,10 @@
       ],
       "conditions": [
         "Работает только для новых клиентов. Действует с ресторана, на самовывоз и на доставку. Не работает с наборами и другими акциями.",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 222114,
+      "expiresInDays": 8,
+      "works": 222135,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -5379,10 +5215,10 @@
       ],
       "conditions": [
         "Только на первый заказ в городах: Воронеж, Ростов-на-Дону, Таганрог, Сочи, Адлер, Лазаревское, Красная Поляна, Эсто-Садок. Предложение не распространяется на заказы, в состав которых входят наборы.",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 7854,
+      "expiresInDays": 8,
+      "works": 7880,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -5405,6 +5241,38 @@
       "sourceUrl": "https://promokod.pikabu.ru/shops/dodopizza"
     },
     {
+      "service": "Tanukifamily",
+      "code": "20CAT028",
+      "type": "percent",
+      "value": 20,
+      "maxDiscount": 0,
+      "minOrder": 1090,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Скидка 20% на первый заказ от 1090 рублей в Тануки!",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "Скидка 20% на первый заказ от 1090 рублей в Тануки! Промокод: 20CAT028 Скопировать промокод Открыть магазин и использовать промокод Условия скидки Промокод действует до: 29.11.2026 Скидка по промокоду для новых пользователей.",
+        "Минимальный заказ — от 1090 ₽"
+      ],
+      "expiresInDays": null,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": false,
+      "wholeCart": true,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": [
+        "firstOrder",
+        "wholeCart"
+      ],
+      "sourceName": "promokodex.ru",
+      "sourceUrl": "https://www.promokodex.ru/actions/edim-doma"
+    },
+    {
       "service": "Купер",
       "code": "20set",
       "type": "percent",
@@ -5420,10 +5288,10 @@
       ],
       "conditions": [
         "Даёт скидку до 800 рублей.",
-        "Срок действия — примерно 2 дн."
+        "Срок действия — примерно 1 дн."
       ],
-      "expiresInDays": 2,
-      "works": 128,
+      "expiresInDays": 1,
+      "works": 129,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -5721,10 +5589,10 @@
       ],
       "conditions": [
         "Пополните корзину на минимальную сумму и примените код на сайте. Не действует с наборами и не суммируется с другими акциями. Может не примениться в ряде городов.",
-        "Срок действия — примерно 9 дн."
+        "Срок действия — примерно 8 дн."
       ],
-      "expiresInDays": 9,
-      "works": 44601,
+      "expiresInDays": 8,
+      "works": 44604,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
