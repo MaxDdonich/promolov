@@ -1,275 +1,275 @@
 {
-    "updatedAt":  "2026-11-24T00:39:58.1362939+03:00",
-    "sources":  {
-                    "promokod.com":  {
-                                         "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                         "lastCount":  121,
-                                         "lastError":  null,
-                                         "totalRuns":  2,
-                                         "totalCodes":  121,
-                                         "averageCount":  60.5,
-                                         "status":  "ok"
-                                     },
-                    "ecosum.ru":  {
-                                      "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                      "lastCount":  16,
-                                      "lastError":  null,
-                                      "totalRuns":  2,
-                                      "totalCodes":  32,
-                                      "averageCount":  16,
-                                      "status":  "ok"
-                                  },
-                    "promokod.pikabu.ru":  {
-                                               "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                               "lastCount":  38,
-                                               "lastError":  null,
-                                               "totalRuns":  2,
-                                               "totalCodes":  76,
-                                               "averageCount":  38,
-                                               "status":  "ok"
-                                           },
-                    "kp.ru":  {
-                                  "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                  "lastCount":  6,
-                                  "lastError":  null,
-                                  "totalRuns":  2,
-                                  "totalCodes":  12,
-                                  "averageCount":  6,
-                                  "status":  "ok"
-                              },
-                    "promokodi.komukupon.ru":  {
-                                                   "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                   "lastCount":  8,
-                                                   "lastError":  null,
-                                                   "totalRuns":  2,
-                                                   "totalCodes":  16,
-                                                   "averageCount":  8,
-                                                   "status":  "ok"
-                                               },
-                    "promokodex.ru":  {
-                                          "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                          "lastCount":  19,
-                                          "lastError":  null,
-                                          "totalRuns":  2,
-                                          "totalCodes":  38,
-                                          "averageCount":  19,
-                                          "status":  "ok"
-                                      },
-                    "promokod.site":  {
-                                          "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                          "lastCount":  2,
-                                          "lastError":  null,
-                                          "totalRuns":  2,
-                                          "totalCodes":  4,
-                                          "averageCount":  2,
-                                          "status":  "ok"
-                                      },
-                    "promokod.store · Еда 1":  {
-                                                   "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                   "lastCount":  10,
-                                                   "lastError":  null,
-                                                   "totalRuns":  2,
-                                                   "totalCodes":  20,
-                                                   "averageCount":  10,
-                                                   "status":  "ok"
-                                               },
-                    "promokod.store · Еда 2":  {
-                                                   "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                   "lastCount":  7,
-                                                   "lastError":  null,
-                                                   "totalRuns":  2,
-                                                   "totalCodes":  14,
-                                                   "averageCount":  7,
-                                                   "status":  "ok"
-                                               },
-                    "promokod.store · Еда 3":  {
-                                                   "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                   "lastCount":  5,
-                                                   "lastError":  null,
-                                                   "totalRuns":  2,
-                                                   "totalCodes":  10,
-                                                   "averageCount":  5,
-                                                   "status":  "ok"
-                                               },
-                    "promocodex.ru · Еда":  {
-                                                "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                "lastCount":  11,
-                                                "lastError":  null,
-                                                "totalRuns":  2,
-                                                "totalCodes":  22,
-                                                "averageCount":  11,
-                                                "status":  "ok"
-                                            },
-                    "promocodex.ru · Рестораны":  {
-                                                      "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                      "lastCount":  6,
-                                                      "lastError":  null,
-                                                      "totalRuns":  2,
-                                                      "totalCodes":  12,
-                                                      "averageCount":  6,
-                                                      "status":  "ok"
-                                                  },
-                    "okodo.ru · Яндекс Еда":  {
-                                                  "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                  "lastCount":  8,
-                                                  "lastError":  null,
-                                                  "totalRuns":  2,
-                                                  "totalCodes":  16,
-                                                  "averageCount":  8,
-                                                  "status":  "ok"
-                                              },
-                    "okodo.ru · Деливери":  {
-                                                "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                "lastCount":  6,
-                                                "lastError":  null,
-                                                "totalRuns":  2,
-                                                "totalCodes":  12,
-                                                "averageCount":  6,
-                                                "status":  "ok"
-                                            },
-                    "okodo.ru · Самокат":  {
-                                               "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                               "lastCount":  3,
-                                               "lastError":  null,
-                                               "totalRuns":  2,
-                                               "totalCodes":  6,
-                                               "averageCount":  3,
-                                               "status":  "ok"
-                                           },
-                    "okodo.ru · Яндекс Лавка":  {
-                                                    "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                    "lastCount":  9,
-                                                    "lastError":  null,
-                                                    "totalRuns":  2,
-                                                    "totalCodes":  18,
-                                                    "averageCount":  9,
-                                                    "status":  "ok"
-                                                },
-                    "okodo.ru · Перекрёсток":  {
-                                                   "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                   "lastCount":  0,
-                                                   "lastError":  null,
-                                                   "totalRuns":  2,
-                                                   "totalCodes":  0,
-                                                   "averageCount":  0,
-                                                   "status":  "empty"
-                                               },
-                    "okodo.ru · Магнит":  {
-                                              "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                              "lastCount":  5,
-                                              "lastError":  null,
-                                              "totalRuns":  2,
-                                              "totalCodes":  10,
-                                              "averageCount":  5,
-                                              "status":  "ok"
-                                          },
-                    "okodo.ru · Все коды":  {
-                                                "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                "lastCount":  38,
-                                                "lastError":  null,
-                                                "totalRuns":  2,
-                                                "totalCodes":  76,
-                                                "averageCount":  38,
-                                                "status":  "ok"
-                                            },
-                    "promokodikov.ru":  {
-                                            "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                            "lastCount":  0,
-                                            "lastError":  null,
-                                            "totalRuns":  2,
-                                            "totalCodes":  0,
-                                            "averageCount":  0,
-                                            "status":  "empty"
-                                        },
-                    "pickpoint.ru":  {
-                                         "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                         "lastCount":  11,
-                                         "lastError":  null,
-                                         "totalRuns":  2,
-                                         "totalCodes":  22,
-                                         "averageCount":  11,
-                                         "status":  "ok"
-                                     },
-                    "fooody.ru":  {
-                                      "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                      "lastCount":  9,
-                                      "lastError":  null,
-                                      "totalRuns":  2,
-                                      "totalCodes":  18,
-                                      "averageCount":  9,
-                                      "status":  "ok"
-                                  },
-                    "t.me/promokod_rostics":  {
-                                                  "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                  "lastCount":  0,
-                                                  "lastError":  "not run",
-                                                  "totalRuns":  2,
-                                                  "totalCodes":  0,
-                                                  "averageCount":  0,
-                                                  "status":  "error"
-                                              },
-                    "t.me/promokod_perekrestok":  {
-                                                      "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                      "lastCount":  0,
-                                                      "lastError":  "not run",
-                                                      "totalRuns":  2,
-                                                      "totalCodes":  0,
-                                                      "averageCount":  0,
-                                                      "status":  "error"
-                                                  },
-                    "t.me/promokody_skidki":  {
-                                                  "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                  "lastCount":  0,
-                                                  "lastError":  "not run",
-                                                  "totalRuns":  2,
-                                                  "totalCodes":  0,
-                                                  "averageCount":  0,
-                                                  "status":  "error"
-                                              },
-                    "t.me/promokody":  {
-                                           "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                           "lastCount":  0,
-                                           "lastError":  "not run",
-                                           "totalRuns":  2,
-                                           "totalCodes":  0,
-                                           "averageCount":  0,
-                                           "status":  "error"
-                                       },
-                    "t.me/promokod_yakitoria":  {
-                                                    "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                    "lastCount":  0,
-                                                    "lastError":  "not run",
-                                                    "totalRuns":  1,
-                                                    "totalCodes":  0,
-                                                    "averageCount":  0,
-                                                    "status":  "error"
-                                                },
-                    "t.me/promokod_growfood":  {
-                                                   "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                   "lastCount":  0,
-                                                   "lastError":  "not run",
-                                                   "totalRuns":  1,
-                                                   "totalCodes":  0,
-                                                   "averageCount":  0,
-                                                   "status":  "error"
-                                               },
-                    "t.me/promokod_vkusvill":  {
-                                                   "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                   "lastCount":  0,
-                                                   "lastError":  "not run",
-                                                   "totalRuns":  1,
-                                                   "totalCodes":  0,
-                                                   "averageCount":  0,
-                                                   "status":  "error"
-                                               },
-                    "t.me/promokod_tanuki":  {
-                                                 "lastRun":  "2026-11-24T00:39:58.1362939+03:00",
-                                                 "lastCount":  0,
-                                                 "lastError":  "not run",
-                                                 "totalRuns":  1,
-                                                 "totalCodes":  0,
-                                                 "averageCount":  0,
-                                                 "status":  "error"
-                                             }
-                }
+  "updatedAt": "2026-11-23T21:43:23.4763268+00:00",
+  "sources": {
+    "promokod.com": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 121,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 242,
+      "averageCount": 80.7,
+      "status": "ok"
+    },
+    "ecosum.ru": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 16,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 48,
+      "averageCount": 16.0,
+      "status": "ok"
+    },
+    "promokod.pikabu.ru": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 38,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 114,
+      "averageCount": 38.0,
+      "status": "ok"
+    },
+    "kp.ru": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 6,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 18,
+      "averageCount": 6.0,
+      "status": "ok"
+    },
+    "promokodi.komukupon.ru": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 8,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 24,
+      "averageCount": 8.0,
+      "status": "ok"
+    },
+    "promokodex.ru": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 19,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 57,
+      "averageCount": 19.0,
+      "status": "ok"
+    },
+    "promokod.site": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 2,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 6,
+      "averageCount": 2.0,
+      "status": "ok"
+    },
+    "promokod.store · Еда 1": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 10,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 30,
+      "averageCount": 10.0,
+      "status": "ok"
+    },
+    "promokod.store · Еда 2": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 7,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 21,
+      "averageCount": 7.0,
+      "status": "ok"
+    },
+    "promokod.store · Еда 3": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 5,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 15,
+      "averageCount": 5.0,
+      "status": "ok"
+    },
+    "promocodex.ru · Еда": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 11,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 33,
+      "averageCount": 11.0,
+      "status": "ok"
+    },
+    "promocodex.ru · Рестораны": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 6,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 18,
+      "averageCount": 6.0,
+      "status": "ok"
+    },
+    "okodo.ru · Яндекс Еда": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 8,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 24,
+      "averageCount": 8.0,
+      "status": "ok"
+    },
+    "okodo.ru · Деливери": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 6,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 18,
+      "averageCount": 6.0,
+      "status": "ok"
+    },
+    "okodo.ru · Самокат": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 3,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 9,
+      "averageCount": 3.0,
+      "status": "ok"
+    },
+    "okodo.ru · Яндекс Лавка": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 9,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 27,
+      "averageCount": 9.0,
+      "status": "ok"
+    },
+    "okodo.ru · Перекрёсток": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 0,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 0,
+      "averageCount": 0.0,
+      "status": "empty"
+    },
+    "okodo.ru · Магнит": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 5,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 15,
+      "averageCount": 5.0,
+      "status": "ok"
+    },
+    "okodo.ru · Все коды": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 38,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 114,
+      "averageCount": 38.0,
+      "status": "ok"
+    },
+    "promokodikov.ru": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 0,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 0,
+      "averageCount": 0.0,
+      "status": "empty"
+    },
+    "pickpoint.ru": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 11,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 33,
+      "averageCount": 11.0,
+      "status": "ok"
+    },
+    "fooody.ru": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 9,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 27,
+      "averageCount": 9.0,
+      "status": "ok"
+    },
+    "t.me/promokod_rostics": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 2,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 2,
+      "averageCount": 0.7,
+      "status": "ok"
+    },
+    "t.me/promokod_perekrestok": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 29,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 29,
+      "averageCount": 9.7,
+      "status": "ok"
+    },
+    "t.me/promokody_skidki": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 3,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 3,
+      "averageCount": 1.0,
+      "status": "ok"
+    },
+    "t.me/promokody": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 2,
+      "lastError": null,
+      "totalRuns": 3,
+      "totalCodes": 2,
+      "averageCount": 0.7,
+      "status": "ok"
+    },
+    "t.me/promokod_yakitoria": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 9,
+      "lastError": null,
+      "totalRuns": 2,
+      "totalCodes": 9,
+      "averageCount": 4.5,
+      "status": "ok"
+    },
+    "t.me/promokod_growfood": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 1,
+      "lastError": null,
+      "totalRuns": 2,
+      "totalCodes": 1,
+      "averageCount": 0.5,
+      "status": "ok"
+    },
+    "t.me/promokod_vkusvill": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 1,
+      "lastError": null,
+      "totalRuns": 2,
+      "totalCodes": 1,
+      "averageCount": 0.5,
+      "status": "ok"
+    },
+    "t.me/promokod_tanuki": {
+      "lastRun": "2026-11-23T21:43:23.4763268+00:00",
+      "lastCount": 10,
+      "lastError": null,
+      "totalRuns": 2,
+      "totalCodes": 10,
+      "averageCount": 5.0,
+      "status": "ok"
+    }
+  }
 }
