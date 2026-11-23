@@ -503,6 +503,7 @@
   /* ---------- Рендер ---------- */
 
   function baseMatch(code) {
+    if (!code.fromFeed && feedExists()) return false;
     if (code.expiresAt && code.expiresAt < Date.now()) return false;
     if (!workingMatch(code)) return false;
     if (ui.service !== 'all' && code.service !== ui.service) return false;
