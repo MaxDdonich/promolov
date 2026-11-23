@@ -222,7 +222,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\collector.ps1
 | Telegram: `promokod_yandex_eda`, `promokod_kfc`, `promokod_magnit`, `promokod_rostics`, `promokod_perekrestok`, `promokody_skidki`, `promokody`, `promokod_eda` | свежие посты с кодами; каждый канал — отдельная точка сбора |
 
 Итого 30 точек сбора: 22 веб-страницы + 8 Telegram-каналов. Обычно получается
-150–250 кодов по 40+ сервисам. Сервис определяется по магазину, домену или
+200–300 кодов по 40+ сервисам. Сервис определяется по магазину, домену или
 названию бренда, поэтому новый сервис добавляется одной строкой в
 `$script:Sources` в начале `collector.ps1`.
 

@@ -993,6 +993,9 @@
     const also = (code.alsoServices || []).length
       ? '<div class="m-fact m-fact--wide"><span>Также подходит</span><b>' + esc(code.alsoServices.join(', ')) + '</b></div>'
       : '';
+    const methodLabel = code.verificationMethod === 'history'
+      ? 'подтверждён историей наблюдений'
+      : (code.sourceCount > 1 ? 'подтверждён ' + code.sourceCount + ' источниками' : 'найден в одном источнике');
 
     $('#modalBody').innerHTML = '' +
       '<div class="m-head">' +
@@ -1022,7 +1025,7 @@
         '<div class="m-fact"><span>На что действует</span><b class="' + (code.wholeCart ? 'is-good' : '') + '">' + applies + '</b></div>' +
         '<div class="m-fact"><span>Срок</span><b>' + esc(expiryLabelFor(code)) + '</b></div>' +
         '<div class="m-fact"><span>' + freshLabel + '</span><b>' + esc(verifiedLabel(code.verifiedAt)) + '</b></div>' +
-        '<div class="m-fact"><span>Источников</span><b>' + (code.sourceCount || 1) + '</b></div>' +
+        '<div class="m-fact"><span>Источников</span><b>' + (code.sourceCount || 1) + ' · ' + esc(methodLabel) + '</b></div>' +
         also +
       '</div>' +
 
@@ -1141,6 +1144,7 @@
       expiresInDays: item.expiresInDays != null ? Number(item.expiresInDays) : null,
       confidence: Number(item.confidence) || 0,
       verification: ['confirmed', 'likely', 'single', 'expired'].includes(item.verification) ? item.verification : '',
+      verificationMethod: item.verificationMethod || '',
       sourceCount: Number(item.sourceCount) || 1,
       evidence: Array.isArray(item.evidence) ? item.evidence.slice(0, 12) : [],
       alsoServices: Array.isArray(item.alsoServices) ? item.alsoServices.slice(0, 6) : [],

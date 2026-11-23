@@ -2001,7 +2001,15 @@ foreach ($key in $groups.Keys) {
   $confidence = [int][Math]::Min(100, [Math]::Round($confidence))
 
   $verification = 'single'
-  if ($sourceCount -ge 2 -and $avgWeight -ge 0.6) { $verification = 'confirmed' }
+  $verificationMethod = 'source'
+  if ($sourceCount -ge 2 -and $avgWeight -ge 0.6) {
+    $verification = 'confirmed'
+    $verificationMethod = 'multi-source'
+  }
+  elseif ($sourceCount -eq 1 -and $avgWeight -ge 0.8 -and $seenRuns -ge 6) {
+    $verification = 'confirmed'
+    $verificationMethod = 'history'
+  }
   elseif ($sourceCount -eq 1 -and $avgWeight -ge 0.8) { $verification = 'likely' }
   elseif ($sourceCount -eq 1 -and $avgWeight -ge 0.7 -and $seenRuns -ge 2) { $verification = 'likely' }
   if ($null -ne $expires -and [int]$expires -lt 0) { $verification = 'expired' }
@@ -2020,6 +2028,7 @@ foreach ($key in $groups.Keys) {
 
   $best['confidence'] = $confidence
   $best['verification'] = $verification
+  $best['verificationMethod'] = $verificationMethod
   $best['sourceCount'] = $sourceCount
   $best['evidence'] = @($evidenceMap.Values)
   $best['alsoServices'] = @($list | ForEach-Object { $_.service } | Where-Object { $_ -and $_ -ne $best.service } | Select-Object -Unique)
