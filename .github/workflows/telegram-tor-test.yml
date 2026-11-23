@@ -1,0 +1,39 @@
+name: Telegram Tor test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Tor
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tor
+
+      - name: Start Tor
+        run: |
+          sudo service tor start
+          sleep 15
+          sudo service tor status || true
+
+      - name: Check Tor exit
+        run: |
+          curl -sS --socks5-hostname 127.0.0.1:9050 --max-time 40 https://check.torproject.org/api/ip || true
+
+      - name: Telegram via Tor
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          echo "--- getMe via Tor ---"
+          curl -sS --socks5-hostname 127.0.0.1:9050 --max-time 60 -w "\nHTTP=%{http_code}\n" "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getMe" || true
+          echo "--- getUpdates via Tor ---"
+          curl -sS --socks5-hostname 127.0.0.1:9050 --max-time 60 -w "\nHTTP=%{http_code}\n" "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates?limit=10" || true
+
+      - name: Telegram via IPv6
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          echo "--- getMe via IPv6 ---"
+          curl -6 -sS --max-time 20 -w "\nHTTP=%{http_code}\n" "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getMe" || true
