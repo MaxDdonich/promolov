@@ -1,0 +1,26 @@
+name: Telegram network test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Get me
+        shell: bash
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          echo "OS=${{ matrix.os }}"
+          curl -sS -4 --http1.1 --max-time 25 -w "\nHTTP=%{http_code}\n" "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getMe" || true
+      - name: Get updates
+        shell: bash
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          curl -sS -4 --http1.1 --max-time 25 -w "\nHTTP=%{http_code}\n" "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates?limit=100" || true
