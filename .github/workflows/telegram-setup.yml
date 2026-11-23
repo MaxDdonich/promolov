@@ -14,9 +14,16 @@ jobs:
         run: |
           $token = $env:TELEGRAM_BOT_TOKEN
           if (-not $token) { throw 'TELEGRAM_BOT_TOKEN secret is empty' }
-          $me = Invoke-RestMethod -Uri "https://api.telegram.org/bot$token/getMe" -TimeoutSec 30
-          Write-Host "BOT_OK=$($me.ok) USERNAME=@$($me.result.username) NAME=$($me.result.first_name)"
-          $upd = Invoke-RestMethod -Uri "https://api.telegram.org/bot$token/getUpdates" -TimeoutSec 30
+          $meRaw = & curl.exe -sS -4 --http1.1 --max-time 25 -w "`nHTTP=%{http_code}" "https://api.telegram.org/bot$token/getMe"
+          Write-Host $meRaw
+          $meLine = ($meRaw -split "`n")[0]
+          try { $me = $meLine | ConvertFrom-Json } catch { $me = $null }
+          if ($me -and $me.ok) { Write-Host "BOT_OK=True USERNAME=@$($me.result.username) NAME=$($me.result.first_name)" }
+          $updRaw = & curl.exe -sS -4 --http1.1 --max-time 25 -w "`nHTTP=%{http_code}" "https://api.telegram.org/bot$token/getUpdates"
+          Write-Host $updRaw
+          $updLine = ($updRaw -split "`n")[0]
+          try { $upd = $updLine | ConvertFrom-Json } catch { $upd = $null }
+          if (-not $upd -or -not $upd.ok) { throw 'Telegram getUpdates failed' }
           Write-Host "UPDATES=$($upd.result.Count)"
           if ($upd.result.Count -eq 0) {
             Write-Host 'NO_UPDATES: open the bot in Telegram, press Start, then run this workflow again.'
