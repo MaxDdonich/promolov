@@ -26,8 +26,9 @@ if (-not $scriptRoot) { $scriptRoot = Split-Path -Parent $MyInvocation.MyCommand
 if (-not $OutFile) { $OutFile = Join-Path $scriptRoot 'data\codes.json' }
 
 $script:UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36 PromoLov/1.0'
+$script:BrowserUA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36'
 $script:Headers = @{
-  'User-Agent'      = $script:UA
+  'User-Agent'      = $script:BrowserUA
   'Accept'          = 'text/html,application/xhtml+xml'
   'Accept-Language' = 'ru-RU,ru;q=0.9,en;q=0.5'
 }
@@ -202,14 +203,14 @@ $script:Sources += @{
 }
 
 $telegramChannels = @(
-  @{ channel = 'promokod_yandex_eda'; group = 'tg-common' },
-  @{ channel = 'promokod_kfc'; group = 'tg-common' },
-  @{ channel = 'promokod_magnit'; group = 'tg-common' },
   @{ channel = 'promokod_rostics'; group = 'tg-rostics' },
   @{ channel = 'promokod_perekrestok'; group = 'tg-perekrestok' },
   @{ channel = 'promokody_skidki'; group = 'tg-generic-1' },
   @{ channel = 'promokody'; group = 'tg-generic-2' },
-  @{ channel = 'promokod_eda'; group = 'tg-generic-3' }
+  @{ channel = 'promokod_yakitoria'; group = 'tg-yakitoria' },
+  @{ channel = 'promokod_growfood'; group = 'tg-growfood' },
+  @{ channel = 'promokod_vkusvill'; group = 'tg-vkusvill' },
+  @{ channel = 'promokod_tanuki'; group = 'tg-tanuki' }
 )
 foreach ($tg in $telegramChannels) {
   $script:Sources += @{
@@ -247,7 +248,7 @@ function Get-Html {
   catch {
     $tmp = Join-Path $env:TEMP ('html-' + [guid]::NewGuid().ToString('N') + '.html')
     try {
-      $status = & curl.exe -s -L --compressed --max-time 40 -A $script:UA -H 'Accept-Language: ru-RU,ru;q=0.9' $Url -o $tmp -w '%{http_code}'
+      $status = & curl.exe -s -L --compressed --http1.1 --max-time 40 -A $script:BrowserUA -H 'Accept-Language: ru-RU,ru;q=0.9' $Url -o $tmp -w '%{http_code}'
       if ($status -ne '200') { throw }
       return [IO.File]::ReadAllText($tmp, [Text.Encoding]::UTF8)
     }
@@ -1232,7 +1233,7 @@ function Get-PromokodexCodes {
   $pageFile = Join-Path $env:TEMP ('promokodex-' + [guid]::NewGuid().ToString('N') + '.html')
 
   try {
-    $pageArgs = @('-s', '-L', '--max-time', '30', '-A', $script:UA, '-H', 'Accept-Language: ru-RU,ru;q=0.9', '-c', $jar, $Url, '-o', $pageFile, '-w', '%{http_code}')
+    $pageArgs = @('-s', '-L', '--max-time', '30', '-A', $script:BrowserUA, '-H', 'Accept-Language: ru-RU,ru;q=0.9', '-c', $jar, $Url, '-o', $pageFile, '-w', '%{http_code}')
     $pageStatus = & curl.exe @pageArgs
     if ($pageStatus -ne '200') { return $items }
 
@@ -1267,7 +1268,7 @@ function Get-PromokodexCodes {
       $responseFile = Join-Path $env:TEMP ('promokodex-' + [guid]::NewGuid().ToString('N') + '.json')
       try {
         $postArgs = @(
-          '-s', '-b', $jar, '-A', $script:UA,
+          '-s', '-b', $jar, '-A', $script:BrowserUA,
           '-H', "X-XSRF-TOKEN: $xsrf",
           '-H', 'Content-Type: application/json',
           '-H', 'X-Requested-With: XMLHttpRequest',
@@ -1684,6 +1685,10 @@ function Get-TelegramCodes {
     'promokod_magnit'     = 'Магнит'
     'promokod_rostics'    = "Rostic's"
     'promokod_perekrestok' = 'Перекрёсток'
+    'promokod_yakitoria'  = 'Якитория'
+    'promokod_growfood'   = 'Grow Food'
+    'promokod_vkusvill'   = 'ВкусВилл'
+    'promokod_tanuki'     = 'Тануки'
     'promokod_eda'        = ''
     'promokody_skidki'    = ''
     'promokody'           = ''
@@ -1693,7 +1698,7 @@ function Get-TelegramCodes {
   $genericChannel = [string]::IsNullOrWhiteSpace($channelMap[$Channel])
 
   try {
-    $status = & curl.exe -s -L --compressed --max-time 30 -A $script:UA -H 'Accept-Language: ru-RU,ru;q=0.9' $url -o $file -w '%{http_code}'
+    $status = & curl.exe -s -L --compressed --max-time 30 -A $script:BrowserUA -H 'Accept-Language: ru-RU,ru;q=0.9' $url -o $file -w '%{http_code}'
     if ($status -ne '200') { return $items }
     $html = [IO.File]::ReadAllText($file, [Text.Encoding]::UTF8)
   }
@@ -1751,6 +1756,10 @@ function Get-TelegramCodes {
           'promokod_magnit'     = '(?i)магнит'
           'promokod_rostics'    = '(?i)rostic|ростикс'
           'promokod_perekrestok' = '(?i)перекр'
+          'promokod_yakitoria'  = '(?i)якитория|yakitoria'
+          'promokod_growfood'   = '(?i)grow food|growfood'
+          'promokod_vkusvill'   = '(?i)вкусвилл|vkusvill'
+          'promokod_tanuki'     = '(?i)тануки|tanuki'
         }
         $bp = $brandPattern[$Channel]
         if ($bp -and $text -match $bp) { $service = $channelService }
