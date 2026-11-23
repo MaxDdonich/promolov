@@ -1,0 +1,20 @@
+name: Telegram chat id
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  get:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get updates through worker
+        shell: bash
+        env:
+          TELEGRAM_PROXY_URL: ${{ secrets.TELEGRAM_PROXY_URL }}
+          TELEGRAM_PROXY_SECRET: ${{ secrets.TELEGRAM_PROXY_SECRET }}
+        run: |
+          if [ -z "$TELEGRAM_PROXY_URL" ]; then echo "TELEGRAM_PROXY_URL is empty"; exit 1; fi
+          curl -sS --max-time 30 -H "x-secret: $TELEGRAM_PROXY_SECRET" -w "\nHTTP=%{http_code}\n" "$TELEGRAM_PROXY_URL/updates"
