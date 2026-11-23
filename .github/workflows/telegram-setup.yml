@@ -14,24 +14,51 @@ jobs:
         run: |
           $token = $env:TELEGRAM_BOT_TOKEN
           if (-not $token) { throw 'TELEGRAM_BOT_TOKEN secret is empty' }
-          $meRaw = & curl.exe -sS -4 --http1.1 --max-time 25 -w "`nHTTP=%{http_code}" "https://api.telegram.org/bot$token/getMe"
-          Write-Host $meRaw
-          $meLine = ($meRaw -split "`n")[0]
-          try { $me = $meLine | ConvertFrom-Json } catch { $me = $null }
-          if ($me -and $me.ok) { Write-Host "BOT_OK=True USERNAME=@$($me.result.username) NAME=$($me.result.first_name)" }
-          $updRaw = & curl.exe -sS -4 --http1.1 --max-time 25 -w "`nHTTP=%{http_code}" "https://api.telegram.org/bot$token/getUpdates"
-          Write-Host $updRaw
-          $updLine = ($updRaw -split "`n")[0]
-          try { $upd = $updLine | ConvertFrom-Json } catch { $upd = $null }
+
+          function Invoke-Tg {
+            param([string]$Method)
+            for ($i = 1; $i -le 4; $i++) {
+              $raw = & curl.exe -sS -4 --http1.1 --max-time 30 -w "`nHTTP=%{http_code}" "https://api.telegram.org/bot$token/$Method"
+              $lines = $raw -split "`n"
+              $httpLine = @($lines | Where-Object { $_ -match '^HTTP=' })[-1]
+              $http = ($httpLine -replace '^HTTP=', '')
+              $body = (@($lines | Where-Object { $_ -notmatch '^HTTP=' }) -join "`n").Trim()
+              Write-Host "METHOD=$Method TRY=$i HTTP=$http BODY=$body"
+              if ($http -eq '429') {
+                try { $j = $body | ConvertFrom-Json; $wait = [int]$j.parameters.retry_after + 2 } catch { $wait = 10 }
+                Write-Host "rate limited, waiting $wait sec"
+                Start-Sleep -Seconds $wait
+                continue
+              }
+              if ($http -eq '200') { return ($body | ConvertFrom-Json) }
+              Start-Sleep -Seconds 5
+            }
+            return $null
+          }
+
+          $me = Invoke-Tg 'getMe'
+          if (-not $me -or -not $me.ok) { throw 'Telegram getMe failed' }
+          Write-Host "BOT_OK=True USERNAME=@$($me.result.username) NAME=$($me.result.first_name)"
+
+          $upd = Invoke-Tg 'getUpdates?limit=100'
           if (-not $upd -or -not $upd.ok) { throw 'Telegram getUpdates failed' }
           Write-Host "UPDATES=$($upd.result.Count)"
           if ($upd.result.Count -eq 0) {
             Write-Host 'NO_UPDATES: open the bot in Telegram, press Start, then run this workflow again.'
             exit 0
           }
+
+          $chats = @()
           $upd.result | ForEach-Object {
             $chat = $_.message.chat
-            if ($chat) {
-              Write-Host ("CHAT_ID={0} TYPE={1} NAME={2} USERNAME=@{3} TEXT={4}" -f $chat.id, $chat.type, $chat.first_name, $_.message.from.username, $_.message.text)
+            if ($chat -and -not ($chats | Where-Object { $_.id -eq $chat.id })) {
+              $chats += [pscustomobject]@{ id = $chat.id; type = $chat.type; name = $chat.first_name; username = $_.message.from.username; text = $_.message.text }
             }
+          }
+          $chats | ForEach-Object { Write-Host ("CHAT_ID={0} TYPE={1} NAME={2} USERNAME=@{3} TEXT={4}" -f $_.id, $_.type, $_.name, $_.username, $_.text) }
+
+          $first = $chats | Select-Object -First 1
+          if ($first) {
+            $test = & curl.exe -sS -4 --http1.1 --max-time 30 --data-urlencode "chat_id=$($first.id)" --data-urlencode "text=PromoLov: бот подключён. Сюда будут приходить алерты и ежедневная сводка." "https://api.telegram.org/bot$token/sendMessage"
+            Write-Host "TEST_MESSAGE=$test"
           }
