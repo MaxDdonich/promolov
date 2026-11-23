@@ -1,4 +1,4 @@
-param(
+﻿param(
   [ValidateSet('alert', 'daily')]
   [string]$Mode = 'alert'
 )
