@@ -138,33 +138,57 @@ $promokodStorePages = @(
   'https://promokod.store/promokody/eda-i-napitki?page=2',
   'https://promokod.store/promokody/eda-i-napitki?page=3'
 )
+$storeIndex = 0
 foreach ($u in $promokodStorePages) {
+  $storeIndex++
   $script:Sources += @{
-    name = 'promokod.store'
-    url  = $u
-    kind = 'promokodstore'
+    name  = 'promokod.store · Еда ' + $storeIndex
+    url   = $u
+    kind  = 'promokodstore'
+    group = 'promokod.store'
   }
 }
 
 $script:Sources += @{
-  name = 'promocodex.ru'
-  url  = 'https://promocodex.ru/categories/food/'
-  kind = 'promocodex'
+  name  = 'promocodex.ru · Еда'
+  url   = 'https://promocodex.ru/categories/food/'
+  kind  = 'promocodex'
+  group = 'promocodex.ru'
 }
 $script:Sources += @{
-  name = 'promocodex.ru'
-  url  = 'https://promocodex.ru/categories/restaurants/'
-  kind = 'promocodex'
+  name  = 'promocodex.ru · Рестораны'
+  url   = 'https://promocodex.ru/categories/restaurants/'
+  kind  = 'promocodex'
+  group = 'promocodex.ru'
+}
+
+$okodoPages = @(
+  @{ label = 'Яндекс Еда'; url = 'https://okodo.ru/yandex-eda/' },
+  @{ label = 'Деливери'; url = 'https://okodo.ru/deliveri/' },
+  @{ label = 'Самокат'; url = 'https://okodo.ru/samokat/' },
+  @{ label = 'Яндекс Лавка'; url = 'https://okodo.ru/yandex-lavka/' },
+  @{ label = 'Перекрёсток'; url = 'https://okodo.ru/perekrestok/' },
+  @{ label = 'Магнит'; url = 'https://okodo.ru/magnit/' }
+)
+foreach ($page in $okodoPages) {
+  $script:Sources += @{
+    name  = 'okodo.ru · ' + $page.label
+    url   = $page.url
+    kind  = 'okodo'
+    group = 'okodo.ru'
+  }
+}
+
+$script:Sources += @{
+  name  = 'okodo.ru · Все коды'
+  url   = 'https://okodo.ru/'
+  kind  = 'okodo'
+  group = 'okodo.ru'
 }
 $script:Sources += @{
-  name = 'okodo.ru'
-  url  = 'https://okodo.ru/'
-  kind = 'okodo'
-}
-$script:Sources += @{
-  name = 'promokodikov.ru'
-  url  = 'https://promokodikov.ru/category/dostavka-edy/'
-  kind = 'promokodikov'
+  name  = 'promokodikov.ru'
+  url   = 'https://promokodikov.ru/category/dostavka-edy/'
+  kind  = 'promokodikov'
 }
 $script:Sources += @{
   name = 'pickpoint.ru'
@@ -214,10 +238,23 @@ function Write-Log {
 
 function Get-Html {
   param([string]$Url)
-  $response = Invoke-WebRequest -Uri $Url -UseBasicParsing -Headers $script:Headers -TimeoutSec 40
-  $bytes = $response.RawContentStream.ToArray()
-  if ($bytes.Length -eq 0) { return [string]$response.Content }
-  return [Text.Encoding]::UTF8.GetString($bytes)
+  try {
+    $response = Invoke-WebRequest -Uri $Url -UseBasicParsing -Headers $script:Headers -TimeoutSec 40
+    $bytes = $response.RawContentStream.ToArray()
+    if ($bytes.Length -eq 0) { return [string]$response.Content }
+    return [Text.Encoding]::UTF8.GetString($bytes)
+  }
+  catch {
+    $tmp = Join-Path $env:TEMP ('html-' + [guid]::NewGuid().ToString('N') + '.html')
+    try {
+      $status = & curl.exe -s -L --compressed --max-time 40 -A $script:UA -H 'Accept-Language: ru-RU,ru;q=0.9' $Url -o $tmp -w '%{http_code}'
+      if ($status -ne '200') { throw }
+      return [IO.File]::ReadAllText($tmp, [Text.Encoding]::UTF8)
+    }
+    finally {
+      Remove-Item $tmp -ErrorAction SilentlyContinue
+    }
+  }
 }
 
 function Convert-HtmlToText {
@@ -1641,6 +1678,20 @@ function Get-TelegramCodes {
   $url = 'https://t.me/s/' + $Channel
   $file = Join-Path $env:TEMP ('telegram-' + [guid]::NewGuid().ToString('N') + '.html')
 
+  $channelMap = @{
+    'promokod_yandex_eda' = 'Яндекс Еда'
+    'promokod_kfc'        = 'KFC'
+    'promokod_magnit'     = 'Магнит'
+    'promokod_rostics'    = "Rostic's"
+    'promokod_perekrestok' = 'Перекрёсток'
+    'promokod_eda'        = ''
+    'promokody_skidki'    = ''
+    'promokody'           = ''
+  }
+  $channelService = $channelMap[$Channel]
+  if (-not $channelService) { $channelService = Get-PromoService -Text $Channel }
+  $genericChannel = [string]::IsNullOrWhiteSpace($channelMap[$Channel])
+
   try {
     $status = & curl.exe -s -L --compressed --max-time 30 -A $script:UA -H 'Accept-Language: ru-RU,ru;q=0.9' $url -o $file -w '%{http_code}'
     if ($status -ne '200') { return $items }
@@ -1651,7 +1702,6 @@ function Get-TelegramCodes {
   }
 
   $parts = [regex]::Split($html, '<div class="tgme_widget_message_wrap')
-  $channelService = Get-PromoService -Text $Channel
 
   for ($i = 1; $i -lt $parts.Count; $i++) {
     $chunk = $parts[$i]
@@ -1667,7 +1717,7 @@ function Get-TelegramCodes {
 
     $full = $text + ' ' + $channelService
     if (-not (Test-RubPrice $full)) { continue }
-    if (-not (Test-Food $full)) { continue }
+    if ($text -match '(?i)эльдорадо|мвидео|литрес|еаптек|аптек|косметик|иригатор|кондиционер|смартфон|ноутбук|телевизор|пылесос|наушник|ситимобил|такси') { continue }
 
     $info = Get-DiscountFromTitle $text
     if ($null -eq $info) { $info = Get-DiscountInfo -Discount '' -Text $full }
@@ -1682,20 +1732,35 @@ function Get-TelegramCodes {
     $candidates = @()
     foreach ($m in [regex]::Matches($text, '\b[A-ZА-Я0-9][A-ZА-Я0-9_-]{3,20}\b')) {
       $candidate = $m.Value
-      if ($candidate -match '^(ПРОМОКОД|ПРОМОКОДЫ|СКИДКА|БЕСПЛАТНО|ЗАКАЗ|ДОСТАВКА|НОВЫЙ|ПЕРВЫЙ|ТОЛЬКО|СЕГОДНЯ|ЯНДЕКС|САМОКАТ|КУПЕР|ВКУСВИЛЛ|МАГНИТ|ПЕРЕКРЕСТОК|ПЯТЕРОЧКА|ДОДО|КФС|РОСТИКС|PROMOKOD|PROMOCODE|TELEGRAM|HTTP|HTTPS|HTML|RUSSIA|MOSCOW|NULL|TRUE|FALSE)$') { continue }
-      if ($candidate -notmatch '\d' -and $candidate -notmatch '-' -and $candidate.Length -lt 6) { continue }
+      if ($candidate -match '^(ПРОМОКОД|ПРОМОКОДЫ|СКИДКА|БЕСПЛАТНО|ЗАКАЗ|ДОСТАВКА|НОВЫЙ|ПЕРВЫЙ|ТОЛЬКО|СЕГОДНЯ|ЯНДЕКС|САМОКАТ|КУПЕР|ВКУСВИЛЛ|МАГНИТ|ПЕРЕКРЕСТОК|ПЯТЕРОЧКА|ДОДО|КФС|РОСТИКС|PROMOKOD|PROMOCODE|TELEGRAM|HTTP|HTTPS|HTML|RUSSIA|MOSCOW|NULL|TRUE|FALSE|OZON|KFC|DIXY|METRO)$') { continue }
+      if ($candidate -notmatch '[A-Za-zА-Яа-я]' -or $candidate -notmatch '\d') { continue }
+      if ($candidate.Length -lt 4) { continue }
       $pos = $text.IndexOf($candidate)
-      $around = $text.Substring([Math]::Max(0, $pos - 70), [Math]::Min(160, $text.Length - [Math]::Max(0, $pos - 70)))
-      if ($around -notmatch '(?i)промокод|по\s+коду|\bкод\b') { continue }
+      $around = $text.Substring([Math]::Max(0, $pos - 80), [Math]::Min(180, $text.Length - [Math]::Max(0, $pos - 80)))
+      if ($around -notmatch '(?i)промокод') { continue }
       if (-not ($candidates -contains $candidate)) { $candidates += $candidate }
-      if ($candidates.Count -ge 3) { break }
+      if ($candidates.Count -ge 4) { break }
     }
 
     foreach ($code in $candidates) {
+      $service = Get-PromoService -Text $text
+      if ($service -eq 'Доставка еды' -and $channelService) {
+        $brandPattern = @{
+          'promokod_yandex_eda' = '(?i)яндекс'
+          'promokod_kfc'        = '(?i)kfc|кфс'
+          'promokod_magnit'     = '(?i)магнит'
+          'promokod_rostics'    = '(?i)rostic|ростикс'
+          'promokod_perekrestok' = '(?i)перекр'
+        }
+        $bp = $brandPattern[$Channel]
+        if ($bp -and $text -match $bp) { $service = $channelService }
+      }
+      if ($service -notmatch '(?i)яндекс|самокат|купер|вкусвилл|вкусмил|перекр|магнит|пят|дикси|ашан|лента|глобус|метро|ozon fresh|додо|domino|sushiwok|sushi|тануки|якитория|rostic|kfc|burger|вкусно|ёбидоёби|elementaree|just food|grow food|level kitchen|let''s food|chef mike|2 берега|азбука|утконос|окей|деливери|сибаристика|foodband|priem|befit|korston|vipfish|my food') { continue }
+      if (-not (Test-Food ($full + ' ' + $service))) { continue }
+      if ($genericChannel -and $service -eq 'Доставка еды') { continue }
+
       $title = $text
       if ($title.Length -gt 140) { $title = $title.Substring(0, 137) + '...' }
-      $service = Get-PromoService -Text $full
-      if ($service -eq 'Доставка еды' -and $channelService) { $service = $channelService }
 
       $minOrder = Get-MinOrder $full
       $existing = Get-ExistingUsers $full
@@ -1731,8 +1796,10 @@ if (-not $Force -and (Test-Path $OutFile)) {
 }
 
 $collected = @()
+$healthRun = @{}
 
 foreach ($source in $script:Sources) {
+  if ($source.kind -eq 'telegram' -and $env:PROMOLOV_SKIP_TELEGRAM -eq '1') { continue }
   try {
     Write-Log ('Fetching ' + $source.name + ' ...')
     $html = ''
@@ -1782,9 +1849,17 @@ foreach ($source in $script:Sources) {
       $found = @(Get-EcosumCodes -Html $html -Url $source.url -SourceName $source.name)
     }
     Write-Log ('  ' + $found.Count + ' codes from ' + $source.name)
+    if (-not $healthRun.ContainsKey($source.name)) {
+      $healthRun[$source.name] = @{ count = 0; error = $null }
+    }
+    $healthRun[$source.name].count += $found.Count
     $collected += $found
   }
   catch {
+    if (-not $healthRun.ContainsKey($source.name)) {
+      $healthRun[$source.name] = @{ count = 0; error = $null }
+    }
+    $healthRun[$source.name].error = $_.Exception.Message
     Write-Log ('  ' + $source.name + ' failed: ' + $_.Exception.Message)
   }
 }
@@ -1796,18 +1871,174 @@ if ($collected.Count -eq 0) {
 
 $unique = @{}
 $junkCode = '^(admitad|promokodex|promokod|promocode|promo|test|none|null)$'
+$groups = @{}
+$codeEvidence = @{}
 foreach ($item in $collected) {
   if ($item.code -match $junkCode) { continue }
-  $key = ($item.code + '|' + $item.service).ToUpper()
-  if (-not $unique.ContainsKey($key)) {
-    $unique[$key] = $item
+  $item['code'] = ([string]$item.code).Trim().ToUpper()
+  $item['service'] = Resolve-Service ([string]$item.service)
+  $key = $item.code
+  if (-not $groups.ContainsKey($key)) { $groups[$key] = @() }
+  $groups[$key] += $item
+  if (-not $codeEvidence.ContainsKey($item.code)) { $codeEvidence[$item.code] = @() }
+  $codeEvidence[$item.code] += $item
+}
+
+$now = Get-Date
+$nowIso = $now.ToString('o')
+$stateFile = Join-Path $scriptRoot 'data\state.json'
+$healthFile = Join-Path $scriptRoot 'data\source-health.json'
+$stateCodes = @{}
+if (Test-Path $stateFile) {
+  try {
+    $stateRaw = Get-Content -Raw -Encoding UTF8 $stateFile | ConvertFrom-Json
+    foreach ($prop in $stateRaw.codes.PSObject.Properties) {
+      $stateCodes[$prop.Name] = $prop.Value
+    }
+  } catch { }
+}
+
+$sourceWeights = @{
+  'promokod.com' = 0.9; 'promokod.pikabu.ru' = 0.9; 'promokodex.ru' = 0.85;
+  'promokodi.komukupon.ru' = 0.8; 'promokod.site' = 0.9; 'kp.ru' = 0.9; 'ecosum.ru' = 0.85;
+  'promokod.store' = 0.82; 'promocodex.ru' = 0.75; 'okodo.ru' = 0.8;
+  'pickpoint.ru' = 0.75; 'fooody.ru' = 0.75; 'promokodikov.ru' = 0.65
+}
+$sourceGroups = @{}
+foreach ($s in $script:Sources) {
+  if ($s.group) { $sourceGroups[$s.name] = $s.group }
+  elseif (-not $sourceGroups.ContainsKey($s.name)) { $sourceGroups[$s.name] = $s.name }
+}
+
+$final = @()
+foreach ($key in $groups.Keys) {
+  $list = @($groups[$key])
+  if ($list.Count -eq 0) { continue }
+
+  $best = @($list | Sort-Object -Property @(
+    @{ Expression = { $_.works }; Descending = $true },
+    @{ Expression = { $_.value }; Descending = $true }
+  )) | Select-Object -First 1
+
+  $serviceWeights = @{}
+  foreach ($it in $list) {
+    $w = 0.6
+    $g = $sourceGroups[$it.sourceName]
+    if ($g -and $sourceWeights.ContainsKey($g)) { $w = $sourceWeights[$g] }
+    elseif ($sourceWeights.ContainsKey($it.sourceName)) { $w = $sourceWeights[$it.sourceName] }
+    if (-not $serviceWeights.ContainsKey($it.service)) { $serviceWeights[$it.service] = 0 }
+    $serviceWeights[$it.service] += $w
   }
-  elseif ($unique[$key].works -lt $item.works) {
-    $unique[$key] = $item
+  $bestService = $null
+  if ($serviceWeights.Count -gt 0) {
+    $bestService = ($serviceWeights.GetEnumerator() | Sort-Object Value -Descending | Select-Object -First 1).Key
+  }
+  if ($bestService) {
+    $preferred = @($list | Where-Object { $_.service -eq $bestService })
+    if ($preferred.Count -gt 0) {
+      $best = @($preferred | Sort-Object -Property @(
+        @{ Expression = { $_.works }; Descending = $true },
+        @{ Expression = { $_.value }; Descending = $true }
+      )) | Select-Object -First 1
+    }
+  }
+
+  $evidenceSources = @($list | ForEach-Object { $_.sourceName } | Where-Object { $_ } | Select-Object -Unique)
+  $codeItems = @($codeEvidence[$best.code])
+  if ($codeItems.Count -eq 0) { $codeItems = $list }
+  $codeSources = @($codeItems | ForEach-Object { $_.sourceName } | Where-Object { $_ } | Select-Object -Unique)
+  if ($codeSources.Count -gt 0) { $evidenceSources = @($codeSources) }
+  $groupsList = @($evidenceSources | ForEach-Object { $sourceGroups[$_] } | Where-Object { $_ } | Select-Object -Unique)
+  $sourceCount = [Math]::Max(1, $groupsList.Count)
+
+  $weights = @($evidenceSources | ForEach-Object {
+    $w = 0.6
+    $g = $sourceGroups[$_]
+    if ($g -and $sourceWeights.ContainsKey($g)) { $w = $sourceWeights[$g] }
+    elseif ($sourceWeights.ContainsKey($_)) { $w = $sourceWeights[$_] }
+    $w
+  })
+  $avgWeight = 0.6
+  if ($weights.Count -gt 0) { $avgWeight = ($weights | Measure-Object -Average).Average }
+
+  $works = 0
+  $workValues = @($codeItems | ForEach-Object { [int]$_.works })
+  if ($workValues.Count -gt 0) { $works = ($workValues | Measure-Object -Maximum).Maximum }
+
+  $prev = $stateCodes[$key]
+  $seenRuns = 1
+  $firstSeen = $nowIso
+  if ($prev) {
+    $recent = $false
+    if ($prev.lastSeen) {
+      try {
+        $lastSeenDate = [datetime]::Parse([string]$prev.lastSeen, [Globalization.CultureInfo]::InvariantCulture)
+        if (($now - $lastSeenDate).TotalHours -le 6) { $recent = $true }
+      } catch { }
+    }
+    if ($recent) {
+      $seenRuns = [int]$prev.seenRuns + 1
+      if ($prev.firstSeen) { $firstSeen = [string]$prev.firstSeen }
+    }
+  }
+
+  $confidence = 18 * $sourceCount + 25 * $avgWeight
+  if ($seenRuns -ge 3) { $confidence += 15 } elseif ($seenRuns -eq 2) { $confidence += 8 } else { $confidence += 5 }
+  if ($works -gt 0) { $confidence += [Math]::Min(9, 3 * [Math]::Log10($works + 1)) }
+  $expires = $best.expiresInDays
+  if ($null -ne $expires -and [int]$expires -gt 7) { $confidence += 10 }
+  elseif ($null -ne $expires) { $confidence += 4 }
+  else { $confidence += 6 }
+  $confidence = [int][Math]::Min(100, [Math]::Round($confidence))
+
+  $verification = 'single'
+  if ($sourceCount -ge 2 -and $avgWeight -ge 0.6) { $verification = 'confirmed' }
+  elseif ($sourceCount -eq 1 -and $avgWeight -ge 0.8) { $verification = 'likely' }
+  elseif ($sourceCount -eq 1 -and $avgWeight -ge 0.7 -and $seenRuns -ge 2) { $verification = 'likely' }
+  if ($null -ne $expires -and [int]$expires -lt 0) { $verification = 'expired' }
+
+  $evidenceMap = @{}
+  foreach ($it in $codeItems) {
+    if (-not $it.sourceName) { continue }
+    $ev = [ordered]@{ source = $it.sourceName; url = $it.sourceUrl; works = [int]$it.works }
+    if (-not $evidenceMap.ContainsKey($it.sourceName)) {
+      $evidenceMap[$it.sourceName] = $ev
+    }
+    elseif ($evidenceMap[$it.sourceName].works -lt $ev.works) {
+      $evidenceMap[$it.sourceName] = $ev
+    }
+  }
+
+  $best['confidence'] = $confidence
+  $best['verification'] = $verification
+  $best['sourceCount'] = $sourceCount
+  $best['evidence'] = @($evidenceMap.Values)
+  $best['alsoServices'] = @($list | ForEach-Object { $_.service } | Where-Object { $_ -and $_ -ne $best.service } | Select-Object -Unique)
+  $best['firstSeenAt'] = $firstSeen
+  $best['lastSeenAt'] = $nowIso
+  $best['seenRuns'] = $seenRuns
+
+  $final += $best
+  $stateCodes[$key] = [ordered]@{
+    firstSeen = $firstSeen
+    lastSeen  = $nowIso
+    seenRuns  = $seenRuns
+    sources   = $evidenceSources
   }
 }
 
-$final = @($unique.Values | Sort-Object -Property @(
+# Prune old state entries (older than 45 days) so the file does not grow forever.
+$cutoff = $now.AddDays(-45)
+foreach ($key in @($stateCodes.Keys)) {
+  try {
+    $last = [datetime]::Parse([string]$stateCodes[$key].lastSeen, [Globalization.CultureInfo]::InvariantCulture)
+    if ($last -lt $cutoff) { $stateCodes.Remove($key) }
+  } catch { }
+}
+
+$final = @($final | Sort-Object -Property @(
+  @{ Expression = { if ($_.verification -eq 'confirmed') { 0 } elseif ($_.verification -eq 'likely') { 1 } elseif ($_.verification -eq 'single') { 2 } else { 3 } } },
+  @{ Expression = { $_.confidence }; Descending = $true },
   @{ Expression = { $_.existingUsers }; Descending = $true },
   @{ Expression = { $_.value }; Descending = $true },
   @{ Expression = { $_.code }; Descending = $false }
@@ -1818,10 +2049,76 @@ if (-not (Test-Path $directory)) {
   New-Item -ItemType Directory -Path $directory -Force | Out-Null
 }
 
+$confirmed = @($final | Where-Object { $_.verification -eq 'confirmed' }).Count
+$likely = @($final | Where-Object { $_.verification -eq 'likely' }).Count
+$single = @($final | Where-Object { $_.verification -eq 'single' }).Count
+$expired = @($final | Where-Object { $_.verification -eq 'expired' }).Count
+$serviceCount = @($final | ForEach-Object { $_.service } | Select-Object -Unique).Count
+
+$healthPrevious = @{}
+if (Test-Path $healthFile) {
+  try {
+    $healthRaw = Get-Content -Raw -Encoding UTF8 $healthFile | ConvertFrom-Json
+    foreach ($prop in $healthRaw.sources.PSObject.Properties) {
+      $healthPrevious[$prop.Name] = $prop.Value
+    }
+  } catch { }
+}
+$health = [ordered]@{}
+foreach ($name in ($script:Sources | ForEach-Object { $_.name } | Select-Object -Unique)) {
+  $cur = $healthRun[$name]
+  if (-not $cur) { $cur = @{ count = 0; error = 'not run' } }
+  $prev = $healthPrevious[$name]
+  $runs = 1
+  $totalCodes = [int]$cur.count
+  if ($prev) {
+    $runs = [int]$prev.totalRuns + 1
+    $totalCodes = [int]$prev.totalCodes + [int]$cur.count
+  }
+  $status = 'ok'
+  if ($cur.error) { $status = 'error' }
+  elseif ([int]$cur.count -eq 0) { $status = 'empty' }
+  $health[$name] = [ordered]@{
+    lastRun      = $nowIso
+    lastCount    = [int]$cur.count
+    lastError    = $cur.error
+    totalRuns    = $runs
+    totalCodes   = $totalCodes
+    averageCount = [math]::Round($totalCodes / $runs, 1)
+    status       = $status
+  }
+}
+
+if ($final.Count -lt 10) {
+  Write-Log ('Only ' + $final.Count + ' codes collected; keeping the previous feed.')
+  exit 1
+}
+
+$statePayload = [ordered]@{
+  updatedAt = $nowIso
+  codes     = $stateCodes
+}
+[IO.File]::WriteAllText($stateFile, ($statePayload | ConvertTo-Json -Depth 8), (New-Object Text.UTF8Encoding($false)))
+
+$healthPayload = [ordered]@{
+  updatedAt = $nowIso
+  sources   = $health
+}
+[IO.File]::WriteAllText($healthFile, ($healthPayload | ConvertTo-Json -Depth 6), (New-Object Text.UTF8Encoding($false)))
+
 $payload = [ordered]@{
-  updatedAt = (Get-Date).ToString('yyyy-MM-ddTHH:mm:ssK')
-  generator = 'PromoLov collector'
-  sources   = @($script:Sources | ForEach-Object { [ordered]@{ name = $_.name; url = $_.url } })
+  updatedAt = $nowIso
+  generator = 'PromoLov collector v2'
+  stats     = [ordered]@{
+    total     = $final.Count
+    confirmed = $confirmed
+    likely    = $likely
+    single    = $single
+    expired   = $expired
+    services  = $serviceCount
+    sources   = @($script:Sources | ForEach-Object { $_.name } | Select-Object -Unique).Count
+  }
+  sources   = @($script:Sources | ForEach-Object { [ordered]@{ name = $_.name; url = $_.url; kind = $_.kind; group = $_.group } })
   codes     = $final
 }
 
@@ -1831,3 +2128,4 @@ $tempFile = $OutFile + '.tmp'
 Move-Item -LiteralPath $tempFile -Destination $OutFile -Force
 
 Write-Log ('Saved ' + $final.Count + ' unique codes to ' + $OutFile)
+Write-Log ('Confirmed: ' + $confirmed + ', likely: ' + $likely + ', single: ' + $single + ', services: ' + $serviceCount)

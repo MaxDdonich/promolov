@@ -40,7 +40,27 @@
     'Just Food': { color: '#6BBF59', mark: 'J', site: 'https://justfood.ru' },
     'Elementaree': { color: '#8BC34A', mark: 'E', site: 'https://elementaree.ru' },
     '2 Берега': { color: '#1F8A70', mark: '2', site: 'https://2berega.ru' },
-    'Азбука Вкуса': { color: '#2E6BE6', mark: 'А', site: 'https://av.ru' }
+    'Азбука Вкуса': { color: '#2E6BE6', mark: 'А', site: 'https://av.ru' },
+    'Деливери': { color: '#FF4D00', mark: 'Д', site: 'https://delivery-club.ru' },
+    'Яндекс Лавка': { color: '#FC3F1D', mark: 'Л', site: 'https://lavka.yandex.ru' },
+    'Лента': { color: '#E4002B', mark: 'Л', site: 'https://lenta.com' },
+    'Глобус': { color: '#E30613', mark: 'Г', site: 'https://globus.ru' },
+    'Метро': { color: '#003D7C', mark: 'М', site: 'https://metro-cc.ru' },
+    'KFC': { color: '#E4002B', mark: 'K', site: 'https://kfc.ru' },
+    'Burger King': { color: '#D62300', mark: 'B', site: 'https://burgerking.ru' },
+    'Вкусно — и точка': { color: '#FF7A00', mark: 'В', site: 'https://vkusnoitochka.ru' },
+    'Sushi Master': { color: '#D62828', mark: 'S', site: 'https://sushimaster.ru' },
+    'Тануки': { color: '#1F8A70', mark: 'Т', site: 'https://tanuki.ru' },
+    'Якитория': { color: '#C1121F', mark: 'Я', site: 'https://yakitoria.ru' },
+    'Grow Food': { color: '#6BBF59', mark: 'G', site: 'https://growfood.ru' },
+    'Level Kitchen': { color: '#2A9D8F', mark: 'L', site: 'https://levelkitchen.ru' },
+    "Let's Food": { color: '#8BC34A', mark: 'L', site: 'https://letsfood.ru' },
+    'Chef Mike': { color: '#4F772D', mark: 'C', site: 'https://chefmike.ru' },
+    'My Food': { color: '#588157', mark: 'M', site: 'https://myfood.ru' },
+    'BeFit': { color: '#00A896', mark: 'B', site: 'https://befit.ru' },
+    'Priem.menu': { color: '#F4A261', mark: 'P', site: 'https://priem.menu' },
+    'FoodBand': { color: '#E76F51', mark: 'F', site: 'https://foodband.ru' },
+    'Сибаристика': { color: '#6D597A', mark: 'С', site: 'https://sibaristica.ru' }
   };
 
   const serviceOf = (name) => SERVICES[name] || {
@@ -59,7 +79,7 @@
     paused: false,
     orderSum: 1500,
     feedUrl: '',
-    onlyWorking: true,
+    onlyWorking: false,
     load() {
       try {
         const raw = localStorage.getItem(LS_KEY);
@@ -72,7 +92,7 @@
         this.paused = !!data.paused;
         this.orderSum = Number.isFinite(data.orderSum) ? data.orderSum : 1500;
         this.feedUrl = typeof data.feedUrl === 'string' ? data.feedUrl : '';
-        this.onlyWorking = data.onlyWorking !== false;
+        this.onlyWorking = data.onlyWorking === true;
       } catch (err) {
         /* localStorage может быть недоступен на file:// — работаем в памяти */
       }
@@ -106,10 +126,16 @@
         expiresAt = now + safe * DAY;
       }
     }
+    const lastSeen = raw.lastSeenAt ? Date.parse(raw.lastSeenAt) : NaN;
+    const firstSeen = raw.firstSeenAt ? Date.parse(raw.firstSeenAt) : NaN;
     return {
       ...raw,
-      verifiedAt: now - (raw.verifiedDaysAgo != null ? raw.verifiedDaysAgo : 2) * DAY,
-      addedAt: now - (raw.addedDaysAgo != null ? raw.addedDaysAgo : 2) * DAY,
+      verifiedAt: Number.isFinite(lastSeen)
+        ? lastSeen
+        : (raw.fromFeed ? null : now - (raw.verifiedDaysAgo != null ? raw.verifiedDaysAgo : 2) * DAY),
+      addedAt: Number.isFinite(firstSeen)
+        ? firstSeen
+        : (raw.fromFeed ? now : now - (raw.addedDaysAgo != null ? raw.addedDaysAgo : 2) * DAY),
       expiresAt: expiresAt,
       isNew: false
     };
@@ -134,6 +160,7 @@
 
   const COLLECTIONS = [
     { id: 'all', label: 'Все коды', icon: '✦' },
+    { id: 'confirmed', label: 'Только подтверждённые', icon: '✓' },
     { id: 'moscow', label: 'Москва', icon: '⌂' },
     { id: 'city', label: 'Только в городах', icon: '⌖' },
     { id: 'returning', label: 'Уже пользовался сервисом', icon: '↻' },
@@ -192,6 +219,7 @@
   }
 
   function verifiedLabel(ts) {
+    if (!ts) return 'не проверялся';
     const hours = (Date.now() - ts) / HOUR;
     if (hours < 1) return 'только что';
     if (hours < 24) return 'сегодня';
@@ -219,6 +247,15 @@
     if (code.expiresAt && code.expiresAt < Date.now()) {
       return { id: 'expired', label: 'Истёк', tone: 'bad' };
     }
+    if (code.verification === 'confirmed') {
+      return { id: 'confirmed', label: 'Подтверждён', tone: 'good' };
+    }
+    if (code.verification === 'likely') {
+      return { id: 'likely', label: 'Вероятно рабочий', tone: 'good' };
+    }
+    if (code.verification === 'single') {
+      return { id: 'single', label: 'Один источник', tone: 'warn' };
+    }
     const { works, fails } = counts(code);
     const total = works + fails;
     if (total >= 5) {
@@ -227,7 +264,7 @@
       if (rate < 0.7) return { id: 'shaky', label: 'Спорный', tone: 'warn' };
       return { id: 'working', label: 'Рабочий', tone: 'good' };
     }
-    if (code.fromFeed) return { id: 'fresh', label: 'Свежий из источника', tone: 'good' };
+    if (code.fromFeed) return { id: 'fresh', label: 'Не проверен', tone: 'warn' };
     return { id: 'demo', label: 'Демо-пример', tone: 'dim' };
   }
 
@@ -238,8 +275,7 @@
   function workingMatch(code) {
     if (!ui.onlyWorking) return true;
     if (code.fromFeed) {
-      const status = statusOf(code);
-      return status.id === 'working' || status.id === 'fresh';
+      return code.verification === 'confirmed' || code.verification === 'likely';
     }
     if (feedExists()) return false;
     return statusOf(code).id === 'working';
@@ -281,8 +317,10 @@
     const save = savings(code, ref);
     const roi = save.total / ref;
     const { works, fails } = counts(code);
-    const reliability = (works + 6) / (works + fails + 12);
-    const ageDays = Math.max(0, (Date.now() - code.verifiedAt) / DAY);
+    const reliability = code.confidence
+      ? clamp(code.confidence / 100, 0, 1)
+      : (works + 6) / (works + fails + 12);
+    const ageDays = code.verifiedAt ? Math.max(0, (Date.now() - code.verifiedAt) / DAY) : 30;
     const freshness = Math.exp(-ageDays / 16);
 
     let urgency = 0.55;
@@ -488,6 +526,7 @@
   }
 
   function matchesCollection(code, id) {
+    if (id === 'confirmed') return code.verification === 'confirmed';
     if (id === 'returning') return !!code.existingUsers;
     if (id === 'wholeCart') return !!code.wholeCart;
     if (id === 'feed') return !!code.fromFeed;
@@ -536,7 +575,7 @@
     const totalVotes = works + fails;
     const rate = totalVotes ? Math.round((works / totalVotes) * 100) : 0;
     const status = statusOf(code);
-    const metric = totalVotes ? '✓ ' + rate + '%' : status.label.toLowerCase();
+    const metric = code.sourceCount > 1 ? status.label + ' · ' + code.sourceCount + ' ист.' : status.label;
     const fav = store.fav.has(code.id);
     const tags = [
       code.existingUsers
@@ -545,6 +584,8 @@
     ];
     if (code.wholeCart) tags.push('<span class="tag tag--accent">вся корзина</span>');
     if (code.freeDelivery) tags.push('<span class="tag">доставка 0 ₽</span>');
+    if (code.verification === 'confirmed') tags.push('<span class="tag tag--ok">✓ подтверждён</span>');
+    else if (code.verification === 'single') tags.push('<span class="tag tag--warn">1 источник</span>');
     if (code.cityRestricted && (code.cities || []).length) {
       const cityList = code.cities;
       const cityText = cityList.length > 2
@@ -563,7 +604,7 @@
         '<div class="card__top">' +
           '<div class="brand">' +
             '<span class="brand__mark" aria-hidden="true">' + esc(sv.mark) + '</span>' +
-            '<span class="brand__info"><b>' + esc(code.service) + '</b><span>' + esc(code.sourceNote || 'промокод') + (code.fromFeed ? '' : ' · демо') + '</span></span>' +
+            '<span class="brand__info"><b>' + esc(code.service) + '</b><span>' + esc(code.sourceNote || 'промокод') + (code.sourceCount > 1 ? ' · ' + code.sourceCount + ' ист.' : '') + (code.fromFeed ? '' : ' · демо') + '</span></span>' +
           '</div>' +
           '<button class="fav ' + (fav ? 'is-on' : '') + '" type="button" data-action="fav" data-id="' + esc(code.id) + '" aria-pressed="' + fav + '" aria-label="В избранное" title="В избранное">' + (fav ? '★' : '☆') + '</button>' +
         '</div>' +
@@ -593,7 +634,7 @@
         '</div>' +
 
         '<div class="card__foot">' +
-          '<span>' + metric + ' · ' + (code.fromFeed ? 'найдено ' : 'проверен ') + esc(verifiedLabel(code.verifiedAt)) + '</span>' +
+          '<span>' + esc(metric) + ' · ' + esc(verifiedLabel(code.verifiedAt)) + '</span>' +
           '<button class="link" type="button" data-action="details" data-id="' + esc(code.id) + '">Детали →</button>' +
         '</div>' +
       '</article>';
@@ -935,15 +976,28 @@
     const sourceLink = code.sourceUrl
       ? '<a href="' + esc(code.sourceUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(code.sourceName || 'источник') + '</a>'
       : '';
-    const freshLabel = code.fromFeed ? 'Найдено' : 'Проверен';
+    const freshLabel = 'Последний раз видели';
     const demoNote = code.fromFeed
-      ? 'Проверка подтверждает, что код всё ещё есть в источнике, но не гарантирует срабатывание при оплате. '
+      ? (code.verification === 'confirmed'
+          ? 'Код подтверждён независимыми источниками и/или историей. Это не гарантирует срабатывание в вашей корзине, но риск ниже. '
+          : 'Код найден в источнике, но независимого подтверждения пока нет. Проверьте условия перед заказом. ')
       : 'Это демонстрационный код из встроенной базы, а не действующая акция. ';
+    const confidence = Number(code.confidence) || 0;
+    const trustValue = totalVotes ? rate : confidence;
+    const trustText = totalVotes ? works + ' / ' + totalVotes : 'индекс доверия ' + confidence + '/100';
+    const evidenceItems = (code.evidence || []).map((ev) => {
+      const label = esc(ev.source || 'источник');
+      const link = ev.url ? '<a href="' + esc(ev.url) + '" target="_blank" rel="noopener noreferrer">' + label + '</a>' : label;
+      return '<li>' + link + (ev.works ? ' · ' + Number(ev.works).toLocaleString('ru-RU') + ' копирований' : '') + '</li>';
+    }).join('');
+    const also = (code.alsoServices || []).length
+      ? '<div class="m-fact m-fact--wide"><span>Также подходит</span><b>' + esc(code.alsoServices.join(', ')) + '</b></div>'
+      : '';
 
     $('#modalBody').innerHTML = '' +
       '<div class="m-head">' +
         '<span class="brand__mark" style="--brand:' + sv.color + '" aria-hidden="true">' + esc(sv.mark) + '</span>' +
-        '<div><b id="modalTitle">' + esc(code.service) + '</b><span>' + esc(code.sourceNote || 'промокод') + (code.fromFeed ? '' : ' · демо') + ' · ' + esc(expiryLabelFor(code)) + '</span></div>' +
+        '<div><b id="modalTitle">' + esc(code.service) + '</b><span>' + esc(code.sourceNote || 'промокод') + (code.sourceCount > 1 ? ' · ' + code.sourceCount + ' ист.' : '') + (code.fromFeed ? '' : ' · демо') + ' · ' + esc(expiryLabelFor(code)) + '</span></div>' +
       '</div>' +
 
       '<div class="m-value">' +
@@ -968,6 +1022,8 @@
         '<div class="m-fact"><span>На что действует</span><b class="' + (code.wholeCart ? 'is-good' : '') + '">' + applies + '</b></div>' +
         '<div class="m-fact"><span>Срок</span><b>' + esc(expiryLabelFor(code)) + '</b></div>' +
         '<div class="m-fact"><span>' + freshLabel + '</span><b>' + esc(verifiedLabel(code.verifiedAt)) + '</b></div>' +
+        '<div class="m-fact"><span>Источников</span><b>' + (code.sourceCount || 1) + '</b></div>' +
+        also +
       '</div>' +
 
       '<div class="m-calc">' + calcRows + '</div>' +
@@ -980,9 +1036,9 @@
       '<div class="m-section">' +
         '<h3>Надёжность кода</h3>' +
         '<div class="m-trust">' +
-          '<span>' + (totalVotes ? '✓ ' + rate + '%' : '—') + '</span>' +
-          '<div class="bar"><i style="width:' + (totalVotes ? rate : 0) + '%"></i></div>' +
-          '<span>' + (totalVotes ? works + ' / ' + totalVotes : 'нет отметок') + '</span>' +
+          '<span>' + (totalVotes ? '✓ ' + rate + '%' : confidence + '/100') + '</span>' +
+          '<div class="bar"><i style="width:' + clamp(trustValue, 0, 100) + '%"></i></div>' +
+          '<span>' + trustText + '</span>' +
         '</div>' +
         '<div class="m-vote">' +
           '<button class="btn" type="button" data-action="vote" data-vote="up" data-id="' + esc(code.id) + '">Сработало</button>' +
@@ -991,6 +1047,7 @@
           '<button class="btn" type="button" data-action="fav" data-id="' + esc(code.id) + '">' + (fav ? '★ В избранном' : '☆ В избранное') + '</button>' +
         '</div>' +
       '</div>' +
+      (evidenceItems ? '<div class="m-section"><h3>Источники</h3><ul class="m-list">' + evidenceItems + '</ul></div>' : '') +
 
       '<div class="m-note">' +
         demoNote +
@@ -1082,8 +1139,14 @@
       cityRestricted: cityRestricted,
       conditions: Array.isArray(item.conditions) ? item.conditions.slice(0, 8) : [],
       expiresInDays: item.expiresInDays != null ? Number(item.expiresInDays) : null,
-      verifiedDaysAgo: 0,
-      addedDaysAgo: 0,
+      confidence: Number(item.confidence) || 0,
+      verification: ['confirmed', 'likely', 'single', 'expired'].includes(item.verification) ? item.verification : '',
+      sourceCount: Number(item.sourceCount) || 1,
+      evidence: Array.isArray(item.evidence) ? item.evidence.slice(0, 12) : [],
+      alsoServices: Array.isArray(item.alsoServices) ? item.alsoServices.slice(0, 6) : [],
+      firstSeenAt: item.firstSeenAt || '',
+      lastSeenAt: item.lastSeenAt || '',
+      seenRuns: Number(item.seenRuns) || 0,
       works: Number(item.works) || 0,
       fails: Number(item.fails) || 0,
       sourceId: 'feed',
@@ -1181,7 +1244,8 @@
           host = parsed.hostname;
         }
       } catch (err) { /* ignore */ }
-      hint.textContent = '✓ Фид обновлён: ' + added + ' кодов · ' + host + ' · ' + new Date().toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
+      const confirmedCount = codes.filter((c) => c.verification === 'confirmed').length;
+      hint.textContent = '✓ Фид обновлён: ' + added + ' кодов · ' + confirmedCount + ' подтверждено · ' + host + ' · ' + new Date().toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
       addLog('Фид ' + url + ': получено ' + items.length + ', в базе ' + added, 'new');
       if (!options.silent) toast('Фид подключён', added + ' промокодов в базе');
       renderAll();
