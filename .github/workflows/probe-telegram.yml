@@ -1,0 +1,25 @@
+name: Probe telegram sources
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: windows-latest
+    steps:
+      - name: Download channels
+        shell: pwsh
+        run: |
+          $ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36'
+          $channels = @('promokod_yandex_eda','promokod_kfc','promokod_magnit','promokod_rostics','promokod_perekrestok','promokody_skidki','promokody','promokod_eda')
+          New-Item -ItemType Directory -Force -Path telegram | Out-Null
+          foreach ($c in $channels) {
+            $status = curl.exe -s -L --compressed --max-time 30 -A $ua -H 'Accept-Language: ru-RU,ru;q=0.9' "https://t.me/s/$c" -o "telegram/$c.html" -w '%{http_code}'
+            $size = 0
+            if (Test-Path "telegram/$c.html") { $size = (Get-Item "telegram/$c.html").Length }
+            Write-Host "$c status=$status size=$size"
+          }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: telegram-pages
+          path: telegram

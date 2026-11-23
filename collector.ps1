@@ -133,10 +133,78 @@ foreach ($page in $promokodSitePages) {
   }
 }
 
+$promokodStorePages = @(
+  'https://promokod.store/promokody/eda-i-napitki',
+  'https://promokod.store/promokody/eda-i-napitki?page=2',
+  'https://promokod.store/promokody/eda-i-napitki?page=3'
+)
+foreach ($u in $promokodStorePages) {
+  $script:Sources += @{
+    name = 'promokod.store'
+    url  = $u
+    kind = 'promokodstore'
+  }
+}
+
+$script:Sources += @{
+  name = 'promocodex.ru'
+  url  = 'https://promocodex.ru/categories/food/'
+  kind = 'promocodex'
+}
+$script:Sources += @{
+  name = 'promocodex.ru'
+  url  = 'https://promocodex.ru/categories/restaurants/'
+  kind = 'promocodex'
+}
+$script:Sources += @{
+  name = 'okodo.ru'
+  url  = 'https://okodo.ru/'
+  kind = 'okodo'
+}
+$script:Sources += @{
+  name = 'promokodikov.ru'
+  url  = 'https://promokodikov.ru/category/dostavka-edy/'
+  kind = 'promokodikov'
+}
+$script:Sources += @{
+  name = 'pickpoint.ru'
+  url  = 'https://pickpoint.ru/promokod/category/dostavka-edi/'
+  kind = 'pickpoint'
+}
+$script:Sources += @{
+  name = 'fooody.ru'
+  url  = 'https://fooody.ru/moskva/promo/'
+  kind = 'fooody'
+}
+
+$telegramChannels = @(
+  @{ channel = 'promokod_yandex_eda'; group = 'tg-common' },
+  @{ channel = 'promokod_kfc'; group = 'tg-common' },
+  @{ channel = 'promokod_magnit'; group = 'tg-common' },
+  @{ channel = 'promokod_rostics'; group = 'tg-rostics' },
+  @{ channel = 'promokod_perekrestok'; group = 'tg-perekrestok' },
+  @{ channel = 'promokody_skidki'; group = 'tg-generic-1' },
+  @{ channel = 'promokody'; group = 'tg-generic-2' },
+  @{ channel = 'promokod_eda'; group = 'tg-generic-3' }
+)
+foreach ($tg in $telegramChannels) {
+  $script:Sources += @{
+    name    = 't.me/' + $tg.channel
+    url     = 'https://t.me/s/' + $tg.channel
+    kind    = 'telegram'
+    channel = $tg.channel
+    group   = $tg.group
+  }
+}
+
 $script:Months = @{
   'января' = 1; 'февраля' = 2; 'марта' = 3; 'апреля' = 4;
   'мая' = 5; 'июня' = 6; 'июля' = 7; 'августа' = 8;
   'сентября' = 9; 'октября' = 10; 'ноября' = 11; 'декабря' = 12
+}
+$script:MonthStems = @{
+  'янв' = 1; 'фев' = 2; 'мар' = 3; 'апр' = 4; 'май' = 5; 'мая' = 5;
+  'июн' = 6; 'июл' = 7; 'авг' = 8; 'сен' = 9; 'окт' = 10; 'ноя' = 11; 'дек' = 12
 }
 
 function Write-Log {
@@ -184,7 +252,10 @@ function Get-ExpiryDays {
   if (-not $Text) { return $null }
   if ($Text -match '(?i)истекает\s+завтра') { return 1 }
   if ($Text -match '(?i)только\s+сегодня') { return 0 }
-  if ($Text -match '(?i)бессрочн') { return $null }
+  if ($Text -match '(?i)бессрочн|без\s+ограничен') { return $null }
+
+  $through = [regex]::Match($Text, '(?i)(?:через|ещё|еще)\s+(\d+)\s*(?:дн|день|дня)')
+  if ($through.Success) { return [int]$through.Groups[1].Value }
 
   $dm = [regex]::Match($Text, '(?i)(?:до|по)\s+(\d{1,2})\.(\d{1,2})(?:\.(\d{4}))?')
   if ($dm.Success) {
@@ -197,16 +268,21 @@ function Get-ExpiryDays {
     } catch { return $null }
   }
 
-  $m = [regex]::Match($Text, '(?i)до\s+(\d{1,2})\s+([а-яё]+)(?:\s+(\d{4}))?')
+  $m = [regex]::Match($Text, '(?i)до\s+(\d{1,2})\s+([а-яё]+)\.?(?:\s+(\d{4}))?')
   if ($m.Success) {
     $monthName = $m.Groups[2].Value.ToLower()
     $month = $script:Months[$monthName]
+    if (-not $month -and $monthName.Length -ge 3) {
+      $month = $script:MonthStems[$monthName.Substring(0, 3)]
+    }
     if ($month) {
       $year = (Get-Date).Year
       if ($m.Groups[3].Success) { $year = [int]$m.Groups[3].Value }
-      $date = Get-Date -Year $year -Month $month -Day ([int]$m.Groups[1].Value) -Hour 23 -Minute 59
-      if (-not $m.Groups[3].Success -and $date.Date -lt (Get-Date).Date) { return -1 }
-      return [int][math]::Ceiling(($date - (Get-Date)).TotalDays)
+      try {
+        $date = Get-Date -Year $year -Month $month -Day ([int]$m.Groups[1].Value) -Hour 23 -Minute 59
+        if (-not $m.Groups[3].Success -and $date.Date -lt (Get-Date).Date) { return -1 }
+        return [int][math]::Ceiling(($date - (Get-Date)).TotalDays)
+      } catch { return $null }
     }
   }
   return $null
@@ -434,6 +510,109 @@ function Resolve-Service {
     '^Яндекс' { return 'Яндекс Еда' }
   }
   return $n
+}
+
+function Resolve-ServiceFromText {
+  param([string]$Text)
+  if (-not $Text) { return '' }
+  $t = $Text.ToLower().Replace('ё', 'е')
+  $map = @(
+    @('яндекс лавка', 'Яндекс Лавка'), @('yandex lavka', 'Яндекс Лавка'),
+    @('яндекс еда', 'Яндекс Еда'), @('yandex eda', 'Яндекс Еда'),
+    @('самокат', 'Самокат'), @('samokat', 'Самокат'),
+    @('купер', 'Купер'), @('kuper', 'Купер'), @('сбермаркет', 'Купер'),
+    @('вкусвилл', 'ВкусВилл'), @('vkusvill', 'ВкусВилл'),
+    @('вкусмил', 'ВкусМил'), @('vkusmil', 'ВкусМил'),
+    @('перекресток', 'Перекрёсток'), @('perekrestok', 'Перекрёсток'),
+    @('магнит', 'Магнит'), @('magnit', 'Магнит'),
+    @('пятерочка', 'Пятёрочка'), @('pyaterochka', 'Пятёрочка'), @('5ka', 'Пятёрочка'),
+    @('дикси', 'Дикси'), @('dixy', 'Дикси'),
+    @('ашан', 'Ашан'), @('auchan', 'Ашан'),
+    @('лента', 'Лента'), @('lenta', 'Лента'),
+    @('глобус', 'Глобус'), @('globus', 'Глобус'),
+    @('метро', 'Метро'), @('metro', 'Метро'),
+    @('ozon fresh', 'Ozon Fresh'), @('озон фреш', 'Ozon Fresh'),
+    @('додо', 'Додо Пицца'), @('dodo', 'Додо Пицца'),
+    @('domino', "Domino's Pizza"), @('домино', "Domino's Pizza"),
+    @('pizzasushiwok', 'Sushiwok'), @('sushiwok', 'Sushiwok'), @('суши вок', 'Sushiwok'),
+    @('sushi master', 'Sushi Master'), @('суши мастер', 'Sushi Master'),
+    @('тануки', 'Тануки'), @('tanuki', 'Тануки'),
+    @('якитория', 'Якитория'), @('yakitoria', 'Якитория'),
+    @('rostic', "Rostic's"), @('ростикс', "Rostic's"),
+    @('kfc', 'KFC'), @('кфс', 'KFC'),
+    @('burger king', 'Burger King'), @('бургер кинг', 'Burger King'),
+    @('вкусно и точка', 'Вкусно — и точка'), @('вкусно — и точка', 'Вкусно — и точка'),
+    @('ебидоеби', 'ЁбиДоёби'), @('yobidoyobi', 'ЁбиДоёби'),
+    @('elementaree', 'Elementaree'), @('элементари', 'Elementaree'),
+    @('just food', 'Just Food'), @('justfood', 'Just Food'),
+    @('grow food', 'Grow Food'), @('growfood', 'Grow Food'),
+    @('level kitchen', 'Level Kitchen'), @('levelkitchen', 'Level Kitchen'),
+    @("let's food", "Let's Food"), @('letsfood', "Let's Food"),
+    @('chef mike', 'Chef Mike'), @('chefmike', 'Chef Mike'),
+    @('2 берега', '2 Берега'), @('2berega', '2 Берега'),
+    @('азбука вкуса', 'Азбука Вкуса'), @('av.ru', 'Азбука Вкуса'),
+    @('утконос', 'Утконос'), @('utkonos', 'Утконос'),
+    @('окей', 'Окей'), @('okey', 'Окей'),
+    @('деливери', 'Деливери'), @('delivery', 'Деливери'),
+    @('сибаристика', 'Сибаристика'), @('sibaristica', 'Сибаристика'),
+    @('foodband', 'FoodBand'), @('фудбенд', 'FoodBand'),
+    @('priem.menu', 'Priem.menu'), @('прием', 'Priem.menu'),
+    @('befit', 'BeFit'), @('be fit', 'BeFit'),
+    @('korston', 'Korston'), @('vipfish', 'Vipfish'),
+    @('my food', 'My Food'), @('myfood', 'My Food')
+  )
+  foreach ($pair in $map) {
+    if ($t.Contains($pair[0])) { return $pair[1] }
+  }
+  return ''
+}
+
+function Resolve-ServiceSlug {
+  param([string]$Slug)
+  $s = ([string]$Slug).ToLower()
+  if (-not $s) { return '' }
+  if ($s -match 'yandexlavka|yandex-lavka|lavka') { return 'Яндекс Лавка' }
+  if ($s -match 'yandexeda|yandex-eda|eda-yandex|edadeal') { return 'Яндекс Еда' }
+  if ($s -match 'samokat') { return 'Самокат' }
+  if ($s -match 'kuper|sbermarket') { return 'Купер' }
+  if ($s -match 'vkusvill|vkus-vill') { return 'ВкусВилл' }
+  if ($s -match 'vkusmil') { return 'ВкусМил' }
+  if ($s -match 'perekrestok') { return 'Перекрёсток' }
+  if ($s -match 'magnit') { return 'Магнит' }
+  if ($s -match '5ka|pyaterochka') { return 'Пятёрочка' }
+  if ($s -match 'dixy') { return 'Дикси' }
+  if ($s -match 'auchan|ashan') { return 'Ашан' }
+  if ($s -match 'lenta') { return 'Лента' }
+  if ($s -match 'globus') { return 'Глобус' }
+  if ($s -match 'metro') { return 'Метро' }
+  if ($s -match 'ozon') { return 'Ozon Fresh' }
+  if ($s -match 'dodo') { return 'Додо Пицца' }
+  if ($s -match 'dominos|domino') { return "Domino's Pizza" }
+  if ($s -match 'sushiwok') { return 'Sushiwok' }
+  if ($s -match 'sushi') { return 'Sushi Master' }
+  if ($s -match 'tanuki') { return 'Тануки' }
+  if ($s -match 'yakitoria') { return 'Якитория' }
+  if ($s -match 'rostic|kfc') { return "Rostic's" }
+  if ($s -match 'burger') { return 'Burger King' }
+  if ($s -match 'vkusno') { return 'Вкусно — и точка' }
+  if ($s -match 'yobidoyobi') { return 'ЁбиДоёби' }
+  if ($s -match 'elementaree') { return 'Elementaree' }
+  if ($s -match 'justfood') { return 'Just Food' }
+  if ($s -match 'growfood') { return 'Grow Food' }
+  if ($s -match 'levelkitchen') { return 'Level Kitchen' }
+  if ($s -match 'letsfood') { return "Let's Food" }
+  if ($s -match 'chefmike') { return 'Chef Mike' }
+  if ($s -match '2berega') { return '2 Берега' }
+  if ($s -match 'utkonos') { return 'Утконос' }
+  if ($s -match 'okey') { return 'Окей' }
+  if ($s -match 'delivery|deliveri') { return 'Деливери' }
+  if ($s -match 'sibaristica') { return 'Сибаристика' }
+  if ($s -match 'foodband') { return 'FoodBand' }
+  if ($s -match 'priem') { return 'Priem.menu' }
+  if ($s -match 'befit') { return 'BeFit' }
+  if ($s -match 'korston') { return 'Korston' }
+  if ($s -match 'vipfish') { return 'Vipfish' }
+  return ''
 }
 
 function New-PromoEntry {
@@ -1114,6 +1293,433 @@ function Get-PromokodexCodes {
   return $items
 }
 
+function Get-PromoService {
+  param([string]$Text, [string]$Slug = '', [string]$Store = '')
+  $s = Resolve-ServiceFromText $Text
+  if ($s) { return $s }
+  if ($Slug) {
+    $s = Resolve-ServiceSlug $Slug
+    if ($s) { return $s }
+  }
+  if ($Store) {
+    $s = Resolve-Service $Store
+    if ($s -and $s.Length -le 40) { return $s }
+  }
+  return 'Доставка еды'
+}
+
+function Get-PromokodStoreCodes {
+  param([string]$Html, [string]$Url, [string]$SourceName)
+
+  $items = @()
+  $parts = [regex]::Split($Html, '<article class="couponRow"')
+
+  for ($i = 1; $i -lt $parts.Count; $i++) {
+    $chunk = $parts[$i]
+    $code = [regex]::Match($chunk, '(?s)<div class="couponCodeCell"[^>]*>\s*<code[^>]*>([^<]+)</code>').Groups[1].Value.Trim()
+    if (-not $code) { continue }
+    if ($code -notmatch '^[A-Za-zА-Яа-я0-9_-]{3,32}$') { continue }
+
+    $title = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)<h3><a[^>]*>(.*?)</a></h3>').Groups[1].Value)).Trim()
+    if (-not $title) { continue }
+
+    $store = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)<div class="couponStoreLine">.*?<strong>(.*?)</strong>').Groups[1].Value)).Trim()
+    $discount = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)<div class="couponDiscountCell"[^>]*>(.*?)</div>').Groups[1].Value)).Trim()
+    $dateText = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)<div class="couponDateCell"[^>]*>(.*?)</div>').Groups[1].Value)).Trim()
+    $full = $title + ' ' + $discount + ' ' + $store
+
+    if (-not (Test-RubPrice $full)) { continue }
+    if (-not (Test-Food $full)) { continue }
+
+    $info = Get-DiscountFromTitle $title
+    if ($null -eq $info) { $info = Get-DiscountInfo -Discount $discount -Text $full }
+    if ($info.value -le 0 -and $info.type -ne 'delivery') { continue }
+
+    $days = Get-ExpiryDays $dateText
+    if ($null -ne $days -and $days -lt 0) { continue }
+
+    $works = 0
+    $wm = [regex]::Match($chunk, '(?s)copyMetric.*?<strong>([\d\s]+)</strong>')
+    if ($wm.Success) { $works = ConvertTo-Number $wm.Groups[1].Value }
+
+    $minOrder = Get-MinOrder $full
+    $existing = Get-ExistingUsers $full
+    $wholeCart = Get-WholeCart $full $info.type
+    $cities = @(Get-Cities $full)
+    $cityRestricted = $cities.Count -gt 0
+    $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+
+    $conditions = @()
+    if ($discount) { $conditions += ('Скидка: ' + $discount) }
+    if ($dateText) { $conditions += $dateText }
+    if ($minOrder -gt 0) { $conditions += ('Минимальный заказ — от ' + $minOrder + ' ₽') }
+
+    $items += New-PromoEntry -Service (Get-PromoService -Text $full -Store $store) -Code $code `
+      -Type $info.type -Value $info.value -MaxDiscount $info.maxDiscount -MinOrder $minOrder `
+      -FreeDelivery $freeDelivery -Title $title -ExpiresInDays $days -Works $works `
+      -ExistingUsers $existing -WholeCart $wholeCart -Cities $cities -CityRestricted $cityRestricted `
+      -Conditions $conditions -SourceName $SourceName -SourceUrl $Url
+  }
+
+  return $items
+}
+
+function Get-PromocodexCodes {
+  param([string]$Html, [string]$Url, [string]$SourceName)
+
+  $items = @()
+  $parts = [regex]::Split($Html, '<div class="col-md-4')
+
+  for ($i = 1; $i -lt $parts.Count; $i++) {
+    $chunk = $parts[$i]
+    $code = [regex]::Match($chunk, 'data-clipboard-text="([^"]+)"').Groups[1].Value.Trim()
+    if (-not $code) { $code = [regex]::Match($chunk, 'coupon-text"[^>]*>([^<]+)</div>').Groups[1].Value.Trim() }
+    if ($code -notmatch '^[A-Za-zА-Яа-я0-9_-]{3,32}$') { continue }
+
+    $title = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)<h2[^>]*>.*?<a[^>]*>(.*?)</a>').Groups[1].Value)).Trim()
+    if (-not $title) { continue }
+
+    $discount = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)<span class="f90[^"]*">(.*?)</span>').Groups[1].Value)).Trim()
+    $slug = [regex]::Match($chunk, 'href="https://promocodex\.ru/promocodes/([^/"]+)/').Groups[1].Value
+    $store = (Convert-HtmlToText ([regex]::Match($chunk, 'title="Все промокоды ([^"]+)"').Groups[1].Value)).Trim()
+    $dateText = [regex]::Match($chunk, 'data-end="([^"]+)"').Groups[1].Value
+    $desc = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)<div class="small[^"]*mt-1">(.*?)</div>').Groups[1].Value)).Trim()
+    $full = $title + ' ' + $discount + ' ' + $store + ' ' + $desc
+
+    if (-not (Test-RubPrice $full)) { continue }
+    if (-not (Test-Food $full)) { continue }
+
+    $info = Get-DiscountFromTitle $title
+    if ($null -eq $info) { $info = Get-DiscountInfo -Discount $discount -Text $full }
+    if ($info.value -le 0 -and $info.type -ne 'delivery') { continue }
+
+    $days = $null
+    if ($dateText) {
+      try {
+        $end = [datetime]::Parse($dateText, [Globalization.CultureInfo]::InvariantCulture)
+        $days = [int][math]::Ceiling(($end.Date - (Get-Date).Date).TotalDays)
+        if ($days -lt 0) { continue }
+      } catch { }
+    }
+    if ($null -eq $days) { $days = Get-ExpiryDays $desc }
+
+    $minOrder = Get-MinOrder $full
+    $existing = Get-ExistingUsers $full
+    $wholeCart = Get-WholeCart $full $info.type
+    $cities = @(Get-Cities $full)
+    $cityRestricted = $cities.Count -gt 0
+    $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+
+    $conditions = @()
+    if ($discount) { $conditions += ('Скидка: ' + $discount) }
+    if ($desc) { $conditions += $desc }
+    if ($minOrder -gt 0) { $conditions += ('Минимальный заказ — от ' + $minOrder + ' ₽') }
+
+    $items += New-PromoEntry -Service (Get-PromoService -Text $full -Slug $slug -Store $store) -Code $code `
+      -Type $info.type -Value $info.value -MaxDiscount $info.maxDiscount -MinOrder $minOrder `
+      -FreeDelivery $freeDelivery -Title $title -ExpiresInDays $days -Works 0 `
+      -ExistingUsers $existing -WholeCart $wholeCart -Cities $cities -CityRestricted $cityRestricted `
+      -Conditions $conditions -SourceName $SourceName -SourceUrl $Url
+  }
+
+  return $items
+}
+
+function Get-OkodoCodes {
+  param([string]$Html, [string]$Url, [string]$SourceName)
+
+  $items = @()
+  $parts = [regex]::Split($Html, '<article class="tg')
+
+  for ($i = 1; $i -lt $parts.Count; $i++) {
+    $chunk = $parts[$i]
+    $code = [regex]::Match($chunk, 'data-code="([^"]+)"').Groups[1].Value.Trim()
+    if ($code -notmatch '^[A-Za-zА-Яа-я0-9_-]{3,32}$') { continue }
+
+    $title = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)class="tg-name">(.*?)</h3>').Groups[1].Value)).Trim()
+    if (-not $title) { continue }
+
+    $store = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)class="tg-svc"[^>]*>(.*?)</a>').Groups[1].Value)).Trim()
+    $priceN = (Convert-HtmlToText ([regex]::Match($chunk, 'class="pr-n">([^<]+)</span>').Groups[1].Value)).Trim()
+    $priceU = (Convert-HtmlToText ([regex]::Match($chunk, 'class="pr-u">([^<]+)</span>').Groups[1].Value)).Trim()
+    $cond = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)class="tg-cond">(.*?)</p>').Groups[1].Value)).Trim()
+    $src = (Convert-HtmlToText ([regex]::Match($chunk, 'class="tg-src"[^>]*>(.*?)</span>').Groups[1].Value)).Trim()
+    $discount = ($priceN + $priceU).Trim()
+    $full = $title + ' ' + $discount + ' ' + $store + ' ' + $cond
+
+    if (-not (Test-RubPrice $full)) { continue }
+    if (-not (Test-Food $full)) { continue }
+
+    $info = Get-DiscountFromTitle $title
+    if ($null -eq $info) { $info = Get-DiscountInfo -Discount $discount -Text $full }
+    if ($info.value -le 0 -and $info.type -ne 'delivery') { continue }
+
+    $days = Get-ExpiryDays $cond
+    if ($null -ne $days -and $days -lt 0) { continue }
+
+    $minOrder = Get-MinOrder $full
+    $existing = Get-ExistingUsers $full
+    $wholeCart = Get-WholeCart $full $info.type
+    $cities = @(Get-Cities $full)
+    $cityRestricted = $cities.Count -gt 0
+    $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+
+    $conditions = @()
+    if ($cond) { $conditions += $cond }
+    if ($src) { $conditions += ('Источники: ' + $src) }
+    if ($minOrder -gt 0) { $conditions += ('Минимальный заказ — от ' + $minOrder + ' ₽') }
+
+    $items += New-PromoEntry -Service (Get-PromoService -Text $full -Store $store) -Code $code `
+      -Type $info.type -Value $info.value -MaxDiscount $info.maxDiscount -MinOrder $minOrder `
+      -FreeDelivery $freeDelivery -Title $title -ExpiresInDays $days -Works 0 `
+      -ExistingUsers $existing -WholeCart $wholeCart -Cities $cities -CityRestricted $cityRestricted `
+      -Conditions $conditions -SourceName $SourceName -SourceUrl $Url
+  }
+
+  return $items
+}
+
+function Get-PromokodikovCodes {
+  param([string]$Html, [string]$Url, [string]$SourceName)
+
+  $items = @()
+  $parts = [regex]::Split($Html, '<div class="news-community')
+
+  for ($i = 1; $i -lt $parts.Count; $i++) {
+    $chunk = $parts[$i]
+    if ($chunk -match 'expired_coupon') { continue }
+
+    $code = [regex]::Match($chunk, 'data-clipboard-text="([^"]+)"').Groups[1].Value.Trim()
+    if (-not $code) { continue }
+    if ($code -notmatch '^[A-Za-zА-Яа-я0-9_-]{3,32}$') { continue }
+
+    $title = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)<h2[^>]*>.*?<a[^>]*>(.*?)</a>').Groups[1].Value)).Trim()
+    if (-not $title) { $title = (Convert-HtmlToText ([regex]::Match($chunk, 'title="([^"]+)"').Groups[1].Value)).Trim() }
+    if (-not $title) { continue }
+
+    $store = [regex]::Match($chunk, 'btn_offer_block[^>]*href="https?://([^/"]+)').Groups[1].Value
+    if (-not $store) { $store = [regex]::Match($chunk, '<img[^>]*alt="([^"]+)"').Groups[1].Value }
+    $full = $title + ' ' + $store
+
+    if (-not (Test-RubPrice $full)) { continue }
+    if (-not (Test-Food $full)) { continue }
+
+    $info = Get-DiscountFromTitle $title
+    if ($null -eq $info) { $info = Get-DiscountInfo -Discount '' -Text $full }
+    if ($info.value -le 0 -and $info.type -ne 'delivery') { continue }
+
+    $dateText = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)(?:до|До)\s+\d{1,2}[^<]{0,20}').Value)).Trim()
+    $days = Get-ExpiryDays $dateText
+
+    $works = 0
+    $wm = [regex]::Match($chunk, 'thumbscount">(\d+)')
+    if ($wm.Success) { $works = [int]$wm.Groups[1].Value }
+
+    $minOrder = Get-MinOrder $full
+    $existing = Get-ExistingUsers $full
+    $wholeCart = Get-WholeCart $full $info.type
+    $cities = @(Get-Cities $full)
+    $cityRestricted = $cities.Count -gt 0
+    $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+
+    $conditions = @()
+    if ($dateText) { $conditions += $dateText }
+    if ($minOrder -gt 0) { $conditions += ('Минимальный заказ — от ' + $minOrder + ' ₽') }
+
+    $items += New-PromoEntry -Service (Get-PromoService -Text $full -Store $store) -Code $code `
+      -Type $info.type -Value $info.value -MaxDiscount $info.maxDiscount -MinOrder $minOrder `
+      -FreeDelivery $freeDelivery -Title $title -ExpiresInDays $days -Works $works `
+      -ExistingUsers $existing -WholeCart $wholeCart -Cities $cities -CityRestricted $cityRestricted `
+      -Conditions $conditions -SourceName $SourceName -SourceUrl $Url
+  }
+
+  return $items
+}
+
+function Get-PickpointCodes {
+  param([string]$Html, [string]$Url, [string]$SourceName)
+
+  $items = @()
+  $parts = [regex]::Split($Html, '<article data-type="coupon"')
+
+  for ($i = 1; $i -lt $parts.Count; $i++) {
+    $chunk = $parts[$i]
+    $code = [regex]::Match($chunk, 'data-code="([^"]+)"').Groups[1].Value.Trim()
+    if ($code -notmatch '^[A-Za-zА-Яа-я0-9_-]{3,32}$') { continue }
+
+    $title = (Convert-HtmlToText ([regex]::Match($chunk, 'data-title="([^"]+)"').Groups[1].Value)).Trim()
+    if (-not $title) { $title = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)promo-card__title">(.*?)</p>').Groups[1].Value)).Trim() }
+    if (-not $title) { continue }
+
+    $store = [regex]::Match($chunk, 'data-shop-domain="([^"]+)"').Groups[1].Value.Trim()
+    if (-not $store) { $store = [regex]::Match($chunk, '<img[^>]*alt="([^"]+)"').Groups[1].Value.Trim() }
+    $exp = (Convert-HtmlToText ([regex]::Match($chunk, 'coupon-exp-label">([^<]+)').Groups[1].Value)).Trim()
+    $full = $title + ' ' + $store + ' ' + $exp
+
+    if (-not (Test-RubPrice $full)) { continue }
+    if (-not (Test-Food $full)) { continue }
+
+    $info = Get-DiscountFromTitle $title
+    if ($null -eq $info) { $info = Get-DiscountInfo -Discount '' -Text $full }
+    if ($info.value -le 0 -and $info.type -ne 'delivery') { continue }
+
+    $days = Get-ExpiryDays $exp
+    if ($null -ne $days -and $days -lt 0) { continue }
+
+    $minOrder = Get-MinOrder $full
+    $existing = Get-ExistingUsers $full
+    $wholeCart = Get-WholeCart $full $info.type
+    $cities = @(Get-Cities $full)
+    $cityRestricted = $cities.Count -gt 0
+    $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+
+    $conditions = @()
+    if ($exp) { $conditions += $exp }
+    if ($minOrder -gt 0) { $conditions += ('Минимальный заказ — от ' + $minOrder + ' ₽') }
+
+    $items += New-PromoEntry -Service (Get-PromoService -Text $full -Slug $store -Store $store) -Code $code `
+      -Type $info.type -Value $info.value -MaxDiscount $info.maxDiscount -MinOrder $minOrder `
+      -FreeDelivery $freeDelivery -Title $title -ExpiresInDays $days -Works 0 `
+      -ExistingUsers $existing -WholeCart $wholeCart -Cities $cities -CityRestricted $cityRestricted `
+      -Conditions $conditions -SourceName $SourceName -SourceUrl $Url
+  }
+
+  return $items
+}
+
+function Get-FooodyCodes {
+  param([string]$Html, [string]$Url, [string]$SourceName)
+
+  $items = @()
+  $parts = [regex]::Split($Html, '<div class="[^"]*promo-item')
+
+  for ($i = 1; $i -lt $parts.Count; $i++) {
+    $chunk = $parts[$i]
+    $code = [regex]::Match($chunk, 'data-code="([^"]+)"').Groups[1].Value.Trim()
+    if ($code -notmatch '^[A-Za-zА-Яа-я0-9_-]{3,32}$') { continue }
+
+    $title = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)<h5[^>]*>.*?<a[^>]*>(.*?)</a>').Groups[1].Value)).Trim()
+    if (-not $title) { continue }
+    $desc = (Convert-HtmlToText ([regex]::Match($chunk, '(?s)<p class="small[^"]*">(.*?)</p>').Groups[1].Value)).Trim()
+    $store = [regex]::Match($chunk, '<img[^>]*alt="([^"]+)"').Groups[1].Value.Trim()
+    $full = $title + ' ' + $desc + ' ' + $store + ' еда'
+
+    if (-not (Test-RubPrice $full)) { continue }
+
+    $info = Get-DiscountFromTitle $title
+    if ($null -eq $info) { $info = Get-DiscountInfo -Discount '' -Text $full }
+    if ($info.value -le 0 -and $info.type -ne 'delivery') { continue }
+
+    $days = Get-ExpiryDays $full
+    if ($null -ne $days -and $days -lt 0) { continue }
+
+    $minOrder = Get-MinOrder $full
+    $existing = Get-ExistingUsers $full
+    $wholeCart = Get-WholeCart $full $info.type
+    $cities = @(Get-Cities $full)
+    $cityRestricted = $cities.Count -gt 0
+    $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+
+    $conditions = @()
+    if ($desc) { $conditions += $desc }
+    if ($minOrder -gt 0) { $conditions += ('Минимальный заказ — от ' + $minOrder + ' ₽') }
+
+    $items += New-PromoEntry -Service (Get-PromoService -Text $full -Store $store) -Code $code `
+      -Type $info.type -Value $info.value -MaxDiscount $info.maxDiscount -MinOrder $minOrder `
+      -FreeDelivery $freeDelivery -Title $title -ExpiresInDays $days -Works 0 `
+      -ExistingUsers $existing -WholeCart $wholeCart -Cities $cities -CityRestricted $cityRestricted `
+      -Conditions $conditions -SourceName $SourceName -SourceUrl $Url
+  }
+
+  return $items
+}
+
+function Get-TelegramCodes {
+  param([string]$Channel, [string]$SourceName)
+
+  $items = @()
+  $url = 'https://t.me/s/' + $Channel
+  $file = Join-Path $env:TEMP ('telegram-' + [guid]::NewGuid().ToString('N') + '.html')
+
+  try {
+    $status = & curl.exe -s -L --compressed --max-time 30 -A $script:UA -H 'Accept-Language: ru-RU,ru;q=0.9' $url -o $file -w '%{http_code}'
+    if ($status -ne '200') { return $items }
+    $html = [IO.File]::ReadAllText($file, [Text.Encoding]::UTF8)
+  }
+  finally {
+    Remove-Item $file -ErrorAction SilentlyContinue
+  }
+
+  $parts = [regex]::Split($html, '<div class="tgme_widget_message_wrap')
+  $channelService = Get-PromoService -Text $Channel
+
+  for ($i = 1; $i -lt $parts.Count; $i++) {
+    $chunk = $parts[$i]
+    $textHtml = [regex]::Match($chunk, '(?s)<div class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>').Groups[1].Value
+    if (-not $textHtml) { continue }
+    $text = (Convert-HtmlToText $textHtml).Trim()
+    if (-not $text) { continue }
+    if ($text -notmatch '(?i)промокод|по\s+коду|\bкод\b') { continue }
+
+    $date = [regex]::Match($chunk, 'datetime="([^"]+)"').Groups[1].Value
+    $link = [regex]::Match($chunk, 'class="tgme_widget_message_date"[^>]*href="([^"]+)"').Groups[1].Value
+    if (-not $link) { $link = $url }
+
+    $full = $text + ' ' + $channelService
+    if (-not (Test-RubPrice $full)) { continue }
+    if (-not (Test-Food $full)) { continue }
+
+    $info = Get-DiscountFromTitle $text
+    if ($null -eq $info) { $info = Get-DiscountInfo -Discount '' -Text $full }
+    if ($info.value -le 0) {
+      if ($full -match '(?i)бесплатн\w*\s+доставк') { $info.type = 'delivery' }
+      else { continue }
+    }
+
+    $days = Get-ExpiryDays $text
+    if ($null -ne $days -and $days -lt 0) { continue }
+
+    $candidates = @()
+    foreach ($m in [regex]::Matches($text, '\b[A-ZА-Я0-9][A-ZА-Я0-9_-]{3,20}\b')) {
+      $candidate = $m.Value
+      if ($candidate -match '^(ПРОМОКОД|ПРОМОКОДЫ|СКИДКА|БЕСПЛАТНО|ЗАКАЗ|ДОСТАВКА|НОВЫЙ|ПЕРВЫЙ|ТОЛЬКО|СЕГОДНЯ|ЯНДЕКС|САМОКАТ|КУПЕР|ВКУСВИЛЛ|МАГНИТ|ПЕРЕКРЕСТОК|ПЯТЕРОЧКА|ДОДО|КФС|РОСТИКС|PROMOKOD|PROMOCODE|TELEGRAM|HTTP|HTTPS|HTML|RUSSIA|MOSCOW|NULL|TRUE|FALSE)$') { continue }
+      if ($candidate -notmatch '\d' -and $candidate -notmatch '-' -and $candidate.Length -lt 6) { continue }
+      $pos = $text.IndexOf($candidate)
+      $around = $text.Substring([Math]::Max(0, $pos - 70), [Math]::Min(160, $text.Length - [Math]::Max(0, $pos - 70)))
+      if ($around -notmatch '(?i)промокод|по\s+коду|\bкод\b') { continue }
+      if (-not ($candidates -contains $candidate)) { $candidates += $candidate }
+      if ($candidates.Count -ge 3) { break }
+    }
+
+    foreach ($code in $candidates) {
+      $title = $text
+      if ($title.Length -gt 140) { $title = $title.Substring(0, 137) + '...' }
+      $service = Get-PromoService -Text $full
+      if ($service -eq 'Доставка еды' -and $channelService) { $service = $channelService }
+
+      $minOrder = Get-MinOrder $full
+      $existing = Get-ExistingUsers $full
+      $wholeCart = Get-WholeCart $full $info.type
+      $cities = @(Get-Cities $full)
+      $cityRestricted = $cities.Count -gt 0
+      $freeDelivery = [bool]($full -match '(?i)бесплатн\w*\s+доставк')
+
+      $conditions = @()
+      if ($candidates.Count -gt 0) { $conditions += ('Код из поста: ' + $code) }
+      if ($days -ne $null) { $conditions += ('Срок: ' + $days + ' дн.') }
+      if ($minOrder -gt 0) { $conditions += ('Минимальный заказ — от ' + $minOrder + ' ₽') }
+
+      $items += New-PromoEntry -Service $service -Code $code `
+        -Type $info.type -Value $info.value -MaxDiscount $info.maxDiscount -MinOrder $minOrder `
+        -FreeDelivery $freeDelivery -Title $title -ExpiresInDays $days -Works 0 `
+        -ExistingUsers $existing -WholeCart $wholeCart -Cities $cities -CityRestricted $cityRestricted `
+        -Conditions $conditions -SourceName $SourceName -SourceUrl $link
+    }
+  }
+
+  return $items
+}
+
 # ---------- main ----------
 
 if (-not $Force -and (Test-Path $OutFile)) {
@@ -1129,7 +1735,10 @@ $collected = @()
 foreach ($source in $script:Sources) {
   try {
     Write-Log ('Fetching ' + $source.name + ' ...')
-    $html = Get-Html $source.url
+    $html = ''
+    if ($source.kind -ne 'telegram') {
+      $html = Get-Html $source.url
+    }
     if ($source.kind -eq 'promokodcom') {
       $found = @(Get-PromokodComCodes -Html $html -Url $source.url -SourceName $source.name)
     }
@@ -1147,6 +1756,27 @@ foreach ($source in $script:Sources) {
     }
     elseif ($source.kind -eq 'promokodsite') {
       $found = @(Get-PromokodSiteCodes -Html $html -Url $source.url -SourceName $source.name -Service $source.service)
+    }
+    elseif ($source.kind -eq 'promokodstore') {
+      $found = @(Get-PromokodStoreCodes -Html $html -Url $source.url -SourceName $source.name)
+    }
+    elseif ($source.kind -eq 'promocodex') {
+      $found = @(Get-PromocodexCodes -Html $html -Url $source.url -SourceName $source.name)
+    }
+    elseif ($source.kind -eq 'okodo') {
+      $found = @(Get-OkodoCodes -Html $html -Url $source.url -SourceName $source.name)
+    }
+    elseif ($source.kind -eq 'promokodikov') {
+      $found = @(Get-PromokodikovCodes -Html $html -Url $source.url -SourceName $source.name)
+    }
+    elseif ($source.kind -eq 'pickpoint') {
+      $found = @(Get-PickpointCodes -Html $html -Url $source.url -SourceName $source.name)
+    }
+    elseif ($source.kind -eq 'fooody') {
+      $found = @(Get-FooodyCodes -Html $html -Url $source.url -SourceName $source.name)
+    }
+    elseif ($source.kind -eq 'telegram') {
+      $found = @(Get-TelegramCodes -Channel $source.channel -SourceName $source.name)
     }
     else {
       $found = @(Get-EcosumCodes -Html $html -Url $source.url -SourceName $source.name)
