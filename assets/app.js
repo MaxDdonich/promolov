@@ -92,7 +92,7 @@
         this.paused = !!data.paused;
         this.orderSum = Number.isFinite(data.orderSum) ? data.orderSum : 1500;
         this.feedUrl = typeof data.feedUrl === 'string' ? data.feedUrl : '';
-        this.onlyWorking = data.onlyWorking === true;
+        this.onlyWorking = data.onlyWorking === true && data.onlyWorkingV2 === true;
       } catch (err) {
         /* localStorage может быть недоступен на file:// — работаем в памяти */
       }
@@ -107,7 +107,8 @@
           paused: this.paused,
           orderSum: this.orderSum,
           feedUrl: this.feedUrl,
-          onlyWorking: this.onlyWorking
+          onlyWorking: this.onlyWorking,
+          onlyWorkingV2: true
         }));
       } catch (err) { /* ignore */ }
     }
@@ -155,8 +156,10 @@
     onlyWorking: store.onlyWorking,
     freeDelivery: false,
     onlyFav: false,
-    sort: 'score'
+    sort: 'score',
+    limit: 24
   };
+  const PAGE_SIZE = 24;
 
   const COLLECTIONS = [
     { id: 'all', label: 'Все коды', icon: '✦' },
@@ -689,21 +692,32 @@
   }
 
   function renderGrid() {
-    const list = visibleCodes();
+    const all = visibleCodes();
+    const list = all.slice(0, ui.limit);
     const pool = workingPool();
     $('#grid').innerHTML = list.map(cardHTML).join('');
-    $('#empty').hidden = list.length > 0;
+    $('#empty').hidden = all.length > 0;
+
+    const moreWrap = $('#loadMoreWrap');
+    const moreBtn = $('#btnLoadMore');
+    if (moreWrap) {
+      const rest = Math.max(0, all.length - list.length);
+      moreWrap.hidden = rest <= 0;
+      if (moreBtn) moreBtn.hidden = rest <= 0;
+      const moreCount = $('#loadMoreCount');
+      if (moreCount) moreCount.textContent = rest > 0 ? '(+' + rest + ')' : '';
+    }
 
     const sum = orderSum;
     const selectedLabels = [...ui.collections]
       .map((id) => (COLLECTIONS.find((item) => item.id === id) || {}).label)
       .filter(Boolean);
     const collectionNote = selectedLabels.length ? ' · ' + selectedLabels.join(' + ').toLowerCase() : '';
-    $('#resultsMeta').textContent = list.length
-      ? list.length + ' из ' + pool.length + ' · чек ' + money(sum) + collectionNote + (ui.onlyWorking ? ' · только рабочие' : '') + (ui.onlyBest ? ' · порог ' + BEST_SCORE : '')
+    $('#resultsMeta').textContent = all.length
+      ? list.length + ' из ' + all.length + ' · чек ' + money(sum) + collectionNote + (ui.onlyWorking ? ' · только рабочие' : '') + (ui.onlyBest ? ' · порог ' + BEST_SCORE : '')
       : 'ничего не найдено';
 
-    if (!list.length) {
+    if (!all.length) {
       const title = $('#emptyTitle');
       const text = $('#emptyText');
       if (title && text) {
@@ -782,6 +796,7 @@
   }
 
   function renderResults() {
+    ui.limit = PAGE_SIZE;
     renderCollections();
     renderGrid();
   }
@@ -1341,6 +1356,11 @@
     }
   });
 
+  $('#btnLoadMore').addEventListener('click', () => {
+    ui.limit += PAGE_SIZE;
+    renderGrid();
+  });
+
   $('#modalBody').addEventListener('click', (event) => {
     const target = event.target.closest('[data-action]');
     if (!target) return;
@@ -1417,14 +1437,14 @@
     ui.service = 'all';
     ui.collections.clear();
     ui.onlyBest = false;
-    ui.onlyWorking = true;
-    store.onlyWorking = true;
+    ui.onlyWorking = false;
+    store.onlyWorking = false;
     store.save();
     ui.freeDelivery = false;
     ui.onlyFav = false;
     $('#search').value = '';
     $('#onlyBest').checked = false;
-    $('#onlyWorking').checked = true;
+    $('#onlyWorking').checked = false;
     $('#freeDelivery').checked = false;
     $('#onlyFav').checked = false;
     renderAll();
