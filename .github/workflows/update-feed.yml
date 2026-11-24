@@ -20,6 +20,9 @@ jobs:
         id: collect
         shell: pwsh
         continue-on-error: true
+        env:
+          PROMOLOV_FETCH_PROXY_URL: ${{ secrets.TELEGRAM_PROXY_URL }}
+          PROMOLOV_FETCH_PROXY_SECRET: ${{ secrets.TELEGRAM_PROXY_SECRET }}
         run: ./collector.ps1 -Force
 
       - name: Validate feed

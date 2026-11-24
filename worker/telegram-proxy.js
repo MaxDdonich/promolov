@@ -5,6 +5,24 @@ function json(data, status = 200) {
   });
 }
 
+const DEFAULT_FETCH_HOSTS = [
+  'promokodoff.ru',
+  'promokodka.ru',
+  'promokodik.ru',
+  'promosave.ru',
+  'coupon.ru',
+  'promokodyeda.ru',
+  'promokod.vbr.ru',
+  'promokodus.com',
+  'kuponoed.ru',
+  'hotkod.ru',
+  'promkod.ru',
+  'promokody.net',
+  'picodi.com',
+  'promokodix.ru',
+  'kupongid.ru'
+].join(',');
+
 async function fetchWithTimeout(url, options = {}, timeoutMs = 12000) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
@@ -21,6 +39,41 @@ export default {
     const secret = request.headers.get('x-secret') || url.searchParams.get('secret');
     if (!env.PROXY_SECRET || secret !== env.PROXY_SECRET) {
       return json({ ok: false, error: 'forbidden' }, 403);
+    }
+
+    if (url.pathname === '/fetch') {
+      const target = url.searchParams.get('url');
+      if (!target) { return json({ ok: false, error: 'url is required' }, 400); }
+      let parsed;
+      try { parsed = new URL(target); } catch { return json({ ok: false, error: 'invalid url' }, 400); }
+      if (!/^https?:$/.test(parsed.protocol)) {
+        return json({ ok: false, error: 'only http/https' }, 400);
+      }
+      const hosts = (env.FETCH_HOSTS || DEFAULT_FETCH_HOSTS).split(',').map((h) => h.trim().toLowerCase()).filter(Boolean);
+      const host = parsed.hostname.toLowerCase();
+      if (!hosts.some((h) => host === h || host.endsWith('.' + h))) {
+        return json({ ok: false, error: 'host is not allowed', host }, 403);
+      }
+      try {
+        const response = await fetchWithTimeout(parsed.href, {
+          headers: {
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36',
+            'accept-language': 'ru-RU,ru;q=0.9,en;q=0.5'
+          },
+          redirect: 'follow'
+        }, 25000);
+        let body = await response.text();
+        if (body.length > 2000000) { body = body.slice(0, 2000000); }
+        return new Response(body, {
+          status: response.status,
+          headers: {
+            'content-type': response.headers.get('content-type') || 'text/html; charset=utf-8',
+            'x-proxy-status': String(response.status)
+          }
+        });
+      } catch (error) {
+        return json({ ok: false, error: String(error) }, 504);
+      }
     }
 
     if (url.pathname === '/diag') {

@@ -32,6 +32,8 @@ $script:Headers = @{
   'Accept'          = 'text/html,application/xhtml+xml'
   'Accept-Language' = 'ru-RU,ru;q=0.9,en;q=0.5'
 }
+$script:FetchProxyUrl = $env:PROMOLOV_FETCH_PROXY_URL
+$script:FetchProxySecret = $env:PROMOLOV_FETCH_PROXY_SECRET
 
 $script:Sources = @(
   @{
@@ -137,7 +139,12 @@ foreach ($page in $promokodSitePages) {
 $promokodStorePages = @(
   'https://promokod.store/promokody/eda-i-napitki',
   'https://promokod.store/promokody/eda-i-napitki?page=2',
-  'https://promokod.store/promokody/eda-i-napitki?page=3'
+  'https://promokod.store/promokody/eda-i-napitki?page=3',
+  'https://promokod.store/promokody/eda-i-napitki?page=4',
+  'https://promokod.store/promokody/eda-i-napitki?page=5',
+  'https://promokod.store/promokody/eda-i-napitki?page=6',
+  'https://promokod.store/promokody/eda-i-napitki?page=7',
+  'https://promokod.store/promokody/eda-i-napitki?page=8'
 )
 $storeIndex = 0
 foreach ($u in $promokodStorePages) {
@@ -162,6 +169,12 @@ $script:Sources += @{
   kind  = 'promocodex'
   group = 'promocodex.ru'
 }
+$script:Sources += @{
+  name  = 'promocodex.ru · Суши'
+  url   = 'https://promocodex.ru/categories/sushi/'
+  kind  = 'promocodex'
+  group = 'promocodex.ru'
+}
 
 $okodoPages = @(
   @{ label = 'Яндекс Еда'; url = 'https://okodo.ru/yandex-eda/' },
@@ -169,7 +182,12 @@ $okodoPages = @(
   @{ label = 'Самокат'; url = 'https://okodo.ru/samokat/' },
   @{ label = 'Яндекс Лавка'; url = 'https://okodo.ru/yandex-lavka/' },
   @{ label = 'Перекрёсток'; url = 'https://okodo.ru/perekrestok/' },
-  @{ label = 'Магнит'; url = 'https://okodo.ru/magnit/' }
+  @{ label = 'Магнит'; url = 'https://okodo.ru/magnit/' },
+  @{ label = 'Ашан'; url = 'https://okodo.ru/auchan/' },
+  @{ label = 'Глобус'; url = 'https://okodo.ru/globus/' },
+  @{ label = 'Метро'; url = 'https://okodo.ru/metro/' },
+  @{ label = "Rostic's"; url = 'https://okodo.ru/rostics/' },
+  @{ label = 'Sushi Master'; url = 'https://okodo.ru/sushi-master/' }
 )
 foreach ($page in $okodoPages) {
   $script:Sources += @{
@@ -210,7 +228,11 @@ $telegramChannels = @(
   @{ channel = 'promokod_yakitoria'; group = 'tg-yakitoria' },
   @{ channel = 'promokod_growfood'; group = 'tg-growfood' },
   @{ channel = 'promokod_vkusvill'; group = 'tg-vkusvill' },
-  @{ channel = 'promokod_tanuki'; group = 'tg-tanuki' }
+  @{ channel = 'promokod_tanuki'; group = 'tg-tanuki' },
+  @{ channel = 'promokod_kfc'; group = 'tg-kfc' },
+  @{ channel = 'promokod_magnit'; group = 'tg-magnit' },
+  @{ channel = 'promokod_vkusnoitochka'; group = 'tg-vkusno' },
+  @{ channel = 'promokod_papajohns'; group = 'tg-papajohns' }
 )
 foreach ($tg in $telegramChannels) {
   $script:Sources += @{
@@ -249,7 +271,12 @@ function Get-Html {
     $tmp = Join-Path $env:TEMP ('html-' + [guid]::NewGuid().ToString('N') + '.html')
     try {
       $status = & curl.exe -s -L --compressed --http1.1 --max-time 40 -A $script:BrowserUA -H 'Accept-Language: ru-RU,ru;q=0.9' $Url -o $tmp -w '%{http_code}'
-      if ($status -ne '200') { throw }
+      if ($status -ne '200' -and $script:FetchProxyUrl -and $script:FetchProxySecret) {
+        Write-Log ('  proxy fallback for ' + $Url)
+        $encoded = [uri]::EscapeDataString($Url)
+        $status = & curl.exe -s -L --compressed --max-time 50 -H "x-secret: $($script:FetchProxySecret)" "$($script:FetchProxyUrl)/fetch?url=$encoded" -o $tmp -w '%{http_code}'
+      }
+      if ($status -ne '200') { throw ('HTTP ' + $status) }
       return [IO.File]::ReadAllText($tmp, [Text.Encoding]::UTF8)
     }
     finally {
@@ -580,6 +607,7 @@ function Resolve-ServiceFromText {
     @('kfc', 'KFC'), @('кфс', 'KFC'),
     @('burger king', 'Burger King'), @('бургер кинг', 'Burger King'),
     @('вкусно и точка', 'Вкусно — и точка'), @('вкусно — и точка', 'Вкусно — и точка'),
+    @('papa john', "Papa John's"), @('папа джон', "Papa John's"),
     @('ебидоеби', 'ЁбиДоёби'), @('yobidoyobi', 'ЁбиДоёби'),
     @('elementaree', 'Elementaree'), @('элементари', 'Elementaree'),
     @('just food', 'Just Food'), @('justfood', 'Just Food'),
@@ -1689,6 +1717,8 @@ function Get-TelegramCodes {
     'promokod_growfood'   = 'Grow Food'
     'promokod_vkusvill'   = 'ВкусВилл'
     'promokod_tanuki'     = 'Тануки'
+    'promokod_vkusnoitochka' = 'Вкусно — и точка'
+    'promokod_papajohns'  = "Papa John's"
     'promokod_eda'        = ''
     'promokody_skidki'    = ''
     'promokody'           = ''
@@ -1760,6 +1790,8 @@ function Get-TelegramCodes {
           'promokod_growfood'   = '(?i)grow food|growfood'
           'promokod_vkusvill'   = '(?i)вкусвилл|vkusvill'
           'promokod_tanuki'     = '(?i)тануки|tanuki'
+          'promokod_vkusnoitochka' = '(?i)вкусно|vkusno'
+          'promokod_papajohns'  = '(?i)papa\s*john|папа\s*джон'
         }
         $bp = $brandPattern[$Channel]
         if ($bp -and $text -match $bp) { $service = $channelService }
@@ -1886,7 +1918,8 @@ foreach ($item in $collected) {
   if ($item.code -match $junkCode) { continue }
   $item['code'] = ([string]$item.code).Trim().ToUpper()
   $item['service'] = Resolve-Service ([string]$item.service)
-  if ($item.type -eq 'percent' -and [int]$item.value -ge 100) { continue }
+  if ($item.type -eq 'percent' -and [int]$item.value -gt 50) { continue }
+  if ($item.type -eq 'fixed' -and [int]$item.minOrder -gt 0 -and [int]$item.value -gt [math]::Floor([int]$item.minOrder * 0.6)) { continue }
   $key = $item.code
   if (-not $groups.ContainsKey($key)) { $groups[$key] = @() }
   $groups[$key] += $item
@@ -1903,7 +1936,35 @@ if (Test-Path $stateFile) {
   try {
     $stateRaw = Get-Content -Raw -Encoding UTF8 $stateFile | ConvertFrom-Json
     foreach ($prop in $stateRaw.codes.PSObject.Properties) {
-      $stateCodes[$prop.Name] = $prop.Value
+      $oldKey = [string]$prop.Name
+      $val = $prop.Value
+      $codeKey = $oldKey
+      $pipe = $oldKey.IndexOf('|')
+      if ($pipe -gt 0) { $codeKey = $oldKey.Substring(0, $pipe) }
+
+      if (-not $stateCodes.ContainsKey($codeKey)) {
+        $stateCodes[$codeKey] = [ordered]@{
+          firstSeen = [string]$val.firstSeen
+          lastSeen  = [string]$val.lastSeen
+          seenRuns  = [int]$val.seenRuns
+          sources   = @($val.sources | Where-Object { $_ } | Select-Object -Unique)
+        }
+      }
+      else {
+        $existing = $stateCodes[$codeKey]
+        $existing.seenRuns = [Math]::Max([int]$existing.seenRuns, [int]$val.seenRuns)
+        try {
+          $eFirst = [datetime]::Parse([string]$existing.firstSeen)
+          $vFirst = [datetime]::Parse([string]$val.firstSeen)
+          if ($vFirst -lt $eFirst) { $existing.firstSeen = [string]$val.firstSeen }
+        } catch { }
+        try {
+          $eLast = [datetime]::Parse([string]$existing.lastSeen)
+          $vLast = [datetime]::Parse([string]$val.lastSeen)
+          if ($vLast -gt $eLast) { $existing.lastSeen = [string]$val.lastSeen }
+        } catch { }
+        $existing.sources = @(@($existing.sources) + @($val.sources) | Where-Object { $_ } | Select-Object -Unique)
+      }
     }
   } catch { }
 }
@@ -1983,7 +2044,7 @@ foreach ($key in $groups.Keys) {
     if ($prev.lastSeen) {
       try {
         $lastSeenDate = [datetime]::Parse([string]$prev.lastSeen, [Globalization.CultureInfo]::InvariantCulture)
-        if (($now - $lastSeenDate).TotalHours -le 6) { $recent = $true }
+        if (($now - $lastSeenDate).TotalDays -le 7) { $recent = $true }
       } catch { }
     }
     if ($recent) {
@@ -2007,7 +2068,7 @@ foreach ($key in $groups.Keys) {
     $verification = 'confirmed'
     $verificationMethod = 'multi-source'
   }
-  elseif ($sourceCount -eq 1 -and $avgWeight -ge 0.8 -and $seenRuns -ge 6) {
+  elseif ($sourceCount -eq 1 -and $avgWeight -ge 0.75 -and $seenRuns -ge 3) {
     $verification = 'confirmed'
     $verificationMethod = 'history'
   }

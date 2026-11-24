@@ -37,6 +37,7 @@ const MIN_PAY_ABS = 50;
     "Rostic's": { color: '#E4002B', mark: 'R', site: 'https://rostics.ru' },
     'Ollis': { color: '#FF7A00', mark: 'O', site: 'https://ollis.ru' },
     "Domino's Pizza": { color: '#0B5CAB', mark: 'D', site: 'https://dominos.ru' },
+    "Papa John's": { color: '#B5121B', mark: 'PJ', site: 'https://papajohns.ru' },
     'ЁбиДоёби': { color: '#FF4D00', mark: 'Ё', site: 'https://yobidoyobi.ru' },
     'Ашан': { color: '#E4002B', mark: 'А', site: 'https://auchan.ru' },
     'Just Food': { color: '#6BBF59', mark: 'J', site: 'https://justfood.ru' },
@@ -80,7 +81,7 @@ const MIN_PAY_ABS = 50;
     sources: {},
     paused: false,
     feedUrl: '',
-    onlyWorking: false,
+    onlyWorking: true,
     load() {
       try {
         const raw = localStorage.getItem(LS_KEY);
@@ -92,7 +93,7 @@ const MIN_PAY_ABS = 50;
         this.sources = data.sources && typeof data.sources === 'object' ? data.sources : {};
         this.paused = !!data.paused;
         this.feedUrl = typeof data.feedUrl === 'string' ? data.feedUrl : '';
-        this.onlyWorking = data.onlyWorking === true && data.onlyWorkingV2 === true;
+        this.onlyWorking = data.onlyWorkingV3 === true ? data.onlyWorking !== false : true;
       } catch (err) {
         /* localStorage может быть недоступен на file:// — работаем в памяти */
       }
@@ -107,7 +108,7 @@ const MIN_PAY_ABS = 50;
           paused: this.paused,
           feedUrl: this.feedUrl,
           onlyWorking: this.onlyWorking,
-          onlyWorkingV2: true
+          onlyWorkingV3: true
         }));
       } catch (err) { /* ignore */ }
     }
@@ -684,6 +685,8 @@ const MIN_PAY_ABS = 50;
 
   function renderGrid() {
     const all = visibleCodes();
+    const showAllBtn = $('#btnShowAll');
+    if (showAllBtn) showAllBtn.textContent = ui.onlyWorking ? 'Показать все' : 'Скрыть неподтверждённые';
     const list = all.slice(0, ui.limit);
     const pool = workingPool();
     $('#grid').innerHTML = list.map(cardHTML).join('');
@@ -1351,6 +1354,14 @@ const MIN_PAY_ABS = 50;
     renderAll();
   });
 
+  $('#btnShowAll').addEventListener('click', () => {
+    ui.onlyWorking = !ui.onlyWorking;
+    store.onlyWorking = ui.onlyWorking;
+    store.save();
+    $('#onlyWorking').checked = ui.onlyWorking;
+    renderAll();
+  });
+
   $('#freeDelivery').addEventListener('change', (event) => {
     ui.freeDelivery = event.target.checked;
     renderResults();
@@ -1371,14 +1382,14 @@ const MIN_PAY_ABS = 50;
     ui.service = 'all';
     ui.collections.clear();
     ui.onlyBest = false;
-    ui.onlyWorking = false;
-    store.onlyWorking = false;
+    ui.onlyWorking = true;
+    store.onlyWorking = true;
     store.save();
     ui.freeDelivery = false;
     ui.onlyFav = false;
     $('#search').value = '';
     $('#onlyBest').checked = false;
-    $('#onlyWorking').checked = false;
+    $('#onlyWorking').checked = true;
     $('#freeDelivery').checked = false;
     $('#onlyFav').checked = false;
     renderAll();
