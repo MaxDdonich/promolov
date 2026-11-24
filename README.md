@@ -1,4 +1,4 @@
-# ПромоЛов
+# PromoLove
 
 Постоянная версия: **https://maxddonich.github.io/promolov/**
 

@@ -38,7 +38,7 @@ function Send-Ntfy([string]$text, [string]$priority = 'default', [string]$tags =
   $plain = [Net.WebUtility]::HtmlDecode(($text -replace '<[^>]+>', ' ' -replace '\s+', ' ')).Trim()
   if ($plain.Length -gt 3500) { $plain = $plain.Substring(0, 3500) + '…' }
   $raw = & curl.exe -sS --max-time 30 `
-    -H 'Title: PromoLov' `
+    -H 'Title: PromoLove' `
     -H "Priority: $priority" `
     -H "Tags: $tags" `
     -H 'Click: https://maxddonich.github.io/promolov/' `
@@ -117,7 +117,7 @@ if ($Mode -eq 'daily') {
   $empty = @($healthSources | Where-Object { $_.Value.status -eq 'empty' }).Count
   $ok = @($healthSources | Where-Object { $_.Value.status -eq 'ok' }).Count
   $text = @"
-📊 <b>PromoLov за сутки</b>
+📊 <b>PromoLove за сутки</b>
 
 Кодов: <b>$total</b>
 Подтверждённых: <b>$confirmed</b>
@@ -195,7 +195,7 @@ if ($issues.Count -eq 0 -and $recoveries.Count -eq 0) {
   exit 0
 }
 
-$title = if ($issues.Count -gt 0) { '⚠️ <b>PromoLov: проблема</b>' } else { '✅ <b>PromoLov: восстановление</b>' }
+$title = if ($issues.Count -gt 0) { '⚠️ <b>PromoLove: проблема</b>' } else { '✅ <b>PromoLove: восстановление</b>' }
 $body = @()
 if ($issues.Count -gt 0) { $body += ($issues | Select-Object -First 10) }
 if ($recoveries.Count -gt 0) { $body += ($recoveries | Select-Object -First 6) }

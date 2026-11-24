@@ -1372,10 +1372,49 @@ const MIN_PAY_ABS = 50;
     renderResults();
   });
 
-  $('#sort').addEventListener('change', (event) => {
-    ui.sort = event.target.value;
+  function updateSortUI() {
+    const labels = { score: 'по выгоде', expiry: 'скоро истекают', new: 'сначала новые' };
+    const label = $('#sortLabel');
+    if (label) label.textContent = labels[ui.sort] || labels.score;
+    document.querySelectorAll('#sortMenu .sortbox__opt').forEach((opt) => {
+      const on = opt.dataset.value === ui.sort;
+      opt.classList.toggle('is-on', on);
+      opt.setAttribute('aria-selected', String(on));
+    });
+  }
+
+  function setSortMenu(open) {
+    const box = $('#sortBox');
+    const btn = $('#sortBtn');
+    if (!box) return;
+    box.classList.toggle('is-open', open);
+    if (btn) btn.setAttribute('aria-expanded', String(open));
+  }
+
+  $('#sortBtn').addEventListener('click', (event) => {
+    event.stopPropagation();
+    const box = $('#sortBox');
+    setSortMenu(!(box && box.classList.contains('is-open')));
+  });
+
+  $('#sortMenu').addEventListener('click', (event) => {
+    const opt = event.target.closest('[data-value]');
+    if (!opt) return;
+    ui.sort = opt.dataset.value;
+    setSortMenu(false);
+    updateSortUI();
     renderGrid();
   });
+
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('#sortBox')) setSortMenu(false);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') setSortMenu(false);
+  });
+
+  updateSortUI();
 
   $('#btnReset').addEventListener('click', () => {
     ui.q = '';

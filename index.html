@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ПромоЛов — выгодные промокоды на доставку еды</title>
-  <meta name="description" content="Автоматический сбор промокодов на доставку еды: проверка источников, подтверждённые коды и актуальные скидки.">
+  <title>PromoLove — выгодные промокоды на доставку еды</title>
+  <meta name="description" content="PromoLove — автоматический сбор промокодов на доставку еды: проверка источников, подтверждённые коды и актуальные скидки.">
   <meta name="theme-color" content="#0b0e0b">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='8' fill='%23c8d36a'/><text x='50' y='74' font-size='62' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%230b0e0b'>₽</text></svg>">
-  <link rel="stylesheet" href="assets/styles.css?v=20261124-7">
+  <link rel="stylesheet" href="assets/styles.css?v=20261124-8">
 </head>
 <body>
   <div class="bg-glow" aria-hidden="true"></div>
 
   <header class="topbar">
     <div class="container topbar__inner">
-      <a class="logo" href="#top" aria-label="ПромоЛов — на главную">
+      <a class="logo" href="#top" aria-label="PromoLove — на главную">
         <span class="logo__mark" aria-hidden="true">₽</span>
-        <span class="logo__text">Промо<b>Лов</b></span>
+        <span class="logo__text">Promo<b>Love</b></span>
       </a>
 
       <div class="live" id="liveStatus" data-state="on">
@@ -44,11 +44,11 @@
       <div class="hero__copy">
         <div class="eyebrow">
           <span class="eyebrow__dot" aria-hidden="true"></span>
-          автосбор 24/7 · станция «ПромоЛов»
+          автосбор 24/7 · станция «PromoLove»
         </div>
         <h1>Выгодные промокоды<br>на доставку еды <span class="grad">ловятся сами</span></h1>
         <p class="hero__lead">
-          ПромоЛов проверяет официальные акции, Telegram-каналы и партнёрские фиды,
+          PromoLove проверяет официальные акции, Telegram-каналы и партнёрские фиды,
           собирает рабочие коды и показывает, где и на каких условиях они действуют.
         </p>
         <div class="hero__stats">
@@ -98,11 +98,17 @@
 
         <div class="sort">
           <span>Сортировка</span>
-          <select id="sort" aria-label="Сортировка">
-            <option value="score">по выгоде</option>
-            <option value="expiry">скоро истекают</option>
-            <option value="new">сначала новые</option>
-          </select>
+          <div class="sortbox" id="sortBox">
+            <button class="sortbox__btn" id="sortBtn" type="button" aria-haspopup="listbox" aria-expanded="false">
+              <span id="sortLabel">по выгоде</span>
+              <span class="sortbox__chev" aria-hidden="true">▾</span>
+            </button>
+            <div class="sortbox__menu" id="sortMenu" role="listbox" aria-label="Сортировка">
+              <button class="sortbox__opt is-on" type="button" role="option" data-value="score" aria-selected="true">по выгоде</button>
+              <button class="sortbox__opt" type="button" role="option" data-value="expiry" aria-selected="false">скоро истекают</button>
+              <button class="sortbox__opt" type="button" role="option" data-value="new" aria-selected="false">сначала новые</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -151,7 +157,7 @@
   <footer class="footer container">
     <div class="footer__brand">
       <span class="logo__mark logo__mark--sm" aria-hidden="true">₽</span>
-      <span>ПромоЛов · демо-проект</span>
+      <span>PromoLove · демо-проект</span>
     </div>
     <p>
       Реальные коды собираются из открытых страниц промокодов (promokod.com, ecosum.ru)
@@ -213,10 +219,10 @@
   <div id="toasts" aria-live="polite" aria-atomic="false"></div>
 
   <noscript>
-    <div class="noscript">Для работы ПромоЛова нужен JavaScript — включите его в настройках браузера.</div>
+    <div class="noscript">Для работы PromoLove нужен JavaScript — включите его в настройках браузера.</div>
   </noscript>
 
-  <script src="assets/data.js?v=20261124-7"></script>
-  <script src="assets/app.js?v=20261124-7"></script>
+  <script src="assets/data.js?v=20261124-8"></script>
+  <script src="assets/app.js?v=20261124-8"></script>
 </body>
 </html>
