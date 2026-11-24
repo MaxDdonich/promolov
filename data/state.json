@@ -1,173 +1,10 @@
 {
-  "updatedAt": "2026-11-24T14:21:02.0198170+00:00",
+  "updatedAt": "2026-11-24T14:27:15.6354608+00:00",
   "codes": {
-    "WHITELABEL": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+    "1984MK6DJ": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 3",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "KOLBASA": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "СМАРТ-4ДМ": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "pickpoint.ru"
-      ]
-    },
-    "TGSGRP2A3BB5": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "ADMNEW": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 1"
-      ]
-    },
-    "199LR5V2H": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "SLN400RP": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "МАЙАМИ35": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 2,
-      "sources": [
-        "t.me/promokod_yakitoria"
-      ]
-    },
-    "35LTNS8X": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokod_perekrestok"
-      ]
-    },
-    "2RHP52V": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "FPS037": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 3,
-      "sources": [
-        "promocodex.ru · Еда",
-        "promocodex.ru"
-      ]
-    },
-    "NVVB4HNN5": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "FR1000JUNE": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "300SOK27": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 2,
-      "sources": [
-        "promocodex.ru · Еда",
-        "promocodex.ru"
-      ]
-    },
-    "GSXXC4I3": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodi.komukupon.ru"
-      ]
-    },
-    "IMP20": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "BA55WFUZ028A": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 2,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "SFFA6PC": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "VSFRAEU": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodex.ru"
-      ]
-    },
-    "HOME": {
-      "firstSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 1,
-      "sources": [
-        "promocodex.ru · Суши"
-      ]
-    },
-    "KOFE": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
       "sources": [
         "promokod.com"
       ]
@@ -180,858 +17,122 @@
         "okodo.ru · Яндекс Еда"
       ]
     },
-    "KT1178": {
+    "ULT600": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/24/2026 01:55:56",
-      "seenRuns": 9,
-      "sources": [
-        "promocodex.ru",
-        "promocodex.ru · Рестораны"
-      ]
-    },
-    "BB99": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
         "promokod.pikabu.ru"
       ]
     },
-    "NEWBEST": {
+    "FIRST": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "11/23/2026 21:43:23",
+      "seenRuns": 7,
       "sources": [
-        "promokod.store · Еда 1",
-        "okodo.ru · Все коды"
+        "fooody.ru"
       ]
     },
-    "SGGB1Q5OIW7": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "1500RUB": {
+    "7E305": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Метро",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "MGH200": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "PROMOKODSHOPGS_GRN": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
         "pickpoint.ru"
       ]
     },
-    "IOS40": {
+    "KOLBASA20": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "RADUUGA5": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+    "33PROMOCOM": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
       "sources": [
-        "promokod.pikabu.ru"
+        "promokod.com"
       ]
     },
-    "SKIDKA30": {
+    "KUPSMKGSL": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "300ROBOT": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "15УНАГИ2": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokod_yakitoria"
+      ]
+    },
+    "HOME": {
+      "firstSeen": "11/24/2026 14:21:02",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 2,
+      "sources": [
+        "promocodex.ru · Суши"
+      ]
+    },
+    "30VULJ8K": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "MOLOKO20": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
     "СЮРПРИЗ": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
         "promokod.store · Еда 1"
       ]
     },
-    "ULT500": {
+    "30VASFJ4": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "OBED24": {
+    "GB028M70": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.com",
-        "promokod.pikabu.ru"
-      ]
-    },
-    "PR1PY": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokody"
-      ]
-    },
-    "FRSALENOV": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "15ОСЕНЬ2": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokod_yakitoria"
-      ]
-    },
-    "195TRVR9H": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promocodex.ru · Еда"
-      ]
-    },
-    "VRN300": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "ecosum.ru",
-        "okodo.ru · Яндекс Еда",
-        "okodo.ru · Деливери"
-      ]
-    },
-    "30VD17BB": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "АЦУЙ4": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 2,
-      "sources": [
-        "t.me/promokod_yakitoria"
-      ]
-    },
-    "УДОН26": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promocodex.ru · Рестораны"
-      ]
-    },
-    "3KGW1": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
         "promokodex.ru"
       ]
     },
-    "30NEWAPRREG": {
+    "FRESHREADY3": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "ПАПА": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 3,
-      "sources": [
-        "okodo.ru · Все коды",
-        "okodo.ru"
-      ]
-    },
-    "50NEWFRESH": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "2EC4HND": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "MILK15": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "KODOBI": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 3,
-      "sources": [
-        "pickpoint.ru"
-      ]
-    },
-    "35V5DD68": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "MONNEW": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
-      "sources": [
-        "ecosum.ru",
-        "okodo.ru · Яндекс Еда",
-        "okodo.ru · Деливери"
-      ]
-    },
-    "VYENPTV": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Самокат",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "KOLBASA20": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "30NEWJOREG": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "LJYN5": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "VSNZHC4": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 3,
-      "sources": [
-        "promocodex.ru · Еда",
-        "promocodex.ru"
-      ]
-    },
-    "NE400SLN": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "35VJPX46": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "15ХОККУ2": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokod_yakitoria"
-      ]
-    },
-    "40ABU645": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "okodo.ru · Яндекс Лавка"
-      ]
-    },
-    "DIXY": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru",
-        "okodo.ru · Яндекс Еда",
-        "okodo.ru · Деливери",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "GS_KOMUKUPON40": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodi.komukupon.ru"
-      ]
-    },
-    "FISH20": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "PIKABU05": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "E366PC": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "ПЫЛКО": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 3,
-      "sources": [
-        "okodo.ru · Все коды",
-        "okodo.ru"
-      ]
-    },
-    "САМ20": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Ашан",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "GRADUATE": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "MLYNF6HZS": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "50KUS11": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Яндекс Лавка",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "FIRST25": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.com",
-        "promokod.pikabu.ru"
-      ]
-    },
-    "FR50NEWNN": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "7E305": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "pickpoint.ru"
-      ]
-    },
-    "DIXYGO": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "ecosum.ru",
-        "okodo.ru · Яндекс Еда",
-        "okodo.ru · Деливери",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "LET500": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "ecosum.ru"
-      ]
-    },
-    "FISH25": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "26NOVEMBER400": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "BOX215": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 2",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "50GDE13": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/23/2026 21:47:25",
-      "seenRuns": 8,
-      "sources": [
-        "promokodi.komukupon.ru"
-      ]
-    },
-    "FIRST15": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.com",
-        "promokod.pikabu.ru"
-      ]
-    },
-    "35V8L6GC": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "300CAKE11": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "okodo.ru · Яндекс Лавка"
-      ]
-    },
-    "182P96KKK": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "GBM51BC8NS9": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 2,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "15NEW": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "SGGB222YWP": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "okodo.ru · Магнит"
-      ]
-    },
-    "HOTCODE": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "pickpoint.ru"
-      ]
-    },
-    "KOMUKUPON15": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodi.komukupon.ru"
-      ]
-    },
-    "SMKREPSLN": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "DWVDG448": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "VSNUYRE": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "OCHEN243": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 2",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "167D2RNMP": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "5PEREK": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "10NEW": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "M99": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "ДР15": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Все коды"
-      ]
-    },
-    "NEW20": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokod_tanuki"
-      ]
-    },
-    "ADMITADPP": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 2"
-      ]
-    },
-    "ZSEEA": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "8XZFS3TXGS6": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 2,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "VV_2734": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokod_vkusvill"
-      ]
-    },
-    "53SNEG91": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 3,
-      "sources": [
-        "promokodex.ru"
-      ]
-    },
-    "XRF34962": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promocodex.ru · Рестораны"
-      ]
-    },
-    "166F7HBRH": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "MONETKA": {
-      "firstSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 1,
-      "sources": [
-        "promocodex.ru · Суши"
-      ]
-    },
-    "ZPL20": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Ашан",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "300BUL63": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "okodo.ru · Яндекс Лавка"
-      ]
-    },
-    "FUDOS243": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 2",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "KUPSMKGSL": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "SPTB932": {
-      "firstSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 1,
-      "sources": [
-        "promocodex.ru · Суши"
-      ]
-    },
-    "5J76X9P": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "kp.ru"
-      ]
-    },
-    "ADM35D3664": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "MM7B": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokod_rostics"
-      ]
-    },
-    "SUP215": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Все коды"
-      ]
-    },
-    "ICESN5HL85": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "kp.ru"
-      ]
-    },
-    "AVVLAD12": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 1",
-        "okodo.ru · Глобус",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "APPNEW": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "START40": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "pickpoint.ru"
-      ]
-    },
-    "YXF989D": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Самокат",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "GIP6QLHL": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Яндекс Еда",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "1015EZUL2": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokod_perekrestok"
-      ]
-    },
-    "SKIDKA15": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Метро",
-        "okodo.ru · Все коды",
-        "t.me/promokod_yakitoria"
-      ]
-    },
-    "VSMFJ4D": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
       "sources": [
         "promokod.com"
       ]
@@ -1045,101 +146,310 @@
         "okodo.ru"
       ]
     },
-    "55KODEX": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodex.ru"
-      ]
-    },
-    "F45E8RE": {
+    "E366PC": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "OBB48M": {
-      "firstSeen": "11/24/2026 11:42:05",
+    "300SOK27": {
+      "firstSeen": "11/23/2026 21:21:37",
       "lastSeen": "11/24/2026 12:27:58",
       "seenRuns": 2,
       "sources": [
-        "promokod.com"
+        "promocodex.ru · Еда",
+        "promocodex.ru"
       ]
     },
-    "SUMMEROFF": {
+    "196JK7VXA": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "GB028M70": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
       "sources": [
+        "promokod.com"
+      ]
+    },
+    "50GDE2": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "pickpoint.ru"
+      ]
+    },
+    "GSN300SK": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "171SQGSRS": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "35VZFU65": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
         "promokodex.ru"
+      ]
+    },
+    "MORE25": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "207PE2RHF": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokody"
       ]
     },
     "DSMM132XWL": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "MORE20": {
+    "СТАРТ1000": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/23/2026 21:43:23",
+      "seenRuns": 7,
+      "sources": [
+        "fooody.ru"
+      ]
+    },
+    "ВСЕТИ2": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "pickpoint.ru"
+      ]
+    },
+    "1723SJANZ": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "ODISSEYA": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodi.komukupon.ru"
-      ]
-    },
-    "WORK24": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "188K29VWQ": {
+    "SGGB222YWP": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "okodo.ru · Магнит"
+      ]
+    },
+    "FRSALENOV": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "SORRY10": {
+    "СТ09P03": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+      "lastSeen": "11/23/2026 21:43:23",
+      "seenRuns": 7,
+      "sources": [
+        "fooody.ru"
+      ]
+    },
+    "300CAKE8": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
+      "sources": [
+        "okodo.ru · Яндекс Лавка"
+      ]
+    },
+    "ПОЛЕЗНО": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promocodex.ru · Еда"
+      ]
+    },
+    "MM7B": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokod_rostics"
+      ]
+    },
+    "FRESHREADY2": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "60PROMOCOM": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "300KUS11": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Яндекс Лавка",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "RBCLBKM8": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokody_skidki"
+      ]
+    },
+    "ZPL20": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
         "okodo.ru · Ашан",
         "okodo.ru · Все коды"
       ]
     },
-    "55PROMOCOM": {
+    "VRN300": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "ecosum.ru",
+        "okodo.ru · Яндекс Еда",
+        "okodo.ru · Деливери"
+      ]
+    },
+    "Y9TUTJB": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodex.ru"
+      ]
+    },
+    "ДОСТАВИМ25": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promocodex.ru · Еда"
+      ]
+    },
+    "189UT87RF": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
+      ]
+    },
+    "JAFUFU7": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "HOTSALE5": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 3,
+      "sources": [
+        "pickpoint.ru"
+      ]
+    },
+    "15BK": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.com",
+        "promokod.pikabu.ru"
+      ]
+    },
+    "AVVLAD12": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 1",
+        "okodo.ru · Глобус",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "ПЫЛКО": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 3,
+      "sources": [
+        "okodo.ru · Все коды",
+        "okodo.ru"
+      ]
+    },
+    "ZSEEA": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "30NEWJOREG": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "40AKU11": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "okodo.ru · Яндекс Лавка"
+      ]
+    },
+    "WHITELABEL": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 3",
+        "okodo.ru · Все коды"
       ]
     },
     "52MAK13": {
@@ -1150,7 +460,128 @@
         "promokodi.komukupon.ru"
       ]
     },
-    "HFD5FM": {
+    "DIXYGO": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "ecosum.ru",
+        "okodo.ru · Яндекс Еда",
+        "okodo.ru · Деливери",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "SFFA6PC": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "YADOMA": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promocodex.ru · Рестораны"
+      ]
+    },
+    "SAM20": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.com",
+        "promokod.pikabu.ru"
+      ]
+    },
+    "FR1000JUNE": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "СТАРТ": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/23/2026 21:43:23",
+      "seenRuns": 7,
+      "sources": [
+        "fooody.ru"
+      ]
+    },
+    "ПРИВЕТ": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promocodex.ru · Рестораны",
+        "promocodex.ru · Суши",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "M99": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "N7CLR": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "SKIDKA25": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "SALE20": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.com",
+        "ecosum.ru",
+        "okodo.ru · Яндекс Еда",
+        "okodo.ru · Деливери"
+      ]
+    },
+    "FISH20": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "35V8L6GC": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "ST40": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodi.komukupon.ru"
+      ]
+    },
+    "8XZFS3TXGS6": {
       "firstSeen": "11/24/2026 11:42:05",
       "lastSeen": "11/24/2026 12:27:58",
       "seenRuns": 2,
@@ -1158,37 +589,185 @@
         "promokod.com"
       ]
     },
-    "MYASO20": {
+    "HEALTHY": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "189UT87RF": {
+    "15ХОККУ2": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokod_yakitoria"
+      ]
+    },
+    "ADMBF2026": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 1"
+      ]
+    },
+    "30VD17BB": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "AVNEW500": {
+    "VM5117X7DE": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
-        "ecosum.ru"
+        "promokodex.ru"
       ]
     },
-    "FRESHAPP30": {
+    "VYENPTV": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Самокат",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "ШРИМП2": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 2,
+      "sources": [
+        "t.me/promokod_yakitoria"
+      ]
+    },
+    "55PROMOCOM": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
       "sources": [
-        "promokod.com",
+        "promokod.com"
+      ]
+    },
+    "ADM35D3664": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "NE400SLN": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "BOX243": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Все коды"
+      ]
+    },
+    "55KODEX": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodex.ru"
+      ]
+    },
+    "SPTB932": {
+      "firstSeen": "11/24/2026 14:21:02",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 2,
+      "sources": [
+        "promocodex.ru · Суши"
+      ]
+    },
+    "CHF30": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "САМ20": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Ашан",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "DIXY": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru",
+        "okodo.ru · Яндекс Еда",
+        "okodo.ru · Деливери",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "SUP15": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodex.ru"
+      ]
+    },
+    "УДОН26": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promocodex.ru · Рестораны"
+      ]
+    },
+    "50PIK12": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
         "promocodex.ru · Еда"
+      ]
+    },
+    "LJYN5": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "NEW20": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokod_tanuki"
+      ]
+    },
+    "26NOVEMBER200": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
       ]
     },
     "ХРУСТИМ2": {
@@ -1199,52 +778,421 @@
         "t.me/promokod_yakitoria"
       ]
     },
+    "ODISSEYA": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodi.komukupon.ru"
+      ]
+    },
+    "FPS123": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 3,
+      "sources": [
+        "ecosum.ru"
+      ]
+    },
+    "FIRST15": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.com",
+        "promokod.pikabu.ru"
+      ]
+    },
+    "50BUL616": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Яндекс Лавка",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "ICEWTGWEDU": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "СМАРТ-4ДМ": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "pickpoint.ru"
+      ]
+    },
+    "PROMOKODSHOPGS_GRN": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "pickpoint.ru"
+      ]
+    },
+    "VS4B13": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokod_growfood"
+      ]
+    },
+    "MGH200": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "KOFE": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "FUDOS243": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 2",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "FOK26": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
     "DEL02EY2Q": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
         "promokodex.ru"
       ]
     },
-    "GURU25": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+    "KFCHOME017596": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
       "sources": [
-        "pickpoint.ru"
+        "t.me/promokod_rostics"
       ]
     },
-    "300ROBOT": {
+    "VSA9JNH": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "LHRU88": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+    "BA55WFUZ028A": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 2,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "ULT500": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "TO759UT27TVS": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "ADMM20": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 1"
+      ]
+    },
+    "HELLOAPP": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 3",
+        "okodo.ru · Sushi Master",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "LET500": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "ecosum.ru"
+      ]
+    },
+    "F45E8RE": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "35V5DD68": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "APP10": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/23/2026 21:43:23",
+      "seenRuns": 7,
+      "sources": [
+        "fooody.ru"
+      ]
+    },
+    "ИТАМАЭ2": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 2,
+      "sources": [
+        "t.me/promokod_yakitoria"
+      ]
+    },
+    "BOX215": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 2",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "5PEREK": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "VSAF2L3": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
         "promokodex.ru"
       ]
     },
-    "5DISC": {
+    "DXNVS": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "FR50NEWNN": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "ВСЕТИ2": {
+    "SUP215": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Все коды"
+      ]
+    },
+    "RADUUGA5": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "RCF7DQ": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
       "sources": [
-        "pickpoint.ru"
+        "promokod.com"
+      ]
+    },
+    "MONETKA": {
+      "firstSeen": "11/24/2026 14:21:02",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 2,
+      "sources": [
+        "promocodex.ru · Суши"
+      ]
+    },
+    "ADMITAD300": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 1"
+      ]
+    },
+    "2EC4HND": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "MOBADM": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 3",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "SIT26": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "300BUL63": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "okodo.ru · Яндекс Лавка"
+      ]
+    },
+    "OBB48M": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 2,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "FRESHAPP30": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.com",
+        "promocodex.ru · Еда"
+      ]
+    },
+    "VV_2734": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokod_vkusvill"
+      ]
+    },
+    "PROMOKODEXX75": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodex.ru"
+      ]
+    },
+    "ADM8326NEXT": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Глобус",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "D11A": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "GBM51BC8NS9": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 2,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "SGGB1Q5OIW7": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "15NEW": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "WORK24": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "SKIDKA30": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "OCHEN215": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 2"
       ]
     },
     "УГОРЬ175": {
@@ -1256,64 +1204,95 @@
         "promocodex.ru"
       ]
     },
-    "FRSALEJULY": {
+    "KOLBASA": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "FTAX20": {
+    "VSM56HS": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "kp.ru"
+      ]
+    },
+    "35V8L71Z": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "kp.ru"
+      ]
+    },
+    "SUMMEROFF": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "MLYNF6HZS": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "PR1PY": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokody"
+      ]
+    },
+    "50GDE13": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/23/2026 21:47:25",
+      "seenRuns": 8,
+      "sources": [
+        "promokodi.komukupon.ru"
+      ]
+    },
+    "AVX9GVL4": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "PIKABU05": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 3,
       "sources": [
         "promokod.pikabu.ru"
       ]
     },
     "300NEW": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "RBCLBKM8": {
+    "AV25": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokody_skidki"
-      ]
-    },
-    "HLEB20": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "50BUL616": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Яндекс Лавка",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "GDSM25": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodi.komukupon.ru"
-      ]
-    },
-    "СТАРТ1000": {
+    "ВСЕВМЕСТЕ": {
       "firstSeen": "11/23/2026 21:21:37",
       "lastSeen": "11/23/2026 21:43:23",
       "seenRuns": 7,
@@ -1321,77 +1300,45 @@
         "fooody.ru"
       ]
     },
-    "CHAS": {
+    "YXF989D": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Самокат",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "SLN400RP": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "ИТАМАЭ2": {
+    "O49TQ7": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "ADMITADPP": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 2"
+      ]
+    },
+    "МАЙАМИ35": {
       "firstSeen": "11/24/2026 11:42:05",
       "lastSeen": "11/24/2026 12:27:58",
       "seenRuns": 2,
       "sources": [
         "t.me/promokod_yakitoria"
-      ]
-    },
-    "BOX243": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Все коды"
-      ]
-    },
-    "СТ09P03": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/23/2026 21:43:23",
-      "seenRuns": 7,
-      "sources": [
-        "fooody.ru"
-      ]
-    },
-    "ADM8326NEXT": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Глобус",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "SUP15": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodex.ru"
-      ]
-    },
-    "KFCHOME017596": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokod_rostics"
-      ]
-    },
-    "ADMITAD300": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 1"
-      ]
-    },
-    "Y9TUTJB": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodex.ru"
       ]
     },
     "VS8STFX": {
@@ -1402,64 +1349,21 @@
         "promokod.site"
       ]
     },
-    "16767DGJZ": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+    "ПАПА": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/24/2026 12:27:58",
       "seenRuns": 3,
       "sources": [
-        "t.me/promokod_perekrestok"
+        "okodo.ru · Все коды",
+        "okodo.ru"
       ]
     },
-    "ULT600": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+    "31GGMQSSDQZ": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
       "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "300CAKE8": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "okodo.ru · Яндекс Лавка"
-      ]
-    },
-    "EAT400": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.com",
-        "ecosum.ru",
-        "okodo.ru · Яндекс Еда",
-        "okodo.ru · Деливери",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "FRESHREADY3": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "MORE25": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "195Q8WG5Z": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
+        "okodo.ru · Магнит"
       ]
     },
     "ДР20": {
@@ -1470,225 +1374,6 @@
         "fooody.ru"
       ]
     },
-    "300KUS11": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Яндекс Лавка",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "V8IUM": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "40AKU11": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "okodo.ru · Яндекс Лавка"
-      ]
-    },
-    "MINUS20": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "RCF7DQ": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "35V8L71Z": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "kp.ru"
-      ]
-    },
-    "SKIDKA25": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "40ARU27": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promocodex.ru · Еда"
-      ]
-    },
-    "ПРИВЕТ": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promocodex.ru · Рестораны",
-        "promocodex.ru · Суши",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "GB0193JX": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokody_skidki"
-      ]
-    },
-    "ST40": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodi.komukupon.ru"
-      ]
-    },
-    "VSM56HS": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "kp.ru"
-      ]
-    },
-    "SKIDKA35": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "O49TQ7": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "OLLIS20": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "30VASFJ4": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "SVWUFT727": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "26NOVEMBER300": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "HLEB": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "207PE2RHF": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokody"
-      ]
-    },
-    "ПОЛЕЗНО": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promocodex.ru · Еда"
-      ]
-    },
-    "MOLOKO20": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "196JK7VXA": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "35VZFU65": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodex.ru"
-      ]
-    },
-    "AV25": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "FPS123": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 3,
-      "sources": [
-        "ecosum.ru"
-      ]
-    },
-    "GIPP284Y": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
     "YAMAPP": {
       "firstSeen": "11/23/2026 21:21:37",
       "lastSeen": "11/23/2026 21:43:23",
@@ -1697,20 +1382,556 @@
         "fooody.ru"
       ]
     },
-    "1984MK6DJ": {
+    "MILK15": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "CKMAY": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+    "FISH25": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
       "sources": [
+        "promokod.com"
+      ]
+    },
+    "TGSGRP2A3BB5": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "FLASH50": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru",
+        "okodo.ru · Самокат",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "5DISC": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "FPS037": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 3,
+      "sources": [
+        "promocodex.ru · Еда",
+        "promocodex.ru"
+      ]
+    },
+    "10NEW": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "MINUS20": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "КАЛИФА": {
+      "firstSeen": "11/24/2026 14:21:02",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 2,
+      "sources": [
+        "promocodex.ru · Суши"
+      ]
+    },
+    "DIXYGSLN": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "GB0193JX": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokody_skidki"
+      ]
+    },
+    "ICESN5HL85": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "kp.ru"
+      ]
+    },
+    "EXP20": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "DWVDG448": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "192CGXWHH": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "NEWBEST": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 1",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "40ABU645": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "okodo.ru · Яндекс Лавка"
+      ]
+    },
+    "CHAS": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "KODOBI": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 3,
+      "sources": [
+        "pickpoint.ru"
+      ]
+    },
+    "APPNEW": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "HOTSALEGS": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "pickpoint.ru"
+      ]
+    },
+    "1015EZUL2": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokod_perekrestok"
+      ]
+    },
+    "GSXXC4I3": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodi.komukupon.ru"
+      ]
+    },
+    "VSNZHC4": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 3,
+      "sources": [
+        "promocodex.ru · Еда",
+        "promocodex.ru"
+      ]
+    },
+    "16767DGJZ": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokod_perekrestok"
+      ]
+    },
+    "CKMAY": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
         "promokodex.ru"
+      ]
+    },
+    "SKIDKA35": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "750PROMOCOM": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "166F7HBRH": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "199LR5V2H": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "MONNEW": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "ecosum.ru",
+        "okodo.ru · Яндекс Еда",
+        "okodo.ru · Деливери"
+      ]
+    },
+    "PROMOKODEXGS": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodex.ru"
+      ]
+    },
+    "3KGW1": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodex.ru"
+      ]
+    },
+    "D100": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "30NEWAPRREG": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "26NOVEMBER400": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "ADMNEW": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 1"
+      ]
+    },
+    "GRADUATE": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "EAT400": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.com",
+        "ecosum.ru",
+        "okodo.ru · Яндекс Еда",
+        "okodo.ru · Деливери",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "SVWUFT727": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "SMKREPSLN": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "PROMOKODEXGS1890": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodex.ru"
+      ]
+    },
+    "IOS40": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "26NOVEMBER500": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "35LTNS8X": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokod_perekrestok"
+      ]
+    },
+    "15ОСЕНЬ2": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokod_yakitoria"
+      ]
+    },
+    "300CAKE11": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "okodo.ru · Яндекс Лавка"
+      ]
+    },
+    "VV400": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "ecosum.ru"
+      ]
+    },
+    "23OVQZL46M": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Магнит",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "VSCZSTB": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "197VV42N2": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokody"
+      ]
+    },
+    "HLEB20": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "START40": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "pickpoint.ru"
+      ]
+    },
+    "BDAY25": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "t.me/promokod_yakitoria"
+      ]
+    },
+    "MYASO20": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "IMP20": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "АЦУЙ4": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 2,
+      "sources": [
+        "t.me/promokod_yakitoria"
+      ]
+    },
+    "ПТИЦА": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promocodex.ru · Еда"
+      ]
+    },
+    "KT1178": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/24/2026 01:55:56",
+      "seenRuns": 9,
+      "sources": [
+        "promocodex.ru",
+        "promocodex.ru · Рестораны"
+      ]
+    },
+    "NVVB4HNN5": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "KOMUKUPON15": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodi.komukupon.ru"
+      ]
+    },
+    "1500RUB": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Метро",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "SKIDKA15": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Метро",
+        "okodo.ru · Все коды",
+        "t.me/promokod_yakitoria"
+      ]
+    },
+    "GURU25": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "pickpoint.ru"
+      ]
+    },
+    "NEW200": {
+      "firstSeen": "11/24/2026 14:21:02",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 2,
+      "sources": [
+        "okodo.ru · Rostic's"
+      ]
+    },
+    "XRF34962": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promocodex.ru · Рестораны"
+      ]
+    },
+    "ДР15": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Все коды"
       ]
     },
     "190HPD98X": {
@@ -1721,75 +1942,54 @@
         "promokod.com"
       ]
     },
-    "SAM20": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.com",
-        "promokod.pikabu.ru"
-      ]
-    },
-    "ADMM20": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 1"
-      ]
-    },
-    "VSAF2L3": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodex.ru"
-      ]
-    },
-    "GBM51BIEF72": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 3,
-      "sources": [
-        "okodo.ru · Магнит",
-        "okodo.ru · Все коды",
-        "okodo.ru"
-      ]
-    },
-    "ПТИЦА": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promocodex.ru · Еда"
-      ]
-    },
-    "SALE20": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.com",
-        "ecosum.ru",
-        "okodo.ru · Яндекс Еда",
-        "okodo.ru · Деливери"
-      ]
-    },
-    "VSCZSTB": {
+    "167D2RNMP": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "MOBADM": {
+    "ADM22196": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodex.ru"
+      ]
+    },
+    "50CAKE11": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Яндекс Лавка",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "2RHP52V": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
       "sources": [
-        "promokod.store · Еда 3",
+        "promokod.com"
+      ]
+    },
+    "GE4LJNEHD": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Магнит",
         "okodo.ru · Все коды"
+      ]
+    },
+    "BB99": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
       ]
     },
     "1738PBZ6M": {
@@ -1800,116 +2000,18 @@
         "promokod.com"
       ]
     },
-    "ШРИМП2": {
+    "50NEWFRESH": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 2,
-      "sources": [
-        "t.me/promokod_yakitoria"
-      ]
-    },
-    "ПРЕЗЕНТ": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 1"
-      ]
-    },
-    "D11A": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "VSA9JNH": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
       "sources": [
         "promokod.com"
       ]
     },
-    "50CAKE11": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Яндекс Лавка",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "50GDE2": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "pickpoint.ru"
-      ]
-    },
-    "GSN300SK": {
+    "VSMFJ4D": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "NEW15": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/23/2026 21:43:23",
-      "seenRuns": 7,
-      "sources": [
-        "fooody.ru"
-      ]
-    },
-    "23OVQZL46M": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Магнит",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "FRESHREADY2": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "REST150": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "31GGMQSSDQZ": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "okodo.ru · Магнит"
-      ]
-    },
-    "ДОСТАВИМ25": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promocodex.ru · Еда"
-      ]
-    },
-    "171SQGSRS": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
       "sources": [
         "promokod.com"
       ]
@@ -1923,113 +2025,245 @@
         "promocodex.ru"
       ]
     },
-    "AVX5S55S": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "FIRST": {
+    "PRIEM_WEEKEND_SALE": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/23/2026 21:43:23",
-      "seenRuns": 7,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
-        "fooody.ru"
+        "promokod.store · Еда 1"
       ]
     },
-    "NVHLMGX2R": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+    "GBM51BIEF72": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/24/2026 12:27:58",
       "seenRuns": 3,
+      "sources": [
+        "okodo.ru · Магнит",
+        "okodo.ru · Все коды",
+        "okodo.ru"
+      ]
+    },
+    "188K29VWQ": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
     "NVQNXH5WF": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
         "kp.ru"
       ]
     },
-    "178S9QU4U": {
+    "VSNUYRE": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "15УНАГИ2": {
+    "OLLIS20": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokod_yakitoria"
-      ]
-    },
-    "26NOVEMBER500": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
       "sources": [
-        "promokod.pikabu.ru"
+        "promokod.com"
       ]
     },
-    "SIT26": {
+    "50KUS11": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "FLASH50": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru",
-        "okodo.ru · Самокат",
+        "okodo.ru · Яндекс Лавка",
         "okodo.ru · Все коды"
       ]
     },
-    "YADOMA": {
+    "30VAS22X": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
-        "promocodex.ru · Рестораны"
+        "kp.ru"
       ]
     },
-    "PROMOKODEXGS1890": {
+    "FTAX20": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "NVHLMGX2R": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "GS_KOMUKUPON40": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodi.komukupon.ru"
+      ]
+    },
+    "AVNEW500": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "ecosum.ru"
+      ]
+    },
+    "VSFRAEU": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
         "promokodex.ru"
       ]
     },
-    "КАЛИФА": {
-      "firstSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 1,
-      "sources": [
-        "promocodex.ru · Суши"
-      ]
-    },
-    "N7CLR": {
+    "182P96KKK": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "ВСЕВМЕСТЕ": {
+    "35VJPX46": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "SORRY10": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Ашан",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "GDSM25": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodi.komukupon.ru"
+      ]
+    },
+    "FIRST25": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.com",
+        "promokod.pikabu.ru"
+      ]
+    },
+    "ПРЕЗЕНТ": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.store · Еда 1"
+      ]
+    },
+    "V8IUM": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "HFD5FM": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 2,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "195TRVR9H": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promocodex.ru · Еда"
+      ]
+    },
+    "26NOVEMBER300": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokod.pikabu.ru"
+      ]
+    },
+    "GIP6QLHL": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "okodo.ru · Яндекс Еда",
+        "okodo.ru · Все коды"
+      ]
+    },
+    "LHRU88": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "promokodex.ru"
+      ]
+    },
+    "53SNEG91": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "11/24/2026 12:27:58",
+      "seenRuns": 3,
+      "sources": [
+        "promokodex.ru"
+      ]
+    },
+    "GIPP284Y": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promokod.com"
+      ]
+    },
+    "HOTCODE": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
+      "sources": [
+        "pickpoint.ru"
+      ]
+    },
+    "40ARU27": {
+      "firstSeen": "11/23/2026 21:21:37",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
+      "sources": [
+        "promocodex.ru · Еда"
+      ]
+    },
+    "NEW15": {
       "firstSeen": "11/23/2026 21:21:37",
       "lastSeen": "11/23/2026 21:43:23",
       "seenRuns": 7,
@@ -2037,70 +2271,21 @@
         "fooody.ru"
       ]
     },
-    "CHF30": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "30VAS22X": {
+    "5J76X9P": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
         "kp.ru"
       ]
     },
-    "PROMOKODEXGS": {
+    "OBED24": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
-        "promokodex.ru"
-      ]
-    },
-    "HELLOAPP": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 3",
-        "okodo.ru · Sushi Master",
-        "okodo.ru · Все коды"
-      ]
-    },
-    "HOTSALEGS": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "pickpoint.ru"
-      ]
-    },
-    "ICEWTGWEDU": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
+        "promokod.com",
         "promokod.pikabu.ru"
-      ]
-    },
-    "VV400": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "ecosum.ru"
-      ]
-    },
-    "VM5117X7DE": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodex.ru"
       ]
     },
     "197QDB77U": {
@@ -2111,106 +2296,26 @@
         "promokod.com"
       ]
     },
-    "DXNVS": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "ADMBF2026": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 1"
-      ]
-    },
-    "HEALTHY": {
+    "178S9QU4U": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "PRIEM_WEEKEND_SALE": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 1"
-      ]
-    },
-    "33PROMOCOM": {
+    "195Q8WG5Z": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "750PROMOCOM": {
+    "MORE20": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "СТАРТ": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/23/2026 21:43:23",
-      "seenRuns": 7,
-      "sources": [
-        "fooody.ru"
-      ]
-    },
-    "OCHEN215": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
-      "sources": [
-        "promokod.store · Еда 2"
-      ]
-    },
-    "BDAY25": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokod_yakitoria"
-      ]
-    },
-    "VS4B13": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokod_growfood"
-      ]
-    },
-    "APP10": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/23/2026 21:43:23",
-      "seenRuns": 7,
-      "sources": [
-        "fooody.ru"
-      ]
-    },
-    "HOTSALE5": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "11/24/2026 12:27:58",
-      "seenRuns": 3,
-      "sources": [
-        "pickpoint.ru"
-      ]
-    },
-    "AVX9GVL4": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
       "sources": [
         "promokod.com"
       ]
@@ -2224,150 +2329,45 @@
         "promokod.store"
       ]
     },
-    "NEW200": {
-      "firstSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 1,
-      "sources": [
-        "okodo.ru · Rostic's"
-      ]
-    },
-    "PROMOKODEXX75": {
+    "REST150": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodex.ru"
-      ]
-    },
-    "192CGXWHH": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "1723SJANZ": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "TO759UT27TVS": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "50PIK12": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promocodex.ru · Еда"
-      ]
-    },
-    "D100": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
         "promokod.pikabu.ru"
       ]
     },
-    "197VV42N2": {
+    "HLEB": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "t.me/promokody"
-      ]
-    },
-    "JAFUFU7": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "60PROMOCOM": {
+    "AVX5S55S": {
       "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 4,
       "sources": [
         "promokod.com"
       ]
     },
-    "FOK26": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
+    "FRSALEJULY": {
+      "firstSeen": "11/24/2026 11:42:05",
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
       "seenRuns": 4,
       "sources": [
-        "promokod.pikabu.ru"
+        "promokod.com"
       ]
     },
-    "26NOVEMBER200": {
+    "OCHEN243": {
       "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
+      "lastSeen": "2026-11-24T14:27:15.6354608+00:00",
+      "seenRuns": 5,
       "sources": [
-        "promokod.pikabu.ru"
-      ]
-    },
-    "GE4LJNEHD": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "okodo.ru · Магнит",
+        "promokod.store · Еда 2",
         "okodo.ru · Все коды"
-      ]
-    },
-    "30VULJ8K": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "DIXYGSLN": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "15BK": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokod.com",
-        "promokod.pikabu.ru"
-      ]
-    },
-    "EXP20": {
-      "firstSeen": "11/24/2026 11:42:05",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 3,
-      "sources": [
-        "promokod.com"
-      ]
-    },
-    "ADM22196": {
-      "firstSeen": "11/23/2026 21:21:37",
-      "lastSeen": "2026-11-24T14:21:02.0198170+00:00",
-      "seenRuns": 4,
-      "sources": [
-        "promokodex.ru"
       ]
     }
   }
