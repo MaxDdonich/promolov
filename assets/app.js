@@ -8,7 +8,7 @@
   const DAY = 86400000;
   const HOUR = 3600000;
   const BEST_SCORE = 78;
-const MIN_PAY_SHARE = 0.10;
+const MIN_PAY_SHARE = 0.50;
 const MIN_PAY_ABS = 50;
   const LS_KEY = 'promolov.v2';
   const FEED_CACHE_KEY = 'promolov.feedCache.v1';
@@ -79,7 +79,6 @@ const MIN_PAY_ABS = 50;
     caught: new Set(),
     sources: {},
     paused: false,
-    orderSum: 1500,
     feedUrl: '',
     onlyWorking: false,
     load() {
@@ -92,7 +91,6 @@ const MIN_PAY_ABS = 50;
         this.caught = new Set(Array.isArray(data.caught) ? data.caught : []);
         this.sources = data.sources && typeof data.sources === 'object' ? data.sources : {};
         this.paused = !!data.paused;
-        this.orderSum = Number.isFinite(data.orderSum) ? data.orderSum : 1500;
         this.feedUrl = typeof data.feedUrl === 'string' ? data.feedUrl : '';
         this.onlyWorking = data.onlyWorking === true && data.onlyWorkingV2 === true;
       } catch (err) {
@@ -107,7 +105,6 @@ const MIN_PAY_ABS = 50;
           caught: [...this.caught],
           sources: this.sources,
           paused: this.paused,
-          orderSum: this.orderSum,
           feedUrl: this.feedUrl,
           onlyWorking: this.onlyWorking,
           onlyWorkingV2: true
@@ -173,7 +170,6 @@ const MIN_PAY_ABS = 50;
     { id: 'feed', label: 'Собрано с сайтов', icon: '⇣' }
   ];
 
-  let orderSum = clamp(Math.round(store.orderSum) || 0, 0, 20000);
   let lastUpdate = Date.now();
   let tickTimer = null;
   const srcStats = {};
@@ -562,13 +558,6 @@ const MIN_PAY_ABS = 50;
     const list = codes.filter((code) => baseMatch(code) && collectionMatch(code));
 
     list.sort((a, b) => {
-      const sa = savings(a, orderSum);
-      const sb = savings(b, orderSum);
-
-      if (ui.sort === 'savings') {
-        if (sa.applicable !== sb.applicable) return sa.applicable ? -1 : 1;
-        return sb.total - sa.total || scoreOf(b) - scoreOf(a);
-      }
       if (ui.sort === 'expiry') {
         const ea = a.expiresAt || Infinity;
         const eb = b.expiresAt || Infinity;
@@ -577,7 +566,7 @@ const MIN_PAY_ABS = 50;
       if (ui.sort === 'new') {
         return b.addedAt - a.addedAt;
       }
-      return scoreOf(b) - scoreOf(a) || sb.total - sa.total;
+      return scoreOf(b) - scoreOf(a);
     });
 
     return list;
@@ -585,11 +574,7 @@ const MIN_PAY_ABS = 50;
 
   function cardHTML(code) {
     const sv = serviceOf(code.service);
-    const save = savings(code, orderSum);
     const score = scoreOf(code);
-    const { works, fails } = counts(code);
-    const totalVotes = works + fails;
-    const rate = totalVotes ? Math.round((works / totalVotes) * 100) : 0;
     const status = statusOf(code);
     const metric = code.sourceCount > 1 ? status.label + ' · ' + code.sourceCount + ' ист.' : status.label;
     const fav = store.fav.has(code.id);
@@ -600,7 +585,7 @@ const MIN_PAY_ABS = 50;
     ];
     if (code.wholeCart) tags.push('<span class="tag tag--accent">вся корзина</span>');
     if (code.freeDelivery) tags.push('<span class="tag">доставка 0 ₽</span>');
-    if (save.capped) tags.push('<span class="tag tag--warn">к оплате от ' + money(save.minPay) + '</span>');
+    if (code.minOrder > 0) tags.push('<span class="tag">от ' + money(code.minOrder) + '</span>');
     if (code.verification === 'confirmed') tags.push('<span class="tag tag--ok">✓ подтверждён</span>');
     else if (code.verification === 'single') tags.push('<span class="tag tag--warn">1 источник</span>');
     if (code.cityRestricted && (code.cities || []).length) {
@@ -616,7 +601,7 @@ const MIN_PAY_ABS = 50;
     }
 
     return '' +
-      '<article class="card ' + (save.applicable ? '' : 'is-muted ') + (code.isNew ? 'is-new' : '') + '" style="--brand:' + sv.color + '" data-id="' + esc(code.id) + '">' +
+      '<article class="card ' + (code.isNew ? 'is-new' : '') + '" style="--brand:' + sv.color + '" data-id="' + esc(code.id) + '">' +
         (code.isNew ? '<span class="card__new">новый</span>' : '') +
         '<div class="card__top">' +
           '<div class="brand">' +
@@ -640,14 +625,6 @@ const MIN_PAY_ABS = 50;
         '<div class="card__code">' +
           '<code>' + esc(code.code) + '</code>' +
           '<button class="btn btn--copy" type="button" data-action="copy" data-id="' + esc(code.id) + '">Скопировать</button>' +
-        '</div>' +
-
-        '<div class="card__save ' + (save.applicable ? '' : 'is-off') + '">' +
-          (!save.applicable
-            ? 'Нужен чек от <b>' + money(save.need) + '</b>'
-            : save.partial
-              ? 'Скидка на категорию · точная сумма — в корзине'
-              : 'Экономия при чеке ' + money(orderSum) + ': <b>' + money(save.total) + '</b> · к оплате <b>' + money(save.pay) + '</b>') +
         '</div>' +
 
         '<div class="card__foot">' +
@@ -722,13 +699,12 @@ const MIN_PAY_ABS = 50;
       if (moreCount) moreCount.textContent = rest > 0 ? '(+' + rest + ')' : '';
     }
 
-    const sum = orderSum;
     const selectedLabels = [...ui.collections]
       .map((id) => (COLLECTIONS.find((item) => item.id === id) || {}).label)
       .filter(Boolean);
     const collectionNote = selectedLabels.length ? ' · ' + selectedLabels.join(' + ').toLowerCase() : '';
     $('#resultsMeta').textContent = all.length
-      ? list.length + ' из ' + all.length + ' · чек ' + money(sum) + collectionNote + (ui.onlyWorking ? ' · только рабочие' : '') + (ui.onlyBest ? ' · порог ' + BEST_SCORE : '')
+      ? list.length + ' из ' + all.length + collectionNote + (ui.onlyWorking ? ' · только рабочие' : '') + (ui.onlyBest ? ' · порог ' + BEST_SCORE : '')
       : 'ничего не найдено';
 
     if (!all.length) {
@@ -740,10 +716,10 @@ const MIN_PAY_ABS = 50;
           text.textContent = 'Снимите одну из подборок или измените остальные фильтры. Подборки работают как пересечение: код должен подходить под все выбранные.';
         } else if (ui.onlyWorking) {
           title.textContent = 'Нет подтверждённых рабочих кодов';
-          text.textContent = 'Попробуйте отключить «только рабочие», изменить сумму чека или обновить фид. Неподтверждённые и демо-коды скрыты.';
+          text.textContent = 'Попробуйте отключить «только рабочие» или обновить фид. Неподтверждённые и демо-коды скрыты.';
         } else {
           title.textContent = 'Ничего не поймали по этим фильтрам';
-          text.textContent = 'Сбросьте фильтры или уменьшите сумму чека — подходящий код найдётся.';
+          text.textContent = 'Сбросьте фильтры — подходящий код найдётся.';
         }
       }
     }
@@ -753,55 +729,15 @@ const MIN_PAY_ABS = 50;
 
   function renderStats() {
     const active = workingPool();
-    let best = 0;
-    let sum = 0;
-    let count = 0;
-
-    active.forEach((code) => {
-      const s = savings(code, orderSum);
-      if (!s.applicable) return;
-      if (s.total > best) best = s.total;
-      if (s.total > 0) {
-        sum += s.total;
-        count += 1;
-      }
-    });
-
+    const confirmed = active.filter((code) => code.verification === 'confirmed').length;
+    const services = new Set(active.map((code) => code.service)).size;
     $('#statCount').textContent = active.length;
-    $('#statBest').textContent = orderSum ? money(best) : '—';
-    $('#statAvg').textContent = orderSum && count ? money(sum / count) : '—';
-  }
-
-  function renderCalc() {
-    const box = $('#calcResult');
-    if (!orderSum) {
-      box.innerHTML = '<div class="calc__none">Введите сумму заказа — покажем, какой промокод сэкономит больше всего.</div>';
-      return;
-    }
-
-    const options = workingPool()
-      .map((code) => ({ code: code, save: savings(code, orderSum), score: scoreOf(code) }))
-      .filter((item) => item.save.applicable && item.save.total > 0);
-
-    if (!options.length) {
-      box.innerHTML = '<div class="calc__none">Для чека <b>' + money(orderSum) + '</b> подходящих кодов нет. Попробуйте сумму побольше — минимум у акций начинается от 600 ₽.</div>';
-      return;
-    }
-
-    options.sort((a, b) => b.save.total - a.save.total || b.score - a.score);
-    const top = options[0];
-    const share = clamp((top.save.total / orderSum) * 100, 0, 100);
-
-    box.innerHTML = '' +
-      '<div class="calc__bestline"><span>Лучшая экономия</span><b>' + money(top.save.total) + '</b></div>' +
-      '<div class="calc__bestcode">код <code>' + esc(top.code.code) + '</code> · ' + esc(top.code.service) + '</div>' +
-      '<div class="calc__bar"><i style="width:' + share.toFixed(1) + '%"></i></div>' +
-      '<div class="calc__note">это ' + Math.round(share) + '% от чека · подходящих кодов: ' + options.length + '</div>';
+    $('#statBest').textContent = confirmed;
+    $('#statAvg').textContent = services;
   }
 
   function renderAll() {
     renderStats();
-    renderCalc();
     renderChips();
     renderCollections();
     renderGrid();
@@ -968,7 +904,6 @@ const MIN_PAY_ABS = 50;
     if (!code) return;
 
     const sv = serviceOf(code.service);
-    const save = savings(code, orderSum);
     const score = scoreOf(code);
     const { works, fails } = counts(code);
     const totalVotes = works + fails;
@@ -976,22 +911,6 @@ const MIN_PAY_ABS = 50;
     const status = statusOf(code);
     const toneClass = status.tone === 'good' ? 'is-good' : status.tone === 'warn' ? 'is-warn' : status.tone === 'bad' ? 'is-bad' : 'is-dim';
     const fav = store.fav.has(code.id);
-    const share = orderSum > 0 ? Math.round((save.total / orderSum) * 100) : 0;
-
-    const calcRows = !save.applicable
-      ? '<div>Условие по чеку</div><b>от ' + money(save.need) + '</b>' +
-        '<div class="total"><span>Ваш чек пока меньше</span><b>экономии нет</b></div>'
-      : save.partial
-        ? '<div>Скидка по коду</div><b>' + valueLabel(code) + ' на категорию</b>' +
-          '<div>Бесплатная доставка</div><b>' + (save.delivery ? money(save.delivery) : '—') + '</b>' +
-          '<div>Ваш чек</div><b>' + money(orderSum) + '</b>' +
-          '<div class="total"><span>Точная сумма скидки</span><b>зависит от товаров</b></div>'
-        : '' +
-          '<div>Скидка по коду</div><b>' + money(save.discount) + '</b>' +
-          '<div>Бесплатная доставка</div><b>' + (save.delivery ? money(save.delivery) : '—') + '</b>' +
-          '<div>Ваш чек</div><b>' + money(orderSum) + '</b>' +
-          '<div>К оплате</div><b>' + money(save.pay) + '</b>' +
-          '<div class="total"><span>Итого экономия</span><b>' + money(save.total) + ' · ' + share + '%</b></div>';
 
     const conditions = (code.conditions || []).map((c) => '<li>' + esc(c) + '</li>').join('')
       || '<li>Условия уточняйте на сайте сервиса</li>';
@@ -1058,8 +977,6 @@ const MIN_PAY_ABS = 50;
         '<div class="m-fact"><span>Источников</span><b>' + (code.sourceCount || 1) + ' · ' + esc(methodLabel) + '</b></div>' +
         also +
       '</div>' +
-
-      '<div class="m-calc">' + calcRows + '</div>' +
 
       '<div class="m-section">' +
         '<h3>Условия</h3>' +
@@ -1138,7 +1055,7 @@ const MIN_PAY_ABS = 50;
     if (!item || !item.service || !item.code) return null;
     const type = ['percent', 'fixed', 'delivery'].includes(item.type) ? item.type : 'fixed';
     const value = Number(item.value) || 0;
-    if (type === 'percent' && value >= 100) return null;
+    if (type === 'percent' && value > 50) return null;
     const category = Array.isArray(item.category) ? item.category.slice(0, 4) : ['из фида'];
     const collections = Array.isArray(item.collections) ? item.collections.map(String) : [];
     const has = (name) => collections.includes(name);
@@ -1467,37 +1384,6 @@ const MIN_PAY_ABS = 50;
     renderAll();
   });
 
-  function setOrderSum(value) {
-    orderSum = clamp(Math.round(value) || 0, 0, 20000);
-    store.orderSum = orderSum;
-    store.save();
-    const input = $('#orderSum');
-    if (document.activeElement !== input) input.value = orderSum;
-    $('#orderRange').value = clamp(orderSum, 300, 5000);
-    renderStats();
-    renderCalc();
-    renderGrid();
-  }
-
-  $('#orderSum').addEventListener('input', (event) => {
-    const raw = event.target.value === '' ? 0 : Number(event.target.value);
-    setOrderSum(Number.isFinite(raw) ? raw : 0);
-  });
-
-  $('#orderSum').addEventListener('blur', (event) => {
-    event.target.value = orderSum;
-  });
-
-  $('#orderRange').addEventListener('input', (event) => {
-    setOrderSum(Number(event.target.value));
-  });
-
-  $('#quickSums').addEventListener('click', (event) => {
-    const btn = event.target.closest('[data-sum]');
-    if (!btn) return;
-    setOrderSum(Number(btn.dataset.sum));
-  });
-
   $('#btnRefresh').addEventListener('click', refreshAll);
 
   $('#btnSources').addEventListener('click', openDrawer);
@@ -1580,8 +1466,6 @@ const MIN_PAY_ABS = 50;
   /* ---------- Инициализация ---------- */
 
   function init() {
-    $('#orderSum').value = orderSum;
-    $('#orderRange').value = clamp(orderSum, 300, 5000);
     $('#onlyWorking').checked = ui.onlyWorking;
 
     const feedUrl = store.feedUrl || 'data/codes.json';

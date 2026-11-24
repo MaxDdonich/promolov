@@ -7,7 +7,7 @@
   <meta name="description" content="Автоматический сбор промокодов на доставку еды: реальная выгода с учётом вашего чека, проверка источников и отметки пользователей.">
   <meta name="theme-color" content="#0a0c0b">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23c8f751'/><text x='50' y='74' font-size='62' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%230a0c0b'>₽</text></svg>">
-  <link rel="stylesheet" href="assets/styles.css?v=20261124-2">
+  <link rel="stylesheet" href="assets/styles.css?v=20261124-3">
 </head>
 <body>
   <div class="bg-glow" aria-hidden="true"></div>
@@ -49,35 +49,14 @@
         <h1>Выгодные промокоды<br>на доставку еды <span class="grad">ловятся сами</span></h1>
         <p class="hero__lead">
           ПромоЛов проверяет официальные акции, Telegram-каналы и партнёрские фиды,
-          считает реальную выгоду с учётом вашего чека и оставляет только то,
-          что действительно экономит деньги.
+          собирает рабочие коды и показывает, где и на каких условиях они действуют.
         </p>
         <div class="hero__stats">
           <div class="stat"><b id="statCount">—</b><span>рабочих кодов</span></div>
-          <div class="stat"><b id="statBest">—</b><span>лучшая экономия</span></div>
-          <div class="stat"><b id="statAvg">—</b><span>средняя выгода</span></div>
+          <div class="stat"><b id="statBest">—</b><span>подтверждённых</span></div>
+          <div class="stat"><b id="statAvg">—</b><span>сервисов</span></div>
         </div>
       </div>
-
-      <aside class="calc" aria-labelledby="calcTitle">
-        <div class="calc__head">
-          <span id="calcTitle">Калькулятор выгоды</span>
-          <span class="calc__badge">ваш чек</span>
-        </div>
-        <label class="calc__field">
-          <span class="sr-only">Сумма заказа в рублях</span>
-          <input id="orderSum" type="number" inputmode="numeric" min="0" max="20000" step="50" value="1500">
-          <span class="calc__cur" aria-hidden="true">₽</span>
-        </label>
-        <input id="orderRange" class="calc__range" type="range" min="300" max="5000" step="100" value="1500" aria-label="Сумма заказа">
-        <div class="calc__quick" id="quickSums">
-          <button type="button" data-sum="700">700 ₽</button>
-          <button type="button" data-sum="1200">1 200 ₽</button>
-          <button type="button" data-sum="2000">2 000 ₽</button>
-          <button type="button" data-sum="3500">3 500 ₽</button>
-        </div>
-        <div class="calc__result" id="calcResult" aria-live="polite"></div>
-      </aside>
     </section>
 
     <section class="toolbar container" aria-label="Фильтры промокодов">
@@ -119,7 +98,6 @@
           <span>Сортировка</span>
           <select id="sort" aria-label="Сортировка">
             <option value="score">по выгоде</option>
-            <option value="savings">по экономии при моём чеке</option>
             <option value="expiry">скоро истекают</option>
             <option value="new">сначала новые</option>
           </select>
@@ -246,7 +224,7 @@
     <div class="noscript">Для работы ПромоЛова нужен JavaScript — включите его в настройках браузера.</div>
   </noscript>
 
-  <script src="assets/data.js?v=20261124-2"></script>
-  <script src="assets/app.js?v=20261124-2"></script>
+  <script src="assets/data.js?v=20261124-3"></script>
+  <script src="assets/app.js?v=20261124-3"></script>
 </body>
 </html>
