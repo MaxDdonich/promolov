@@ -24,4 +24,5 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_PROXY_URL: ${{ secrets.TELEGRAM_PROXY_URL }}
           TELEGRAM_PROXY_SECRET: ${{ secrets.TELEGRAM_PROXY_SECRET }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: ./scripts/telegram-notify.ps1 -Mode daily

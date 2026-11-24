@@ -1,0 +1,22 @@
+name: ntfy test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send test push
+        shell: bash
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          curl -sS --max-time 30 \
+            -H "Title: PromoLov: тест" \
+            -H "Priority: high" \
+            -H "Tags: white_check_mark" \
+            -H "Click: https://maxddonich.github.io/promolov/" \
+            --data-binary "Тест уведомлений PromoLov. Если вы видите это сообщение — push работает." \
+            -w "\nHTTP=%{http_code}\n" \
+            "https://ntfy.sh/$NTFY_TOPIC"

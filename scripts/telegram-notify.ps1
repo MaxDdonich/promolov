@@ -8,8 +8,10 @@ $ErrorActionPreference = 'Stop'
 $token = $env:TELEGRAM_BOT_TOKEN
 $chatId = $env:TELEGRAM_CHAT_ID
 $proxy = $env:TELEGRAM_PROXY_URL
-if ([string]::IsNullOrWhiteSpace($chatId) -or ([string]::IsNullOrWhiteSpace($token) -and [string]::IsNullOrWhiteSpace($proxy))) {
-  Write-Host 'Telegram is not fully configured; skipping notification.'
+$ntfyTopic = $env:NTFY_TOPIC
+if ([string]::IsNullOrWhiteSpace($ntfyTopic) -and
+    ([string]::IsNullOrWhiteSpace($chatId) -or ([string]::IsNullOrWhiteSpace($token) -and [string]::IsNullOrWhiteSpace($proxy)))) {
+  Write-Host 'No notification channel configured; skipping.'
   exit 0
 }
 
@@ -31,7 +33,27 @@ function Read-GitJson([string]$path) {
   } catch { return $null }
 }
 
+function Send-Ntfy([string]$text, [string]$priority = 'default', [string]$tags = 'bell') {
+  if ([string]::IsNullOrWhiteSpace($ntfyTopic)) { return $false }
+  $plain = [Net.WebUtility]::HtmlDecode(($text -replace '<[^>]+>', ' ' -replace '\s+', ' ')).Trim()
+  if ($plain.Length -gt 3500) { $plain = $plain.Substring(0, 3500) + '…' }
+  $raw = & curl.exe -sS --max-time 30 `
+    -H 'Title: PromoLov' `
+    -H "Priority: $priority" `
+    -H "Tags: $tags" `
+    -H 'Click: https://maxddonich.github.io/promolov/' `
+    --data-binary $plain `
+    "https://ntfy.sh/$ntfyTopic"
+  Write-Host "ntfy response=$raw"
+  try {
+    $json = $raw | ConvertFrom-Json
+    return [bool]$json.id
+  } catch { return $false }
+}
+
 function Send-Telegram([string]$text) {
+  if ([string]::IsNullOrWhiteSpace($chatId)) { return $false }
+  if ([string]::IsNullOrWhiteSpace($token) -and [string]::IsNullOrWhiteSpace($env:TELEGRAM_PROXY_URL)) { return $false }
   $text = $text.Trim()
   if ($text.Length -gt 3900) { $text = $text.Substring(0, 3900) + '…' }
   for ($i = 1; $i -le 4; $i++) {
@@ -108,8 +130,9 @@ if ($Mode -eq 'daily') {
 
 <a href="$site">Открыть сайт</a>
 "@
-  $sent = Send-Telegram $text
-  if (-not $sent) { Write-Host 'Telegram daily message was not sent.'; exit 1 }
+  $sent = Send-Ntfy $text 'default' 'bar_chart'
+  if (-not $sent) { $sent = Send-Telegram $text }
+  if (-not $sent) { Write-Host 'Daily notification was not sent.'; exit 1 }
   exit 0
 }
 
@@ -178,8 +201,11 @@ if ($issues.Count -gt 0) { $body += ($issues | Select-Object -First 10) }
 if ($recoveries.Count -gt 0) { $body += ($recoveries | Select-Object -First 6) }
 $text = $title + "`n`n" + ($body -join "`n") + "`n`n<a href=`"$site`">Открыть сайт</a>"
 
-$sent = Send-Telegram $text
+$priority = if ($issues.Count -gt 0) { 'high' } else { 'default' }
+$tags = if ($issues.Count -gt 0) { 'warning' } else { 'white_check_mark' }
+$sent = Send-Ntfy $text $priority $tags
+if (-not $sent) { $sent = Send-Telegram $text }
 if (-not $sent) {
-  Write-Host 'Telegram alert was not sent.'
+  Write-Host 'Alert notification was not sent.'
   exit 1
 }
