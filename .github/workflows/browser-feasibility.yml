@@ -1,0 +1,23 @@
+name: Browser feasibility probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Playwright
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.49.1
+          npx playwright install --with-deps chromium
+      - name: Probe Yandex Eda and Kuper
+        run: node scripts/browser-probe.js
