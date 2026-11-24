@@ -1,4 +1,4 @@
-name: Telegram daily summary
+name: Daily push summary
 
 on:
   schedule:
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Send daily summary
+      - name: Send daily push
         shell: pwsh
         continue-on-error: true
         env:
