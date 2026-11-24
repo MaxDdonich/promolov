@@ -7,7 +7,7 @@
   <meta name="description" content="Автоматический сбор промокодов на доставку еды: проверка источников, подтверждённые коды и актуальные скидки.">
   <meta name="theme-color" content="#0b0e0b">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='8' fill='%23c8d36a'/><text x='50' y='74' font-size='62' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%230b0e0b'>₽</text></svg>">
-  <link rel="stylesheet" href="assets/styles.css?v=20261124-6">
+  <link rel="stylesheet" href="assets/styles.css?v=20261124-7">
 </head>
 <body>
   <div class="bg-glow" aria-hidden="true"></div>
@@ -179,16 +179,6 @@
         <div id="sourceList" class="sources"></div>
 
         <div class="feedbox">
-          <h3>Реальный фид</h3>
-          <p>По умолчанию используется <code>data/codes.json</code>: его собирает <code>collector.ps1</code>, а сайт подхватывает автоматически и кэширует. Можно вставить другой URL с массивом <code>codes</code> — если сервер отдаёт CORS-заголовки.</p>
-          <form id="feedForm" class="feedbox__form">
-            <input id="feedUrl" type="url" placeholder="https://example.com/promos.json" aria-label="URL JSON-фида">
-            <button class="btn btn--lime" type="submit">Подключить / обновить</button>
-          </form>
-          <div class="feedbox__hint" id="feedHint" aria-live="polite"></div>
-        </div>
-
-        <div class="feedbox">
           <h3>Доступ с других устройств</h3>
           <p>Скопируйте ссылку и откройте на другом устройстве. На локальной версии устройства должны быть в одной Wi-Fi, публичная версия GitHub Pages работает из любого интернета.</p>
           <div class="feedbox__form">
@@ -226,7 +216,7 @@
     <div class="noscript">Для работы ПромоЛова нужен JavaScript — включите его в настройках браузера.</div>
   </noscript>
 
-  <script src="assets/data.js?v=20261124-6"></script>
-  <script src="assets/app.js?v=20261124-6"></script>
+  <script src="assets/data.js?v=20261124-7"></script>
+  <script src="assets/app.js?v=20261124-7"></script>
 </body>
 </html>

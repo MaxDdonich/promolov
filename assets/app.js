@@ -1177,7 +1177,7 @@ const MIN_PAY_ABS = 50;
     const hint = $('#feedHint');
     if (feedLoading) return false;
     feedLoading = true;
-    if (!options.silent) hint.textContent = 'Запрашиваем фид…';
+    if (!options.silent && hint) hint.textContent = 'Запрашиваем фид…';
 
     try {
       const response = await fetch(url, { cache: 'no-store' });
@@ -1201,15 +1201,15 @@ const MIN_PAY_ABS = 50;
         }
       } catch (err) { /* ignore */ }
       const confirmedCount = codes.filter((c) => c.verification === 'confirmed').length;
-      hint.textContent = '✓ Фид обновлён: ' + added + ' кодов · ' + confirmedCount + ' подтверждено · ' + host + ' · ' + new Date().toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
+      if (hint) hint.textContent = '✓ Фид обновлён: ' + added + ' кодов · ' + confirmedCount + ' подтверждено · ' + host + ' · ' + new Date().toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
       addLog('Фид ' + url + ': получено ' + items.length + ', в базе ' + added, 'new');
       if (!options.silent) toast('Фид подключён', added + ' промокодов в базе');
       renderAll();
       return true;
     } catch (err) {
-      hint.textContent = '✕ Фид не загрузился: ' + err.message + '. Показаны кэшированные коды, если они есть.';
+      if (hint) hint.textContent = '✕ Фид не загрузился: ' + err.message + '. Показаны кэшированные коды, если они есть.';
       addLog('Ошибка фида: ' + err.message, 'err');
-      if (!options.silent) toast('Фид не подключился', 'Смотрите подсказку под полем URL');
+      if (!options.silent) toast('Фид не подключился', 'Проверьте соединение и обновите страницу');
       return false;
     } finally {
       feedLoading = false;
@@ -1441,16 +1441,6 @@ const MIN_PAY_ABS = 50;
     updateLive();
   });
 
-  $('#feedForm').addEventListener('submit', (event) => {
-    event.preventDefault();
-    const url = $('#feedUrl').value.trim();
-    if (!url) {
-      $('#feedHint').textContent = 'Вставьте URL фида, например https://example.com/promos.json';
-      return;
-    }
-    connectFeed(url);
-  });
-
   $('#btnPause').addEventListener('dblclick', (event) => event.preventDefault());
 
   $('#btnResetDemo').addEventListener('click', () => {
@@ -1480,8 +1470,6 @@ const MIN_PAY_ABS = 50;
     $('#onlyWorking').checked = ui.onlyWorking;
 
     const feedUrl = store.feedUrl || 'data/codes.json';
-    $('#feedUrl').value = feedUrl;
-    $('#feedHint').textContent = 'Автозагрузка включена: ' + feedUrl;
 
     if (store.paused) {
       addLog('Автолов был поставлен на паузу в прошлый раз', 'info');
