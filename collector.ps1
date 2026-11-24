@@ -1886,6 +1886,7 @@ foreach ($item in $collected) {
   if ($item.code -match $junkCode) { continue }
   $item['code'] = ([string]$item.code).Trim().ToUpper()
   $item['service'] = Resolve-Service ([string]$item.service)
+  if ($item.type -eq 'percent' -and [int]$item.value -ge 100) { continue }
   $key = $item.code
   if (-not $groups.ContainsKey($key)) { $groups[$key] = @() }
   $groups[$key] += $item

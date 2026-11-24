@@ -8,6 +8,8 @@
   const DAY = 86400000;
   const HOUR = 3600000;
   const BEST_SCORE = 78;
+const MIN_PAY_SHARE = 0.10;
+const MIN_PAY_ABS = 50;
   const LS_KEY = 'promolov.v2';
   const FEED_CACHE_KEY = 'promolov.feedCache.v1';
 
@@ -295,21 +297,31 @@
     const min = code.minOrder || 0;
     const applicable = sum >= min;
     const partial = code.type === 'percent' && code.wholeCart === false;
-    let discount = 0;
+    const minPay = sum > 0 ? Math.max(MIN_PAY_ABS, Math.ceil(sum * MIN_PAY_SHARE)) : 0;
+    const maxDiscount = Math.max(0, sum - minPay);
+    let rawDiscount = 0;
+    let capped = false;
     if (applicable && !partial) {
-      if (code.type === 'percent') discount = (sum * (code.value || 0)) / 100;
-      else if (code.type === 'fixed') discount = code.value || 0;
-      if (code.maxDiscount) discount = Math.min(discount, code.maxDiscount);
-      discount = Math.min(discount, sum);
+      if (code.type === 'percent') rawDiscount = (sum * clamp(code.value || 0, 0, 100)) / 100;
+      else if (code.type === 'fixed') rawDiscount = code.value || 0;
+      if (code.maxDiscount) rawDiscount = Math.min(rawDiscount, code.maxDiscount);
+      capped = rawDiscount > maxDiscount;
+      rawDiscount = Math.min(rawDiscount, maxDiscount);
     }
     const delivery = applicable && code.freeDelivery ? (code.deliveryCost || 149) : 0;
+    const maxTotal = sum > 0 ? Math.max(0, sum + delivery - minPay) : 0;
+    const total = Math.min(rawDiscount + delivery, maxTotal);
+    const pay = Math.max(minPay, sum + delivery - total);
     return {
       applicable,
       partial,
       need: min,
-      discount: Math.round(discount),
+      minPay: Math.round(minPay),
+      discount: Math.round(rawDiscount),
       delivery: Math.round(delivery),
-      total: Math.round(discount + delivery)
+      total: Math.round(total),
+      pay: Math.round(pay),
+      capped
     };
   }
 
@@ -588,6 +600,7 @@
     ];
     if (code.wholeCart) tags.push('<span class="tag tag--accent">вся корзина</span>');
     if (code.freeDelivery) tags.push('<span class="tag">доставка 0 ₽</span>');
+    if (save.capped) tags.push('<span class="tag tag--warn">к оплате от ' + money(save.minPay) + '</span>');
     if (code.verification === 'confirmed') tags.push('<span class="tag tag--ok">✓ подтверждён</span>');
     else if (code.verification === 'single') tags.push('<span class="tag tag--warn">1 источник</span>');
     if (code.cityRestricted && (code.cities || []).length) {
@@ -634,7 +647,7 @@
             ? 'Нужен чек от <b>' + money(save.need) + '</b>'
             : save.partial
               ? 'Скидка на категорию · точная сумма — в корзине'
-              : 'Экономия при чеке ' + money(orderSum) + ': <b>' + money(save.total) + '</b>') +
+              : 'Экономия при чеке ' + money(orderSum) + ': <b>' + money(save.total) + '</b> · к оплате <b>' + money(save.pay) + '</b>') +
         '</div>' +
 
         '<div class="card__foot">' +
@@ -977,6 +990,7 @@
           '<div>Скидка по коду</div><b>' + money(save.discount) + '</b>' +
           '<div>Бесплатная доставка</div><b>' + (save.delivery ? money(save.delivery) : '—') + '</b>' +
           '<div>Ваш чек</div><b>' + money(orderSum) + '</b>' +
+          '<div>К оплате</div><b>' + money(save.pay) + '</b>' +
           '<div class="total"><span>Итого экономия</span><b>' + money(save.total) + ' · ' + share + '%</b></div>';
 
     const conditions = (code.conditions || []).map((c) => '<li>' + esc(c) + '</li>').join('')
@@ -1123,6 +1137,8 @@
   function normalizeFeed(item) {
     if (!item || !item.service || !item.code) return null;
     const type = ['percent', 'fixed', 'delivery'].includes(item.type) ? item.type : 'fixed';
+    const value = Number(item.value) || 0;
+    if (type === 'percent' && value >= 100) return null;
     const category = Array.isArray(item.category) ? item.category.slice(0, 4) : ['из фида'];
     const collections = Array.isArray(item.collections) ? item.collections.map(String) : [];
     const has = (name) => collections.includes(name);
@@ -1145,7 +1161,7 @@
       service: String(item.service).slice(0, 40),
       code: String(item.code).slice(0, 32).toUpperCase(),
       type: type,
-      value: Number(item.value) || 0,
+      value: value,
       minOrder: Number(item.minOrder) || 0,
       maxDiscount: Number(item.maxDiscount) || 0,
       freeDelivery: !!item.freeDelivery,
