@@ -2068,7 +2068,7 @@ foreach ($key in $groups.Keys) {
     $verification = 'confirmed'
     $verificationMethod = 'multi-source'
   }
-  elseif ($sourceCount -eq 1 -and $avgWeight -ge 0.8 -and $seenRuns -ge 6) {
+  elseif ($sourceCount -eq 1 -and $avgWeight -ge 0.8 -and $seenRuns -ge 5) {
     $verification = 'confirmed'
     $verificationMethod = 'history'
   }
