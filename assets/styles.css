@@ -2138,3 +2138,27 @@ h1, h2, h3, .logo__text, .results h2 {
   .btn--copy { padding: 5px 7px; font-size: 9.5px; }
   .tag { font-size: 8.5px; padding: 2px 5px; }
 }
+
+@media (max-width: 720px) {
+  .modal { padding: 0; align-items: end; }
+  .modal__panel {
+    width: 100%;
+    max-width: 100%;
+    max-height: 94vh;
+    padding: 18px 14px 24px;
+    border-radius: 16px 16px 0 0;
+    overflow-x: hidden;
+  }
+  .m-head { padding-right: 32px; }
+  .m-head b, .m-head span, .m-value p, .m-fact b, .m-list li { overflow-wrap: anywhere; }
+  .m-value { flex-wrap: wrap; gap: 10px; }
+  .m-value > div:first-child { min-width: 0; flex: 1 1 200px; }
+  .m-value h2 { font-size: 26px; }
+  .m-score .score { width: 52px; height: 52px; }
+  .m-code code { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .m-facts { grid-template-columns: 1fr; }
+  .m-vote { flex-wrap: wrap; }
+  .m-vote .btn { flex: 1 1 calc(50% - 8px); min-width: 0; }
+  .m-trust { flex-wrap: wrap; }
+  .m-trust .bar { flex: 1 1 100%; order: 3; }
+}
