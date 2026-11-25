@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-24T22:48:40.6926449+00:00",
+  "updatedAt": "2026-11-25T05:05:18.1266417+00:00",
   "generator": "PromoLov collector v2",
   "stats": {
-    "total": 245,
-    "confirmed": 203,
-    "likely": 25,
+    "total": 253,
+    "confirmed": 204,
+    "likely": 32,
     "single": 17,
     "expired": 0,
-    "services": 37,
+    "services": 43,
     "sources": 45
   },
   "sources": [
@@ -413,9 +413,9 @@
       ],
       "conditions": [
         "Экономия 20% на всё в ресторанах с отметкой -20% действует при использовании промокода.",
-        "Срок действия — примерно 38 дн."
+        "Срок действия — примерно 37 дн."
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 2231,
       "fails": 0,
       "existingUsers": true,
@@ -431,16 +431,6 @@
       "sourceCount": 3,
       "evidence": [
         {
-          "source": "ecosum.ru",
-          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
-          "works": 0
-        },
-        {
-          "source": "okodo.ru · Яндекс Еда",
-          "url": "https://okodo.ru/yandex-eda/",
-          "works": 0
-        },
-        {
           "source": "promokod.com",
           "url": "https://promokod.com/coupon-store/eda-yandex-ru",
           "works": 2231
@@ -449,14 +439,24 @@
           "source": "okodo.ru · Деливери",
           "url": "https://okodo.ru/deliveri/",
           "works": 0
+        },
+        {
+          "source": "ecosum.ru",
+          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
+          "works": 0
+        },
+        {
+          "source": "okodo.ru · Яндекс Еда",
+          "url": "https://okodo.ru/yandex-eda/",
+          "works": 0
         }
       ],
       "alsoServices": [
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Яндекс Еда",
@@ -475,9 +475,9 @@
       "conditions": [
         "При первом заказе из ресторанов и магазинов на сумму от 800 рублей с промокодом предоставляется скидка 400 рублей.",
         "Минимальный заказ — от 800 ₽",
-        "Срок действия — примерно 38 дн."
+        "Срок действия — примерно 37 дн."
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 2885,
       "fails": 0,
       "existingUsers": false,
@@ -496,16 +496,6 @@
       "sourceCount": 3,
       "evidence": [
         {
-          "source": "ecosum.ru",
-          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
-          "works": 0
-        },
-        {
-          "source": "okodo.ru · Яндекс Еда",
-          "url": "https://okodo.ru/yandex-eda/",
-          "works": 0
-        },
-        {
           "source": "okodo.ru · Все коды",
           "url": "https://okodo.ru/",
           "works": 0
@@ -519,6 +509,16 @@
           "source": "okodo.ru · Деливери",
           "url": "https://okodo.ru/deliveri/",
           "works": 0
+        },
+        {
+          "source": "ecosum.ru",
+          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
+          "works": 0
+        },
+        {
+          "source": "okodo.ru · Яндекс Еда",
+          "url": "https://okodo.ru/yandex-eda/",
+          "works": 0
         }
       ],
       "alsoServices": [
@@ -526,8 +526,8 @@
         "Деливери"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -549,7 +549,7 @@
         "Срок действия — примерно 37 дн."
       ],
       "expiresInDays": 37,
-      "works": 2555,
+      "works": 2556,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -571,7 +571,7 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 2555
+          "works": 2556
         },
         {
           "source": "promokod.com",
@@ -581,8 +581,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -603,7 +603,7 @@
         "Срок действия — примерно 37 дн."
       ],
       "expiresInDays": 37,
-      "works": 4832,
+      "works": 4833,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -625,7 +625,7 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 4832
+          "works": 4833
         },
         {
           "source": "promokod.com",
@@ -635,8 +635,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -657,7 +657,7 @@
         "Срок действия — примерно 37 дн."
       ],
       "expiresInDays": 37,
-      "works": 222364,
+      "works": 222369,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -677,7 +677,7 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 222364
+          "works": 222369
         },
         {
           "source": "promokod.com",
@@ -687,8 +687,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -709,7 +709,7 @@
         "Срок действия — примерно 37 дн."
       ],
       "expiresInDays": 37,
-      "works": 44655,
+      "works": 44658,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -729,7 +729,7 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 44655
+          "works": 44658
         },
         {
           "source": "promokod.com",
@@ -739,8 +739,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -761,7 +761,7 @@
         "Источники: hi-tech.mail.ru",
         "Минимальный заказ — от 700 ₽"
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -780,14 +780,14 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promokod.pikabu.ru",
-          "url": "https://promokod.pikabu.ru/shops/samokat",
-          "works": 72171
-        },
-        {
           "source": "okodo.ru · Самокат",
           "url": "https://okodo.ru/samokat/",
           "works": 0
+        },
+        {
+          "source": "promokod.pikabu.ru",
+          "url": "https://promokod.pikabu.ru/shops/samokat",
+          "works": 72185
         },
         {
           "source": "okodo.ru · Все коды",
@@ -799,8 +799,8 @@
         "Самокат"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Domino's Pizza",
@@ -820,8 +820,8 @@
         "Скидка: 20%",
         "до 3 дек. 2026 г."
       ],
-      "expiresInDays": 10,
-      "works": 18812,
+      "expiresInDays": 9,
+      "works": 18866,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -841,7 +841,7 @@
         {
           "source": "promokod.store · Еда 2",
           "url": "https://promokod.store/promokody/eda-i-napitki?page=2",
-          "works": 18812
+          "works": 18866
         },
         {
           "source": "okodo.ru · Все коды",
@@ -853,8 +853,8 @@
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Ollis",
@@ -874,8 +874,8 @@
         "Скидка: 10%",
         "до 3 дек. 2026 г."
       ],
-      "expiresInDays": 10,
-      "works": 20732,
+      "expiresInDays": 9,
+      "works": 20795,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -895,7 +895,7 @@
         {
           "source": "promokod.store · Еда 2",
           "url": "https://promokod.store/promokody/eda-i-napitki?page=2",
-          "works": 20732
+          "works": 20795
         },
         {
           "source": "okodo.ru · Все коды",
@@ -907,8 +907,8 @@
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Ollis",
@@ -928,8 +928,8 @@
         "Скидка: 10%",
         "до 3 дек. 2026 г."
       ],
-      "expiresInDays": 10,
-      "works": 18594,
+      "expiresInDays": 9,
+      "works": 18648,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -949,7 +949,7 @@
         {
           "source": "promokod.store · Еда 2",
           "url": "https://promokod.store/promokody/eda-i-napitki?page=2",
-          "works": 18594
+          "works": 18648
         },
         {
           "source": "okodo.ru · Все коды",
@@ -961,8 +961,8 @@
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -982,7 +982,7 @@
         "до 31.12",
         "Источники: Admitad, hi-tech.mail.ru"
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -998,14 +998,14 @@
       "sourceCount": 2,
       "evidence": [
         {
+          "source": "promokod.store · Еда 3",
+          "url": "https://promokod.store/promokody/eda-i-napitki?page=3",
+          "works": 14460
+        },
+        {
           "source": "okodo.ru · Sushi Master",
           "url": "https://okodo.ru/sushi-master/",
           "works": 0
-        },
-        {
-          "source": "promokod.store · Еда 3",
-          "url": "https://promokod.store/promokody/eda-i-napitki?page=3",
-          "works": 14418
         },
         {
           "source": "okodo.ru · Все коды",
@@ -1017,8 +1017,8 @@
         "sushi-master"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -1039,7 +1039,7 @@
         "Источники: Admitad",
         "Минимальный заказ — от 4500 ₽"
       ],
-      "expiresInDays": 35,
+      "expiresInDays": 34,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -1067,7 +1067,7 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 25678
+          "works": 25753
         },
         {
           "source": "okodo.ru · Все коды",
@@ -1079,8 +1079,8 @@
         "Глобус"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Ozon Fresh",
@@ -1115,20 +1115,20 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promokod.com",
-          "url": "https://promokod.com/coupon-store/ozonfresh",
-          "works": 1006
-        },
-        {
           "source": "promocodex.ru · Еда",
           "url": "https://promocodex.ru/categories/food/",
           "works": 0
+        },
+        {
+          "source": "promokod.com",
+          "url": "https://promokod.com/coupon-store/ozonfresh",
+          "works": 1006
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Vipfish",
@@ -1149,7 +1149,7 @@
         "до без ограничения"
       ],
       "expiresInDays": null,
-      "works": 31781,
+      "works": 31876,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1167,22 +1167,22 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promokod.store · Еда 1",
-          "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 31781
-        },
-        {
           "source": "okodo.ru · Все коды",
           "url": "https://okodo.ru/",
           "works": 0
+        },
+        {
+          "source": "promokod.store · Еда 1",
+          "url": "https://promokod.store/promokody/eda-i-napitki",
+          "works": 31876
         }
       ],
       "alsoServices": [
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "ВкусМил",
@@ -1203,7 +1203,7 @@
         "до без ограничения"
       ],
       "expiresInDays": null,
-      "works": 24757,
+      "works": 24832,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1221,22 +1221,22 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promokod.store · Еда 3",
-          "url": "https://promokod.store/promokody/eda-i-napitki?page=3",
-          "works": 24757
-        },
-        {
           "source": "okodo.ru · Все коды",
           "url": "https://okodo.ru/",
           "works": 0
+        },
+        {
+          "source": "promokod.store · Еда 3",
+          "url": "https://promokod.store/promokody/eda-i-napitki?page=3",
+          "works": 24832
         }
       ],
       "alsoServices": [
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "BeFit",
@@ -1257,7 +1257,7 @@
         "до без ограничения"
       ],
       "expiresInDays": null,
-      "works": 17905,
+      "works": 17959,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -1275,22 +1275,22 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promokod.store · Еда 3",
-          "url": "https://promokod.store/promokody/eda-i-napitki?page=3",
-          "works": 17905
-        },
-        {
           "source": "okodo.ru · Все коды",
           "url": "https://okodo.ru/",
           "works": 0
+        },
+        {
+          "source": "promokod.store · Еда 3",
+          "url": "https://promokod.store/promokody/eda-i-napitki?page=3",
+          "works": 17959
         }
       ],
       "alsoServices": [
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Дикси",
@@ -1335,11 +1335,6 @@
           "works": 155
         },
         {
-          "source": "okodo.ru · Яндекс Еда",
-          "url": "https://okodo.ru/yandex-eda/",
-          "works": 0
-        },
-        {
           "source": "okodo.ru · Деливери",
           "url": "https://okodo.ru/deliveri/",
           "works": 0
@@ -1348,14 +1343,19 @@
           "source": "okodo.ru · Все коды",
           "url": "https://okodo.ru/",
           "works": 0
+        },
+        {
+          "source": "okodo.ru · Яндекс Еда",
+          "url": "https://okodo.ru/yandex-eda/",
+          "works": 0
         }
       ],
       "alsoServices": [
         "Яндекс Еда"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Купер",
@@ -1409,8 +1409,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Токио Сити",
@@ -1431,7 +1431,7 @@
         "Первый заказ от 1400 ₽ · до 31 декабря · 1",
         "Минимальный заказ — от 1400 ₽"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -1469,8 +1469,8 @@
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Дикси",
@@ -1510,16 +1510,6 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "ecosum.ru",
-          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
-          "works": 0
-        },
-        {
-          "source": "okodo.ru · Яндекс Еда",
-          "url": "https://okodo.ru/yandex-eda/",
-          "works": 0
-        },
-        {
           "source": "okodo.ru · Деливери",
           "url": "https://okodo.ru/deliveri/",
           "works": 0
@@ -1528,14 +1518,24 @@
           "source": "okodo.ru · Все коды",
           "url": "https://okodo.ru/",
           "works": 0
+        },
+        {
+          "source": "ecosum.ru",
+          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
+          "works": 0
+        },
+        {
+          "source": "okodo.ru · Яндекс Еда",
+          "url": "https://okodo.ru/yandex-eda/",
+          "works": 0
         }
       ],
       "alsoServices": [
         "Яндекс Еда"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Яндекс Еда",
@@ -1555,7 +1555,7 @@
         "300 ₽ (от 1500) на повторный заказ в «Монетка». Действует до 30 ноября 2026 года включительно.",
         "Минимальный заказ — от 1500 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -1574,6 +1574,11 @@
       "sourceCount": 2,
       "evidence": [
         {
+          "source": "okodo.ru · Деливери",
+          "url": "https://okodo.ru/deliveri/",
+          "works": 0
+        },
+        {
           "source": "ecosum.ru",
           "url": "https://www.ecosum.ru/promokody-yandex-eda/",
           "works": 0
@@ -1582,19 +1587,14 @@
           "source": "okodo.ru · Яндекс Еда",
           "url": "https://okodo.ru/yandex-eda/",
           "works": 0
-        },
-        {
-          "source": "okodo.ru · Деливери",
-          "url": "https://okodo.ru/deliveri/",
-          "works": 0
         }
       ],
       "alsoServices": [
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Яндекс Еда",
@@ -1614,7 +1614,7 @@
         "300 ₽ (от 1800) на повторный заказ в «Верный». Действует до 30 ноября 2026 года включительно.",
         "Минимальный заказ — от 1800 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -1633,6 +1633,11 @@
       "sourceCount": 2,
       "evidence": [
         {
+          "source": "okodo.ru · Деливери",
+          "url": "https://okodo.ru/deliveri/",
+          "works": 0
+        },
+        {
           "source": "ecosum.ru",
           "url": "https://www.ecosum.ru/promokody-yandex-eda/",
           "works": 0
@@ -1641,19 +1646,14 @@
           "source": "okodo.ru · Яндекс Еда",
           "url": "https://okodo.ru/yandex-eda/",
           "works": 0
-        },
-        {
-          "source": "okodo.ru · Деливери",
-          "url": "https://okodo.ru/deliveri/",
-          "works": 0
         }
       ],
       "alsoServices": [
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Яндекс Еда",
@@ -1672,9 +1672,9 @@
       "conditions": [
         "Выбирай рестораны со значком Ultima, оформляй заказ и экономь 500 рублей! Действует на два заказа от 2000 рублей.",
         "Минимальный заказ — от 2000 ₽",
-        "Срок действия — примерно 38 дн."
+        "Срок действия — примерно 37 дн."
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 598,
       "fails": 0,
       "existingUsers": true,
@@ -1697,8 +1697,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Яндекс Еда",
@@ -1717,9 +1717,9 @@
       "conditions": [
         "Промокод действует три раза до 31 декабря 2026.",
         "Минимальный заказ — от 1000 ₽",
-        "Срок действия — примерно 38 дн."
+        "Срок действия — примерно 37 дн."
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 342,
       "fails": 0,
       "existingUsers": true,
@@ -1745,8 +1745,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Яндекс Еда",
@@ -1792,8 +1792,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -1838,8 +1838,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Ozon Fresh",
@@ -1858,9 +1858,9 @@
       "conditions": [
         "Скидка 30% действует на товары из специального каталога при заказе от 3000 рублей.",
         "Минимальный заказ — от 3000 ₽",
-        "Срок действия — примерно 16 дн."
+        "Срок действия — примерно 15 дн."
       ],
-      "expiresInDays": 16,
+      "expiresInDays": 15,
       "works": 831,
       "fails": 0,
       "existingUsers": true,
@@ -1883,8 +1883,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Додо Пицца",
@@ -1929,8 +1929,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -1979,8 +1979,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -2002,7 +2002,7 @@
         "Срок действия — примерно 37 дн."
       ],
       "expiresInDays": 37,
-      "works": 1602,
+      "works": 1605,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2024,13 +2024,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 1602
+          "works": 1605
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Перекрёсток",
@@ -2048,9 +2048,9 @@
       ],
       "conditions": [
         "Купон со скидкой 15% действует на первый заказ в Перекрёстке.",
-        "Срок действия — примерно 1381 дн."
+        "Срок действия — примерно 1380 дн."
       ],
-      "expiresInDays": 1381,
+      "expiresInDays": 1380,
       "works": 393,
       "fails": 0,
       "existingUsers": false,
@@ -2076,8 +2076,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Доставка еды",
@@ -2097,7 +2097,7 @@
         "до 30.11",
         "Источники: hi-tech.mail.ru"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -2116,6 +2116,11 @@
       "sourceCount": 2,
       "evidence": [
         {
+          "source": "t.me/promokod_yakitoria",
+          "url": "https://t.me/promokod_yakitoria/136",
+          "works": 0
+        },
+        {
           "source": "okodo.ru · Метро",
           "url": "https://okodo.ru/metro/",
           "works": 0
@@ -2124,19 +2129,14 @@
           "source": "okodo.ru · Все коды",
           "url": "https://okodo.ru/",
           "works": 0
-        },
-        {
-          "source": "t.me/promokod_yakitoria",
-          "url": "https://t.me/promokod_yakitoria/136",
-          "works": 0
         }
       ],
       "alsoServices": [
         "Якитория"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Priem.menu",
@@ -2156,8 +2156,8 @@
         "Скидка: 1 000 ₽",
         "до 3 дек. 2026 г."
       ],
-      "expiresInDays": 10,
-      "works": 14186,
+      "expiresInDays": 9,
+      "works": 14228,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -2174,13 +2174,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 14186
+          "works": 14228
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Domino's Pizza",
@@ -2200,8 +2200,8 @@
         "Скидка: 300 ₽",
         "до 31 дек. 2026 г."
       ],
-      "expiresInDays": 38,
-      "works": 20619,
+      "expiresInDays": 37,
+      "works": 20682,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2221,13 +2221,13 @@
         {
           "source": "promokod.store · Еда 2",
           "url": "https://promokod.store/promokody/eda-i-napitki?page=2",
-          "works": 20619
+          "works": 20682
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -2276,8 +2276,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Перекрёсток",
@@ -2295,9 +2295,9 @@
       ],
       "conditions": [
         "При заказе колбасы, ветчины, сосисок и других колбасных изделий из подборки, ввод промокода при первой покупке даёт выгоду 25%!",
-        "Срок действия — примерно 38 дн."
+        "Срок действия — примерно 37 дн."
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 123,
       "fails": 0,
       "existingUsers": true,
@@ -2320,8 +2320,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -2339,9 +2339,9 @@
       ],
       "conditions": [
         "Промокод даёт скидку 25% на молочные продукты из подборки. Введите его при первой покупке и сэкономьте 25%!",
-        "Срок действия — примерно 38 дн."
+        "Срок действия — примерно 37 дн."
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 174,
       "fails": 0,
       "existingUsers": true,
@@ -2364,8 +2364,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Domino's Pizza",
@@ -2385,8 +2385,8 @@
         "Скидка: 20%",
         "до 31 дек. 2026 г."
       ],
-      "expiresInDays": 38,
-      "works": 25842,
+      "expiresInDays": 37,
+      "works": 25917,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2406,13 +2406,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 25842
+          "works": 25917
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -2457,8 +2457,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -2504,55 +2504,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
-    },
-    {
-      "service": "Pizza Heart (Пицца Харт)",
-      "code": "ПРЕЗЕНТ",
-      "type": "percent",
-      "value": 20,
-      "maxDiscount": 0,
-      "minOrder": 1190,
-      "freeDelivery": false,
-      "deliveryCost": 149,
-      "title": "Скидка 20% при покупке от 1190 рублей только для Краснодара",
-      "category": [
-        "доставка еды",
-        "собрано с сайта"
-      ],
-      "conditions": [
-        "Скидка: 20%",
-        "до 1 дек. 2026 г.",
-        "Минимальный заказ — от 1190 ₽"
-      ],
-      "expiresInDays": 8,
-      "works": 20659,
-      "fails": 0,
-      "existingUsers": true,
-      "wholeCart": false,
-      "cities": [
-        "Краснодар"
-      ],
-      "cityRestricted": true,
-      "collections": "returning",
-      "sourceName": "promokod.store · Еда 1",
-      "sourceUrl": "https://promokod.store/promokody/eda-i-napitki",
-      "confidence": 72,
-      "verification": "confirmed",
-      "verificationMethod": "history",
-      "sourceCount": 1,
-      "evidence": [
-        {
-          "source": "promokod.store · Еда 1",
-          "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 20659
-        }
-      ],
-      "alsoServices": [],
-      "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Domino's Pizza",
@@ -2572,8 +2525,8 @@
         "Скидка: 10%",
         "до 3 дек. 2026 г."
       ],
-      "expiresInDays": 10,
-      "works": 24639,
+      "expiresInDays": 9,
+      "works": 24714,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2593,13 +2546,13 @@
         {
           "source": "promokod.store · Еда 2",
           "url": "https://promokod.store/promokody/eda-i-napitki?page=2",
-          "works": 24639
+          "works": 24714
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Перекрёсток",
@@ -2617,9 +2570,9 @@
       ],
       "conditions": [
         "Заказ на любую сумму с промокодом включает бесплатную доставку и скидку 5% от стоимости товаров в чеке.",
-        "Срок действия — примерно 38 дн."
+        "Срок действия — примерно 37 дн."
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 283,
       "fails": 0,
       "existingUsers": true,
@@ -2645,8 +2598,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -2665,9 +2618,9 @@
       "conditions": [
         "СКИДКА 750 РУБЛЕЙ ОТ 1500 РУБЛЕЙ ДЕЙСТВУЕТ НА ПЕРВЫЙ ЗАКАЗ ЧЕРЕЗ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ «ПЕРЕКРЕСТОК». АКЦИЯ ДЕЙСТВУЕТ ДО 23 ДЕКАБРЯ 2026 Г. ВКЛЮЧИТЕЛЬНО. ТОЛЬКО ДЛЯ ГОРОДОВ: ВОЛГОГРАД, ЕКАТЕРИНБУРГ, ТУЛА, САМАРА, СОЧИ, НИЖНИЙ НОВГОРОД, КУРСК",
         "Минимальный заказ — от 1500 ₽",
-        "Срок действия — примерно 395 дн."
+        "Срок действия — примерно 394 дн."
       ],
-      "expiresInDays": 395,
+      "expiresInDays": 394,
       "works": 231,
       "fails": 0,
       "existingUsers": false,
@@ -2700,53 +2653,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
-    },
-    {
-      "service": "Магнит",
-      "code": "ADM35D3664",
-      "type": "percent",
-      "value": 35,
-      "maxDiscount": 500,
-      "minOrder": 1200,
-      "freeDelivery": false,
-      "deliveryCost": 149,
-      "title": "Скидка 35% на первый заказ от 1200₽ в Магнит Доставке",
-      "category": [
-        "доставка еды",
-        "собрано с сайта"
-      ],
-      "conditions": [
-        "Действует на первый заказ от 1200 ₽ в сервисах «Экспресс» или «Мигом». Действует при заказе товаров с доставкой или самовывозом Действует даже на акционные товары, кроме товаров с отметкой «Финальная цена» Скидка не распространяется на стоимость сборки и доставки товаров Максимальная скидка по промокоду 500 ₽",
-        "Минимальный заказ — от 1200 ₽",
-        "Срок действия — примерно 8 дн."
-      ],
-      "expiresInDays": 8,
-      "works": 83,
-      "fails": 0,
-      "existingUsers": false,
-      "wholeCart": false,
-      "cities": [],
-      "cityRestricted": false,
-      "collections": "firstOrder",
-      "sourceName": "promokod.com",
-      "sourceUrl": "https://promokod.com/coupon-store/magnit-ru",
-      "confidence": 72,
-      "verification": "confirmed",
-      "verificationMethod": "history",
-      "sourceCount": 1,
-      "evidence": [
-        {
-          "source": "promokod.com",
-          "url": "https://promokod.com/coupon-store/magnit-ru",
-          "works": 83
-        }
-      ],
-      "alsoServices": [],
-      "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Ашан",
@@ -2767,8 +2675,8 @@
         "до 28 февр. 2027 г.",
         "Минимальный заказ — от 4000 ₽"
       ],
-      "expiresInDays": 97,
-      "works": 16126,
+      "expiresInDays": 96,
+      "works": 16174,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -2788,13 +2696,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 16126
+          "works": 16174
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Перекрёсток",
@@ -2812,9 +2720,9 @@
       ],
       "conditions": [
         "Скидка не распространяется на товары со скидками и товары с лейблом \"Низкая цена\". Предложение действует на первый заказ.",
-        "Срок действия — примерно 1381 дн."
+        "Срок действия — примерно 1380 дн."
       ],
-      "expiresInDays": 1381,
+      "expiresInDays": 1380,
       "works": 103,
       "fails": 0,
       "existingUsers": false,
@@ -2837,8 +2745,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -2856,9 +2764,9 @@
       ],
       "conditions": [
         "Промоеод действует на первый заказ",
-        "Срок действия — примерно 1381 дн."
+        "Срок действия — примерно 1380 дн."
       ],
-      "expiresInDays": 1381,
+      "expiresInDays": 1380,
       "works": 207,
       "fails": 0,
       "existingUsers": false,
@@ -2884,8 +2792,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Яндекс Еда",
@@ -2931,8 +2839,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Яндекс Еда",
@@ -2953,7 +2861,7 @@
         "Срок действия — примерно 37 дн."
       ],
       "expiresInDays": 37,
-      "works": 33,
+      "works": 34,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2973,13 +2881,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/eda-yandex",
-          "works": 33
+          "works": 34
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Ozon Fresh",
@@ -3024,8 +2932,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -3043,9 +2951,9 @@
       ],
       "conditions": [
         "На шпроты, тунец и другие рыбные консервы — скидка 25% при первой покупке с промокодом.",
-        "Срок действия — примерно 38 дн."
+        "Срок действия — примерно 37 дн."
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 21,
       "fails": 0,
       "existingUsers": true,
@@ -3068,8 +2976,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -3087,9 +2995,9 @@
       ],
       "conditions": [
         "Скидка 25% предоставляется на морепродукты из широкого ассортимента по промокоду при первой покупке.",
-        "Срок действия — примерно 38 дн."
+        "Срок действия — примерно 37 дн."
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 48,
       "fails": 0,
       "existingUsers": true,
@@ -3112,8 +3020,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Ozon Fresh",
@@ -3158,8 +3066,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -3178,9 +3086,9 @@
       "conditions": [
         "Скидка не распространяется на товары со скидками и товары с лейблом \"Низкая цена\".",
         "Минимальный заказ — от 2000 ₽",
-        "Срок действия — примерно 1381 дн."
+        "Срок действия — примерно 1380 дн."
       ],
-      "expiresInDays": 1381,
+      "expiresInDays": 1380,
       "works": 31,
       "fails": 0,
       "existingUsers": false,
@@ -3206,8 +3114,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -3225,9 +3133,9 @@
       ],
       "conditions": [
         "К первому заказу можно добавить хлеб или другую выпечку из подборки, применить промокод и получить скидку 25%.",
-        "Срок действия — примерно 38 дн."
+        "Срок действия — примерно 37 дн."
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 47,
       "fails": 0,
       "existingUsers": false,
@@ -3250,8 +3158,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -3269,9 +3177,9 @@
       ],
       "conditions": [
         "Скидка 25% на кофе и чай из большого ассортимента по промокоду. Предложение распространяется только на первый заказ.",
-        "Срок действия — примерно 38 дн."
+        "Срок действия — примерно 37 дн."
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 66,
       "fails": 0,
       "existingUsers": false,
@@ -3294,8 +3202,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -3313,9 +3221,9 @@
       ],
       "conditions": [
         "Скидка 20% на первый заказ рыбы предоставляется при оформлении заказа в магазине Перекресток.",
-        "Срок действия — примерно 1381 дн."
+        "Срок действия — примерно 1380 дн."
       ],
-      "expiresInDays": 1381,
+      "expiresInDays": 1380,
       "works": 14,
       "fails": 0,
       "existingUsers": false,
@@ -3338,8 +3246,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -3357,9 +3265,9 @@
       ],
       "conditions": [
         "Предложение действительно для первого заказа. Скидка не применяется на товары, уже имеющие скидку, и товары с пометкой \"Низкая цена\".",
-        "Срок действия — примерно 1381 дн."
+        "Срок действия — примерно 1380 дн."
       ],
-      "expiresInDays": 1381,
+      "expiresInDays": 1380,
       "works": 26,
       "fails": 0,
       "existingUsers": false,
@@ -3382,8 +3290,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -3402,9 +3310,9 @@
       "conditions": [
         "Первый заказ в мобильном приложении даёт скидку 10% при активации промокода. Предложение действует на заказы от 1200 рублей.",
         "Минимальный заказ — от 1200 ₽",
-        "Срок действия — примерно 38 дн."
+        "Срок действия — примерно 37 дн."
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 14,
       "fails": 0,
       "existingUsers": false,
@@ -3430,8 +3338,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -3449,9 +3357,9 @@
       ],
       "conditions": [
         "Минимальный заказ — от 3000 ₽",
-        "Срок действия — примерно 1381 дн."
+        "Срок действия — примерно 1380 дн."
       ],
-      "expiresInDays": 1381,
+      "expiresInDays": 1380,
       "works": 17,
       "fails": 0,
       "existingUsers": false,
@@ -3477,8 +3385,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Ozon Fresh",
@@ -3523,8 +3431,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Купер",
@@ -3570,8 +3478,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Ozon Fresh",
@@ -3616,8 +3524,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Ozon Fresh",
@@ -3664,8 +3572,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Ozon Fresh",
@@ -3705,8 +3613,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Ozon Fresh",
@@ -3748,8 +3656,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Додо Пицца",
@@ -3771,7 +3679,7 @@
         "Срок действия — примерно 6 дн."
       ],
       "expiresInDays": 6,
-      "works": 1171,
+      "works": 1173,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -3795,13 +3703,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 1171
+          "works": 1173
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -3851,8 +3759,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Pizza Heart (Пицца Харт)",
@@ -3873,7 +3781,7 @@
         "до без ограничения"
       ],
       "expiresInDays": null,
-      "works": 15837,
+      "works": 15885,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -3890,13 +3798,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 15837
+          "works": 15885
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Перекрёсток",
@@ -3949,8 +3857,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Пятёрочка",
@@ -3969,9 +3877,9 @@
       "conditions": [
         "Скидка 750 рублей при заказе от 1500 рублей на первый заказ. Промокод суммируется с акциями.",
         "Минимальный заказ — от 1500 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 370,
       "fails": 0,
       "existingUsers": false,
@@ -3997,8 +3905,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Яндекс Еда",
@@ -4040,8 +3948,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Самокат",
@@ -4062,7 +3970,7 @@
         "Срок действия — примерно 6 дн."
       ],
       "expiresInDays": 6,
-      "works": 1815,
+      "works": 1817,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4082,13 +3990,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/samokat",
-          "works": 1815
+          "works": 1817
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Самокат",
@@ -4134,8 +4042,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Самокат",
@@ -4181,8 +4089,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Самокат",
@@ -4228,8 +4136,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Самокат",
@@ -4275,8 +4183,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -4297,7 +4205,7 @@
         "Срок действия — примерно 6 дн."
       ],
       "expiresInDays": 6,
-      "works": 8391,
+      "works": 8401,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4326,13 +4234,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 8391
+          "works": 8401
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Перекрёсток",
@@ -4350,9 +4258,9 @@
       ],
       "conditions": [
         "Скидка не распространяется на товары со скидками и товары с ярлыком \"Низкая цена\".",
-        "Срок действия — примерно 1381 дн."
+        "Срок действия — примерно 1380 дн."
       ],
-      "expiresInDays": 1381,
+      "expiresInDays": 1380,
       "works": 4,
       "fails": 0,
       "existingUsers": false,
@@ -4375,8 +4283,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Додо Пицца",
@@ -4421,8 +4329,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -4440,9 +4348,9 @@
       ],
       "conditions": [
         "Предложение не распространяется на товары с действующими скидками и на продукты с пометкой «Низкая цена».",
-        "Срок действия — примерно 1381 дн."
+        "Срок действия — примерно 1380 дн."
       ],
-      "expiresInDays": 1381,
+      "expiresInDays": 1380,
       "works": 9,
       "fails": 0,
       "existingUsers": false,
@@ -4468,8 +4376,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -4487,9 +4395,9 @@
       ],
       "conditions": [
         "Скидка не применяется к товарам со скидкой и с ярлыком \"Низкая цена\".",
-        "Срок действия — примерно 1381 дн."
+        "Срок действия — примерно 1380 дн."
       ],
-      "expiresInDays": 1381,
+      "expiresInDays": 1380,
       "works": 7,
       "fails": 0,
       "existingUsers": false,
@@ -4512,8 +4420,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -4532,9 +4440,9 @@
       "conditions": [
         "Скидка 350 р. на первый онлайн-заказ на сумму от 2500р.",
         "Минимальный заказ — от 2500 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 163,
       "fails": 0,
       "existingUsers": true,
@@ -4560,8 +4468,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -4580,9 +4488,9 @@
       "conditions": [
         "Скидка 300 р. на первый онлайн-заказ на сумму от 1500р.",
         "Минимальный заказ — от 1500 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 218,
       "fails": 0,
       "existingUsers": true,
@@ -4608,8 +4516,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Додо Пицца",
@@ -4663,8 +4571,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -4683,9 +4591,9 @@
       "conditions": [
         "Скидка 200 р. на первый онлайн-заказ на сумму от 1000 р.",
         "Минимальный заказ — от 1000 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 92,
       "fails": 0,
       "existingUsers": true,
@@ -4711,8 +4619,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Додо Пицца",
@@ -4754,8 +4662,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Самокат",
@@ -4797,8 +4705,55 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
+    },
+    {
+      "service": "Pizza Heart (Пицца Харт)",
+      "code": "ПРЕЗЕНТ",
+      "type": "percent",
+      "value": 20,
+      "maxDiscount": 0,
+      "minOrder": 1190,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Скидка 20% при покупке от 1190 рублей только для Краснодара",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "Скидка: 20%",
+        "до 1 дек. 2026 г.",
+        "Минимальный заказ — от 1190 ₽"
+      ],
+      "expiresInDays": 7,
+      "works": 20722,
+      "fails": 0,
+      "existingUsers": true,
+      "wholeCart": false,
+      "cities": [
+        "Краснодар"
+      ],
+      "cityRestricted": true,
+      "collections": "returning",
+      "sourceName": "promokod.store · Еда 1",
+      "sourceUrl": "https://promokod.store/promokody/eda-i-napitki",
+      "confidence": 66,
+      "verification": "confirmed",
+      "verificationMethod": "history",
+      "sourceCount": 1,
+      "evidence": [
+        {
+          "source": "promokod.store · Еда 1",
+          "url": "https://promokod.store/promokody/eda-i-napitki",
+          "works": 20722
+        }
+      ],
+      "alsoServices": [],
+      "firstSeenAt": "11/23/2026 21:21:37",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -4840,8 +4795,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "BeFit",
@@ -4861,8 +4816,8 @@
         "Скидка: 2 026 ₽",
         "до 30 нояб. 2026 г."
       ],
-      "expiresInDays": 7,
-      "works": 18857,
+      "expiresInDays": 6,
+      "works": 18911,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4882,13 +4837,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 18857
+          "works": 18911
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Перекрёсток",
@@ -4941,8 +4896,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -4961,9 +4916,9 @@
       "conditions": [
         "Закажите продукты через сайт или приложение “Перекрёсток Доставка” со скидкой 750₽ на первый заказ от 1500₽ вместе с промокодом! Акция действует для новых пользователей в Волгограде, Сочи, Екатеринбурге, Самаре, Нижнем Новгороде, Туле. Не суммируется со скидками и с товарами со знаком \"Низкая цена\". Условия доставки уточняйте на сайте perekrestok.ru или в приложении Перекрёсток Доставка.",
         "Минимальный заказ — от 1500 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 216,
       "fails": 0,
       "existingUsers": false,
@@ -4996,8 +4951,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -5016,9 +4971,9 @@
       "conditions": [
         "Действует на территории: Волгограда, Сочи, Екатеринбурга, Самары, Нижнего Новгорода, ТулыНе суммируется с другими акциями",
         "Минимальный заказ — от 1500 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 147,
       "fails": 0,
       "existingUsers": false,
@@ -5051,8 +5006,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -5071,9 +5026,9 @@
       "conditions": [
         "Скидка 550 рублей от 1500 рублей - действует только для новых пользователей.",
         "Минимальный заказ — от 1500 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 261,
       "fails": 0,
       "existingUsers": false,
@@ -5099,8 +5054,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Самокат",
@@ -5145,8 +5100,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Яндекс Еда",
@@ -5191,8 +5146,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -5213,7 +5168,7 @@
         "Действителен до 30.11.2026",
         "Минимальный заказ — от 2500 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 74,
       "fails": 0,
       "existingUsers": false,
@@ -5239,8 +5194,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Перекрёсток",
@@ -5286,8 +5241,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -5332,8 +5287,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Самокат",
@@ -5376,8 +5331,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -5398,7 +5353,7 @@
         "Действителен до 30.11.2026",
         "Минимальный заказ — от 1500 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 68,
       "fails": 0,
       "existingUsers": false,
@@ -5424,7 +5379,52 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
+    },
+    {
+      "service": "Магнит",
+      "code": "ADM35D3664",
+      "type": "percent",
+      "value": 35,
+      "maxDiscount": 500,
+      "minOrder": 1200,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Скидка 35% на первый заказ от 1200₽ в Магнит Доставке",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "Действует на первый заказ от 1200 ₽ в сервисах «Экспресс» или «Мигом». Действует при заказе товаров с доставкой или самовывозом Действует даже на акционные товары, кроме товаров с отметкой «Финальная цена» Скидка не распространяется на стоимость сборки и доставки товаров Максимальная скидка по промокоду 500 ₽",
+        "Минимальный заказ — от 1200 ₽",
+        "Срок действия — примерно 7 дн."
+      ],
+      "expiresInDays": 7,
+      "works": 83,
+      "fails": 0,
+      "existingUsers": false,
+      "wholeCart": false,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": "firstOrder",
+      "sourceName": "promokod.com",
+      "sourceUrl": "https://promokod.com/coupon-store/magnit-ru",
+      "confidence": 66,
+      "verification": "confirmed",
+      "verificationMethod": "history",
+      "sourceCount": 1,
+      "evidence": [
+        {
+          "source": "promokod.com",
+          "url": "https://promokod.com/coupon-store/magnit-ru",
+          "works": 83
+        }
+      ],
+      "alsoServices": [],
+      "firstSeenAt": "11/24/2026 11:42:05",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
       "seenRuns": 7
     },
     {
@@ -5471,8 +5471,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Самокат",
@@ -5518,8 +5518,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -5565,8 +5565,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -5612,8 +5612,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Самокат",
@@ -5659,8 +5659,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -5679,9 +5679,9 @@
       "conditions": [
         "Скидка -30% при заказе от 2000 рублей - действует только для новых пользователей. Максимальная скидка - 700 рублей.",
         "Минимальный заказ — от 2000 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 104,
       "fails": 0,
       "existingUsers": false,
@@ -5707,8 +5707,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Додо Пицца",
@@ -5760,8 +5760,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Simply Meal RU",
@@ -5781,8 +5781,8 @@
         "Скидка: 19%",
         "до 30 нояб. 2026 г."
       ],
-      "expiresInDays": 7,
-      "works": 14314,
+      "expiresInDays": 6,
+      "works": 14356,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -5802,13 +5802,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 14314
+          "works": 14356
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Купер",
@@ -5830,7 +5830,7 @@
         "Срок действия — примерно 6 дн."
       ],
       "expiresInDays": 6,
-      "works": 43,
+      "works": 44,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -5850,13 +5850,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/sbermarket",
-          "works": 43
+          "works": 44
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Купер",
@@ -5902,8 +5902,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -5922,9 +5922,9 @@
       "conditions": [
         "Скидка 350 р. на первый онлайн-заказ на сумму от 2500р.",
         "Минимальный заказ — от 2500 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 62,
       "fails": 0,
       "existingUsers": true,
@@ -5950,8 +5950,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -5970,9 +5970,9 @@
       "conditions": [
         "Скидка 300 р. на первый онлайн-заказ на сумму от 1500р.",
         "Минимальный заказ — от 1500 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 52,
       "fails": 0,
       "existingUsers": true,
@@ -5998,8 +5998,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -6018,9 +6018,9 @@
       "conditions": [
         "Скидка 250 р. на первый онлайн-заказ на сумму от 1250р.",
         "Минимальный заказ — от 1250 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 34,
       "fails": 0,
       "existingUsers": true,
@@ -6046,8 +6046,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -6066,9 +6066,9 @@
       "conditions": [
         "Скидка 250 р. на первый онлайн-заказ на сумму от 1250р.",
         "Минимальный заказ — от 1250 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 52,
       "fails": 0,
       "existingUsers": true,
@@ -6094,8 +6094,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Ozon Fresh",
@@ -6137,8 +6137,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Ozon Fresh",
@@ -6178,8 +6178,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Додо Пицца",
@@ -6223,8 +6223,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Додо Пицца",
@@ -6272,8 +6272,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Додо Пицца",
@@ -6322,8 +6322,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Додо Пицца",
@@ -6367,8 +6367,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Додо Пицца",
@@ -6422,8 +6422,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Купер",
@@ -6467,8 +6467,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -6514,8 +6514,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Купер",
@@ -6562,8 +6562,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Перекрёсток",
@@ -6609,8 +6609,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Самокат",
@@ -6630,7 +6630,7 @@
         "Действителен до 30.11.2026",
         "Минимальный заказ — от 2000 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 41,
       "fails": 0,
       "existingUsers": false,
@@ -6656,8 +6656,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "ВкусВилл",
@@ -6700,8 +6700,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Самокат",
@@ -6721,7 +6721,7 @@
         "Действителен до 30.11.2026",
         "Минимальный заказ — от 1000 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 24,
       "fails": 0,
       "existingUsers": false,
@@ -6747,8 +6747,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Перекрёсток",
@@ -6767,9 +6767,9 @@
       "conditions": [
         "Закажите продукты через сайт или приложение “Перекрёсток Доставка” со скидкой 300₽ на первый заказ от 1200₽ вместе с промокодом! Акция действует для новых пользователей по всей РФ, а также для тех кто не покупал более года. Не суммируется со скидками и с товарами со знаком \"Низкая цена\". Условия доставки уточняйте на сайте perekrestok.ru или в приложении Перекрёсток Доставка.",
         "Минимальный заказ — от 1200 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 17,
       "fails": 0,
       "existingUsers": false,
@@ -6795,8 +6795,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -6839,8 +6839,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Купер",
@@ -6886,8 +6886,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -6906,9 +6906,9 @@
       "conditions": [
         "Скидка 250 рублей от 1250 рублей - действует только для новых пользователей",
         "Минимальный заказ — от 1250 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 19,
       "fails": 0,
       "existingUsers": false,
@@ -6934,8 +6934,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -6956,7 +6956,7 @@
         "Действителен до 30.11.2026",
         "Минимальный заказ — от 1250 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 41,
       "fails": 0,
       "existingUsers": false,
@@ -6982,8 +6982,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "ВкусВилл",
@@ -7026,8 +7026,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Магнит",
@@ -7046,9 +7046,9 @@
       "conditions": [
         "Максимальная сумма скидки 500 ₽Не распространяется на товары с пометкой «финальная цена»",
         "Минимальный заказ — от 1000 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 27,
       "fails": 0,
       "existingUsers": false,
@@ -7071,8 +7071,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -7091,9 +7091,9 @@
       "conditions": [
         "Закажите продукты через сайт или приложение “Перекрёсток Доставка” со скидкой 40% на первый заказ от 1500₽ вместе с промокодом! Максимальная сумма скидки - 600₽ Акция действует для новых пользователей по всей РФ, а также для тех кто не совершал покупки более года. Не суммируется со скидками и с товарами со знаком \"Низкая цена\". Условия доставки уточняйте на сайте perekrestok.ru или в приложении Перекрёсток Доставка.",
         "Минимальный заказ — от 1500 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 56,
       "fails": 0,
       "existingUsers": false,
@@ -7119,8 +7119,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -7139,9 +7139,9 @@
       "conditions": [
         "Максимальная сумма скидки 600 ₽Суммируется с другими скидками",
         "Минимальный заказ — от 1500 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 43,
       "fails": 0,
       "existingUsers": false,
@@ -7167,8 +7167,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Купер",
@@ -7214,8 +7214,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Магнит",
@@ -7234,9 +7234,9 @@
       "conditions": [
         "Скидка 35% при покупке от 1200 рублей в Магнит Экспресс. Максимальная сумма скидки 500 рублей.",
         "Минимальный заказ — от 1200 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 26,
       "fails": 0,
       "existingUsers": false,
@@ -7262,8 +7262,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Магнит",
@@ -7282,9 +7282,9 @@
       "conditions": [
         "Скидка 35% при покупке от 1200 рублей в Магнит Экспресс. Максимальная сумма скидки 500 рублей.",
         "Минимальный заказ — от 1200 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 23,
       "fails": 0,
       "existingUsers": false,
@@ -7310,8 +7310,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Купер",
@@ -7357,8 +7357,56 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
+    },
+    {
+      "service": "Доставка еды",
+      "code": "NEW200",
+      "type": "fixed",
+      "value": 200,
+      "maxDiscount": 0,
+      "minOrder": 999,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "200 ₽ при заказе доставки",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "от 999 ₽ до 31.12",
+        "Источники: hi-tech.mail.ru",
+        "Минимальный заказ — от 999 ₽"
+      ],
+      "expiresInDays": 37,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": true,
+      "wholeCart": true,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": [
+        "returning",
+        "wholeCart"
+      ],
+      "sourceName": "okodo.ru · Rostic's",
+      "sourceUrl": "https://okodo.ru/rostics/",
+      "confidence": 63,
+      "verification": "confirmed",
+      "verificationMethod": "history",
+      "sourceCount": 1,
+      "evidence": [
+        {
+          "source": "okodo.ru · Rostic's",
+          "url": "https://okodo.ru/rostics/",
+          "works": 0
+        }
+      ],
+      "alsoServices": [],
+      "firstSeenAt": "11/24/2026 14:21:02",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 5
     },
     {
       "service": "2 Берега",
@@ -7375,7 +7423,7 @@
         "собрано с сайта"
       ],
       "conditions": [],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -7398,8 +7446,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -7420,7 +7468,7 @@
         "Источники: Admitad",
         "Минимальный заказ — от 3000 ₽"
       ],
-      "expiresInDays": 10,
+      "expiresInDays": 9,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -7446,8 +7494,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -7468,7 +7516,7 @@
         "Источники: ecosum.ru",
         "Минимальный заказ — от 3000 ₽"
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -7487,20 +7535,20 @@
       "sourceCount": 1,
       "evidence": [
         {
-          "source": "okodo.ru · Все коды",
-          "url": "https://okodo.ru/",
+          "source": "okodo.ru · Ашан",
+          "url": "https://okodo.ru/auchan/",
           "works": 0
         },
         {
-          "source": "okodo.ru · Ашан",
-          "url": "https://okodo.ru/auchan/",
+          "source": "okodo.ru · Все коды",
+          "url": "https://okodo.ru/",
           "works": 0
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -7521,7 +7569,7 @@
         "Источники: Admitad",
         "Минимальный заказ — от 2500 ₽"
       ],
-      "expiresInDays": 10,
+      "expiresInDays": 9,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -7547,8 +7595,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -7569,7 +7617,7 @@
         "Источники: Admitad",
         "Минимальный заказ — от 6790 ₽"
       ],
-      "expiresInDays": 32,
+      "expiresInDays": 31,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -7588,20 +7636,20 @@
       "sourceCount": 1,
       "evidence": [
         {
-          "source": "okodo.ru · Все коды",
-          "url": "https://okodo.ru/",
+          "source": "okodo.ru · Глобус",
+          "url": "https://okodo.ru/globus/",
           "works": 0
         },
         {
-          "source": "okodo.ru · Глобус",
-          "url": "https://okodo.ru/globus/",
+          "source": "okodo.ru · Все коды",
+          "url": "https://okodo.ru/",
           "works": 0
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -7622,7 +7670,7 @@
         "Источники: hi-tech.mail.ru",
         "Минимальный заказ — от 600 ₽"
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -7648,8 +7696,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Elementaree",
@@ -7692,8 +7740,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Ollis",
@@ -7715,7 +7763,7 @@
         "Только в приложении",
         "Есть исключения: промонаборы и сеты"
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -7741,8 +7789,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Domino's Pizza",
@@ -7763,7 +7811,7 @@
         "Есть исключения: наборы",
         "Не суммируется с другими скидками"
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -7789,8 +7837,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Магнит",
@@ -7813,7 +7861,7 @@
         "Не суммируется с другими скидками",
         "Минимальный заказ — от 1200 ₽"
       ],
-      "expiresInDays": 38,
+      "expiresInDays": 37,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -7839,8 +7887,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Купер",
@@ -7886,8 +7934,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Самокат",
@@ -7929,8 +7977,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Магнит",
@@ -7949,9 +7997,9 @@
       "conditions": [
         "Получи скидку 26% на повторный заказ самовывозом от 2 000 ₽ из магазина Магнит Гипермаркет в мобильном приложении Магнит: акции и доставка по уникальному промокоду! Сервис может самостоятельно определять минимальную сумму заказа в зависимости от зоны доставки, повышенного спроса и т.д. Акция действует только на самовывоз и в Магнит Гипермаркет, суммируется с другими скидками в приложении и действует на красные ценники! Фонд акции ограничен, акция может завершиться досрочно. Промокод дает скидку не более 2 000 ₽. Скидка не действует на товары с отметкой «финальная цена».",
         "Минимальный заказ — от 2000 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 9,
       "fails": 0,
       "existingUsers": true,
@@ -7974,8 +8022,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Купер",
@@ -8021,8 +8069,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Купер",
@@ -8044,7 +8092,7 @@
         "Срок действия — примерно 6 дн."
       ],
       "expiresInDays": 6,
-      "works": 6,
+      "works": 8,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -8064,13 +8112,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/sbermarket",
-          "works": 6
+          "works": 8
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Купер",
@@ -8113,8 +8161,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Купер",
@@ -8160,8 +8208,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Купер",
@@ -8207,8 +8255,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Самокат",
@@ -8226,9 +8274,9 @@
       ],
       "conditions": [
         "Минимальный заказ — от 1000 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 8,
       "fails": 0,
       "existingUsers": false,
@@ -8254,8 +8302,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -8273,9 +8321,9 @@
       ],
       "conditions": [
         "Минимальный заказ — от 1200 ₽",
-        "Срок действия — примерно 7 дн."
+        "Срок действия — примерно 6 дн."
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 10,
       "fails": 0,
       "existingUsers": false,
@@ -8301,8 +8349,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Самокат",
@@ -8345,8 +8393,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Domino's Pizza",
@@ -8392,8 +8440,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Sushiwok",
@@ -8441,8 +8489,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Domino's Pizza",
@@ -8492,8 +8540,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Rostic's",
@@ -8539,8 +8587,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Додо Пицца",
@@ -8590,8 +8638,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Domino's Pizza",
@@ -8637,8 +8685,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Domino's Pizza",
@@ -8684,8 +8732,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Пятёрочка",
@@ -8731,8 +8779,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Перекрёсток",
@@ -8775,8 +8823,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Самокат",
@@ -8822,8 +8870,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "ВкусВилл",
@@ -8869,8 +8917,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "ВкусВилл",
@@ -8916,8 +8964,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "ВкусВилл",
@@ -8963,8 +9011,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Магнит",
@@ -9010,8 +9058,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Rostic's",
@@ -9057,8 +9105,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "ЁбиДоёби",
@@ -9101,8 +9149,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -9154,8 +9202,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -9195,20 +9243,20 @@
       "sourceCount": 1,
       "evidence": [
         {
-          "source": "okodo.ru · Все коды",
-          "url": "https://okodo.ru/",
+          "source": "okodo.ru · Ашан",
+          "url": "https://okodo.ru/auchan/",
           "works": 0
         },
         {
-          "source": "okodo.ru · Ашан",
-          "url": "https://okodo.ru/auchan/",
+          "source": "okodo.ru · Все коды",
+          "url": "https://okodo.ru/",
           "works": 0
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Яндекс Еда",
@@ -9228,7 +9276,7 @@
         "500 ₽ (от 3000) на повторный заказ в «Азбука Вкуса» и «Азбука Вкуса Daily». Действует до 30 ноября 2026 года включительно.",
         "Минимальный заказ — от 3000 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -9254,8 +9302,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Яндекс Еда",
@@ -9275,7 +9323,7 @@
         "500 ₽ (от 2000) на повторный заказ в Dolce Milk. Действует до 30 ноября 2026 года включительно.",
         "Минимальный заказ — от 2000 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -9301,8 +9349,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Яндекс Еда",
@@ -9322,7 +9370,7 @@
         "400 ₽ (от 1800) на повторный заказ во «ВкусВилл Гипер» и «ВкусВилл Экспресс». Действует до 30 ноября 2026 года включительно.",
         "Минимальный заказ — от 1800 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -9348,8 +9396,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -9370,7 +9418,7 @@
         "Источники: hi-tech.mail.ru",
         "Минимальный заказ — от 700 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -9396,8 +9444,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Доставка еды",
@@ -9418,7 +9466,7 @@
         "Источники: ecosum.ru",
         "Минимальный заказ — от 800 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -9444,8 +9492,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Доставка еды",
@@ -9466,7 +9514,7 @@
         "Источники: hi-tech.mail.ru",
         "Минимальный заказ — от 2000 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -9492,8 +9540,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Ашан",
@@ -9515,7 +9563,7 @@
         "Есть исключения: товары со скидкой",
         "Минимальный заказ — от 3000 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -9541,8 +9589,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -9563,7 +9611,7 @@
         "Источники: ecosum.ru",
         "Минимальный заказ — от 3000 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -9582,20 +9630,20 @@
       "sourceCount": 1,
       "evidence": [
         {
-          "source": "okodo.ru · Все коды",
-          "url": "https://okodo.ru/",
+          "source": "okodo.ru · Ашан",
+          "url": "https://okodo.ru/auchan/",
           "works": 0
         },
         {
-          "source": "okodo.ru · Ашан",
-          "url": "https://okodo.ru/auchan/",
+          "source": "okodo.ru · Все коды",
+          "url": "https://okodo.ru/",
           "works": 0
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -9616,7 +9664,7 @@
         "Источники: hi-tech.mail.ru",
         "Минимальный заказ — от 500 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -9644,8 +9692,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -9666,7 +9714,7 @@
         "Источники: ecosum.ru",
         "Минимальный заказ — от 2000 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -9682,20 +9730,20 @@
       "sourceCount": 1,
       "evidence": [
         {
-          "source": "okodo.ru · Яндекс Еда",
-          "url": "https://okodo.ru/yandex-eda/",
+          "source": "okodo.ru · Все коды",
+          "url": "https://okodo.ru/",
           "works": 0
         },
         {
-          "source": "okodo.ru · Все коды",
-          "url": "https://okodo.ru/",
+          "source": "okodo.ru · Яндекс Еда",
+          "url": "https://okodo.ru/yandex-eda/",
           "works": 0
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -9716,7 +9764,7 @@
         "Источники: hi-tech.mail.ru",
         "Минимальный заказ — от 2000 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -9747,8 +9795,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -9769,7 +9817,7 @@
         "Источники: hi-tech.mail.ru",
         "Минимальный заказ — от 600 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -9795,8 +9843,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Доставка еды",
@@ -9817,7 +9865,7 @@
         "Источники: ecosum.ru",
         "Минимальный заказ — от 600 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -9843,8 +9891,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Доставка еды",
@@ -9865,7 +9913,7 @@
         "Источники: ecosum.ru",
         "Минимальный заказ — от 600 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -9896,8 +9944,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -9918,7 +9966,7 @@
         "Источники: hi-tech.mail.ru",
         "Минимальный заказ — от 700 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -9949,8 +9997,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -9971,7 +10019,7 @@
         "Источники: ecosum.ru",
         "Минимальный заказ — от 800 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -10002,8 +10050,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -10024,7 +10072,7 @@
         "Источники: ecosum.ru",
         "Минимальный заказ — от 700 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -10055,8 +10103,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -10077,7 +10125,7 @@
         "Источники: hi-tech.mail.ru",
         "Минимальный заказ — от 1200 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -10108,8 +10156,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -10130,7 +10178,7 @@
         "Источники: hi-tech.mail.ru",
         "Минимальный заказ — от 1000 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -10161,8 +10209,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Доставка еды",
@@ -10183,7 +10231,7 @@
         "Источники: hi-tech.mail.ru",
         "Минимальный заказ — от 2000 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -10209,8 +10257,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Доставка еды",
@@ -10231,7 +10279,7 @@
         "Источники: hi-tech.mail.ru",
         "Минимальный заказ — от 2500 ₽"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 6,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -10250,68 +10298,20 @@
       "sourceCount": 1,
       "evidence": [
         {
-          "source": "okodo.ru · Все коды",
-          "url": "https://okodo.ru/",
+          "source": "okodo.ru · Метро",
+          "url": "https://okodo.ru/metro/",
           "works": 0
         },
         {
-          "source": "okodo.ru · Метро",
-          "url": "https://okodo.ru/metro/",
+          "source": "okodo.ru · Все коды",
+          "url": "https://okodo.ru/",
           "works": 0
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
-    },
-    {
-      "service": "Доставка еды",
-      "code": "NEW200",
-      "type": "fixed",
-      "value": 200,
-      "maxDiscount": 0,
-      "minOrder": 999,
-      "freeDelivery": false,
-      "deliveryCost": 149,
-      "title": "200 ₽ при заказе доставки",
-      "category": [
-        "доставка еды",
-        "собрано с сайта"
-      ],
-      "conditions": [
-        "от 999 ₽ до 31.12",
-        "Источники: hi-tech.mail.ru",
-        "Минимальный заказ — от 999 ₽"
-      ],
-      "expiresInDays": 38,
-      "works": 0,
-      "fails": 0,
-      "existingUsers": true,
-      "wholeCart": true,
-      "cities": [],
-      "cityRestricted": false,
-      "collections": [
-        "returning",
-        "wholeCart"
-      ],
-      "sourceName": "okodo.ru · Rostic's",
-      "sourceUrl": "https://okodo.ru/rostics/",
-      "confidence": 63,
-      "verification": "likely",
-      "verificationMethod": "source",
-      "sourceCount": 1,
-      "evidence": [
-        {
-          "source": "okodo.ru · Rostic's",
-          "url": "https://okodo.ru/rostics/",
-          "works": 0
-        }
-      ],
-      "alsoServices": [],
-      "firstSeenAt": "11/24/2026 14:21:02",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 4
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Токио Сити",
@@ -10332,7 +10332,7 @@
         "Заказ от 900 ₽ · до 31 декабря",
         "Минимальный заказ — от 900 ₽"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -10358,8 +10358,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 14:21:02",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 4
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 5
     },
     {
       "service": "Яндекс Еда",
@@ -10376,9 +10376,9 @@
         "собрано с сайта"
       ],
       "conditions": [
-        "Истекает через 37 дней"
+        "Истекает через 36 дней"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -10404,8 +10404,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Яндекс Еда",
@@ -10426,7 +10426,7 @@
         "Заказ от 700 ₽ · до 31 декабря",
         "Минимальный заказ — от 700 ₽"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -10452,8 +10452,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Ашан",
@@ -10474,7 +10474,7 @@
         "Заказ от 2500 ₽ · до 31 декабря",
         "Минимальный заказ — от 2500 ₽"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -10500,8 +10500,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Domino's Pizza",
@@ -10518,10 +10518,10 @@
         "собрано с сайта"
       ],
       "conditions": [
-        "Истекает через 37 дней",
+        "Истекает через 36 дней",
         "Минимальный заказ — от 1890 ₽"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -10547,8 +10547,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Rostic's",
@@ -10569,7 +10569,7 @@
         "Заказ от 1500 ₽ · до 31 декабря",
         "Минимальный заказ — от 1500 ₽"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -10595,8 +10595,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Ашан",
@@ -10617,7 +10617,7 @@
         "Заказ от 3000 ₽ · до 31 декабря",
         "Минимальный заказ — от 3000 ₽"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -10643,8 +10643,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Sushi Master",
@@ -10665,7 +10665,7 @@
         "Заказ от 1600 ₽ · до 31 декабря",
         "Минимальный заказ — от 1600 ₽"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -10691,8 +10691,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 14:21:02",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 4
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 5
     },
     {
       "service": "allopizza.su",
@@ -10709,10 +10709,10 @@
         "собрано с сайта"
       ],
       "conditions": [
-        "Истекает через 37 дней",
+        "Истекает через 36 дней",
         "Минимальный заказ — от 1299 ₽"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -10738,8 +10738,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Sushi Master",
@@ -10760,7 +10760,7 @@
         "Заказ от 1500 ₽ · до 31 декабря",
         "Минимальный заказ — от 1500 ₽"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -10786,8 +10786,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 14:21:02",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 4
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 5
     },
     {
       "service": "Яндекс Еда",
@@ -10808,7 +10808,7 @@
         "Первый заказ от 700 ₽ · до 31 декабря",
         "Минимальный заказ — от 700 ₽"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -10834,8 +10834,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "prostoeda.pro",
@@ -10852,9 +10852,9 @@
         "собрано с сайта"
       ],
       "conditions": [
-        "Истекает через 37 дней"
+        "Истекает через 36 дней"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -10880,8 +10880,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Elementaree",
@@ -10898,9 +10898,9 @@
         "собрано с сайта"
       ],
       "conditions": [
-        "Истекает через 37 дней"
+        "Истекает через 36 дней"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -10926,8 +10926,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Монетка",
@@ -10948,7 +10948,7 @@
         "Первый заказ от 1200 ₽ · до 31 декабря",
         "Минимальный заказ — от 1200 ₽"
       ],
-      "expiresInDays": 37,
+      "expiresInDays": 36,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -10974,8 +10974,186 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
+    },
+    {
+      "service": "FoodBand",
+      "code": "ВСЕВМЕСТЕ",
+      "type": "fixed",
+      "value": 3590,
+      "maxDiscount": 0,
+      "minOrder": 0,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Сет из пяти пицц за 3590 рублей",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "FoodBand"
+      ],
+      "expiresInDays": null,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": true,
+      "wholeCart": false,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": "returning",
+      "sourceName": "fooody.ru",
+      "sourceUrl": "https://fooody.ru/moskva/promo/",
+      "confidence": 58,
+      "verification": "likely",
+      "verificationMethod": "source",
+      "sourceCount": 1,
+      "evidence": [
+        {
+          "source": "fooody.ru",
+          "url": "https://fooody.ru/moskva/promo/",
+          "works": 0
+        }
+      ],
+      "alsoServices": [],
+      "firstSeenAt": "11/23/2026 21:21:37",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
+    },
+    {
+      "service": "Три пирога за 1 399 ₽",
+      "code": "FIRST",
+      "type": "fixed",
+      "value": 1399,
+      "maxDiscount": 0,
+      "minOrder": 0,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Три пирога за 1 399 ₽",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "Пироги №1"
+      ],
+      "expiresInDays": null,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": true,
+      "wholeCart": true,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": [
+        "returning",
+        "wholeCart"
+      ],
+      "sourceName": "fooody.ru",
+      "sourceUrl": "https://fooody.ru/moskva/promo/",
+      "confidence": 58,
+      "verification": "likely",
+      "verificationMethod": "source",
+      "sourceCount": 1,
+      "evidence": [
+        {
+          "source": "fooody.ru",
+          "url": "https://fooody.ru/moskva/promo/",
+          "works": 0
+        }
+      ],
+      "alsoServices": [],
+      "firstSeenAt": "11/23/2026 21:21:37",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
+    },
+    {
+      "service": "FoodBand",
+      "code": "NEW15",
+      "type": "percent",
+      "value": 25,
+      "maxDiscount": 0,
+      "minOrder": 0,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Скидка до 25% на заказ в приложении",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "FoodBand"
+      ],
+      "expiresInDays": null,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": true,
+      "wholeCart": true,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": [
+        "returning",
+        "wholeCart"
+      ],
+      "sourceName": "fooody.ru",
+      "sourceUrl": "https://fooody.ru/moskva/promo/",
+      "confidence": 58,
+      "verification": "likely",
+      "verificationMethod": "source",
+      "sourceCount": 1,
+      "evidence": [
+        {
+          "source": "fooody.ru",
+          "url": "https://fooody.ru/moskva/promo/",
+          "works": 0
+        }
+      ],
+      "alsoServices": [],
+      "firstSeenAt": "11/23/2026 21:21:37",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
+    },
+    {
+      "service": "Скидка 20% в честь дня рождения",
+      "code": "ДР20",
+      "type": "percent",
+      "value": 20,
+      "maxDiscount": 0,
+      "minOrder": 0,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Скидка 20% в честь дня рождения",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "Алло Пицца"
+      ],
+      "expiresInDays": null,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": true,
+      "wholeCart": false,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": "returning",
+      "sourceName": "fooody.ru",
+      "sourceUrl": "https://fooody.ru/moskva/promo/",
+      "confidence": 58,
+      "verification": "likely",
+      "verificationMethod": "source",
+      "sourceCount": 1,
+      "evidence": [
+        {
+          "source": "fooody.ru",
+          "url": "https://fooody.ru/moskva/promo/",
+          "works": 0
+        }
+      ],
+      "alsoServices": [],
+      "firstSeenAt": "11/23/2026 21:21:37",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Дикси",
@@ -11020,8 +11198,54 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
+    },
+    {
+      "service": "Доставка еды",
+      "code": "YAMAPP",
+      "type": "fixed",
+      "value": 500,
+      "maxDiscount": 0,
+      "minOrder": 0,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Скидка 500 ₽ на первый заказ в приложении",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "Yamdiet"
+      ],
+      "expiresInDays": null,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": false,
+      "wholeCart": true,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": [
+        "firstOrder",
+        "wholeCart"
+      ],
+      "sourceName": "fooody.ru",
+      "sourceUrl": "https://fooody.ru/moskva/promo/",
+      "confidence": 58,
+      "verification": "likely",
+      "verificationMethod": "source",
+      "sourceCount": 1,
+      "evidence": [
+        {
+          "source": "fooody.ru",
+          "url": "https://fooody.ru/moskva/promo/",
+          "works": 0
+        }
+      ],
+      "alsoServices": [],
+      "firstSeenAt": "11/23/2026 21:21:37",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Domino's Pizza",
@@ -11064,8 +11288,143 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
+    },
+    {
+      "service": "Скидка 20% и 1000 баллов на первый заказ",
+      "code": "СТАРТ1000",
+      "type": "percent",
+      "value": 20,
+      "maxDiscount": 0,
+      "minOrder": 0,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Скидка 20% и 1000 баллов на первый заказ",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "Алло Пицца"
+      ],
+      "expiresInDays": null,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": false,
+      "wholeCart": false,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": "firstOrder",
+      "sourceName": "fooody.ru",
+      "sourceUrl": "https://fooody.ru/moskva/promo/",
+      "confidence": 58,
+      "verification": "likely",
+      "verificationMethod": "source",
+      "sourceCount": 1,
+      "evidence": [
+        {
+          "source": "fooody.ru",
+          "url": "https://fooody.ru/moskva/promo/",
+          "works": 0
+        }
+      ],
+      "alsoServices": [],
+      "firstSeenAt": "11/23/2026 21:21:37",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
+    },
+    {
+      "service": "Скидка 10% на первый заказ в приложении",
+      "code": "APP10",
+      "type": "percent",
+      "value": 10,
+      "maxDiscount": 0,
+      "minOrder": 0,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Скидка 10% на первый заказ в приложении",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "Пироги №1"
+      ],
+      "expiresInDays": null,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": false,
+      "wholeCart": true,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": [
+        "firstOrder",
+        "wholeCart"
+      ],
+      "sourceName": "fooody.ru",
+      "sourceUrl": "https://fooody.ru/moskva/promo/",
+      "confidence": 58,
+      "verification": "likely",
+      "verificationMethod": "source",
+      "sourceCount": 1,
+      "evidence": [
+        {
+          "source": "fooody.ru",
+          "url": "https://fooody.ru/moskva/promo/",
+          "works": 0
+        }
+      ],
+      "alsoServices": [],
+      "firstSeenAt": "11/23/2026 21:21:37",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
+    },
+    {
+      "service": "Level Kitchen",
+      "code": "СТАРТ",
+      "type": "percent",
+      "value": 10,
+      "maxDiscount": 0,
+      "minOrder": 0,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "Скидка 10% на первый заказ",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "Level Kitchen"
+      ],
+      "expiresInDays": null,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": false,
+      "wholeCart": true,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": [
+        "firstOrder",
+        "wholeCart"
+      ],
+      "sourceName": "fooody.ru",
+      "sourceUrl": "https://fooody.ru/moskva/promo/",
+      "confidence": 58,
+      "verification": "likely",
+      "verificationMethod": "source",
+      "sourceCount": 1,
+      "evidence": [
+        {
+          "source": "fooody.ru",
+          "url": "https://fooody.ru/moskva/promo/",
+          "works": 0
+        }
+      ],
+      "alsoServices": [],
+      "firstSeenAt": "11/23/2026 21:21:37",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Токио Сити",
@@ -11086,7 +11445,7 @@
         "Заказ от 900 ₽ · до 30 ноября",
         "Минимальный заказ — от 900 ₽"
       ],
-      "expiresInDays": 6,
+      "expiresInDays": 5,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -11112,8 +11471,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Vipfish",
@@ -11134,7 +11493,7 @@
         "Заказ от 3999 ₽ · до 30 ноября",
         "Минимальный заказ — от 3999 ₽"
       ],
-      "expiresInDays": 6,
+      "expiresInDays": 5,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -11157,8 +11516,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 14:21:02",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 4
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 5
     },
     {
       "service": "Фарфор",
@@ -11179,7 +11538,7 @@
         "Заказ от 2290 ₽ · до 30 ноября",
         "Минимальный заказ — от 2290 ₽"
       ],
-      "expiresInDays": 6,
+      "expiresInDays": 5,
       "works": 0,
       "fails": 0,
       "existingUsers": true,
@@ -11205,8 +11564,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "polza",
@@ -11223,10 +11582,10 @@
         "собрано с сайта"
       ],
       "conditions": [
-        "Истекает через 6 дней",
+        "Истекает через 5 дней",
         "Минимальный заказ — от 2199 ₽"
       ],
-      "expiresInDays": 6,
+      "expiresInDays": 5,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -11252,8 +11611,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Перекрёсток",
@@ -11274,7 +11633,7 @@
         "Первый заказ от 1500 ₽ · до 30 ноября",
         "Минимальный заказ — от 1500 ₽"
       ],
-      "expiresInDays": 6,
+      "expiresInDays": 5,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -11300,8 +11659,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "saransk.inyan-rolly",
@@ -11318,9 +11677,9 @@
         "собрано с сайта"
       ],
       "conditions": [
-        "Истекает через 7 дней"
+        "Истекает через 4 дня"
       ],
-      "expiresInDays": 7,
+      "expiresInDays": 4,
       "works": 0,
       "fails": 0,
       "existingUsers": false,
@@ -11346,8 +11705,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 7
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 8
     },
     {
       "service": "Купер",
@@ -11369,7 +11728,7 @@
         "Срок действия — примерно 1 дн."
       ],
       "expiresInDays": 1,
-      "works": 0,
+      "works": 4,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -11381,7 +11740,7 @@
       ],
       "sourceName": "promokod.pikabu.ru",
       "sourceUrl": "https://promokod.pikabu.ru/shops/sbermarket",
-      "confidence": 50,
+      "confidence": 54,
       "verification": "likely",
       "verificationMethod": "source",
       "sourceCount": 1,
@@ -11389,13 +11748,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/sbermarket",
-          "works": 0
+          "works": 4
         }
       ],
       "alsoServices": [],
-      "firstSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 1
+      "firstSeenAt": "11/24/2026 22:48:40",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 2
     },
     {
       "service": "Tanukifamily",
@@ -11428,7 +11787,7 @@
       ],
       "sourceName": "promokodex.ru",
       "sourceUrl": "https://www.promokodex.ru/actions/edim-doma",
-      "confidence": 50,
+      "confidence": 53,
       "verification": "likely",
       "verificationMethod": "source",
       "sourceCount": 1,
@@ -11440,9 +11799,9 @@
         }
       ],
       "alsoServices": [],
-      "firstSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 1
+      "firstSeenAt": "11/24/2026 22:48:40",
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 2
     },
     {
       "service": "Яндекс Еда",
@@ -11488,8 +11847,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Якитория",
@@ -11534,8 +11893,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Rostic's",
@@ -11581,8 +11940,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Якитория",
@@ -11631,8 +11990,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Якитория",
@@ -11681,8 +12040,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -11728,8 +12087,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -11775,8 +12134,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -11825,8 +12184,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -11875,8 +12234,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Перекрёсток",
@@ -11919,8 +12278,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Купер",
@@ -11966,8 +12325,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -12010,8 +12369,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ВкусВилл",
@@ -12056,8 +12415,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "KFC",
@@ -12102,8 +12461,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Тануки",
@@ -12148,8 +12507,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "ЁбиДоёби",
@@ -12192,8 +12551,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     },
     {
       "service": "Якитория",
@@ -12243,8 +12602,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-24T22:48:40.6926449+00:00",
-      "seenRuns": 6
+      "lastSeenAt": "2026-11-25T05:05:18.1266417+00:00",
+      "seenRuns": 7
     }
   ]
 }
