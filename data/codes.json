@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T02:41:46.6628495+00:00",
+  "updatedAt": "2026-11-28T10:55:05.7883843+00:00",
   "generator": "PromoLov collector v2",
   "stats": {
     "total": 248,
@@ -435,24 +435,24 @@
       "sourceCount": 3,
       "evidence": [
         {
-          "source": "okodo.ru · Яндекс Еда",
-          "url": "https://okodo.ru/yandex-eda/",
-          "works": 0
-        },
-        {
-          "source": "okodo.ru · Деливери",
-          "url": "https://okodo.ru/deliveri/",
-          "works": 0
-        },
-        {
           "source": "ecosum.ru",
           "url": "https://www.ecosum.ru/promokody-yandex-eda/",
+          "works": 0
+        },
+        {
+          "source": "okodo.ru · Яндекс Еда",
+          "url": "https://okodo.ru/yandex-eda/",
           "works": 0
         },
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/eda-yandex",
           "works": 163
+        },
+        {
+          "source": "okodo.ru · Деливери",
+          "url": "https://okodo.ru/deliveri/",
+          "works": 0
         },
         {
           "source": "okodo.ru · Все коды",
@@ -464,8 +464,8 @@
         "Яндекс Еда"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Яндекс Еда",
@@ -501,6 +501,11 @@
       "sourceCount": 3,
       "evidence": [
         {
+          "source": "ecosum.ru",
+          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
+          "works": 0
+        },
+        {
           "source": "okodo.ru · Яндекс Еда",
           "url": "https://okodo.ru/yandex-eda/",
           "works": 0
@@ -509,11 +514,6 @@
           "source": "promokod.com",
           "url": "https://promokod.com/coupon-store/eda-yandex-ru",
           "works": 2340
-        },
-        {
-          "source": "ecosum.ru",
-          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
-          "works": 0
         },
         {
           "source": "okodo.ru · Деливери",
@@ -525,8 +525,8 @@
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Яндекс Еда",
@@ -566,8 +566,18 @@
       "sourceCount": 3,
       "evidence": [
         {
+          "source": "ecosum.ru",
+          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
+          "works": 0
+        },
+        {
           "source": "okodo.ru · Яндекс Еда",
           "url": "https://okodo.ru/yandex-eda/",
+          "works": 0
+        },
+        {
+          "source": "okodo.ru · Все коды",
+          "url": "https://okodo.ru/",
           "works": 0
         },
         {
@@ -576,18 +586,8 @@
           "works": 3044
         },
         {
-          "source": "ecosum.ru",
-          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
-          "works": 0
-        },
-        {
           "source": "okodo.ru · Деливери",
           "url": "https://okodo.ru/deliveri/",
-          "works": 0
-        },
-        {
-          "source": "okodo.ru · Все коды",
-          "url": "https://okodo.ru/",
           "works": 0
         }
       ],
@@ -596,8 +596,8 @@
         "Деливери"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -619,7 +619,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 2559,
+      "works": 2560,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -639,20 +639,20 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promokod.pikabu.ru",
-          "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 2559
-        },
-        {
           "source": "promokod.com",
           "url": "https://promokod.com/coupon-store/dodopizza-ru",
           "works": 477
+        },
+        {
+          "source": "promokod.pikabu.ru",
+          "url": "https://promokod.pikabu.ru/shops/dodopizza",
+          "works": 2560
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -673,7 +673,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 4846,
+      "works": 4850,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -693,20 +693,20 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promokod.pikabu.ru",
-          "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 4846
-        },
-        {
           "source": "promokod.com",
           "url": "https://promokod.com/coupon-store/dodopizza-ru",
           "works": 260
+        },
+        {
+          "source": "promokod.pikabu.ru",
+          "url": "https://promokod.pikabu.ru/shops/dodopizza",
+          "works": 4850
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -727,7 +727,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 222745,
+      "works": 222797,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -745,20 +745,20 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promokod.pikabu.ru",
-          "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 222745
-        },
-        {
           "source": "promokod.com",
           "url": "https://promokod.com/coupon-store/dodopizza-ru",
           "works": 105
+        },
+        {
+          "source": "promokod.pikabu.ru",
+          "url": "https://promokod.pikabu.ru/shops/dodopizza",
+          "works": 222797
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -779,7 +779,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 44725,
+      "works": 44732,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -797,20 +797,20 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promokod.pikabu.ru",
-          "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 44725
-        },
-        {
           "source": "promokod.com",
           "url": "https://promokod.com/coupon-store/dodopizza-ru",
           "works": 363
+        },
+        {
+          "source": "promokod.pikabu.ru",
+          "url": "https://promokod.pikabu.ru/shops/dodopizza",
+          "works": 44732
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -850,6 +850,11 @@
       "sourceCount": 2,
       "evidence": [
         {
+          "source": "promokod.pikabu.ru",
+          "url": "https://promokod.pikabu.ru/shops/samokat",
+          "works": 73468
+        },
+        {
           "source": "okodo.ru · Самокат",
           "url": "https://okodo.ru/samokat/",
           "works": 0
@@ -858,19 +863,14 @@
           "source": "okodo.ru · Все коды",
           "url": "https://okodo.ru/",
           "works": 0
-        },
-        {
-          "source": "promokod.pikabu.ru",
-          "url": "https://promokod.pikabu.ru/shops/samokat",
-          "works": 73323
         }
       ],
       "alsoServices": [
         "Самокат"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -906,9 +906,9 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promokod.store · Еда 3",
-          "url": "https://promokod.store/promokody/eda-i-napitki?page=3",
-          "works": 14924
+          "source": "okodo.ru · Все коды",
+          "url": "https://okodo.ru/",
+          "works": 0
         },
         {
           "source": "okodo.ru · Sushi Master",
@@ -916,17 +916,17 @@
           "works": 0
         },
         {
-          "source": "okodo.ru · Все коды",
-          "url": "https://okodo.ru/",
-          "works": 0
+          "source": "promokod.store · Еда 3",
+          "url": "https://promokod.store/promokody/eda-i-napitki?page=3",
+          "works": 14979
         }
       ],
       "alsoServices": [
         "sushi-master"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -970,7 +970,7 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 26598
+          "works": 26696
         },
         {
           "source": "okodo.ru · Глобус",
@@ -987,8 +987,8 @@
         "Глобус"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Яндекс Еда",
@@ -1009,7 +1009,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 62,
+      "works": 71,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1021,7 +1021,7 @@
       ],
       "sourceName": "promokod.pikabu.ru",
       "sourceUrl": "https://promokod.pikabu.ru/shops/eda-yandex",
-      "confidence": 88,
+      "confidence": 89,
       "verification": "confirmed",
       "verificationMethod": "multi-source",
       "sourceCount": 2,
@@ -1029,7 +1029,7 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/eda-yandex",
-          "works": 62
+          "works": 71
         },
         {
           "source": "ecosum.ru",
@@ -1039,8 +1039,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/26/2026 18:26:45",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 5
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 6
     },
     {
       "service": "Ozon Fresh",
@@ -1075,20 +1075,20 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promocodex.ru · Еда",
-          "url": "https://promocodex.ru/categories/food/",
-          "works": 0
-        },
-        {
           "source": "promokod.com",
           "url": "https://promokod.com/coupon-store/ozonfresh",
           "works": 1006
+        },
+        {
+          "source": "promocodex.ru · Еда",
+          "url": "https://promocodex.ru/categories/food/",
+          "works": 0
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Vipfish",
@@ -1109,7 +1109,7 @@
         "до без ограничения"
       ],
       "expiresInDays": null,
-      "works": 32939,
+      "works": 33062,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1127,22 +1127,22 @@
       "sourceCount": 2,
       "evidence": [
         {
+          "source": "promokod.store · Еда 1",
+          "url": "https://promokod.store/promokody/eda-i-napitki",
+          "works": 33062
+        },
+        {
           "source": "okodo.ru · Все коды",
           "url": "https://okodo.ru/",
           "works": 0
-        },
-        {
-          "source": "promokod.store · Еда 1",
-          "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 32939
         }
       ],
       "alsoServices": [
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "ВкусМил",
@@ -1163,7 +1163,7 @@
         "до без ограничения"
       ],
       "expiresInDays": null,
-      "works": 25668,
+      "works": 25766,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1181,22 +1181,22 @@
       "sourceCount": 2,
       "evidence": [
         {
+          "source": "promokod.store · Еда 3",
+          "url": "https://promokod.store/promokody/eda-i-napitki?page=3",
+          "works": 25766
+        },
+        {
           "source": "okodo.ru · Все коды",
           "url": "https://okodo.ru/",
           "works": 0
-        },
-        {
-          "source": "promokod.store · Еда 3",
-          "url": "https://promokod.store/promokody/eda-i-napitki?page=3",
-          "works": 25668
         }
       ],
       "alsoServices": [
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "BeFit",
@@ -1217,7 +1217,7 @@
         "до без ограничения"
       ],
       "expiresInDays": null,
-      "works": 18555,
+      "works": 18626,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -1235,22 +1235,22 @@
       "sourceCount": 2,
       "evidence": [
         {
+          "source": "promokod.store · Еда 3",
+          "url": "https://promokod.store/promokody/eda-i-napitki?page=3",
+          "works": 18626
+        },
+        {
           "source": "okodo.ru · Все коды",
           "url": "https://okodo.ru/",
           "works": 0
-        },
-        {
-          "source": "promokod.store · Еда 3",
-          "url": "https://promokod.store/promokody/eda-i-napitki?page=3",
-          "works": 18555
         }
       ],
       "alsoServices": [
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Domino's Pizza",
@@ -1271,7 +1271,7 @@
         "до 3 дек. 2026 г."
       ],
       "expiresInDays": 6,
-      "works": 19462,
+      "works": 19533,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1296,15 +1296,15 @@
         {
           "source": "promokod.store · Еда 2",
           "url": "https://promokod.store/promokody/eda-i-napitki?page=2",
-          "works": 19462
+          "works": 19533
         }
       ],
       "alsoServices": [
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Ollis",
@@ -1325,7 +1325,7 @@
         "до 3 дек. 2026 г."
       ],
       "expiresInDays": 6,
-      "works": 21491,
+      "works": 21574,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1350,15 +1350,15 @@
         {
           "source": "promokod.store · Еда 2",
           "url": "https://promokod.store/promokody/eda-i-napitki?page=2",
-          "works": 21491
+          "works": 21574
         }
       ],
       "alsoServices": [
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Ollis",
@@ -1379,7 +1379,7 @@
         "до 3 дек. 2026 г."
       ],
       "expiresInDays": 6,
-      "works": 19244,
+      "works": 19315,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1404,15 +1404,15 @@
         {
           "source": "promokod.store · Еда 2",
           "url": "https://promokod.store/promokody/eda-i-napitki?page=2",
-          "works": 19244
+          "works": 19315
         }
       ],
       "alsoServices": [
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Купер",
@@ -1455,20 +1455,20 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promokod.pikabu.ru",
-          "url": "https://promokod.pikabu.ru/shops/sbermarket",
-          "works": 18
-        },
-        {
           "source": "promokod.com",
           "url": "https://promokod.com/coupon-store/sbermarket-ru",
           "works": 15
+        },
+        {
+          "source": "promokod.pikabu.ru",
+          "url": "https://promokod.pikabu.ru/shops/sbermarket",
+          "works": 18
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Токио Сити",
@@ -1508,8 +1508,8 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "promocodex.ru · Суши",
-          "url": "https://promocodex.ru/categories/sushi/",
+          "source": "promocodex.ru · Рестораны",
+          "url": "https://promocodex.ru/categories/restaurants/",
           "works": 0
         },
         {
@@ -1518,8 +1518,8 @@
           "works": 0
         },
         {
-          "source": "promocodex.ru · Рестораны",
-          "url": "https://promocodex.ru/categories/restaurants/",
+          "source": "promocodex.ru · Суши",
+          "url": "https://promocodex.ru/categories/sushi/",
           "works": 0
         }
       ],
@@ -1527,8 +1527,8 @@
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Дикси",
@@ -1568,13 +1568,13 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "okodo.ru · Яндекс Еда",
-          "url": "https://okodo.ru/yandex-eda/",
+          "source": "ecosum.ru",
+          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
           "works": 0
         },
         {
-          "source": "ecosum.ru",
-          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
+          "source": "okodo.ru · Яндекс Еда",
+          "url": "https://okodo.ru/yandex-eda/",
           "works": 0
         },
         {
@@ -1592,8 +1592,8 @@
         "Яндекс Еда"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Яндекс Еда",
@@ -1632,13 +1632,13 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "okodo.ru · Яндекс Еда",
-          "url": "https://okodo.ru/yandex-eda/",
+          "source": "ecosum.ru",
+          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
           "works": 0
         },
         {
-          "source": "ecosum.ru",
-          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
+          "source": "okodo.ru · Яндекс Еда",
+          "url": "https://okodo.ru/yandex-eda/",
           "works": 0
         },
         {
@@ -1651,8 +1651,8 @@
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Яндекс Еда",
@@ -1691,13 +1691,13 @@
       "sourceCount": 2,
       "evidence": [
         {
-          "source": "okodo.ru · Яндекс Еда",
-          "url": "https://okodo.ru/yandex-eda/",
+          "source": "ecosum.ru",
+          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
           "works": 0
         },
         {
-          "source": "ecosum.ru",
-          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
+          "source": "okodo.ru · Яндекс Еда",
+          "url": "https://okodo.ru/yandex-eda/",
           "works": 0
         },
         {
@@ -1710,8 +1710,8 @@
         "Доставка еды"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -1754,13 +1754,13 @@
           "works": 0
         },
         {
-          "source": "okodo.ru · Все коды",
-          "url": "https://okodo.ru/",
+          "source": "okodo.ru · Метро",
+          "url": "https://okodo.ru/metro/",
           "works": 0
         },
         {
-          "source": "okodo.ru · Метро",
-          "url": "https://okodo.ru/metro/",
+          "source": "okodo.ru · Все коды",
+          "url": "https://okodo.ru/",
           "works": 0
         }
       ],
@@ -1768,8 +1768,8 @@
         "Якитория"
       ],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Яндекс Еда",
@@ -1813,8 +1813,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Яндекс Еда",
@@ -1861,8 +1861,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Яндекс Еда",
@@ -1883,7 +1883,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 565,
+      "works": 571,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -1903,13 +1903,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/eda-yandex",
-          "works": 565
+          "works": 571
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -1930,7 +1930,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 1974,
+      "works": 1977,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -1949,13 +1949,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 1974
+          "works": 1977
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Ozon Fresh",
@@ -1974,10 +1974,10 @@
       "conditions": [
         "Скидка 30% действует на товары из специального каталога при заказе от 3000 рублей.",
         "Минимальный заказ — от 3000 ₽",
-        "Срок действия — примерно 13 дн."
+        "Срок действия — примерно 16 дн."
       ],
-      "expiresInDays": 13,
-      "works": 872,
+      "expiresInDays": 16,
+      "works": 885,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -1994,13 +1994,13 @@
         {
           "source": "promokod.com",
           "url": "https://promokod.com/coupon-store/ozonfresh",
-          "works": 872
+          "works": 885
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Додо Пицца",
@@ -2021,7 +2021,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 5293,
+      "works": 5295,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -2040,13 +2040,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 5293
+          "works": 5295
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -2068,7 +2068,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 1552,
+      "works": 1554,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2090,13 +2090,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 1552
+          "works": 1554
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -2118,7 +2118,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 1613,
+      "works": 1615,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2140,13 +2140,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 1613
+          "works": 1615
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Перекрёсток",
@@ -2168,7 +2168,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 973,
+      "works": 976,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -2188,13 +2188,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/perekrestok",
-          "works": 973
+          "works": 976
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/26/2026 18:26:45",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 5
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 6
     },
     {
       "service": "Перекрёсток",
@@ -2240,8 +2240,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "ВкусВилл",
@@ -2288,8 +2288,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "ВкусВилл",
@@ -2336,8 +2336,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Domino's Pizza",
@@ -2358,7 +2358,7 @@
         "до 31 дек. 2026 г."
       ],
       "expiresInDays": 34,
-      "works": 21379,
+      "works": 21462,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2378,13 +2378,13 @@
         {
           "source": "promokod.store · Еда 2",
           "url": "https://promokod.store/promokody/eda-i-napitki?page=2",
-          "works": 21379
+          "works": 21462
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -2433,8 +2433,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Перекрёсток",
@@ -2477,8 +2477,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -2521,8 +2521,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Domino's Pizza",
@@ -2543,7 +2543,7 @@
         "до 31 дек. 2026 г."
       ],
       "expiresInDays": 34,
-      "works": 26749,
+      "works": 26847,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2563,13 +2563,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 26749
+          "works": 26847
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -2614,8 +2614,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -2637,7 +2637,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 238,
+      "works": 239,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -2656,13 +2656,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 238
+          "works": 239
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Перекрёсток",
@@ -2708,8 +2708,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -2763,8 +2763,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -2807,8 +2807,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Ашан",
@@ -2830,7 +2830,7 @@
         "Минимальный заказ — от 4000 ₽"
       ],
       "expiresInDays": 93,
-      "works": 16697,
+      "works": 16758,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -2850,13 +2850,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 16697
+          "works": 16758
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Перекрёсток",
@@ -2899,8 +2899,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -2946,8 +2946,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Яндекс Еда",
@@ -2968,7 +2968,7 @@
         "Срок действия — примерно 34 дн."
       ],
       "expiresInDays": 34,
-      "works": 44,
+      "works": 45,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -2988,13 +2988,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/eda-yandex",
-          "works": 44
+          "works": 45
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "ВкусВилл",
@@ -3041,8 +3041,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "ВкусВилл",
@@ -3089,8 +3089,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "ВкусВилл",
@@ -3137,8 +3137,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "ВкусВилл",
@@ -3185,8 +3185,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Ozon Fresh",
@@ -3231,8 +3231,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -3275,8 +3275,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -3319,8 +3319,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Ozon Fresh",
@@ -3365,8 +3365,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -3413,8 +3413,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -3457,8 +3457,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -3501,8 +3501,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -3545,8 +3545,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -3593,8 +3593,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -3640,8 +3640,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Ozon Fresh",
@@ -3686,8 +3686,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Купер",
@@ -3733,8 +3733,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Ozon Fresh",
@@ -3779,8 +3779,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Ozon Fresh",
@@ -3827,8 +3827,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Ozon Fresh",
@@ -3868,8 +3868,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Ozon Fresh",
@@ -3911,8 +3911,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Додо Пицца",
@@ -3934,7 +3934,7 @@
         "Срок действия — примерно 3 дн."
       ],
       "expiresInDays": 3,
-      "works": 1252,
+      "works": 1260,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -3958,13 +3958,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 1252
+          "works": 1260
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -3986,7 +3986,7 @@
         "Срок действия — примерно 3 дн."
       ],
       "expiresInDays": 3,
-      "works": 720,
+      "works": 728,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -4009,13 +4009,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 720
+          "works": 728
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Pizza Heart (Пицца Харт)",
@@ -4036,7 +4036,7 @@
         "до без ограничения"
       ],
       "expiresInDays": null,
-      "works": 16410,
+      "works": 16471,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -4053,13 +4053,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 16410
+          "works": 16471
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Перекрёсток",
@@ -4112,8 +4112,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Пятёрочка",
@@ -4160,8 +4160,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Яндекс Еда",
@@ -4203,8 +4203,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Самокат",
@@ -4225,7 +4225,7 @@
         "Срок действия — примерно 3 дн."
       ],
       "expiresInDays": 3,
-      "works": 1942,
+      "works": 1958,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4245,13 +4245,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/samokat",
-          "works": 1942
+          "works": 1958
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Самокат",
@@ -4272,7 +4272,7 @@
         "Срок действия — примерно 3 дн."
       ],
       "expiresInDays": 3,
-      "works": 871,
+      "works": 875,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4292,13 +4292,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/samokat",
-          "works": 871
+          "works": 875
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Самокат",
@@ -4319,7 +4319,7 @@
         "Срок действия — примерно 3 дн."
       ],
       "expiresInDays": 3,
-      "works": 1271,
+      "works": 1303,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4339,13 +4339,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/samokat",
-          "works": 1271
+          "works": 1303
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Самокат",
@@ -4366,7 +4366,7 @@
         "Срок действия — примерно 3 дн."
       ],
       "expiresInDays": 3,
-      "works": 1145,
+      "works": 1159,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4386,13 +4386,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/samokat",
-          "works": 1145
+          "works": 1159
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Самокат",
@@ -4413,7 +4413,7 @@
         "Срок действия — примерно 3 дн."
       ],
       "expiresInDays": 3,
-      "works": 662,
+      "works": 663,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4433,13 +4433,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/samokat",
-          "works": 662
+          "works": 663
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -4460,7 +4460,7 @@
         "Срок действия — примерно 3 дн."
       ],
       "expiresInDays": 3,
-      "works": 9157,
+      "works": 9263,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -4489,13 +4489,13 @@
         {
           "source": "promokod.pikabu.ru",
           "url": "https://promokod.pikabu.ru/shops/dodopizza",
-          "works": 9157
+          "works": 9263
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Перекрёсток",
@@ -4538,8 +4538,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Додо Пицца",
@@ -4584,8 +4584,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -4631,8 +4631,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -4675,8 +4675,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Priem.menu",
@@ -4697,7 +4697,7 @@
         "до 3 дек. 2026 г."
       ],
       "expiresInDays": 6,
-      "works": 14692,
+      "works": 14747,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -4714,13 +4714,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 14692
+          "works": 14747
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -4774,8 +4774,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "ВкусВилл",
@@ -4822,8 +4822,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Додо Пицца",
@@ -4865,8 +4865,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Самокат",
@@ -4908,8 +4908,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Pizza Heart (Пицца Харт)",
@@ -4931,7 +4931,7 @@
         "Минимальный заказ — от 1190 ₽"
       ],
       "expiresInDays": 4,
-      "works": 21427,
+      "works": 21510,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": false,
@@ -4950,13 +4950,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 21427
+          "works": 21510
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -4998,8 +4998,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Domino's Pizza",
@@ -5020,7 +5020,7 @@
         "до 3 дек. 2026 г."
       ],
       "expiresInDays": 6,
-      "works": 25550,
+      "works": 25648,
       "fails": 0,
       "existingUsers": true,
       "wholeCart": true,
@@ -5040,13 +5040,13 @@
         {
           "source": "promokod.store · Еда 2",
           "url": "https://promokod.store/promokody/eda-i-napitki?page=2",
-          "works": 25550
+          "works": 25648
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "BeFit",
@@ -5067,7 +5067,7 @@
         "до 30 нояб. 2026 г."
       ],
       "expiresInDays": 3,
-      "works": 19509,
+      "works": 19580,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -5087,13 +5087,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 19509
+          "works": 19580
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Перекрёсток",
@@ -5146,8 +5146,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -5201,8 +5201,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -5256,8 +5256,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -5304,8 +5304,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Самокат",
@@ -5350,8 +5350,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Яндекс Еда",
@@ -5396,8 +5396,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "ВкусВилл",
@@ -5444,8 +5444,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Перекрёсток",
@@ -5491,8 +5491,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Самокат",
@@ -5535,8 +5535,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "ВкусВилл",
@@ -5583,8 +5583,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Магнит",
@@ -5628,8 +5628,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Купер",
@@ -5675,8 +5675,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Самокат",
@@ -5722,8 +5722,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -5769,8 +5769,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -5816,8 +5816,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Самокат",
@@ -5863,8 +5863,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -5911,8 +5911,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Додо Пицца",
@@ -5964,8 +5964,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Simply Meal RU",
@@ -5986,7 +5986,7 @@
         "до 30 нояб. 2026 г."
       ],
       "expiresInDays": 3,
-      "works": 14817,
+      "works": 14872,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -6006,13 +6006,13 @@
         {
           "source": "promokod.store · Еда 1",
           "url": "https://promokod.store/promokody/eda-i-napitki",
-          "works": 14817
+          "works": 14872
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Купер",
@@ -6059,8 +6059,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Купер",
@@ -6106,8 +6106,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Ozon Fresh",
@@ -6149,8 +6149,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Ozon Fresh",
@@ -6190,8 +6190,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Додо Пицца",
@@ -6235,8 +6235,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Додо Пицца",
@@ -6284,8 +6284,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Додо Пицца",
@@ -6334,8 +6334,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Додо Пицца",
@@ -6379,8 +6379,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Додо Пицца",
@@ -6434,8 +6434,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Купер",
@@ -6479,8 +6479,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Додо Пицца",
@@ -6526,8 +6526,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Купер",
@@ -6574,8 +6574,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Перекрёсток",
@@ -6621,8 +6621,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Самокат",
@@ -6668,8 +6668,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "ВкусВилл",
@@ -6712,8 +6712,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Самокат",
@@ -6734,7 +6734,7 @@
         "Минимальный заказ — от 1000 ₽"
       ],
       "expiresInDays": 3,
-      "works": 45,
+      "works": 46,
       "fails": 0,
       "existingUsers": false,
       "wholeCart": true,
@@ -6754,13 +6754,13 @@
         {
           "source": "kp.ru",
           "url": "https://www.kp.ru/promokod/samokat/",
-          "works": 45
+          "works": 46
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Перекрёсток",
@@ -6807,8 +6807,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "ВкусВилл",
@@ -6851,8 +6851,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Купер",
@@ -6898,8 +6898,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -6946,8 +6946,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "ВкусВилл",
@@ -6994,8 +6994,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "ВкусВилл",
@@ -7038,8 +7038,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Магнит",
@@ -7083,8 +7083,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -7131,8 +7131,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -7179,8 +7179,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Купер",
@@ -7226,8 +7226,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Магнит",
@@ -7274,8 +7274,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Магнит",
@@ -7322,8 +7322,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Купер",
@@ -7369,8 +7369,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Доставка еды",
@@ -7417,8 +7417,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 14:21:02",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 13
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 14
     },
     {
       "service": "2 Берега",
@@ -7458,8 +7458,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -7511,8 +7511,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -7564,8 +7564,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -7612,8 +7612,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Яндекс Еда",
@@ -7660,8 +7660,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 9
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 10
     },
     {
       "service": "Elementaree",
@@ -7704,8 +7704,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Ollis",
@@ -7753,8 +7753,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Domino's Pizza",
@@ -7801,8 +7801,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Магнит",
@@ -7851,8 +7851,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Купер",
@@ -7898,8 +7898,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Самокат",
@@ -7941,8 +7941,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Магнит",
@@ -7986,8 +7986,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Купер",
@@ -8033,8 +8033,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Купер",
@@ -8081,8 +8081,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Купер",
@@ -8125,8 +8125,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Купер",
@@ -8172,8 +8172,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Купер",
@@ -8219,8 +8219,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Самокат",
@@ -8266,8 +8266,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -8313,8 +8313,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Самокат",
@@ -8357,8 +8357,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Domino's Pizza",
@@ -8404,8 +8404,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Sushiwok",
@@ -8453,8 +8453,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Domino's Pizza",
@@ -8504,8 +8504,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Rostic's",
@@ -8551,8 +8551,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/26/2026 18:26:45",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 5
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 6
     },
     {
       "service": "Додо Пицца",
@@ -8602,8 +8602,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Domino's Pizza",
@@ -8649,8 +8649,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Domino's Pizza",
@@ -8696,8 +8696,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Перекрёсток",
@@ -8740,8 +8740,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Самокат",
@@ -8787,8 +8787,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "ВкусВилл",
@@ -8834,8 +8834,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "ВкусВилл",
@@ -8881,8 +8881,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "ВкусВилл",
@@ -8928,8 +8928,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Магнит",
@@ -8975,8 +8975,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Rostic's",
@@ -9022,8 +9022,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/26/2026 18:26:45",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 5
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 6
     },
     {
       "service": "ЁбиДоёби",
@@ -9066,8 +9066,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9114,8 +9114,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Доставка еды",
@@ -9162,8 +9162,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Доставка еды",
@@ -9215,8 +9215,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9263,8 +9263,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Доставка еды",
@@ -9316,8 +9316,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9366,8 +9366,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9419,8 +9419,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9469,8 +9469,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9522,8 +9522,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9570,8 +9570,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Доставка еды",
@@ -9618,8 +9618,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Доставка еды",
@@ -9671,8 +9671,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9724,8 +9724,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9777,8 +9777,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9830,8 +9830,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9883,8 +9883,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9936,8 +9936,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -9984,8 +9984,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Доставка еды",
@@ -10025,20 +10025,20 @@
       "sourceCount": 1,
       "evidence": [
         {
-          "source": "okodo.ru · Все коды",
-          "url": "https://okodo.ru/",
+          "source": "okodo.ru · Метро",
+          "url": "https://okodo.ru/metro/",
           "works": 0
         },
         {
-          "source": "okodo.ru · Метро",
-          "url": "https://okodo.ru/metro/",
+          "source": "okodo.ru · Все коды",
+          "url": "https://okodo.ru/",
           "works": 0
         }
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Яндекс Еда",
@@ -10084,8 +10084,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Яндекс Еда",
@@ -10131,8 +10131,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Яндекс Еда",
@@ -10178,8 +10178,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Ашан",
@@ -10227,8 +10227,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -10275,8 +10275,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -10323,8 +10323,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Токио Сити",
@@ -10371,8 +10371,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 14:21:02",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 13
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 14
     },
     {
       "service": "Яндекс Еда",
@@ -10417,8 +10417,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Яндекс Еда",
@@ -10465,8 +10465,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/27/2026 10:51:13",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 3
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 4
     },
     {
       "service": "Ашан",
@@ -10513,8 +10513,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Domino's Pizza",
@@ -10560,8 +10560,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Rostic's",
@@ -10608,8 +10608,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Ашан",
@@ -10656,8 +10656,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Sushi Master",
@@ -10704,8 +10704,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 14:21:02",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 13
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 14
     },
     {
       "service": "allopizza.su",
@@ -10751,8 +10751,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Sushi Master",
@@ -10799,8 +10799,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 14:21:02",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 13
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 14
     },
     {
       "service": "Яндекс Еда",
@@ -10847,8 +10847,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "prostoeda.pro",
@@ -10893,8 +10893,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Elementaree",
@@ -10939,8 +10939,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Монетка",
@@ -10987,8 +10987,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "FoodBand",
@@ -11030,8 +11030,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 12
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 13
     },
     {
       "service": "Три пирога за 1 399 ₽",
@@ -11076,8 +11076,55 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 12
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 13
+    },
+    {
+      "service": "Яндекс Еда",
+      "code": "AUCHAN300",
+      "type": "fixed",
+      "value": 300,
+      "maxDiscount": 0,
+      "minOrder": 3000,
+      "freeDelivery": false,
+      "deliveryCost": 149,
+      "title": "300 ₽ на повторный заказ во «АШАН Гипермаркет»",
+      "category": [
+        "доставка еды",
+        "собрано с сайта"
+      ],
+      "conditions": [
+        "300 ₽ (от 3000) на повторный заказ во «АШАН Гипермаркет». Действует до 30 ноября 2026 года включительно.",
+        "Минимальный заказ — от 3000 ₽"
+      ],
+      "expiresInDays": 3,
+      "works": 0,
+      "fails": 0,
+      "existingUsers": true,
+      "wholeCart": true,
+      "cities": [],
+      "cityRestricted": false,
+      "collections": [
+        "returning",
+        "wholeCart"
+      ],
+      "sourceName": "ecosum.ru",
+      "sourceUrl": "https://www.ecosum.ru/promokody-yandex-eda/",
+      "confidence": 58,
+      "verification": "likely",
+      "verificationMethod": "source",
+      "sourceCount": 1,
+      "evidence": [
+        {
+          "source": "ecosum.ru",
+          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
+          "works": 0
+        }
+      ],
+      "alsoServices": [],
+      "firstSeenAt": "11/27/2026 19:57:26",
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 3
     },
     {
       "service": "FoodBand",
@@ -11122,8 +11169,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 12
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 13
     },
     {
       "service": "Скидка 20% в честь дня рождения",
@@ -11165,8 +11212,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 12
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 13
     },
     {
       "service": "Дикси",
@@ -11211,8 +11258,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Доставка еды",
@@ -11257,8 +11304,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 12
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 13
     },
     {
       "service": "polza",
@@ -11304,8 +11351,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Domino's Pizza",
@@ -11348,8 +11395,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Скидка 20% и 1000 баллов на первый заказ",
@@ -11391,8 +11438,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 12
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 13
     },
     {
       "service": "Скидка 10% на первый заказ в приложении",
@@ -11437,8 +11484,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 12
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 13
     },
     {
       "service": "Level Kitchen",
@@ -11483,8 +11530,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 12
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 13
     },
     {
       "service": "Токио Сити",
@@ -11531,8 +11578,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Vipfish",
@@ -11576,8 +11623,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 14:21:02",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 13
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 14
     },
     {
       "service": "Фарфор",
@@ -11624,8 +11671,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "saransk.inyan-rolly",
@@ -11670,55 +11717,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/23/2026 21:21:37",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 16
-    },
-    {
-      "service": "Яндекс Еда",
-      "code": "AUCHAN300",
-      "type": "fixed",
-      "value": 300,
-      "maxDiscount": 0,
-      "minOrder": 3000,
-      "freeDelivery": false,
-      "deliveryCost": 149,
-      "title": "300 ₽ на повторный заказ во «АШАН Гипермаркет»",
-      "category": [
-        "доставка еды",
-        "собрано с сайта"
-      ],
-      "conditions": [
-        "300 ₽ (от 3000) на повторный заказ во «АШАН Гипермаркет». Действует до 30 ноября 2026 года включительно.",
-        "Минимальный заказ — от 3000 ₽"
-      ],
-      "expiresInDays": 3,
-      "works": 0,
-      "fails": 0,
-      "existingUsers": true,
-      "wholeCart": true,
-      "cities": [],
-      "cityRestricted": false,
-      "collections": [
-        "returning",
-        "wholeCart"
-      ],
-      "sourceName": "ecosum.ru",
-      "sourceUrl": "https://www.ecosum.ru/promokody-yandex-eda/",
-      "confidence": 51,
-      "verification": "likely",
-      "verificationMethod": "source",
-      "sourceCount": 1,
-      "evidence": [
-        {
-          "source": "ecosum.ru",
-          "url": "https://www.ecosum.ru/promokody-yandex-eda/",
-          "works": 0
-        }
-      ],
-      "alsoServices": [],
-      "firstSeenAt": "11/27/2026 19:57:26",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 2
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 17
     },
     {
       "service": "Яндекс Еда",
@@ -11764,8 +11764,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Якитория",
@@ -11810,8 +11810,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Rostic's",
@@ -11857,8 +11857,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Якитория",
@@ -11907,8 +11907,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Якитория",
@@ -11957,8 +11957,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -12004,8 +12004,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -12051,8 +12051,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Перекрёсток",
@@ -12095,8 +12095,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Купер",
@@ -12142,8 +12142,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "ВкусВилл",
@@ -12186,8 +12186,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "ВкусВилл",
@@ -12232,8 +12232,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "KFC",
@@ -12278,8 +12278,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Тануки",
@@ -12324,8 +12324,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     },
     {
       "service": "Якитория",
@@ -12375,8 +12375,8 @@
       ],
       "alsoServices": [],
       "firstSeenAt": "11/24/2026 11:42:05",
-      "lastSeenAt": "2026-11-28T02:41:46.6628495+00:00",
-      "seenRuns": 15
+      "lastSeenAt": "2026-11-28T10:55:05.7883843+00:00",
+      "seenRuns": 16
     }
   ]
 }
